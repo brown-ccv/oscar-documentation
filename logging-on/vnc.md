@@ -33,9 +33,9 @@ connected to your existing VNC session.
 
 **Kill VNC session** closes the client and stops your VNC session from running.
 
-{{% alert warning %}}
+{% hint style="warning" %}
 Closing the VNC window will only disconnect you from the VNC session,
 it will not kill the session.
 
 Sessions are limited to a designated period of time (maximum of 7 days, depending on the resources selected for the session). After this time, the session will expire.
-{{% /alert %}}
+{% endhint %}

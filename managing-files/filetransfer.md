@@ -10,13 +10,13 @@ icon: check
 
 # File transfer
 
-{{< alert info >}}
+{% hint style="info" %}
 
 Oscar has transfer nodes with a high speed conection for quickly moving
 data.  To use the transfer nodes use `transfer.ccv.brown.edu` as the
 host address.
 
-{{</ alert >}}
+{% endhint %}
 
 # Moving files between your machine and Oscar
 

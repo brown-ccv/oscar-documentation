@@ -27,10 +27,10 @@ Similarly, to run this without the display enabled:
     matlab-threaded -nodisplay
 ```
 
-{{< alert danger >}}
+{% hint style="danger" %}
 Do **not** run Matlab on the Oscar login nodes.  Request a compute node
 either with an interactive session, a batch script, or using the VNC.
-{{</ alert >}}
+{% endhint %}
 
 ## VNC
 

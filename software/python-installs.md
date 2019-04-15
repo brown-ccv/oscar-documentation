@@ -10,9 +10,9 @@ icon: check
 
 # Installing python packages
 
-{{< alert info >}}
+{% hint style="info" %}
 We use angular brackets `<>` to denote command line options that you should replace with an appropriate value
-{{< /alert >}}
+{% endhint %}
 
 Users can install python packages
 
@@ -35,13 +35,13 @@ directory:
 ```shell
     ~/.local/lib/python<version>/site-packages
 ```
-{{< alert warning >}}
+{% hint style="warning" %}
 If you omit the `--user` flag you will see
 ```shell
     IOError: [Errno 13] Permission denied: '/gpfs/runtime/opt/python/2.7.3/lib/python2.7/site-packages/ordereddict.py'
 ```
 This is because users do not have access to the default locations where software is installed.
-{{< /alert >}}
+{% endhint %}
 
 
 # Install at custom location
@@ -99,12 +99,12 @@ by downloading the source code itself. Most python packages can be
 installed by running the `setup.py` script that should be included in
 the downloaded files.
 
-{{< alert warning>}}
+{% hint style="warning" %}
 You will need to provide a "prefix path" for the install location
 ```shell
     python setup.py install --prefix=</path/to/install/location>
 ```
-{{< /alert >}}
+{% endhint %}
 
 This will create the sub-directories `bin`, `lib`, etc. at the location
 provided above and install the packages there. The environment will have

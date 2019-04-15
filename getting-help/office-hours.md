@@ -13,6 +13,6 @@ icon: check
 CCV holds weekly office hours.  These are drop in sessions where we'll have one or more
 CCV staff members available to answer questions and help with any problems you have.
 
-{{< alert info>}}
+{% hint style="info" %}
 Office hours are held in 180 George Street.
-{{</ alert >}}
+{% endhint %}

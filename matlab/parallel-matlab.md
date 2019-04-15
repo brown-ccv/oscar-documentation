@@ -19,11 +19,11 @@ can benefit from massively parallel computations:
 Finally, parallel computing features like `parfor` and `spmd` can be
 used by launching a pool of workers on a node.
 
-{{< alert info >}}
+{% hint style="info" %}
 Note that the Parallel
 Computing Toolbox by itself cannot span across multiple nodes so
 make sure you request only 1 node to avoid wasting resources.
-{{</ alert >}}
+{% endhint %}
 
 -   [Execute Loop Iterations in
     Parallel](http://www.mathworks.com/help/distcomp/parfor.html)

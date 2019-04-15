@@ -21,11 +21,11 @@ priority and the resources you request (e.g. cores, memory and runtime).
 cluster.  In general, the less resources you request the less time
 you will spend waiting in the queue.
 
-{{< alert warning >}}
+{% hint style="warning" %}
 Please do not run CPU-intense or long-running programs directly on
 the login nodes! The login nodes are shared by many users, and you will
 interrupt other users' work.
-{{</ alert >}}
+{% endhint %}
 
 Jobs can be run on Oscar in two different ways:
 

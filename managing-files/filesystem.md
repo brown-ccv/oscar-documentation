@@ -42,12 +42,12 @@ and scratch space.
  * Purging: files not accessed for 30 days may be deleted
  * Quota is per individual user
 
-{{< alert warning >}}
+{% hint style="warning" %}
 Files not accessed for 30 days may be deleted from your scratch directory.  
 This is because scratch is high performance space. The fuller scratch is the worse
 the read/write performance.  Use ~/data for files you need to keep long term.
 
-{{</ alert >}}
+{% endhint %}
 
 A good practice is to configure your application to read any initial
 input data from `~/data` and write all output into `~/scratch`. Then,
@@ -68,7 +68,7 @@ To see how much space you have on Oscar you can use the command
     FILESET data+apollo        11.05T      20T      24T        - |   459764  4194304  8388608        -
 ```
 
-{{< alert warning >}}
+{% hint style="warning" %}
 There is a quota for space used and for number of files.  If you hit the hard limit
 on **either** of these you will be unable to write any more files until you are back under quota.
 
@@ -77,4 +77,4 @@ You can go over your quota up to the hard limit for a grace period
 (14 days). This grace period is to give you time to manage your files.
 When the grace period expires you will be unable to write any files
 until you are back under quota.
-{{</ alert >}}
+{% endhint %}

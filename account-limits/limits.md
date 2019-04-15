@@ -8,7 +8,7 @@ icon: check
 ---
 # Account Limits
 
-{{< alert info >}} The number and size of jobs allowed on Oscar vary with both partition and type of user account. You can email support@ccv.brown.edu if you need advice on which paritions to use {{</ alert >}}
+{% hint style="info" %} The number and size of jobs allowed on Oscar vary with both partition and type of user account. You can email support@ccv.brown.edu if you need advice on which partitions to use {% endhint %}
 
 The following partitions are available to all Oscar users:
 
@@ -31,14 +31,14 @@ The following partitions are available to all Oscar users:
 | --- | --- | --- | --- |
 | Maximum number of cores in use at once | 16 | 208 | condo size |
 | Maximum number of jobs | 16 | 208 | condo size |
-| Maximum memory in use at once (GB) | 123 | 1024 | condo size | 
+| Maximum memory in use at once (GB) | 123 | 1024 | condo size |
 | Time limit per job (core•minutes) | 46,100 | 998,400 | condo size |
 
 Condo limits apply to the group (i.e., they reflect the sum of all users on the condo). Condo users can check the limits on their condo with the command `condos`.
 
-{{< alert warning >}}
+{% hint style="warning" %}
 There is no limit on the time for condo jobs, but users should be aware that planned maintenance on the machine may occur (one month’s notice is given prior to any planned maintenance).
-{{</ alert >}}
+{% endhint %}
 
 # debug partition
 
