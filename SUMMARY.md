@@ -1,4 +1,62 @@
-# Table of contents
+# Table of contents  
 
 * [Initial page](README.md)
 
+## Connecting to Oscar
+
+* [SSH](logging-on/ssh.md)
+* [VNC](logging-on/vnc.md)
+* [CIFS](logging-on/cifs.md)
+
+## Accounts on Oscar
+
+* [Account Types](account-limits/account-types.md)
+* [Account Limits](account-limits/limits.md)
+
+## Managing files
+
+* [Oscar Filesystem](managing-files/filesystem.md)
+* [Transfering Files to and from Oscar](managing-files/filetransfer.md)
+* [Transfering Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
+* [Restoring Deleted Files](managing-files/restore.md)
+* [Best Practives for I/O](managing-files/io-best-practices.md)
+
+## Software
+
+* [Installing R Packages](software/r-installs.md)
+* [Installing Python Packages](software/python-installs.md)
+* [Compiling Software](software/compiling.md)
+* [Using Modules](software/modules.md)
+
+## Submitting jobs
+
+* [Using a Shared Machine](job-submission/shared-machine.md)
+* [SLURM](job-submission/slurm.md)
+* [Interactive Jobs](job-submission/interact.md)
+* [Batch Jobs](job-submission/batch.md)
+* [Managing Jobs](job-submission/managing-jobs.md)
+* [Array Jobs](job-submission/array.md)
+
+## GPU Computing
+
+* [GPUs on Oscar](gpu-computing/gpus.md)
+* [Submitting GPU Jobs](gpu-computing/submit-gpu.md)
+* [Compiling CUDA](gpu-computing/cuda-compiling.md)
+* [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
+
+## Large Memory Computing
+
+* [Large Menory Nodes on Oscar](large-memory-computing/large-mem.md)
+
+## MATLAB
+
+* [Matlab GUI](matlab/matlab-gui.md)
+* [Matlab Batch Jobs](matlab/matlab-batch.md)
+* [Improving Performance and Memory Managament](matlab/performance.md)
+* [Parallel Matlab](matlab/parallel-matlab.md)
+
+## Getting Help
+
+* [File a Support Ticket](getting-help/ticket.md)
+* [Visit Office Hours](getting-help/office-hours.md)
+* [Meet with CCV Staff](getting-help/meet-ccv.md)
