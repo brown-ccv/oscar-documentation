@@ -1,17 +1,17 @@
-# Table of contents  
+# Table of contents
 
 * [Initial page](README.md)
 
 ## Connecting to Oscar
 
-* [SSH](logging-on/ssh.md)
-* [VNC](logging-on/vnc.md)
-* [CIFS](logging-on/cifs.md)
+* [SSH](connecting-to-oscar/ssh.md)
+* [VNC](connecting-to-oscar/vnc.md)
+* [CIFS](connecting-to-oscar/cifs.md)
 
 ## Accounts on Oscar
 
-* [Account Types](account-limits/account-types.md)
-* [Account Limits](account-limits/limits.md)
+* [Account Types](accounts-on-oscar/account-types.md)
+* [Account Limits](accounts-on-oscar/limits.md)
 
 ## Managing files
 
@@ -30,12 +30,12 @@
 
 ## Submitting jobs
 
-* [Using a Shared Machine](job-submission/shared-machine.md)
-* [SLURM](job-submission/slurm.md)
-* [Interactive Jobs](job-submission/interact.md)
-* [Batch Jobs](job-submission/batch.md)
-* [Managing Jobs](job-submission/managing-jobs.md)
-* [Array Jobs](job-submission/array.md)
+* [Using a Shared Machine](submitting-jobs/shared-machine.md)
+* [SLURM](submitting-jobs/slurm.md)
+* [Interactive Jobs](submitting-jobs/interact.md)
+* [Batch Jobs](submitting-jobs/batch.md)
+* [Managing Jobs](submitting-jobs/managing-jobs.md)
+* [Array Jobs](submitting-jobs/array.md)
 
 ## GPU Computing
 
@@ -60,3 +60,4 @@
 * [File a Support Ticket](getting-help/ticket.md)
 * [Visit Office Hours](getting-help/office-hours.md)
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
+

@@ -1,6 +1,6 @@
 ---
-title: "Office Hours"
-date: 2019-01-31T17:02:55-05:00
+title: Office Hours
+date: '2019-01-31T22:02:55.000Z'
 draft: false
 project: Oscar
 section: Getting Help
@@ -8,11 +8,11 @@ weight: 0
 icon: check
 ---
 
-# Office Hours
+# Visit Office Hours
 
-CCV holds weekly office hours.  These are drop in sessions where we'll have one or more
-CCV staff members available to answer questions and help with any problems you have.
+CCV holds weekly office hours. These are drop in sessions where we'll have one or more CCV staff members available to answer questions and help with any problems you have.
 
 {% hint style="info" %}
 Office hours are held in 180 George Street.
 {% endhint %}
+
