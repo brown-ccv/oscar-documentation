@@ -31,7 +31,7 @@ options:
   -t walltime     as hh:mm:ss (default: 30:00)
   -m memory       as #[k|m|g] (default: 4g)
   -q queue        (default: 'batch')
-  -o outfile      save a copy of the session's output to outfile (default: off)
+  -o outfile      save a copy of the sessions output to outfile (default: off)
   -X              enable X forwarding (default: no)
   -f featurelist  CCV-defined node features (e.g., 'e5-2600'),
                   combined with '&' and '|' (default: none)

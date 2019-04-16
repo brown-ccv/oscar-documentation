@@ -24,6 +24,10 @@ sbatch <jobscript>
 
 A batch script starts by specifying the `bash` shell as its interpreter, with the line:
 
+```bash
+#!/bin/bash
+```
+
 Next, a series of lines starting with `#SBATCH` define the resources you need, for example:
 
 ```bash
@@ -45,7 +49,7 @@ The command-line options will override the resources specified in the script, so
 The `sbatch` command will return a number, which is your job ID. You can view the output of your job in the file `slurm-<jobid>.out` in the directory where you ran the `sbatch` command. For instance, you can view the last 10 lines of output with:
 
 ```bash
-    tail -10 slurm-<jobid>.out
+tail -10 slurm-<jobid>.out
 ```
 
 Alternatively, you can mention the file names where you want to dump the standard output and errors using the `-o` and `-e` flags.
@@ -54,32 +58,18 @@ Useful `sbatch` options:
 
 | option | purpose |
 | :--- | :--- |
-| `-J` | Specify the job name that will be |
-| displayed when listing the job. |  |
-| `-n` | Number of tasks \(= number of |
-| cores, if "--cpus-per-task" or |  |
-| "-c" option is not mentioned\). |  |
-| `-c` | Number of CPUs or cores per task |
-| \(on the same node\). |  |
+| `-J` | Specify the job name that will be displayed when when listing the job |
+| `-n` | Number of tasks \(= number of cores, if "--cpus-per-task" or "-c" option is not mentioned\). |
+| `-c` | Number of CPUs or cores per task \(on the same node\). |
 | `-N` | Number of nodes. |
 | `-t` | Runtime, as HH:MM:SS. |
 | `--mem=` | Requested memory per node. |
 | `-p` | Request a specific partition. |
-| `-o` | Filename for standard output from |
-| the job. |  |
-| `-e` | Filename for standard error from |
-| the job. |  |
-| `-C` | Add a feature constraint \(a tag |
-| that describes a type of node\). |  |
-| You can view the available |  |
-| features on Oscar with the |  |
-| `nodes` command. |  |
-| `--mail-type=` | Specify the events that you |
-| should be notified of by email: |  |
-| BEGIN, END, FAIL, REQUEUE, and |  |
-| ALL. |  |
-| `--mail-user=` | Email ID where you should be |
-| notified. |  |
+| `-o` | Filename for standard output from the job. |
+| `-e` | Filename for standard error from the job. |
+| `-C` | Add a feature constraint \(a tag that describes a type of node\). You can view the available features on Oscar with the `nodes`command. |
+| `--mail-type=` | Specify the events that you should be notified of by email: BEGIN, END, FAIL, REQUEUE, and ALL. |
+| `--mail-user=` | Email ID where you should be notified. |
 
 You can read the full list of options at [http://slurm.schedmd.com/sbatch.html](http://slurm.schedmd.com/sbatch.html) or with the command:
 
