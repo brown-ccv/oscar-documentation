@@ -6,7 +6,7 @@ weight: 0
 icon: oscar.svg
 ---
 
-# Initial page
+# Oscar
 
 Welcome to the CCV Oscar User Manual. Oscar is Brown University's supercomputer.
 

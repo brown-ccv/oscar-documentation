@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Oscar](README.md)
 
 ## Connecting to Oscar
 
@@ -16,8 +16,8 @@
 ## Managing files
 
 * [Oscar Filesystem](managing-files/filesystem.md)
-* [Transfering Files to and from Oscar](managing-files/filetransfer.md)
-* [Transfering Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
+* [Transferring Files to and from Oscar](managing-files/filetransfer.md)
+* [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practives for I/O](managing-files/io-best-practices.md)
 

@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Transfering Files to and from Oscar
+# Transferring Files to and from Oscar
 
 ## File transfer
 
