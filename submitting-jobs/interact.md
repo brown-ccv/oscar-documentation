@@ -16,9 +16,7 @@ To start an interactive session for running serial or threaded programs on an Os
 interact
 ```
 
-By default, this will create an interactive session that reserves 1 core, 4GB of memory, and 30 minutes of runtime.
-
-You can change these default limits with the following command line options:
+By default, this will create an interactive session that reserves 1 core and 4GB of memory for a period of 30 minutes. You can change the resources reserved for the session from these default limits by modifying the interact command:
 
 ```bash
 usage: interact [-n cores] [-t walltime] [-m memory] [-q queue]
@@ -40,11 +38,13 @@ options:
   -a account     user SLURM accounting account name
 ```
 
-For example:
+For example, the command
 
 ```bash
 $ interact -n 20 -t 01:00:00 -m 10g
 ```
 
-This will request 20 cores, 1 hour of time and 10 GB of memory \(per node\).
+requests an interactive session with 20 cores and 10 GB of memory \(per node\) for a period of 1 hour.
+
+
 

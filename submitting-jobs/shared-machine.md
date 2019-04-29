@@ -10,27 +10,12 @@ icon: check
 
 # Using a Shared Machine
 
-Oscar is a shared machine used by hundreds of users at once. User requests are called jobs. A "job" is the combination of the resource requested and the program you want to run on the compute nodes of the Oscar cluster. On Oscar **slurm** is used to schedule and manage jobs.
-
-Jobs are scheduled to run on the cluster according to your account priority and the resources you request \(e.g. cores, memory and runtime\). cluster. In general, the less resources you request the less time you will spend waiting in the queue.
-
-{% hint style="warning" %}
-Please do not run CPU-intense or long-running programs directly on the login nodes! The login nodes are shared by many users, and you will interrupt other users' work.
-{% endhint %}
+Oscar is a shared machine used by hundreds of users at once. User requests are called _**jobs**_. A job is the combination of the resource requested and the program you want to run on the compute nodes of the Oscar cluster. On Oscar, [_**Slurm**_](https://slurm.schedmd.com) is used to schedule and manage jobs.
 
 Jobs can be run on Oscar in two different ways:
 
-* An **interactive** job allows you to interact with a program by
-
-  typing input, using a GUI, etc. But if your connection is
-
-  interrupted, the job will abort. These are best for small,
-
-  short-running jobs where you need to test out a program, or where
-
-  you need to use the program's GUI.
-
-* A **batch** job allows you to submit a script that tells the cluster
+* _**Interactive** **jobs**_ allow the user to interact with programs \(e.g., by entering input manually, using a GUI\) while they are running. However, if your connection to the system is interrupted, the job will abort. Small jobs with short run times or jobs that require the use of a GUI are best-suited for running interactively.
+* _**Batch** **jobs**_ allows you to submit a script that tells the cluster
 
   how to run your program. Your program can run for long periods of
 
@@ -39,4 +24,16 @@ Jobs can be run on Oscar in two different ways:
   The output of your program is continuously written to an output file
 
   that you can view both during and after your program runs.
+
+Jobs are scheduled to run on the cluster according to your account priority and the resources you request \(e.g. cores, memory and runtime\). In general, the fewer resources you request, the less time your job will spend waiting in the queue.
+
+{% hint style="warning" %}
+Please do not run CPU-intense or long-running programs directly on the login nodes! The login nodes are shared by many users, and you will interrupt other users' work.
+{% endhint %}
+
+
+
+
+
+
 

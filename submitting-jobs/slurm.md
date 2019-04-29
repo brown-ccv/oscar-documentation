@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# SLURM
+# Slurm
 
 Oscar has the following slurm partitions
 

@@ -31,7 +31,7 @@
 ## Submitting jobs
 
 * [Using a Shared Machine](submitting-jobs/shared-machine.md)
-* [SLURM](submitting-jobs/slurm.md)
+* [Slurm](submitting-jobs/slurm.md)
 * [Interactive Jobs](submitting-jobs/interact.md)
 * [Batch Jobs](submitting-jobs/batch.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
