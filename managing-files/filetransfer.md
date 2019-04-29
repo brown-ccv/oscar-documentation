@@ -54,9 +54,9 @@ To copy a file from Oscar to your computer:
 * [Cyberduck](http://cyberduck.ch) for Mac
 * [FileZilla](https://filezilla-project.org) for all platforms
 
-4.\) [Globus online](https://www.globus.org/)
+4.\) Globus online
 
-Globus is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
+[Globus](https://www.globus.org) is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
 
 ```text
     brownccv#Brown-CCV-oscar-1

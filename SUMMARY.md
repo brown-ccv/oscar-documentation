@@ -15,7 +15,7 @@
 
 ## Managing files
 
-* [Oscar Filesystem](managing-files/filesystem.md)
+* [Oscar's Filesystem](managing-files/filesystem.md)
 * [Transferring Files to and from Oscar](managing-files/filetransfer.md)
 * [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
