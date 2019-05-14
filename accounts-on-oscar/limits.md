@@ -55,7 +55,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of cores in use at once | 16 |
 | Maximum number of jobs | 2 |
 | Maximum memory in use at once \(GB\) | 123 |
-| Limit, sum of all jobs \(minutes\) | 30 |
+| Time limit, per job \(minutes\) | 30 |
 
 ## gpu partition
 
