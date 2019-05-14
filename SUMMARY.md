@@ -19,7 +19,7 @@
 * [Transferring Files to and from Oscar](managing-files/filetransfer.md)
 * [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
-* [Best Practives for I/O](managing-files/io-best-practices.md)
+* [Best Practices for I/O](managing-files/io-best-practices.md)
 
 ## Software
 

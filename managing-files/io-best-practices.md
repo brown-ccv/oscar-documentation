@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Best Practives for I/O
+# Best Practices for I/O
 
 Efficient I/O is essential for good performance in data-intensive applications. Often, the file system is a substantial bottleneck on HPC systems, because CPU and memory technology has improved much more drastically in the last few decades than I/O technology.
 

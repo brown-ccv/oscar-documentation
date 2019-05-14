@@ -13,7 +13,7 @@ icon: check
 Nightly snapshots of the file system are available for the last 5-7 days.
 
 {% hint style="warning" %}
-CCV does not guarentee that each of the last 7 days will be available in snapshots because ocasionally the snapshot process does not complete within 24 hours.
+CCV does not guarantee that each of the last 7 days will be available in snapshots because occasionally the snapshot process does not complete within 24 hours.
 {% endhint %}
 
 Snapshots can be found in the following directories.
