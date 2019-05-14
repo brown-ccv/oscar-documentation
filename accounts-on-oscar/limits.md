@@ -37,7 +37,7 @@ The following partitions are available to all Oscar users:
 | Maximum number of cores in use at once | 16 | 208 | condo size |
 | Maximum number of jobs | 16 | 208 | condo size |
 | Maximum memory in use at once \(GB\) | 123 | 1024 | condo size |
-| Time limit, sum of all jobs \(core•minutes\) | 46,100 | 998,400 | condo size |
+| Limit, sum of all jobs \(core•minutes\) | 46,100 | 998,400 | condo size |
 
 Condo limits apply to the group \(i.e., they reflect the sum of all users on the condo\). Condo users can check the limits on their condo with the command `condos`.
 
@@ -55,7 +55,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of cores in use at once | 16 |
 | Maximum number of jobs | 2 |
 | Maximum memory in use at once \(GB\) | 123 |
-| Time limit per job \(minutes\) | 30 |
+| Limit, sum of all jobs \(minutes\) | 30 |
 
 ## gpu partition
 
@@ -68,7 +68,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of GPUs in use at once | 2 | 8 |
 | Maximum number of CPUs in use at once | 4 | 16 |
 | Maximum memory in use at once \(GB\) | 46 | 180 |
-| Time limit per job \(GPU•hours\) | 48 | 192 |
+| Limit, sum of all jobs \(GPU•hours\) | 48 | 192 |
 
 ## gpu-debug partition
 
@@ -80,7 +80,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of GPUs in use at once | 1 |
 | Maximum number of CPUs in use at once | 2 |
 | Maximum memory in use at once \(GB\) | 23 |
-| Time limit per job \(GPU•hours\) | 4 |
+| Limit, sum of all jobs \(GPU•hours\) | 4 |
 
 ## bigmem
 
@@ -93,7 +93,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of jobs | 1 | 2 |
 | Maximum memory in use at once \(GB\) | 750 | 750 |
 | Time limit \(wall clock\) per job \(hours\) | 24 | 96 |
-| Time limit per job \(core•minutes\) | 46,080 | 184,320 |
+| Limit, sum of all jobs \(core•minutes\) | 46,080 | 184,320 |
 
 ## smp partition
 
@@ -106,5 +106,5 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 | Maximum number of jobs | 1 | 2 |
 | Maximum memory in use at once \(GB\) | 503 | 1006 |
 | Time limit \(wall clock\) per job \(hours\) | 24 | 48 |
-| Time limit per job \(core•minutes\) | 92,160 | 184,320 |
+| Limit, sum of all jobs \(core•minutes\) | 92,160 | 184,320 |
 
