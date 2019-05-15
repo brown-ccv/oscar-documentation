@@ -35,7 +35,7 @@
 * [Interactive Jobs](submitting-jobs/interact.md)
 * [Batch Jobs](submitting-jobs/batch.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
-* [Array Jobs](submitting-jobs/array.md)
+* [Job Arrays](submitting-jobs/array.md)
 
 ## GPU Computing
 
