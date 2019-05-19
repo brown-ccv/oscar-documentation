@@ -18,7 +18,7 @@ There are four categories of accounts on Oscar.
 
 ## Exploratory accounts
 
-Exploratory accounts are available to all members of the Brown comminity for free.
+Exploratory accounts are available to all members of the Brown community for free.
 
 ## Premium accounts
 
@@ -26,7 +26,11 @@ Premium accounts are available through a quarterly subscription.
 
 ## Condo
 
-PIs who purchase hardware \(compute nodes\) for the CCV machine get a condo account. Condo account users have next-to-run prioriy on the number of cores equivalent to the hardware they purchased.
+PIs who purchase hardware \(compute nodes\) for the CCV machine get a condo account. Condo account users have next-to-run priority on the number of cores equivalent to the hardware they purchased.
+
+{% hint style="info" %}
+Use the command `groups` to see whether your account is a member of priority or a condo account
+{% endhint %}
 
 ## Class
 
