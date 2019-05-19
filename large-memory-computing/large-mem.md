@@ -1,2 +1,2 @@
-# Large Menory Nodes on Oscar
+# Large Memory Nodes on Oscar
 

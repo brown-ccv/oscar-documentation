@@ -46,7 +46,7 @@
 
 ## Large Memory Computing
 
-* [Large Menory Nodes on Oscar](large-memory-computing/large-mem.md)
+* [Large Memory Nodes on Oscar](large-memory-computing/large-mem.md)
 
 ## MATLAB
 
