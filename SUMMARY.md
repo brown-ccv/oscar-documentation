@@ -23,10 +23,11 @@
 
 ## Software
 
+* [Software on Oscar](software/untitled.md)
+* [Using Modules](software/modules.md)
 * [Installing R Packages](software/r-installs.md)
 * [Installing Python Packages](software/python-installs.md)
 * [Compiling Software](software/compiling.md)
-* [Using Modules](software/modules.md)
 
 ## Submitting jobs
 
