@@ -33,7 +33,7 @@ You can transfer files between Department File Servers and Oscar using [smbclien
 3\) Use Oscar's high speed connection to files.brown.edu
 
 ```text
-    smbclient "//hpcsmb.isi.ccv.brown.edu/SHARE_NAME" -D DIRECTORY_NAME -U "ad\BROWN_ID"`
+    smbclient "//smb.isi.ccv.brown.edu/SHARE_NAME" -D DIRECTORY_NAME -U "ad\BROWN_ID"`
 ```
 
 Replace SHARE\_NAME, DIRECTORY\_NAME, and BROWN\_ID. DIRECTORY\_NAME is an optional parameter. The password required is your **Brown** password.
