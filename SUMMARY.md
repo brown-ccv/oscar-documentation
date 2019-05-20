@@ -12,6 +12,7 @@
 
 * [Account Types](accounts-on-oscar/account-types.md)
 * [Account Limits](accounts-on-oscar/limits.md)
+* [Passwords](accounts-on-oscar/passwords.md)
 
 ## Managing files
 
