@@ -29,6 +29,7 @@
 * [Installing R Packages](software/r-installs.md)
 * [Installing Python Packages](software/python-installs.md)
 * [Compiling Software](software/compiling.md)
+* [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 
 ## Submitting jobs
 
@@ -36,6 +37,7 @@
 * [Slurm](submitting-jobs/slurm.md)
 * [Interactive Jobs](submitting-jobs/interact.md)
 * [Batch Jobs](submitting-jobs/batch.md)
+* [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
 * [Job Arrays](submitting-jobs/array.md)
 
