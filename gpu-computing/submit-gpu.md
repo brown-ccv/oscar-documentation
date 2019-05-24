@@ -28,7 +28,7 @@ To start an session on a GPU node, use the `interact` command and specify the `g
 
 Here is an example batch script for a cuda job that uses 1 gpu and 1 cpu for 5 minutes
 
-```text
+```bash
 #!/bin/bash
 
 # Request a GPU partition node and access to 1 GPU

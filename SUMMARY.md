@@ -45,6 +45,7 @@
 
 * [GPUs on Oscar](gpu-computing/gpus.md)
 * [Submitting GPU Jobs](gpu-computing/submit-gpu.md)
+* [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
 
@@ -58,6 +59,10 @@
 * [Matlab Batch Jobs](matlab/matlab-batch.md)
 * [Improving Performance and Memory Managament](matlab/performance.md)
 * [Parallel Matlab](matlab/parallel-matlab.md)
+
+## Singularity Containers
+
+* [Untitled](singularity-containers/untitled.md)
 
 ## Getting Help
 
