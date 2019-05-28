@@ -4,7 +4,10 @@
 
 This page serves as a guide for application developers getting started with parallel programming, or users wanting to know more about the working of parallel programs/software they are using.
 
-Although there are several ways to classify parallel programming models, a basic classification is: 1. Shared Memory Programming 2. Distributed Memory Programming
+Although there are several ways to classify parallel programming models, a basic classification is: 
+
+1. [Shared Memory Programming](intro-to-parallel-programming.md#shared-memory-parallelism)
+2. Distributed Memory Programming
 
 ## Shared Memory Parallelism
 
