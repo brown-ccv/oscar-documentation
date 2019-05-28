@@ -6,10 +6,6 @@ description: >-
 
 # Intro to Singularity
 
-## What is a Container?
-
-## What is Singularity?
-
 ## Where Can You Run
 
 Currently, Singularity 2.5.2 has been installed and is operational on all compute nodes attached to the batch, gpu, and VNC partitions. These instructions may not work on the private condo nodes. If you experience any issues using Singularity, please contact support through the [Support Ticket System](../getting-help/ticket.md).

@@ -13,7 +13,7 @@ icon: check
 The Oscar GPUs are in a separate partition to the regular compute nodes. The partition is called `gpu`. To see how many jobs are running and pending in the gpu partition, use
 
 ```text
-    allq gpu
+allq gpu
 ```
 
 ## Interactive use
@@ -21,7 +21,7 @@ The Oscar GPUs are in a separate partition to the regular compute nodes. The par
 To start an session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
 
 ```text
-     interact -q gpu -g 1
+interact -q gpu -g 1
 ```
 
 ## Batch jobs
@@ -48,6 +48,6 @@ module load cuda
 To submit this script:
 
 ```text
-     sbatch my_script.sh
+sbatch my_script.sh
 ```
 
