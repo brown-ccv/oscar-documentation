@@ -7,7 +7,7 @@ weight: 0
 icon: check
 ---
 
-# CIFS
+# CIFS \(Local Mount\)
 
 CCV users can access their home, data, and scratch directories as a local mount on their own Windows, Mac, or Linux system using the Common Internet File System \(CIFS\) protocol \(also called Samba\). This allows you to use applications on your machine to open files stored on Oscar. It is also a convenient way to move files between Oscar and your own machine, as you can drag and drop files.
 

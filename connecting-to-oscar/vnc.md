@@ -7,7 +7,7 @@ weight: 0
 icon: check
 ---
 
-# VNC
+# VNC \(Virtual Desktop\)
 
 [Virtual Network Computing](http://en.wikipedia.org/wiki/Virtual_Network_Computing) \(VNC\) nodes allow users to connect remotely to a graphical desktop environment running on an Oscar compute node.
 

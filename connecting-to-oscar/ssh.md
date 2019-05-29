@@ -7,7 +7,7 @@ weight: 0
 icon: check
 ---
 
-# SSH
+# SSH \(Terminal\)
 
 To log in to Oscar you need Secure Shell \(SSH\) on your computer.
 

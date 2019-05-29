@@ -5,9 +5,9 @@
 
 ## Connecting to Oscar
 
-* [SSH](connecting-to-oscar/ssh.md)
-* [VNC](connecting-to-oscar/vnc.md)
-* [CIFS](connecting-to-oscar/cifs.md)
+* [SSH \(Terminal\)](connecting-to-oscar/ssh.md)
+* [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
+* [CIFS \(Local Mount\)](connecting-to-oscar/cifs.md)
 
 ## Accounts on Oscar
 
