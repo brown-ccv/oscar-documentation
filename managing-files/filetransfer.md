@@ -21,15 +21,15 @@ Oscar has transfer nodes with a high speed conection for quickly moving data. To
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
 1. CIFS
-2. comand line
+2. command line
 3. GUI
 4. Globus online
 
-1.\) CIFS
+### 1.\) CIFS
 
 You can drag and drop files from your machine to the Oscar filesystem with CIFS. This is an easy method for a small number of files.
 
-2.\) Command line
+### 2.\) Command line
 
 **Mac and Linux**
 
@@ -47,14 +47,14 @@ To copy a file from Oscar to your computer:
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
 
-3.\) GUI programs for transfering files using the `scp` or `sftp` protocol
+### 3.\) GUI programs for transferring files using the `scp` or `sftp` protocol
 
 * [WinSCP](http://winscp.net) for Windows and
 * [Fugu](http://rsug.itd.umich.edu/software/fugu/) for Mac
 * [Cyberduck](http://cyberduck.ch) for Mac
 * [FileZilla](https://filezilla-project.org) for all platforms
 
-4.\) Globus online
+### 4.\) Globus online
 
 [Globus](https://www.globus.org) is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
 

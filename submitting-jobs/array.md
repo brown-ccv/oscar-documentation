@@ -17,7 +17,7 @@ in your batch script. The range can be a comma separated list of integers, along
 
 A job will be submitted for _each_ value in the range. The values in the range will be substituted for the variable `$SLURM_ARRAY_TASK_ID` in the remainder of the script. Here is an example of a script for running a serial Matlab script on 16 different parameters by submitting 16 different jobs as an array:
 
-```text
+```bash
 #!/bin/bash
 #SBATCH -J MATLAB
 #SBATCH -t 1:00:00

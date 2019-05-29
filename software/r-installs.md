@@ -22,13 +22,13 @@ Note some packages will require code to be compiled so it is best to do R packag
 
 To install the package 'wordcloud':
 
-```text
+```r
 > install.packages("wordcloud", repos="http://cran.r-project.org")
 ```
 
 You will see a warning:
 
-```text
+```r
 Warning in install.packages("wordcloud", repos = "http://cran.r-project.org") :
   'lib = "/gpfs/runtime/opt/R/3.4.2/lib64/R/library"' is not writable
 Would you like to use a personal library instead?  (y/n) 
@@ -36,7 +36,7 @@ Would you like to use a personal library instead?  (y/n)
 
 Answer `y` . If you have not installed any R packages before you will see the following message:
 
-```text
+```r
 Would you like to create a personal library
 ~/R/x86_64-pc-linux-gnu-library/3.4
 to install packages into?  (y/n) 
@@ -44,7 +44,7 @@ to install packages into?  (y/n)
 
 Answer `y` . The package will then be installed. If the install is successful you will see a message like:
 
-```text
+```r
 ** R
 ** data
 ** preparing package for lazy loading
@@ -57,7 +57,7 @@ Answer `y` . The package will then be installed. If the install is successful yo
 
 If the installation was not successful you will see a message like:
 
-```text
+```r
 Warning message:
 In install.packages("wordcloud", repos = "http://cran.r-project.org") :
   installation of package ‘wordcloud’ had non-zero exit status
@@ -81,7 +81,7 @@ R
 
 To remove the 'wordcloud' package:
 
-```text
+```r
 > remove.packages("wordcloud")
 ```
 

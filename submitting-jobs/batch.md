@@ -69,7 +69,7 @@ Alternatively, you can mention the file names where you want to dump the standar
 A full description of all of the options for`sbatch` can be found [online ](https://slurm.schedmd.com/sbatch.html)or by using the following command on Oscar:
 
 ```bash
-    $ man sbatch
+$ man sbatch
 ```
 
 The table below summarizes some of the more useful options for`sbatch` .

@@ -40,6 +40,7 @@
 * [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
 * [Job Arrays](submitting-jobs/array.md)
+* [Condo/Priority Jobs](submitting-jobs/condo-priority-jobs.md)
 
 ## GPU Computing
 

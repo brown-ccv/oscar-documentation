@@ -18,7 +18,7 @@ interact
 
 By default, this will create an interactive session that reserves 1 core and 4GB of memory for a period of 30 minutes. You can change the resources reserved for the session from these default limits by modifying the interact command:
 
-```bash
+```text
 usage: interact [-n cores] [-t walltime] [-m memory] [-q queue]
                 [-o outfile] [-X] [-f featurelist] [-h hostname] [-g ngpus]
 

@@ -40,7 +40,7 @@ The `module load` command supports **auto-completion** of the module name using 
 
 You can customize the default environment that is loaded when you login by putting the appropriate module commands in the `.modules` file in your home directory. For instance, if you edited your `.modules` file to contain
 
-```text
+```bash
 module load python/3.5.2
 ```
 

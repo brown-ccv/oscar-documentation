@@ -15,13 +15,13 @@ On Oscar, the command `matlab` is actually a wrapper that sets up MATLAB to run 
 To run the actual multi-threaded version with JVM and Display enabled, use:
 
 ```text
-    matlab-threaded
+matlab-threaded
 ```
 
 Similarly, to run this without the display enabled:
 
 ```text
-    matlab-threaded -nodisplay
+matlab-threaded -nodisplay
 ```
 
 {% hint style="danger" %}
@@ -33,7 +33,7 @@ Do **not** run Matlab on the Oscar login nodes. Request a compute node either wi
 The [VNC](../connecting-to-oscar/vnc.md) client provided by CCV is the best way to launch GUI applications on Oscar, including Matlab. From the terminal emulator in VNC use the `matlab-threaded` command to launch the Matlab GUI. For example,
 
 ```text
-    matlab-threaded
+matlab-threaded
 ```
 
 Here is a snapshot of what it looks like:

@@ -9,7 +9,7 @@ icon: check
 
 # CIFS
 
-CCV users can access their home, data, and scratch directories as a local mount on their own Windows, Mac, or Linux system using the Common Internet File System \(CIFS\) protocol \(also called Samba\). This allows you to use applications on your machine to open files stored on Oscar. It is also a convienient way to move files between Oscar and your own machine, as you can drag and drop files.
+CCV users can access their home, data, and scratch directories as a local mount on their own Windows, Mac, or Linux system using the Common Internet File System \(CIFS\) protocol \(also called Samba\). This allows you to use applications on your machine to open files stored on Oscar. It is also a convenient way to move files between Oscar and your own machine, as you can drag and drop files.
 
 {% hint style="info" %}
 To use CIFS you will need to be on the Brown network. On campus use the 'Brown' wifi network. Off campus use the [Brown VPN client](https://vpn.brown.edu).
@@ -18,7 +18,7 @@ To use CIFS you will need to be on the Brown network. On campus use the 'Brown' 
 Users should ensure that the date and time are set correctly on their machine. Once the date and time are correct, [use SSH to connect to Oscar](https://github.com/brown-ccv/oscar-documentation/tree/918b50a24d064a0c7e6aa49eef728199435d7de1/ssh/README.md) to set your CIFS password. Once logged in, run the command:
 
 ```text
-     smbpasswd
+smbpasswd
 ```
 
 First, you will be prompted for your "old" password, which is the temporary password you were given by CCV when your account was created. Next, you will be asked to enter a new CIFS password twice. You may choose to use the same password that you use for Oscar, if you wish.
@@ -54,49 +54,49 @@ Now you are ready to mount your CCV directories locally. Instructions for each o
 * Install the `cifs-utils` package:
 
   ```bash
-      CentOS/RHEL:   $ sudo yum install cifs-utils
+  CentOS/RHEL:   $ sudo yum install cifs-utils
 
-      Ubuntu:        $ sudo apt-get install cifs-utils
+  Ubuntu:        $ sudo apt-get install cifs-utils
   ```
 
 * Make a directory to mount the share into:
 
   ```bash
-      $ sudo mkdir /mnt/rdata
+  $ sudo mkdir /mnt/rdata
   ```
 
 * Create a credentials file and add your CCV account information \(use the CIFS password\):
 
   ```bash
-        $ sudo gedit /etc/cifspw
+  $ sudo gedit /etc/cifspw
 
-        username=<user>
-        password=<password>
+  username=<user>
+  password=<password>
   ```
 
 * Allow only root access to the credentials files:
 
   ```bash
-        $ sudo chmod 0600 /etc/cifspw
+  $ sudo chmod 0600 /etc/cifspw
   ```
 
 * Add an entry to the `fstab`:
 
   ```bash
-        $ sudo gedit /etc/fstab
+  $ sudo gedit /etc/fstab
   ```
 
 * The `fstab` entry is the single line:
 
   ```bash
-         //oscarcifs.ccv.brown.edu/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=1.0,nounix,uid=<localUser> 0 0
+  //oscarcifs.ccv.brown.edu/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=1.0,nounix,uid=<localUser> 0 0
   ```
 
 * Change `<localUser>` to the login used on your Linux workstation.
 * Mount the share:
 
   ```bash
-            $ mount -a
+  $ mount -a
   ```
 
 ## Windows

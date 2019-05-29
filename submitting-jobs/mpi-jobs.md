@@ -87,7 +87,7 @@ This will create the allocation, run the MPI program, and release the allocation
 
 Here is a sample batch script to run an MPI program:
 
-```text
+```bash
 #!/bin/bash
 
 # Request an hour of runtime:
@@ -114,7 +114,7 @@ srun --mpi=pmi2 MyMPIProgram
 
 If your program has multi-threading capability using OpenMP, you can have several cores attached with a single MPI task using the `--cpus-per-task` or `-c` option with `sbatch` or `salloc`. The environment variable `OMP_NUM_THREADS` governs the number of threads that will be used.
 
-```text
+```bash
 #!/bin/bash
 
 # Use 2 nodes with 2 tasks each (4 MPI tasks)

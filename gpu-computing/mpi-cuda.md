@@ -17,10 +17,10 @@ Mixing MPI \(C\) and CUDA \(C++\) code requires some care during linking because
 These two source files can be compiled and linked with both a C and C++ compiler into a single executable on Oscar using:
 
 ```text
-     module load mpi cuda
-     mpicc -c main.c -o main.o
-     nvcc -c multiply.cu -o multiply.o
-     mpicc main.o multiply.o -lcudart
+module load mpi cuda
+mpicc -c main.c -o main.o
+nvcc -c multiply.cu -o multiply.o
+mpicc main.o multiply.o -lcudart
 ```
 
 The CUDA/C++ compiler `nvcc` is used only to compile the CUDA source file, and the MPI C compiler `mpicc` is used to compile the C code and to perform the linking.  / _multiply.cu_ /
@@ -31,7 +31,7 @@ The CUDA/C++ compiler `nvcc` is used only to compile the CUDA source file, and t
 
 extern "C" void launch\_multiply\(const float _a, const_ b\) { / _... load CPU data into GPU buffers a\_gpu and b\_gpu_ /
 
-```text
+```c
  __multiply__ <<< ...block configuration... >>> (a_gpu, b_gpu);
 
  safecall(cudaThreadSynchronize());
