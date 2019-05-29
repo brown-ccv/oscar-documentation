@@ -59,10 +59,12 @@ To copy a file from Oscar to your computer:
 [Globus](https://www.globus.org) is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
 
 ```text
-    brownccv#Brown-CCV-oscar-1
-    brownccv#Brown-CCV-oscar-2
+brownccv#Brown-CCV-oscar-1
+brownccv#Brown-CCV-oscar-2
 ```
 
 You can use either endoint to move data to/from Oscar to another Globus endpoint.  
-If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal.
+If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus](using-globus.md) section.
+
+
 

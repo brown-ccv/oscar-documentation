@@ -46,5 +46,3 @@ $ interact -n 20 -t 01:00:00 -m 10g
 
 requests an interactive session with 20 cores and 10 GB of memory \(per node\) for a period of 1 hour.
 
-
-

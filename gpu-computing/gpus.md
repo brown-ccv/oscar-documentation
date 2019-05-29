@@ -4,7 +4,7 @@ Oscar has 44 GPU nodes that are regular compute nodes with two NVIDIA [Tesla M20
 
 ## Interactive Use
 
-To start an [interactive](../submitting-jobs/interact.md) session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
+To start an [interactive](../submitting-jobs/interact/) session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
 
 ```text
 $ interact -q gpu -g 1

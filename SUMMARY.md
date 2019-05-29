@@ -17,10 +17,12 @@
 ## Managing files
 
 * [Oscar's Filesystem](managing-files/filesystem.md)
-* [Transferring Files to and from Oscar](managing-files/filetransfer.md)
+* [Transferring Files to and from Oscar](managing-files/filetransfer/README.md)
+  * [Using Globus](managing-files/filetransfer/using-globus.md)
 * [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
+* [Version Control](managing-files/version-control.md)
 
 ## Software
 
@@ -35,7 +37,8 @@
 
 * [Using a Shared Machine](submitting-jobs/shared-machine.md)
 * [Slurm](submitting-jobs/slurm.md)
-* [Interactive Jobs](submitting-jobs/interact.md)
+* [Interactive Jobs](submitting-jobs/interact/README.md)
+  * [X-Forwarding](submitting-jobs/interact/x-forwarding.md)
 * [Batch Jobs](submitting-jobs/batch.md)
 * [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
@@ -72,6 +75,8 @@
 
 ## Getting Help
 
+* [Common Problems](getting-help/common-problems.md)
+* [FAQ](getting-help/faq.md)
 * [File a Support Ticket](getting-help/ticket.md)
 * [Visit Office Hours](getting-help/office-hours.md)
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
