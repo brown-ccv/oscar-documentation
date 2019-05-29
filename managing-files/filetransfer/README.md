@@ -20,10 +20,10 @@ Oscar has transfer nodes with a high speed conection for quickly moving data. To
 
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
-1. CIFS
-2. command line
-3. GUI
-4. Globus online
+1. [CIFS](../../connecting-to-oscar/cifs.md)
+2. [Command line \(scp\)](./#2-command-line)
+3. [GUI application](./#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
+4. [Globus online](./#4-globus-online)
 
 ### 1.\) CIFS
 
@@ -63,7 +63,7 @@ brownccv#Brown-CCV-oscar-1
 brownccv#Brown-CCV-oscar-2
 ```
 
-You can use either endoint to move data to/from Oscar to another Globus endpoint.  
+You can use either endpoint to move data to/from Oscar to another Globus endpoint.  
 If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus](using-globus.md) section.
 
 

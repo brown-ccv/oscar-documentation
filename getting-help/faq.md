@@ -76,7 +76,65 @@ Specify the SLURM option `--mem-per-cpu=` in your script.
 
 We recommend linking against the Intel Math Kernels Library \(MKL\) which provides both BLAS and LAPACK. The easiest way to do this on Oscar is to include the special environment variable `$MKL` at the end of your link line, e.g. `gcc -o blas-app blas-app.c $MKL`. For more complicated build systems, you may want to consult the [MKL Link Line Advisor](http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
 
-#### Why is my job taking so long to start?
+## RUNNING JOBS
+
+#### How is a job identified? 
+
+By a unique JobID, e.g. `13180139`
+
+#### Which of my jobs are running/pending? 
+
+Use the command `myq`
+
+#### How do I check the progress of my running job? 
+
+You can look at the output file. The default output file is slurm-%j.out" where %j is the JobID. If you specified and output file using `#SBATCH -o output_filename` and/or an error file `#SBATCH -e error_filename` you can check these files for any output from your job. You can view the contents of a text file using the program `less` , e.g.
+
+```text
+less output_filename
+```
+
+Use the `spacebar` to move down the file, `b` to move back up the file, and `q` to quit.
+
+#### My job is not running how I indented it too. How do I cancel the job?
+
+ `scancel <JobID>` where `<JobID>` is the job allocation number, e.g. `13180139`
+
+#### How do I save a copy of an interactive session?
+
+ You can use `interact -o outfile` to save a copy of the session's output to "outfile"
+
+I've submitted a bunch of jobs. How do I tell which one is which? `myq` will list the running and pending jobs with their JobID and the name of the job. The name of the job is set in the batch script with `#SBATCH -J jobname`. For jobs that are in the queue \(running or pending\) you can use the command `scontrol show job <JobID>` where `<JobID>` is the job allocation number, e.g.`13180139` to give you more detail about what was submitted.
+
+#### How do I ask for a haswell node?
+
+Use the `--constraint` \(or `-C`\) option:
+
+```text
+#SBATCH --constraint=haswell
+```
+
+You can use the `--constraint` option restrict your allocation according to other features too. The `nodes` command provides a list of "features" for each type of node.
+
+#### What are the nodes in the "smp" partition?
+
+SMP stands for symmetric multiprocessing. These nodes are meant to be useful with jobs which use a large numbers of CPUs on the same node for **shared memory parallelism**. However, comparing sequentially they can be much slower because their architecture is quite old.
+
+#### Why won't my job start? 
+
+When your job is pending \(PD\) in the queue, SLURM will display a reason why your job is pending. The table below shows some common reasons for which jobs are kept pending.
+
+| Reason | Meaning |
+| :--- | :--- |
+| \(None\) |  You may see this for a short time when you first submit a job  |
+| \(QOSGrpCpuLimit\)  | All your condo cores are currently in use |
+| \(Priority\)  | Jobs with higher priority are using the resources  |
+| \(Resources\)  | There are not enough free resources to fulfill your request  |
+|  \(JobHeldUser\)  | You have put a hold on the job. The job **will not run** until you lift the hold. |
+| \(ReqNodeNotAvail\)  | The resources you have requested are not available. Note this normally means you have requested something impossible, e.g. 100 cores on 1 node, or a 24 core sandy bridge node. Double check your batch script for any errors. Your job **will never run** if you are requesting something that does not exist on Oscar.  |
+| \(PartitionNodeLimit\)  | You have asked for more nodes than exist in the partition. For example if you make a typo and have specified -N \(nodes\) but meant -n \(tasks\) and have asked for more than 64 nodes. Your job **will never run**. Double check your batch script. |
+
+#### Why is my job taking so long to start? Just waiting in \(Priority\) or \(Resources\)
 
 1. **Overall system busy**: when tens of thousands of jobs are submitted it total by all users, the time it takes SLURM to process these into the system may increase from the normal almost instantly to a half-hour or more. 
 2. **Specific resource busy**: if you request very specific resources \(e.g., a specific processor\) you then have to wait for that specific resource to become available while other similar resources may be going unused. 

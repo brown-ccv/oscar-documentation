@@ -40,7 +40,9 @@ Files not accessed for 30 days may be deleted from your scratch directory. This 
 
 A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`.
 
+{% hint style="info" %}
 Note: class or temporary accounts may not have a `~/data` directory!
+{% endhint %}
 
 To see how much space you have on Oscar you can use the command `myquota`. Below is an example output
 

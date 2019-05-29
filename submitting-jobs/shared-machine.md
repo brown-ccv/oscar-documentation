@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Using a Shared Machine
+# Running Jobs
 
 Oscar is a shared machine used by hundreds of users at once. User requests are called _**jobs**_. A job is the combination of the resource requested and the program you want to run on the compute nodes of the Oscar cluster. On Oscar, [_**Slurm**_](https://slurm.schedmd.com) is used to schedule and manage jobs.
 

@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Oscar](README.md)
+* [Quickstart Guide](getting-started.md)
 
 ## Connecting to Oscar
 
@@ -35,14 +36,14 @@
 
 ## Submitting jobs
 
-* [Using a Shared Machine](submitting-jobs/shared-machine.md)
+* [Running Jobs](submitting-jobs/shared-machine.md)
 * [Slurm](submitting-jobs/slurm.md)
 * [Interactive Jobs](submitting-jobs/interact/README.md)
   * [X-Forwarding](submitting-jobs/interact/x-forwarding.md)
 * [Batch Jobs](submitting-jobs/batch.md)
-* [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
 * [Job Arrays](submitting-jobs/array.md)
+* [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Condo/Priority Jobs](submitting-jobs/condo-priority-jobs.md)
 
 ## GPU Computing
