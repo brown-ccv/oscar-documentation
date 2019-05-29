@@ -22,7 +22,7 @@ Oscar is our primary research computing cluster with several hundred multi-core 
 
 #### How do I request an account on Oscar?
 
-To request an account, please fill out a [New User Account Form](../). All accounts are subject to our [General Terms and Conditions](/about/terms). 
+To request an account, please fill out a [New User Account Form](http://pccvwebcit.services.brown.edu/secure/account/). All accounts are subject to our [General Terms and Conditions](/about/terms). 
 
 #### How do I run a job on Oscar?
 
@@ -46,15 +46,15 @@ MPI is a type of programming interface. Programs written with MPI can run on and
 
 #### I have some MPI-enabled source code. How can I compile it on Oscar? 
 
-The MPI implmentation mvapich2 is installed and fully supported on the cluster. By default it supports compiling with gcc. If you want to use a different compiler, use a module such as mvapich2-intel, mvapich2-pgi, etc. To compile your MPI-enabled application, load the mvapich2 module and change your compiler to the appropriate wrapper beginning with "mpi-" \(this could be mpicc, mpic++, mpif77, etc, depending on your language\). Call the wrapper wherever you would normally call your compiler. For example: `mpicc program.c` An alternate MPI implementation, OpenMPI is installed, and it is used similar to the above. However, it is not fully supported due to hardware reasons.
+The MPI implementation mvapich2 is installed and fully supported on the cluster. By default it supports compiling with gcc. If you want to use a different compiler, use a module such as mvapich2-intel, mvapich2-pgi, etc. To compile your MPI-enabled application, load the mvapich2 module and change your compiler to the appropriate wrapper beginning with "mpi-" \(this could be mpicc, mpic++, mpif77, etc, depending on your language\). Call the wrapper wherever you would normally call your compiler. For example: `mpicc program.c` An alternate MPI implementation, OpenMPI is installed, and it is used similar to the above. However, it is not fully supported due to hardware reasons.
 
 #### What applications are available on Oscar?
 
-Many scientific and HPC software packages are already installed on Oscar, including python, perl, R, Matlab, Mathematica, and Maple. Use the `module avail` command on Oscar to view the whole list or search for packages. See our manual page on [Software](/doc/software) to understand how software modules work. Additional packages can be requested by submitting a support ticket to `support@ccv.brown.edu`.
+Many scientific and HPC software packages are already installed on Oscar, including python, perl, R, Matlab, Mathematica, and Maple. Use the `module avail` command on Oscar to view the whole list or search for packages. See our manual page on [Software](../software/software.md) to understand how software modules work. Additional packages can be requested by submitting a support ticket to `support@ccv.brown.edu`.
 
 #### What compilers are available on Oscar? 
 
-By default, the `gcc` compiler is available when you login to Oscar, providing the GNU compiler suite of `gcc` \(C\), `g++` \(C++\), and `gfortran` \(Fortran 77/90/95\). We also provide compilers from Intel \(`intel` module\) and the Portland Group \(`pgi` module\). For more information, visit our manual page on [Software](/doc/software).
+By default, the `gcc` compiler is available when you login to Oscar, providing the GNU compiler suite of `gcc` \(C\), `g++` \(C++\), and `gfortran` \(Fortran 77/90/95\). We also provide compilers from Intel \(`intel` module\) and the Portland Group \(`pgi` module\). For more information, visit our manual page on [Software](../software/software.md).
 
 #### How do I get information about finished jobs?
 
@@ -66,7 +66,7 @@ The `myquota` command on Oscar will print a summary of your usage on the home, d
 
 #### My job keeps terminating unexpectedly with a "Killed" message, or without any errors. What happened?
 
-These are symptoms of not requesting enough memory for your job. The default memory allocation is about 3 GB. If your job is resource-intensive, you may need to specifically allocate more. See the [user manual](/doc/jobs) for instructions on requesting memory and other resources.
+These are symptoms of not requesting enough memory for your job. The default memory allocation is about 3 GB. If your job is resource-intensive, you may need to specifically allocate more. See the [user manual](../submitting-jobs/batch.md#sbatch-command-options) for instructions on requesting memory and other resources.
 
 #### How do I request a certain amount of memory per CPU?
 

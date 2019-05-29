@@ -26,7 +26,7 @@
 
 ## Software
 
-* [Software on Oscar](software/untitled.md)
+* [Software on Oscar](software/software.md)
 * [Using Modules](software/modules.md)
 * [Installing R Packages](software/r-installs.md)
 * [Installing Python Packages](software/python-installs.md)
