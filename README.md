@@ -18,3 +18,19 @@ Anyone with a Brown account can get a free, exploratory account on Oscar.
 
 Individuals external to Brown can get access to Oscar by having a sponsored Brown account. Please work with your department to get sponsored Brown accounts for any external collaborators.
 
+## Important Notices
+
+{% hint style="warning" %}
+**Do not run computations or simulations on the login nodes**, because they are shared with other users. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes.
+{% endhint %}
+
+{% hint style="warning" %}
+**Large numbers of jobs submitted to Slurm on Oscar can cause problems.**    If you are going to submit tens of thousands of jobs please bundle your work into fewer jobs.   CCV staff can help you with this.  Please email support@ccv.brown.edu with any questions
+{% endhint %}
+
+{% hint style="info" %}
+**Oscar is a multi-node system**.  If your code is serial or threaded then using multiple nodes will not make your code go faster.   Restrict your job to running on one node with`#SBATCH -N 1`. Efficient use of resources helps everyone on Oscar.  CCV staff can help you determine the best way to run your job.  support@ccv.brown.edu
+{% endhint %}
+
+
+
