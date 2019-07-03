@@ -8,7 +8,7 @@ To use Globus, first create a personal Globus ID account. You can then use eithe
 
 The instructions below demonstrate using the [web interface](https://www.globus.org/app/transfer) to perform a transfer:
 
-After logging in to Globus you will see the [transfer](https://www.globus.org/app/transfer) page. To set up the transfer user the select the "to" and "from" end point to transfer files. For CentOS6 Oscar the endpoint is called `brownccv#transfer`. You will need to use your oscar username and password to connect to the Oscar endpoint. For the Red Hat 7 system use either of the following endpoints:
+After logging in to Globus you will see the [transfer](https://www.globus.org/app/transfer) page. To set up the transfer user the select the "to" and "from" end point to transfer files.  You will need to use your Oscar username and password to connect to the Oscar endpoint. Use either of the following endpoints:
 
 ```text
 brownccv#Brown-CCV-oscar-1
