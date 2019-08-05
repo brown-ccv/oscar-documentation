@@ -10,7 +10,7 @@ icon: oscar.svg
 
 Welcome to the CCV Oscar User Manual. Oscar is Brown University's supercomputer.
 
-This user manual assumes you already have an Oscar account. If you do not have an Oscar account, you can request one by filling and submitting a [new user account form](http://pccvwebcit.services.brown.edu/secure/account/).
+This user manual assumes you already have an Oscar account. If you do not have an Oscar account, you can request one by filling and submitting a [new user account form](https://brown.edu/cis/forms/CCV/newuseraccount.php).
 
 {% hint style="info" %}
 Anyone with a Brown account can get a free, exploratory account on Oscar.
