@@ -23,6 +23,10 @@ Users can install python packages
 * using a virtual environment
 * from source into a custom location
 
+{% hint style="info" %}
+Note for python3 packages replace `python` with  `python3` ****and `pip` with `pip3`
+{% endhint %}
+
 ### Install into your home directory
 
 The `--user` flag will instruct pip to install to you home directory

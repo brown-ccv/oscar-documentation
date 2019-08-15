@@ -58,6 +58,12 @@
 
 * [Large Memory Nodes on Oscar](large-memory-computing/large-mem.md)
 
+## Debugging
+
+* [Arm Forge](debugging/arm-forge/README.md)
+  * [Configuring Remote Launch](debugging/arm-forge/configuring-remote-launch.md)
+  * [Setting Job Submission Settings](debugging/arm-forge/setting-job-submission-settings.md)
+
 ## MATLAB
 
 * [Matlab GUI](matlab/matlab-gui.md)
