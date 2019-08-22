@@ -5,7 +5,8 @@
 
 ## Connecting to Oscar
 
-* [SSH \(Terminal\)](connecting-to-oscar/ssh.md)
+* [SSH \(Terminal\)](connecting-to-oscar/ssh/README.md)
+  * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding.md)
 * [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
 * [CIFS \(Local Mount\)](connecting-to-oscar/cifs.md)
 
@@ -38,8 +39,7 @@
 
 * [Running Jobs](submitting-jobs/shared-machine.md)
 * [Slurm](submitting-jobs/slurm.md)
-* [Interactive Jobs](submitting-jobs/interact/README.md)
-  * [X-Forwarding](submitting-jobs/interact/x-forwarding.md)
+* [Interactive Jobs](submitting-jobs/interact.md)
 * [Batch Jobs](submitting-jobs/batch.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)
 * [Job Arrays](submitting-jobs/array.md)
