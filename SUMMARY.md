@@ -30,8 +30,9 @@
 
 * [Software on Oscar](software/software.md)
 * [Using Modules](software/modules.md)
-* [Installing R Packages](software/r-installs.md)
+* [Python on Oscar](software/python-on-oscar.md)
 * [Installing Python Packages](software/python-installs.md)
+* [Installing R Packages](software/r-installs.md)
 * [Compiling Software](software/compiling.md)
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 
