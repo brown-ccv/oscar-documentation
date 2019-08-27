@@ -90,3 +90,8 @@
 * [Visit Office Hours](getting-help/office-hours.md)
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
 
+## CESM
+
+* [Using a CESM module](cesm/cesm.md)
+* [Installing your own version of CESM](cesm/installing-your-own-version-of-cesm.md)
+
