@@ -10,22 +10,57 @@ icon: check
 
 # Installing Python Packages
 
-## Installing python packages
+There are several ways for users to install python packages on Oscar
 
-{% hint style="info" %}
-We use angular brackets `<>` to denote command line options that you should replace with an appropriate value
-{% endhint %}
-
-Users can install python packages
-
+* using a **virtual environment**
+* using conda
 * into their home directory
 * into a custom location
-* using a virtual environment
 * from source into a custom location
+
+{% hint style="warning" %}
+We recommend using a virtual environment for your workflow if you prefer`pip`
+
+If you are a conda user we recommend managing your workflow with [conda environments  ](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+{% endhint %}
+
+{% hint style="info" %}
+In this document, we use angular brackets `<>` to denote command line options that you should replace with an appropriate value
+{% endhint %}
 
 {% hint style="info" %}
 Note for python3 packages replace `python` with  `python3` ****and `pip` with `pip3`
 {% endhint %}
+
+## Using virtualenv
+
+Virtual environments are a cleaner way to install python packages for a specific workflow. [This webpage](https://virtualenv.pypa.io/en/stable/) gives a good explanation of the use cases.    In the example below, a virtual environment called 'my\_cool\_science' is set up in your home directory:
+
+```text
+cd ~
+virtualenv my_cool_science
+source ~/my_cool_science/bin/activate
+pip install <your package>
+deactivate
+```
+
+line 1: change directory to home
+
+line2: create the virtual environment
+
+line3: activate the virtual environment
+
+line4: install any packages you need for the virtual environment
+
+line5: deactivate the environment
+
+When you want to use the environment,  e.g. in a batch script or an interactive session 
+
+ `source ~/my_cool_science/bin/activate`
+
+When your work is finished, deactivate the environment with 
+
+`deactivate`
 
 ### Install into your home directory
 
@@ -51,9 +86,11 @@ If you omit the `--user` flag you will see
 This is because users do not have access to the default locations where software is installed.
 {% endhint %}
 
+Python packages can often have conflicting dependencies.  For workflows that require a lot of python packages, we recommend using virtual environments. 
+
 ## Install at custom location
 
-Users have a limit of 10GB for their home directories on Oscar. Hence, users might want to use their data directory instead for installing software. Another motivation to do that is to have shared access to the software among the whole research group.
+Users have a limit of 20GB for their home directories on Oscar. Hence, users might want to use their data directory instead for installing software. Another motivation to do that is to have shared access to the software among the whole research group.
 
 ```bash
  pip install --target=</path/to/install/location> <package>
@@ -70,10 +107,6 @@ This can be added at the end of your `.bashrc` file in your home directory. This
 A caveat of using this method is that pip will install the packages \(along with its requirements\) even if the package required is already installed under the global install or the default local install location. Hence, this is more of a brute force method and not the most efficient one.
 
 For example, if your package depends on numpy or scipy, you might want to use the numpy and scipy under our global install as those have been compiled with MKL support. Using the `--target` option will reinstall numpy with default optimizations and without MKL support at the specified location.
-
-## Using `virtualenv`
-
-Virtual environments are an efficient way to install python packages for a specific workflow. [This webpage](https://virtualenv.pypa.io/en/stable/) gives a good explanation of the use cases.
 
 ## Installing from source
 
