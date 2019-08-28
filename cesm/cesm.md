@@ -29,6 +29,6 @@ line 4. shows how to use xmlchange to change run options.  For a full list of op
 `./xmlquery --listall`
 
 {% hint style="warning" %}
-Note for CESM2 you can have a directory ~/.cime with your own cime files.   Be aware of this if you are switch between your own install and the module install.
+Note for CESM2 you can have a directory ~/.cime with your own cime files.   Be aware of this if you are switching between your own install and the module install.
 {% endhint %}
 
