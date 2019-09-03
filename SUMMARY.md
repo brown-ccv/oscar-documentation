@@ -2,6 +2,7 @@
 
 * [Oscar](README.md)
 * [Quickstart Guide](getting-started.md)
+* [Citing CCV](citing-ccv.md)
 
 ## Connecting to Oscar
 
