@@ -27,17 +27,6 @@
 * [Best Practices for I/O](managing-files/io-best-practices.md)
 * [Version Control](managing-files/version-control.md)
 
-## Software
-
-* [Software on Oscar](software/software.md)
-* [Using Modules](software/modules.md)
-* [Python on Oscar](software/python-on-oscar.md)
-* [Python in batch jobs](software/python-in-batch-jobs.md)
-* [Installing Python Packages](software/python-installs.md)
-* [Installing R Packages](software/r-installs.md)
-* [Compiling Software](software/compiling.md)
-* [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
-
 ## Submitting jobs
 
 * [Running Jobs](submitting-jobs/shared-machine.md)
@@ -56,6 +45,21 @@
 * [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
+
+## Software
+
+* [Software on Oscar](software/software.md)
+* [Using Modules](software/modules.md)
+* [Python on Oscar](software/python-on-oscar.md)
+* [Python in batch jobs](software/python-in-batch-jobs.md)
+* [Installing Python Packages](software/python-installs.md)
+* [Installing R Packages](software/r-installs.md)
+* [Compiling Software](software/compiling.md)
+* [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
+
+## Jupyter Notebooks
+
+* [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
 
 ## Large Memory Computing
 
