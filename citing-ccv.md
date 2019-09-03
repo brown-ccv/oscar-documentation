@@ -1,7 +1,5 @@
 # Citing CCV
 
-
-
 If you publish research that benefited from the use of CCV services or resources, we would greatly appreciate an acknowledgment that states:
 
 ```text
