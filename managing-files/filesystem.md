@@ -35,7 +35,13 @@ CCV uses IBM's General Parallel File System \(GPFS\). Users have a home, data, a
 * Quota is per individual user
 
 {% hint style="warning" %}
-Files not accessed for 30 days may be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. Use ~/data for files you need to keep long term.
+Files not accessed for 30 days will be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. **Use ~/data for files you need to keep long term.**
+{% endhint %}
+
+{% hint style="warning" %}
+The scratch purge is on individual files. It is by 'atime' which is when the file was last read. You can use 'find' to find files that are at risk of being purged, e.g. to find files in the current directory that have not been accessed in the last 25 days:
+
+find . -atime +25
 {% endhint %}
 
 A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`.
