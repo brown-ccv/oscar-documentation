@@ -76,7 +76,7 @@ Users should ensure that the date and time are set correctly on their machine. N
 6. The `fstab` entry is the single line:
 
    ```bash
-   //smb.ccv.brown.edu/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=1.0,nounix,uid=<localUser> 0 0
+   //smb.ccv.brown.edu/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localUser> 0 0
    ```
 
 7. Change `<localUser>` to the login used on your Linux workstation.

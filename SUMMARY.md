@@ -37,6 +37,7 @@
 * [Job Arrays](submitting-jobs/array.md)
 * [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Condo/Priority Jobs](submitting-jobs/condo-priority-jobs.md)
+* [Dependent Jobs](submitting-jobs/dependent-jobs.md)
 
 ## GPU Computing
 
@@ -45,6 +46,10 @@
 * [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
+
+## Large Memory Computing
+
+* [Large Memory Nodes on Oscar](large-memory-computing/large-mem.md)
 
 ## Software
 
@@ -60,10 +65,6 @@
 ## Jupyter Notebooks
 
 * [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
-
-## Large Memory Computing
-
-* [Large Memory Nodes on Oscar](large-memory-computing/large-mem.md)
 
 ## Debugging
 
