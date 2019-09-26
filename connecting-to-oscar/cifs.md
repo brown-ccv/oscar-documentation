@@ -93,7 +93,7 @@ Users should ensure that the date and time are set correctly on their machine. N
 3. Enter `\\smb.ccv.brown.edu\<user>` as the Folder
 4. Check "Connect using different credentials"
 5. Click "Finish"
-6. Enter your AD user name
+6. Enter your AD user name. If your computer is not in Active Directory \(AD\), you should enter your username in the format **ad\username**
 7. Enter your AD password and click "OK"
 
 You can now access your home directory through Windows Explorer with the assigned drive letter. Your data and scratch directories are available as the subdirectories \(`~/data` and `~/scratch`\) of your home directory.
