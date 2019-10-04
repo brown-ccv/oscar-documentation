@@ -17,6 +17,12 @@ To use CIFS you will need to be on the Brown network. On campus use the 'Brown' 
 
 Users should ensure that the date and time are set correctly on their machine. Now you are ready to mount your CCV directories locally. Instructions for each of the various operating systems are given below.
 
+{% hint style="warning" %}
+If you have problems with `smb://smb.ccv.brown.edu`  
+
+You can use the old CIFS mount with your Oscar password`smb://oscarcifs.ccv.brown.edu`
+{% endhint %}
+
 ## macOS
 
 1. In the Finder, press "Command + K" or select "Connect to Server..."

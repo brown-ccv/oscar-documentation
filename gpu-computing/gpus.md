@@ -12,7 +12,7 @@ $ interact -q gpu -g 1
 
 ## GPU Batch Job
 
-For production runs with exclusive access to GPU nodes, please submit a [batch job](../submitting-jobs/batch.md) to the `gpu` partition. E.g. for using 1 GPU:
+For production runs, please submit a [batch job](../submitting-jobs/batch.md) to the `gpu` partition. E.g. for using 1 GPU:
 
 ```text
 $ sbatch -p gpu --gres=gpu:1 <jobscript>
