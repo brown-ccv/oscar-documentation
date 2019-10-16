@@ -1,6 +1,6 @@
 # Quickstart Guide
 
-This guide assumes you have an Oscar account. To request an account see [create an account](https://www.ccv.brown.edu/start/account)
+This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.edu/cis/forms/CCV/newuseraccount.php)
 
 ### OSCAR
 
