@@ -20,7 +20,7 @@ Users should ensure that the date and time are set correctly on their machine. N
 {% hint style="warning" %}
 If you have problems with `smb://smb.ccv.brown.edu`  
 
-You can use the old CIFS mount with your Oscar password`smb://oscarcifs.ccv.brown.edu`
+You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation here`](https://app.gitbook.com/@brown-cis/s/oscar/~/edit/drafts/-LrsoGEnLZ0aQEZQJHxI/connecting-to-oscar/cifs-non-ad-local-mount)
 {% endhint %}
 
 ## macOS
