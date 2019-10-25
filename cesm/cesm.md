@@ -12,7 +12,7 @@ To load a particular version:
 
 Be sure to load the dependencies - these are printed in the load message for the CESM module.  For example for cesm/2.1.1
 
-`module load cesm/2.1.1 intel/2019.3 yaml-cpp/0.6.2_intel2019.3 netcdf/4.7.0_intel2019.3 hdf5/1.10.0 mpi/mvapich2-2.3a_intel`
+`module load netcdf/4.7.0_intel2019.3 hdf5/1.10.0 mpi/mvapich2-2.3a_intel esmf/8.0.0b perl/5.18.2 intel/2019.3 blas/3.7.0 yaml-cpp/0.6.2_intel2019.3 lapack/3.6.0`
 
 The following example shows how to create a new case on Oscar.
 
