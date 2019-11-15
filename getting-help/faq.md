@@ -34,7 +34,7 @@ See our page on [Academic Classes](https://ccv.brown.edu/services/consulting/stu
 
 #### How do I find out when the system is down?
 
-We post updates to our user mailing list, `users@ccv.brown.edu`, which you are automatically subscribed to when setting up an account with CCV. If you need to be added to the mailing list, please submit a support ticket to `support@ccv.brown.edu`.
+We post updates to our user mailing list, `ccv@listserv.brown.edu` which you are automatically subscribed to when setting up an account with CCV. If you need to be added to the mailing list, please submit a support ticket to `support@ccv.brown.edu`.  We also have an announcement mailing list for office hours, workshops and other events relevant to CCV users, `ccv-announce.listserve.brown.edu`.
 
 #### How do I run a job array on Oscar?
 
@@ -42,11 +42,11 @@ A job array is a special type of job submission that allows you to submit many r
 
 #### How do I run a MPI job on Oscar?
 
-MPI is a type of programming interface. Programs written with MPI can run on and communicate across multiple nodes. You can run MPI-capable programs by calling `mpirun -n # <program>` in your batch script, where -n is the number of processors you have requested in your job. For more detailed info, visit our manual page on [MPI programs](../submitting-jobs/mpi-jobs.md). 
+MPI is a type of programming interface. Programs written with MPI can run on and communicate across multiple nodes. You can run MPI-capable programs by calling  `srun --mpi=pmi2  <program>` in your batch script. For more detailed info, visit our manual page on [MPI programs](../submitting-jobs/mpi-jobs.md). 
 
 #### I have some MPI-enabled source code. How can I compile it on Oscar? 
 
-The MPI implementation mvapich2 is installed and fully supported on the cluster. By default it supports compiling with gcc. If you want to use a different compiler, use a module such as mvapich2-intel, mvapich2-pgi, etc. To compile your MPI-enabled application, load the mvapich2 module and change your compiler to the appropriate wrapper beginning with "mpi-" \(this could be mpicc, mpic++, mpif77, etc, depending on your language\). Call the wrapper wherever you would normally call your compiler. For example: `mpicc program.c` An alternate MPI implementation, OpenMPI is installed, and it is used similar to the above. However, it is not fully supported due to hardware reasons.
+Load an mpi module `module load mpi`.  For a list of mpi modules available, `module avail mpi`
 
 #### What applications are available on Oscar?
 
@@ -54,7 +54,7 @@ Many scientific and HPC software packages are already installed on Oscar, includ
 
 #### What compilers are available on Oscar? 
 
-By default, the `gcc` compiler is available when you login to Oscar, providing the GNU compiler suite of `gcc` \(C\), `g++` \(C++\), and `gfortran` \(Fortran 77/90/95\). We also provide compilers from Intel \(`intel` module\) and the Portland Group \(`pgi` module\). For more information, visit our manual page on [Software](../software/software.md).
+By default, the `gcc` compiler is available when you login to Oscar, providing the GNU compiler suite of `gcc` \(C\), `g++` \(C++\), and `gfortran`. We also provide compilers from Intel \(`intel` module\) and the Portland Group \(`pgi` module\). For more information, visit our manual page on [Software](../software/software.md).
 
 #### How do I get information about finished jobs?
 
