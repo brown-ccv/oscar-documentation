@@ -30,7 +30,7 @@ Sample batch scripts are available in your home directory at `~/batch_scripts` a
 
 #### Can I use Oscar for teaching? 
 
-See our page on [Academic Classes](/class-use) 
+See our page on [Academic Classes](https://ccv.brown.edu/services/consulting/student-accounts/) 
 
 #### How do I find out when the system is down?
 
