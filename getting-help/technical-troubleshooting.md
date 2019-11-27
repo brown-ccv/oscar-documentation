@@ -20,19 +20,7 @@ Save and Exit, and Retry.
 ssh-keygen -R "ssh.ccv.brown.edu"
 ```
 
-## Tip 2:
 
-**VNC Connection not starting**
-
-Having conda environment in your .bashrc is known to cause conflicts with VNC. The easy fix would be to login via ssh and check your ~/.bashrc file and delete everything except:
-
-> ```text
-> # .bashrc
-> # Source global definitions
-> if [ -f /etc/bashrc ]; then
->     . /etc/bashrc
-> fi
-> ```
 
 ## Tip 3:
 
