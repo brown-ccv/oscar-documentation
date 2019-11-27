@@ -22,9 +22,5 @@ ssh-keygen -R "ssh.ccv.brown.edu"
 
 
 
-## Tip 3:
-
-**Filesystem Quota Warnings**
-
-If a user exceeds the allocated quota i.e. 20G for home directories the account goes into grace period meaning user has 14 days to get back under the limit or write access will be terminated. 
+## 
 
