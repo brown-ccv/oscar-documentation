@@ -52,6 +52,24 @@ We set an expiry date on all student accounts and guest accounts. This is to avo
 
 In case you want to continue using CCV resources and face this error while logging in, simply send us an e-mail at support@ccv.brown.edu and we will reactivate your account. If you have an estimated graduation date, let us know so that we can set the expiry around that time.
 
+## **Warning: Remote host identification has changed**
+
+**Error:** Offending RSA key in ~/.ssh/known\_hosts:**4**. This indicates you have an offending RSA key at line no. 4
+
+**Solution 1**
+
+```
+$ vi ~/.ssh/known_hosts
+remove line no: 4.
+Save and Exit, and Retry.
+```
+
+**Solution 2**
+
+```bash
+ssh-keygen -R "ssh.ccv.brown.edu"
+```
+
 ## GLIBCXX\_&lt;version&gt; not found OR cc1plus: error: unrecognized command line option "-std=c++11"
 
 **Solution:** Run your program after loading a more recent gcc module. For example,
