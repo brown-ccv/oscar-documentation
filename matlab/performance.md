@@ -15,8 +15,6 @@ Matlab programs often suffer from poor performance and running out of memory. Am
 * [Techniques to Improve](http://www.mathworks.com/help/matlab/matlab_prog/techniques-for-improving-performance.html) [Performance](http://www.mathworks.com/help/matlab/matlab_prog/techniques-for-improving-performance.html)
 * [Strategies for Efficient Use of Memory](http://www.mathworks.com/help/matlab/matlab_prog/strategies-for-efficient-use-of-memory.html)
 
-
-
 The first step to speeding up Matlab applications is identifying the part which takes up most of the run time. Matlab's "Profiling" tool can be very helpful in doing that:
 
 * [Profiling for Improving Performance](http://www.mathworks.com/help/matlab/matlab_prog/profiling-for-improving-performance.html)
