@@ -1,6 +1,10 @@
 # GPUs on Oscar
 
-Oscar has 44 GPU nodes that are regular compute nodes with two NVIDIA [Tesla M2050](http://www.nvidia.com/object/preconfigured-clusters.html) GPUs \(_Fermi_ architecture\) added. Each M2050 GPU has 448 CUDA cores and 3GB GDDR5 memory. To gain access to these nodes, please submit a support ticket and ask to be added to the 'gpu' group. Please note that these gpu nodes can only be used for single node jobs.
+{% hint style="info" %}
+To view the various GPUs available on Oscar, use the command
+
+`nodes gpu`
+{% endhint %}
 
 ## Interactive Use
 
