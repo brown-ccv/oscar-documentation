@@ -18,7 +18,7 @@ singularity build <finalImageName>.simg docker://<dockerHubURL>
 becomes
 
 ```
-singularity build tf-py3.simg docker://tensorflow/tensorflow:latest-py3
+singularity build tf-py3.simg docker://tensorflow/tensorflow:1.14.0
 ```
 
 Once entering the command, singularity will begin to compile the container. During the build process, the .singularity directory is used as a temporary cache location. Be aware of this is if you are nearing or at the hard quota limit in your home directory.
