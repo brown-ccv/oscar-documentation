@@ -72,3 +72,21 @@ OpenACC is a portable, directive-based parallel programming construct. You can p
 
 [GPU Programming in Matlab](http://www.mathworks.com/company/newsletters/articles/gpu-programming-in-matlab.html)
 
+## NVLink Enabled GPU Nodes
+
+NVLink enables GPUs to pool memory over high speed links \(25 G/s\). This will increase performance of your application code.
+
+Nodes `gpu[1210,1211,1212]`have 4 fully connected NVLink \(SXM2\) V100 GPUs.
+
+To submit interactive job to NVLink Enabled GPU nodes:
+
+```text
+interact -q gpu -f v100
+```
+
+To submit batch job\(s\) add following line to your batch script.
+
+```text
+#SBATCH --constraint=v100
+```
+
