@@ -23,3 +23,12 @@ You start the transfer using the button in blue shown below. You should see "Tra
 
 If you have started a transfer between two remote machines you don't have to keep your computer connect to Globus. When the transfer is compete you will receive and email. **Note if you are using Globus Connect Personal for a transfer to/from your machine, Globus personal will need to stay running on your machine for the transfer to complete.**
 
+
+
+## Tips for Using Globus
+
+There are "rates limits" on how much data and how many files a user can transfer in any 24 hours period. The following two tips can help to alleviate the restrictions from the rates limits:
+
+* transfer a subfolder as a job. A user can submit 2-3 jobs at a time.
+* compress the folder or subfolders with a lot of small files, e.g., using tar, before transfer
+
