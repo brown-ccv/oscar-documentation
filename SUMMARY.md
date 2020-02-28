@@ -62,6 +62,7 @@
 * [Installing R Packages](software/r-installs.md)
 * [Compiling Software](software/compiling.md)
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
+* [Screen](software/screen.md)
 
 ## Jupyter Notebooks
 
