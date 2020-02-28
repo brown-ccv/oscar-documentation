@@ -25,9 +25,9 @@ If you have started a transfer between two remote machines you don't have to kee
 
 
 
-## Tips for Using Globus
+## Tips for Transferring Data between Globus and Google Drive
 
-There are "rates limits" on how much data and how many files a user can transfer in any 24 hours period. The following two tips can help to alleviate the restrictions from the rates limits:
+For Google Drive, there are "rates limits" on how much data and how many files a user can transfer in any 24 hours period. The following two tips can help to alleviate the restrictions from the rates limits:
 
 * transfer a subfolder as a job. A user can submit 2-3 jobs at a time.
 * compress the folder or subfolders with a lot of small files, e.g., using tar, before transfer
