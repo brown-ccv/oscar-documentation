@@ -8,11 +8,10 @@ Common commands are:
 
 * start a new screen session with session name: `screen -S <name>`
 * list running sessions/screens: `screen -ls`
-* attach to a running session: `screen -x`
 * attach to session by name: `screen -r <name>`  
 * detach: `Ctrl+a d`
-* detach and logout \(quick exit\): `Ctrl+a D D`  
-* quit: `Ctrl+a :quit`
+* detach and logout \(quick exit\): `Ctrl+a d d`  
+* kill a screen session: `screen -XS session_name quit`
 
 ### Reconnecting to your screen session
 
@@ -22,23 +21,21 @@ There are several login nodes in Oscar, and the node from where you launched `sc
 
 In order to reconnect to a running `screen` session, you need to be connected to the same login node that you launched your `screen` session from. In order to locate and identify your `screen` sessions correctly, we recommed the following:
 
-* **Name your screen session** using the name of the login node. For instance, start your screen with a commnd similar to
+* Reconfigure the location where screen saves the list of current sessions. This will allow you to query sessions across different login nodes. 
 
 1. ```text
-   screen -S experiment1-login003
+   export SCREENDIR=$HOME/.screen
    ```
 
-* Reconfigure the location where screen saves the list of current sessions. This will allow you to query sessions across different login nodes. 
+* Put the following line into your /.bashrc and then run "source ~/.bashrc"
 
 1. ```text
    mkdir ~/.screen && chmod 700 ~/.screen
    ```
 
-   Put the following line into your  `~/.bashrc` file and reload `source ~/.bashrc`
+* **Name your screen session** using the name of the login node. For instance, start your screen with a commnd similar to
 
-   ```text
-   export SCREENDIR=$HOME/.screen
+1. ```text
+   screen -S experiment1-login003
    ```
-
-
 
