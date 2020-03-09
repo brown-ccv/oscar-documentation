@@ -21,21 +21,23 @@ There are several login nodes in Oscar, and the node from where you launched `sc
 
 In order to reconnect to a running `screen` session, you need to be connected to the same login node that you launched your `screen` session from. In order to locate and identify your `screen` sessions correctly, we recommed the following:
 
-* Reconfigure the location where screen saves the list of current sessions. This will allow you to query sessions across different login nodes. 
-
-1. ```text
-   export SCREENDIR=$HOME/.screen
-   ```
-
-* Put the following line into your /.bashrc and then run "source ~/.bashrc"
+* Create a directory to store the information of your screen sessions.  You only need do this once.
 
 1. ```text
    mkdir ~/.screen && chmod 700 ~/.screen
    ```
 
-* **Name your screen session** using the name of the login node. For instance, start your screen with a commnd similar to
+*  Put the following line into your /.bashrc.  This tells the screen program to save the information of your screen sessions  in  the directory created in the previous step . This allows you to query your screen sessions across different login nodes. To make this change effective in your current sessions, you need run 'source /.bashrc' in each of your current session . However, you do not need to run 'source /bashrc' in your new sessions. 
+
+1. ```text
+   export SCREENDIR=$HOME/.screen
+   ```
+
+* **Name your new screen session** using the name of the login node. For instance, start your screen with a commnd similar to
 
 1. ```text
    screen -S experiment1-login003
    ```
+
+
 
