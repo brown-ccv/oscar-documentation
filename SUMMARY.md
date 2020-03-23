@@ -60,7 +60,7 @@
 * [Python in batch jobs](software/python-in-batch-jobs.md)
 * [Installing Python Packages](software/python-installs.md)
 * [Installing R Packages](software/r-installs.md)
-* [Using CCMake](software/compiling.md)
+* [Using CCMake](software/ccmake.md)
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 * [Screen](software/screen.md)
 
