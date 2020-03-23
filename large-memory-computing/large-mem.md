@@ -1,5 +1,5 @@
 ---
-description: Memory Intensive Workloads
+description: Memory-Intensive Workloads
 ---
 
 # Large Memory Nodes on Oscar
@@ -13,13 +13,13 @@ Users can check the nodes in a partition using this command `nodes | grep bigmem
     2     64     32-cores    754GB   32core,intel,cascade,edr  bigmem 
 ```
 
-To Submit Batch Jobs to large memory nodes:
+To submit batch jobs to large memory nodes, include the following in your batch script:
 
 ```text
 #SBATCH -p bigmem
 ```
 
-To Run an interactve job on large memory node:
+To run an interactive job on large memory node, launch the `interact` command with the following flag:
 
 ```text
 $ interact -a bigmem
