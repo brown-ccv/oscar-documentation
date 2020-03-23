@@ -8,7 +8,7 @@ Open-source software refers to any program whose source code is available for us
 
 ### CMake
 
-Due to the complexity of the programs, they often have to link to third party or external libraries. GCC and MakeFile have a complex structured command to work with the linker. Thankfully for us, there is a tool that simplify this process. CMake is a build system generator that we can use to facilitate the software build process. Additionally, CMake comes packaged with CCMake, which is an easy-to-use interactive tool that  will let us  provide build instructions to the compiler and the linker for projects written in C, Fortran, or C++. For more information about CMake please click [here](https://cmake.org/).
+Due to the complexity of some software, we often have to link to third party or external libraries. GCC and MakeFile have a complex structured command to work with the linker. Thankfully for us, there is a tool that simplify this process. CMake is a build system generator that we can use to facilitate the software build process. Additionally, CMake comes packaged with CCMake, which is an easy-to-use interactive tool that  will let us  provide build instructions to the compiler and the linker for projects written in C, Fortran, or C++. For more information about CMake please click [here](https://cmake.org/).
 
 {% hint style="info" %}
 Make sure the source code  has a CMakeLists.txt file in the root folder
