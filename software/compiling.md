@@ -6,9 +6,11 @@ description: Guide to build and compile software using  CCMake.
 
 Open-source software refers to any program whose source code is available for use or modification as user or other developers see fit. This is usually developed as a public collaboration and made freely available.
 
-### CMake
+### CMake and CCMake
 
-Due to the complexity of some software, we often have to link to third party or external libraries. GCC and MakeFile have a complex structured command to work with the linker. Thankfully for us, there is a tool that simplify this process. CMake is a build system generator that we can use to facilitate the software build process. Additionally, CMake comes packaged with CCMake, which is an easy-to-use interactive tool that  will let us  provide build instructions to the compiler and the linker for projects written in C, Fortran, or C++. For more information about CMake please click [here](https://cmake.org/).
+Due to the complexity of some software, we often have to link to third party or external libraries. When working with software that has complicated building and linking steps, it is often impractical to use GCC \(or your favorite compiler\) directly. GNU Make is a build system that can simplify things somewhat, but "makefiles" can become unwieldy in their own way. Thankfully for us, there is a tool that simplifies this process. 
+
+CMake is a build system generator that we can use to facilitate the software build process. CMake allows us to specify—at a higher level than GNU Make—the instructions for compiling and linking our software. Additionally, CMake comes packaged with CCMake, which is an easy-to-use interactive tool that  will let us  provide build instructions to the compiler and the linker for projects written in C, Fortran, or C++. For more information about CMake and CCMake please click [here](https://cmake.org/).
 
 {% hint style="info" %}
 Make sure the source code  has a CMakeLists.txt file in the root folder
