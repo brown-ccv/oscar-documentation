@@ -89,5 +89,29 @@ The table below summarizes some of the more useful options for`sbatch` .
 | `--mail-type=` | Specify the events that you should be notified of by email: BEGIN, END, FAIL, REQUEUE, and ALL |
 | `--mail-user=` | Email ID where you should be notified |
 
+### Passing environment variables to a batch job
 
+When a user log in to Oscar, there are pre-set environment variables such as HOME, which are the user's login environment variables. A user may modify an existing enviornmet variable, or add a new environment variable. So when a user submit a slurm batch job, the user's current environment variables may differ from the user's login environment. By default, a user's current environment variables, instead of the user's login environment variables, are accessible to the user's batch jobs on Oscar.
+
+To modify or add an environment variable, run the following command:
+
+* run the following command in your shell
+
+```bash
+export my_variable=my_value
+```
+
+* or have the following line in your batch script
+
+```bash
+#SBATCH --export=my_variable=my_value
+```
+
+After the step above to modify or add an environment variable, your batch job can access the environment variable _my\_variable_ whose value is _my\_value_.
+
+To export more than one environment variables, just list all the name=value pairs separated by a comma:
+
+```bash
+#SBATCH --export=my_variable1=my_value1,my_variable2=my_value2,my_variable3=my_value3
+```
 
