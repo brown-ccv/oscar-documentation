@@ -4,7 +4,7 @@ description: Memory-Intensive Workloads
 
 # Large Memory Nodes on Oscar
 
-Users can check the nodes in a partition using this command `nodes | grep bigmem` . As of March 2020 the Oscar cluster currently has following nodes in bigmem partition. 
+Users can check the nodes in a partition using this command `nodes bigmem` . As of March 2020 the Oscar cluster currently has following nodes in bigmem partition. 
 
 ```text
     NODES CORES  CPU/NODE    MEM     Features                  PARTITION
@@ -22,7 +22,7 @@ To submit batch jobs to large memory nodes, include the following in your batch 
 To run an interactive job on large memory node, launch the `interact` command with the following flag:
 
 ```text
-$ interact -a bigmem
+$ interact -q bigmem
 ```
 
 
