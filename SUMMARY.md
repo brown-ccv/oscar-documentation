@@ -64,9 +64,10 @@
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 * [Screen](software/screen.md)
 
-## Jupyter Notebooks
+## Jupyter Notebooks/Labs <a id="jupyter-notebooks"></a>
 
-* [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
+* [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar-1.md)
+* [Jupyter Labs on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
 
 ## Debugging
 
