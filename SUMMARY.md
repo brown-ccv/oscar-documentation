@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Oscar](README.md)
+* [System Overview](system-overview.md)
 * [Quickstart Guide](getting-started.md)
 * [Citing CCV](citing-ccv.md)
 
