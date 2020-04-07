@@ -1,6 +1,6 @@
 # Quickstart Guide
 
-This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.edu/cis/forms/CCV/newuseraccount.php)
+This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B)
 
 ### OSCAR
 
