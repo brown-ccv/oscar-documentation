@@ -8,7 +8,7 @@ Most inquiries can be directed to CCV’s support address, `support@ccv.brown.ed
 
 #### What are the fees for CCV services?
 
-All CCV services are billed quarterly, and rates can be found [here](../accounts-on-oscar/account-types.md) \(requires a Brown authentication to view\). Questions about rates should be directed to `support@ccv.brown.edu`. 
+All CCV services are billed quarterly, and rates can be found [here](https://ccv.brown.edu/services/rates/) \(requires a Brown authentication to view\). Questions about rates should be directed to `support@ccv.brown.edu`. 
 
 #### How do I acknowledge CCV in a research publication?
 
