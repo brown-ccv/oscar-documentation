@@ -22,7 +22,7 @@ Oscar is our primary research computing cluster with several hundred multi-core 
 
 #### How do I request an account on Oscar?
 
-To request an account, please fill out a [New User Account Form.](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) All accounts are subject to our [General Terms and Conditions](ccv-user-policies.md). 
+To request an account, please fill out a [New User Account Form.](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) All accounts are subject to our [General Terms and Conditions](https://it.brown.edu/computing-policies). 
 
 #### How do I run a job on Oscar?
 
