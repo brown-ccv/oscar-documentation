@@ -49,7 +49,7 @@ To copy a file from Oscar to your computer:
 
 ### 3.\) GUI programs for transferring files using the `scp` or `sftp` protocol
 
-* [WinSCP](http://winscp.net) for Windows and
+* [WinSCP](http://winscp.net) for Windows
 * [Fugu](http://rsug.itd.umich.edu/software/fugu/) for Mac
 * [Cyberduck](http://cyberduck.ch) for Mac
 * [FileZilla](https://filezilla-project.org) for all platforms
