@@ -119,6 +119,20 @@ A caveat of using this method is that pip will install the packages \(along with
 
 For example, if your package depends on numpy or scipy, you might want to use the numpy and scipy under our global install as those have been compiled with MKL support. Using the `--target` option will reinstall numpy with default optimizations and without MKL support at the specified location.
 
+
+## Using Conda
+
+Conda is available if you load an `anaconda/*` module, for example:
+```text
+module load anaconda/3-5.2.0
+```
+To be able to use `conda activate` you need to setup your shell once, for example:
+```bash
+echo ". /gpfs/runtime/opt/anaconda/3-5.2.0/etc/profile.d/conda.sh" >> ~/.bashrc  # Depends on the Conda version you loaded
+source ~/.bashrc
+```
+
+
 ## Installing from source
 
 Sometimes, python software is not packaged by the developers to be installed by pip. Or, you may want to use the development version which has not been packaged. In this case, the python package can be installed by downloading the source code itself. Most python packages can be installed by running the `setup.py` script that should be included in the downloaded files.
