@@ -99,7 +99,7 @@ This is because users do not have access to the default locations where software
 
 Python packages can often have conflicting dependencies.  For workflows that require a lot of python packages, we recommend using virtual environments. 
 
-## Install at custom location
+### Install at custom location
 
 Users have a limit of 20GB for their home directories on Oscar. Hence, users might want to use their data directory instead for installing software. Another motivation to do that is to have shared access to the software among the whole research group.
 
@@ -132,6 +132,16 @@ echo ". /gpfs/runtime/opt/anaconda/3-5.2.0/etc/profile.d/conda.sh" >> ~/.bashrc 
 source ~/.bashrc
 ```
 
+### Install at custom location
+
+Similar to Pip, to install your Conda environment at a different location, you can run the following command modifying the directory where you want to create your Conda environment:
+```bash
+conda create --prefix /gpfs/data/my_condo/path/to/my/folder
+```
+Then to activate your new environment, just run:
+```bash
+conda activate /gpfs/data/my_condo/path/to/my/folder
+```
 
 ## Installing from source
 
