@@ -25,7 +25,7 @@ There are several ways for users to install python packages on Oscar
 * from source into a custom location
 
 {% hint style="warning" %}
-We recommend using a virtual environment for your workflow if you prefer`pip.` If you are a conda user we recommend managing your workflow with [conda environments  ](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+We recommend using a virtual environment for your workflow if you prefer`pip.` If you are a conda user we recommend managing your workflow with [conda environments . ](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)You can load an [anaconda](anaconda.md) module and then use conda.
 {% endhint %}
 
 {% hint style="info" %}
