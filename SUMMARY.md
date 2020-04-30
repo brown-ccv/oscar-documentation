@@ -63,6 +63,7 @@
 * [Installing R Packages](software/r-installs.md)
 * [Using CCMake](software/ccmake.md)
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
+* [Anaconda](software/anaconda.md)
 * [Screen](software/screen.md)
 
 ## Jupyter Notebooks/Labs <a id="jupyter-notebooks"></a>
