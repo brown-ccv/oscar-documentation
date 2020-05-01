@@ -10,13 +10,9 @@ icon: check
 
 # Transferring Files to and from Oscar
 
-## File transfer
-
 {% hint style="info" %}
 Oscar has transfer nodes with a high speed conection for quickly moving data. To use the transfer nodes use `transfer.ccv.brown.edu` as the host address.
 {% endhint %}
-
-## Moving files between your machine and Oscar
 
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
@@ -25,11 +21,11 @@ There are several ways to move files between your machine and Oscar. Which metho
 3. [GUI application](./#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
 4. [Globus online](./#4-globus-online)
 
-### 1.\) CIFS
+## 1. CIFS
 
 You can drag and drop files from your machine to the Oscar filesystem with CIFS. This is an easy method for a small number of files.
 
-### 2.\) Command line
+## 2. Command line
 
 **Mac and Linux**
 
@@ -47,14 +43,28 @@ To copy a file from Oscar to your computer:
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
 
-### 3.\) GUI programs for transferring files using the `scp` or `sftp` protocol
+## 3. GUI programs for transferring files using the `scp` or `sftp` protocol
 
-* [WinSCP](http://winscp.net) for Windows
-* [Fugu](http://rsug.itd.umich.edu/software/fugu/) for Mac
-* [Cyberduck](http://cyberduck.ch) for Mac
-* [FileZilla](https://filezilla-project.org) for all platforms
+In general, you can specify the followings for your GUI programs:
 
-### 4.\) Globus online
+* Protocol: SSH File Transfer Protocol
+* Host: transfer.ccv.brown.edu
+* User: your Oscar username
+* Password: your Oscar password
+
+### 3.1 [WinSCP](https://winscp.net/eng/index.php) for Windows
+
+### 3.3 [Cyberduck](https://cyberduck.io) for Mac
+
+![Figure 1 Cyberduck](../../.gitbook/assets/cyberduck.png)
+
+### 3.1 [FileZilla](https://filezilla-project.org) for all platforms
+
+Open the site manage, then add a new site with the followings:
+
+![Figure 2 FileZilla](../../.gitbook/assets/screen-shot-2020-05-01-at-9.29.03-am.png)
+
+## 4. Globus online
 
 [Globus](https://www.globus.org) is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
 
