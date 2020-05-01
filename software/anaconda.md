@@ -78,7 +78,7 @@ conda create -p  /path/to/install/conda_environment_name
 
 ### Activate a Conda Environment
 
-TAfter creating a conda environment, we can activate a conda environment by the following command:
+After creating a conda environment, we can activate a conda environment by the following command:
 
 ```text
 source activate conda_environment_name
