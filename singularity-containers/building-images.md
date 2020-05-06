@@ -6,7 +6,16 @@ description: >-
 
 # Building Images
 
-For more information regarding building a singularity container, the [Building a Container](https://singularity.lbl.gov/docs-build-container) documentation is excellent and I would recommend giving it a look. 
+For more information regarding building a singularity container, the [Building a Container](https://singularity.lbl.gov/docs-build-container) documentation is excellent and we recommend becoming familiar with it. 
+
+{% hint style="info" %}
+Container images can take up a lot of disk space. You may want to save them in a location with a large quota and  it is also a good idea to change singularity's default cache directory \( i.e`~/.singularity)`to a location that gets cleaned up regularly i.e `~/.scratch`. In order to change the chache directory, you need to set the appropiate variable in your `~/.bashrc` file. For instance:
+
+```text
+# set SINGULARITY_CACHEDIR. Make sure directory exists!
+export SINGULARITY_CACHEDIR=~/scratch/.singularity
+```
+{% endhint %}
 
 ## From SingularityHub
 
@@ -31,4 +40,6 @@ $ singularity build <finalImageName>.simg docker://<dockerHubURL>
 ```
 
 This will pull the docker image from DockerHub and build it as a singularity image locally.
+
+
 
