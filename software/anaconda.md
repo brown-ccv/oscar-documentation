@@ -15,7 +15,11 @@ anaconda/2-5.3.0  anaconda/3-4.3.0
 
 ## Conda
 
-Anaconda uses conda to install packages and manage their depenencies. You can use condo to manage [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html).
+Anaconda uses conda to install packages and manage their depenencies. You can use conda to manage [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). To access conda, you need to load an Anaconda module. For example,
+
+```text
+module load Anaconda/3-5.2.0
+```
 
 ### Conda Environment
 
