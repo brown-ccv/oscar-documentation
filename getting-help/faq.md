@@ -128,6 +128,7 @@ When your job is pending \(PD\) in the queue, SLURM will display a reason why yo
 | :--- | :--- |
 | \(None\) |  You may see this for a short time when you first submit a job  |
 | \(QOSGrpCpuLimit\)  | All your condo cores are currently in use |
+| \(QOSGrpMemLimit\) | The total memory of your running jobs and this pending job is more than the limit for your account.  |
 | \(Priority\)  | Jobs with higher priority are using the resources  |
 | \(Resources\)  | There are not enough free resources to fulfill your request  |
 |  \(JobHeldUser\)  | You have put a hold on the job. The job **will not run** until you lift the hold. |
