@@ -32,7 +32,7 @@
 ## Submitting jobs
 
 * [Running Jobs](submitting-jobs/shared-machine.md)
-* [Slurm](submitting-jobs/slurm.md)
+* [Slurm Partitions](submitting-jobs/slurm.md)
 * [Interactive Jobs](submitting-jobs/interact.md)
 * [Batch Jobs](submitting-jobs/batch.md)
 * [Managing Jobs](submitting-jobs/managing-jobs.md)

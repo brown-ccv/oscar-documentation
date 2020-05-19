@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Slurm
+# Slurm Partitions
 
 Oscar has the following slurm partitions
 
@@ -19,7 +19,22 @@ Oscar has the following slurm partitions
 | gpu | GPU nodes |
 | gpu-debug | short wait time, short run time partition for gpu debugging |
 | bigmem | large memory nodes |
-| smp | older large memory nodes |
+| vnc | graphical desktop environment |
 
 **batch** is the default partition.
+
+To list current partitions on Oscar, run the following commands:
+
+```text
+$ sinfo -O "partition"
+PARTITION           
+batch*              
+debug               
+test                
+vnc                 
+bigmem              
+gpu                 
+gpu-he              
+gpu-debug        
+```
 
