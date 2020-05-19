@@ -116,10 +116,6 @@ Use the `--constraint` \(or `-C`\) option:
 
 You can use the `--constraint` option restrict your allocation according to other features too. The `nodes` command provides a list of "features" for each type of node.
 
-#### What are the nodes in the "smp" partition?
-
-SMP stands for symmetric multiprocessing. These nodes are meant to be useful with jobs which use a large numbers of CPUs on the same node for **shared memory parallelism**. However, comparing sequentially they can be much slower because their architecture is quite old.
-
 #### Why won't my job start? 
 
 When your job is pending \(PD\) in the queue, SLURM will display a reason why your job is pending. The table below shows some common reasons for which jobs are kept pending.
