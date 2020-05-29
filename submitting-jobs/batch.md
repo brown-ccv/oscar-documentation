@@ -115,3 +115,57 @@ To export more than one environment variables, just list all the name=value pair
 #SBATCH --export=my_variable1=my_value1,my_variable2=my_value2,my_variable3=my_value3
 ```
 
+Here is an **example** that a batch script loops over an input file and submits a job for each directory in the input file, where a directory is passed to a batch job for processing.
+
+The input file test.txt has multiple lines where each line is a directory:
+
+```bash
+/users/yliu385/data/yliu385/Test/
+/users/yliu385/data/yliu385/Test/pip
+/users/yliu385/data/yliu385
+```
+
+The loop.sh script read each line \(directory\) from the input file, pass the directory as an environment variable to a batch job:
+
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 1 ] || ! [ -f "$1" ]; then
+    echo "Usage: $0 FILE"
+    exit 1
+fi
+
+while IFS= read -r line; do
+   sbatch --export=directory=$line test.job 
+done < $1
+```
+
+The test.job is a job script, which run the test.sh to process the directory passed as an variable environment:
+
+```bash
+#!/bin/sh
+
+#SBATCH -N 1
+#SBATCH -n 1
+
+echo $directory
+echo $1
+./test.sh $directory
+```
+
+The test.sh is a bash script which just simplies echo the directory:
+
+```bash
+#!/bin/bash
+
+echo "$0 argument: $1"
+```
+
+If you run `./loop.sh`, then three jobs are submitted. Each job generates an output like the following:
+
+```bash
+/users/yliu385/data/yliu385/Test/
+
+./test.sh argument: /users/yliu385/data/yliu385/Test/
+```
+
