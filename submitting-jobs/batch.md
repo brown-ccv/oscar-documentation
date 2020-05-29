@@ -148,8 +148,6 @@ The test.job is a job script, which run the test.sh to process the directory pas
 #SBATCH -N 1
 #SBATCH -n 1
 
-echo $directory
-echo $1
 ./test.sh $directory
 ```
 
