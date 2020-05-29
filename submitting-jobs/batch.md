@@ -167,3 +167,12 @@ If you run `./loop.sh`, then three jobs are submitted. Each job generates an out
 ./test.sh argument: /users/yliu385/data/yliu385/Test/
 ```
 
+### Using variables to set slurm job name, output and error file names
+
+Variables can be passed at the sbatch command line to set job name, output and error file names, as shown in the following example:
+
+```bash
+t=`date +"%Y-%m-%d"`
+sbatch --job-name=test.$t --output=test.out.$t --error=test.err.$t test.job
+```
+
