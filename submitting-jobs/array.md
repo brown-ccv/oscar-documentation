@@ -37,5 +37,22 @@ You can then submit the multiple jobs using a single `sbatch` command:
 $ sbatch <jobscript>
 ```
 
+The `$SLURM_ARRAY_TASK_ID` can be manipulated as needed. For example, you can generate a fixed length number form it. The following example generates a number of length of 3 from `$SLURM_ARRAY_TASK_ID`.
+
+```text
+#!/bin/bash
+#SBATCH -J MATLAB
+#SBATCH -t 1:00:00
+#SBATCH --array=1-16
+
+# Use '%A' for array-job ID, '%J' for job ID and '%a' for task ID
+#SBATCH -e arrayjob-%a.err
+#SBATCH -o arrayjob-%a.out
+
+echo "Starting job $SLURM_ARRAY_TASK_ID on $HOSTNAME"
+t=`printf "%03d" $SLURM_ARRAY_TASK_ID`
+matlab -r "MyMatlabFunction($t); quit;"
+```
+
 For more info: [https://slurm.schedmd.com/job\_array.html](https://slurm.schedmd.com/job_array.html)
 
