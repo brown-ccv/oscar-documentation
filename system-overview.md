@@ -2,7 +2,7 @@
 
 **The page is under construction.**
 
-## Computer Nodes
+## Compute Nodes
 
 Oscar has  540 compute nodes including 34 GPU nodes.
 
