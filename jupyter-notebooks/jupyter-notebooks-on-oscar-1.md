@@ -14,6 +14,10 @@ There are a couple of ways to use [Juypter](https://jupyter.org/) Notebookon Osc
 
  With the batch job or interactive session method, you use a browser on your machine to connect to your Juypter Lab server on Oscar.  
 
+{% hint style="info" %}
+First go to the directory where you need to access when using Jupyter Notebook, and then start Jupyter Notebook. The directory where a Jupyter Notebook is started is the working directory for the Notebook.
+{% endhint %}
+
 {% hint style="warning" %}
 Do not run jupyter notebook on login nodes.
 {% endhint %}
