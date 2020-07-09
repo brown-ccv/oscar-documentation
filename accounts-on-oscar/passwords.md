@@ -12,7 +12,9 @@ We have seen login problems with the Brown credentials for some users so account
 
 ### Changing Passwords
 
-To change your Oscar login password, use the command:
+Oscar  users should use their Brown passwords to log into Oscar except very few legacy  user accounts. To change your Brown password, go to myaccount.brown.edu to do it.
+
+To change your Oscar login password for a legacy user account, use the command:
 
 ```text
 $ passwd
