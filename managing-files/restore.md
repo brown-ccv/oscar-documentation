@@ -27,7 +27,7 @@ Snapshots can be found in the following directories.
 **Data** directory snapshot
 
 ```text
-/gpfs/.snapshots/yyyy-mm-dd>/data/<groupname>/<username><path_to_file>
+/gpfs/.snapshots/yyyy-mm-dd>/data/<groupname>/<username>/path_to_file>
 ```
 
 **Scratch** directory snapshot
