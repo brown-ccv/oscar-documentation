@@ -63,8 +63,8 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
    ```bash
    $ sudo gedit /etc/cifspw
 
-   username=<user>
-   password=<password>
+   username=user
+   password=password
    ```
 
 4. Allow only root access to the credentials files:
