@@ -21,19 +21,19 @@ Snapshots can be found in the following directories.
 **Home** directory snapshot
 
 ```text
-/gpfs_home/.snapshots/<date>/<username>/<path_to_file>
+/gpfs/.snapshots/<yyyy-mm-dd>/<home>/<username>/<path_to_file>
 ```
 
 **Data** directory snapshot
 
 ```text
-/gpfs/.snapshots/<date>/data/<groupname>/<path_to_file>
+/gpfs/.snapshots/yyyy-mm-dd>/data/<groupname>/<username><path_to_file>
 ```
 
 **Scratch** directory snapshot
 
 ```text
-/gpfs/.snapshots/<date>/scratch/<username>/<path_to_file>
+/gpfs/.snapshots/<yyyy-mm-dd>/scratch/<username>/<path_to_file>
 ```
 
 To restore a file copy the file from the snapshot.
@@ -45,8 +45,8 @@ Do **not** use the links in your home directory snapshot to try and retrieve sna
 _e.g._:
 
 ```bash
-ls -l /gpfs_home/.snapshots/April_03/ghopper/data
-lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs_home/.snapshots/April_03/ghopper/scratch -> /gpfs/data/navy
+ls -l /gpfs/.snapshots/2020-07-15/home/ghopper/data
+lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs/.snapshots/2020-07-15/ghopper/scratch -> /gpfs/data/navy
 ```
 
 {% hint style="warning" %}
