@@ -35,7 +35,8 @@ options:
                   combined with '&' and '|' (default: none)
   -h hostname     only run on the specific node 'hostname'
                   (default: none, use any available node)
-  -a account     user SLURM accounting account name
+  -a account      user SLURM accounting account name
+  -g ngpus        number of GPUs   
 ```
 
 For example, the command
