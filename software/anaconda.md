@@ -55,7 +55,13 @@ unset DBUS\_SESSION\_BUS\_ADDRESS
 Anaconda uses conda to install packages and manage their depenencies. You can use conda to manage [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). To access conda, you need to load an Anaconda module. For example,
 
 ```text
-module load Anaconda/3-5.2.0
+module load anaconda/2020.02
+```
+
+or
+
+```text
+module load anaconda/3-5.2.0
 ```
 
 ### Conda Environment
@@ -119,7 +125,15 @@ conda create -p  /path/to/install/conda_environment_name
 
 ### Activate a Conda Environment
 
-After creating a conda environment, we can activate a conda environment by the following command:
+After creating a conda environment, users can activate a conda environment to install or access packages in the environment. The command is slightly different for anaconda modules.
+
+For the anaoconda/2020.02 module, users can activate an environment  by the following command:
+
+```text
+conda activate conda_environment_name
+```
+
+For the anaconda/3-5.2.0 module, users can activate an environment by the following command:
 
 ```text
 source activate conda_environment_name
