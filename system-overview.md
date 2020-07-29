@@ -2,7 +2,7 @@
 
 ## Compute Nodes
 
-Oscar has  410 compute nodes including 31 GPU nodes.
+Oscar has  384 compute nodes including 31 GPU nodes.
 
 <table>
   <thead>
@@ -16,28 +16,6 @@ Oscar has  410 compute nodes including 31 GPU nodes.
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left">Intel Sandy Bridge (E5-2670)</td>
-      <td style="text-align:left">16</td>
-      <td style="text-align:left">55</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">n/a</td>
-      <td style="text-align:left">node555</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Intel Sandy Bridge (E5-2670)</td>
-      <td style="text-align:left">16</td>
-      <td style="text-align:left">62</td>
-      <td style="text-align:left">25</td>
-      <td style="text-align:left">n/a</td>
-      <td style="text-align:left">
-        <p>node405-node408,</p>
-        <p>node504-node508,</p>
-        <p>node551-node554,</p>
-        <p>node556-node559,</p>
-        <p>node572-node579</p>
-      </td>
-    </tr>
     <tr>
       <td style="text-align:left">Intel Haswell (E5-2650 v3)</td>
       <td style="text-align:left">20</td>
@@ -60,6 +38,14 @@ Oscar has  410 compute nodes including 31 GPU nodes.
       </td>
     </tr>
     <tr>
+      <td style="text-align:left">Intel Broadwell (ES-2650 v4)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">110</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node973</td>
+    </tr>
+    <tr>
       <td style="text-align:left">Intel Skylake (Gold 6126)</td>
       <td style="text-align:left">24</td>
       <td style="text-align:left">93</td>
@@ -71,30 +57,6 @@ Oscar has  410 compute nodes including 31 GPU nodes.
         <p>node1301-node1313,</p>
         <p>node1315</p>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Intel Broadwell (ES-2650 v4)</td>
-      <td style="text-align:left">24</td>
-      <td style="text-align:left">110</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">n/a</td>
-      <td style="text-align:left">node973</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
-      <td style="text-align:left">32</td>
-      <td style="text-align:left">172</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">n/a</td>
-      <td style="text-align:left">node1639</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
-      <td style="text-align:left">32</td>
-      <td style="text-align:left">172</td>
-      <td style="text-align:left">1</td>
-      <td style="text-align:left">n/a</td>
-      <td style="text-align:left">node1639</td>
     </tr>
     <tr>
       <td style="text-align:left">Intel Skylake (Gold 6126)</td>
@@ -118,6 +80,22 @@ Oscar has  410 compute nodes including 31 GPU nodes.
       <td style="text-align:left">36</td>
       <td style="text-align:left">n/a</td>
       <td style="text-align:left">node1317-node1320, node1333-node1364</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">172</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1639</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">172</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1639</td>
     </tr>
     <tr>
       <td style="text-align:left">Intel Cascade (Gold 6242)</td>
