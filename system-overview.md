@@ -1,37 +1,204 @@
 # System Overview
 
-**The page is under construction.**
-
 ## Compute Nodes
 
-Oscar has  540 compute nodes including 34 GPU nodes.
+Oscar has  410 compute nodes including 31 GPU nodes.
 
-| Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) |
-| :--- | :--- | :--- | :--- | :--- |
-| Intel Sandy Bridge | 16 | 47 | 1 | n/a |
-| Intel Sandy Bridge | 16 | 55 | 2 | n/a |
-| Intel Sandy Bridge | 16 | 125 | 2 | n/a |
-| Intel Ivy Bridge | 20 | 110 | 3 | n/a |
-| Intel Ivy Bridge | 20 | 125 | 103 | n/a |
-| Intel Haswell | 20 | 125 | 41 | n/a |
-| Intel Broadwell | 24 | 110 | 2 | n/a |
-| Intel Broadwell | 24 | 125 | 94 | n/a |
-| Intel Skylake | 24 | 96 | 46 | n/a |
-| Intel Skylake | 24 | 187 | 39 | n/a |
-| Intel Skylake | 24 | 376 | 4 | n/a |
-| Intel Cascade | 32 | 187 | 100 | n/a |
-| Intel Cascade | 32 | 376 | 40 | n/a |
-| Intel Cascade | 32 | 754 | 2 | n/a |
-| Intel Cascade | 32 | 2096 | 2 | n/a |
-| Intel Skylake | 8 | 93 | 4 | titanv \(12G\) |
-| Intel Skylake | 8 | 187 | 8 | p100 \(12G\) |
-| Intel Skylake | 24 | 187 | 2 | titanrtx \(24G\) |
-| Intel Skylake | 32 | 376 | 1 | titanrtx \(24G\) |
-| Intel Skylake | 24 | 187 | 3 | v100 \(32G\) |
-| Intel Haswell | 40 | 503 | 2 | v100 \(32G\) |
-| Intel Cascade | 32 | 376 | 10 | quadrortx \(24G\) |
-| Inet E5-2697 | 32 | 755 | 3 | 1080ti \(11G\) |
-| Intel E5-2600 | 12 | 125 | 1 | 780gtx \(3G\) |
-| Intel E5-2697 | 20 | 125 | 10 | n/a |
-| Intel E5-2670 | 16 | 62 | 16 | n/a |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Model</th>
+      <th style="text-align:left">Cores per Node</th>
+      <th style="text-align:left">Memory (GB)</th>
+      <th style="text-align:left">Node Count</th>
+      <th style="text-align:left">GPU (GPU Memory)</th>
+      <th style="text-align:left">Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Intel Sandy Bridge (E5-2670)</td>
+      <td style="text-align:left">16</td>
+      <td style="text-align:left">55</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node555</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Sandy Bridge (E5-2670)</td>
+      <td style="text-align:left">16</td>
+      <td style="text-align:left">62</td>
+      <td style="text-align:left">25</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">
+        <p>node405-node408,</p>
+        <p>node504-node508,</p>
+        <p>node551-node554,</p>
+        <p>noe556-node559,</p>
+        <p>node572-node579</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Haswell (E5-2650 v3)</td>
+      <td style="text-align:left">20</td>
+      <td style="text-align:left">94</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node936</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Haswell (ES-2650 v3)</td>
+      <td style="text-align:left">20</td>
+      <td style="text-align:left">125</td>
+      <td style="text-align:left">135</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">
+        <p>node901-node935,</p>
+        <p>node937-node941,</p>
+        <p>node945-node972,</p>
+        <p>node974-node976, node1001-node1064</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 6126)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">93</td>
+      <td style="text-align:left">47</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">
+        <p>node1121,</p>
+        <p>node1129-node1160,</p>
+        <p>node1301-node1313,</p>
+        <p>node1315</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Broadwell (ES-2650 v4)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">110</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node973</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">172</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1639</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">172</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1639</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 6126)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">187</td>
+      <td style="text-align:left">127</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">
+        <p>node1101-node1128,</p>
+        <p>node1161-node1164,</p>
+        <p>node1314,</p>
+        <p>node1321-node1328,</p>
+        <p>node1626-node1638,</p>
+        <p>node1640-node1664, node1701-node1748</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 6126)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">376</td>
+      <td style="text-align:left">36</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1317-node1320, node1333-node1364</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">754</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1611-node1612</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">2048</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1609-node1610</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 5122)</td>
+      <td style="text-align:left">8</td>
+      <td style="text-align:left">93</td>
+      <td style="text-align:left">4</td>
+      <td style="text-align:left">titanv (12G)</td>
+      <td style="text-align:left">node1201 -node1204</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 5122)</td>
+      <td style="text-align:left">8</td>
+      <td style="text-align:left">187</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">p100 (12G)</td>
+      <td style="text-align:left">gpu1207, gpu1209</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 6126)</td>
+      <td style="text-align:left">12</td>
+      <td style="text-align:left">187</td>
+      <td style="text-align:left">6</td>
+      <td style="text-align:left">p100(12G)</td>
+      <td style="text-align:left">gpu1213-gpu1218</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6142)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">376</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">titanrtx (24G)</td>
+      <td style="text-align:left">gpu1401-gpu1402</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Skylake (Gold 6126)</td>
+      <td style="text-align:left">24</td>
+      <td style="text-align:left">187</td>
+      <td style="text-align:left">3</td>
+      <td style="text-align:left">v100 (32G)</td>
+      <td style="text-align:left">gpu1210-gpu1212</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Broadwelll (E5-2698 v4)</td>
+      <td style="text-align:left">40</td>
+      <td style="text-align:left">503</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">v100 (32G)</td>
+      <td style="text-align:left">gpu1404-gpu1405</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade (Gold 6242)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">376</td>
+      <td style="text-align:left">10</td>
+      <td style="text-align:left">quadrortx (24G)</td>
+      <td style="text-align:left">gpu2001-gpu2010</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Inet Broadwell (E5-2697A v4)</td>
+      <td style="text-align:left">32</td>
+      <td style="text-align:left">755</td>
+      <td style="text-align:left">2</td>
+      <td style="text-align:left">1080ti (11G)</td>
+      <td style="text-align:left">gpu717-718</td>
+    </tr>
+  </tbody>
+</table>
 
