@@ -34,7 +34,7 @@ Oscar has  410 compute nodes including 31 GPU nodes.
         <p>node405-node408,</p>
         <p>node504-node508,</p>
         <p>node551-node554,</p>
-        <p>noe556-node559,</p>
+        <p>node556-node559,</p>
         <p>node572-node579</p>
       </td>
     </tr>
@@ -176,7 +176,7 @@ Oscar has  410 compute nodes including 31 GPU nodes.
       <td style="text-align:left">gpu1210-gpu1212</td>
     </tr>
     <tr>
-      <td style="text-align:left">Intel Broadwelll (E5-2698 v4)</td>
+      <td style="text-align:left">Intel Broadwell (E5-2698 v4)</td>
       <td style="text-align:left">40</td>
       <td style="text-align:left">503</td>
       <td style="text-align:left">2</td>
