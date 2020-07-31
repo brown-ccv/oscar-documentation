@@ -33,8 +33,8 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
 
    and click "Connect".
 
-   * Replace `'Home'`with `'Scratch'` or `'Data'`to mount specific volumes.
-   * **Note -** Not specifying`Home,Scratch or Data`will result in much slower performance, as it will have to enumerate through thousands of directories. 
+   * Replace `'home'`with `'scratch'` or `'data'`to mount specific volumes.
+   * **Note -** Not specifying`home,scratch or data`will result in much slower performance, as it will have to enumerate through thousands of directories. 
 
 3. Enter your AD username and password.
 4. You may choose to add your login credentials to your keychain so you will not need to enter this again.
