@@ -29,9 +29,12 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
 
    from the "Go" menu.
 
-2. For "Server Address", enter `smb://smb.ccv.brown.edu`
+2. For "Server Address", enter `smb://smb.ccv.brown.edu/home/<user>`
 
    and click "Connect".
+
+   * Replace `'Home'`with `'Scratch'` or `'Data'`to mount specific volumes.
+   * **Note -** Not specifying`Home,Scratch or Data`will result in much slower performance, as it will have to enumerate through thousands of directories. 
 
 3. Enter your AD username and password.
 4. You may choose to add your login credentials to your keychain so you will not need to enter this again.
@@ -96,7 +99,7 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
 
 1. Right-click "Computer" and select "Map Network Drive"
 2. Select an unassigned drive letter
-3. Enter `\\smb.ccv.brown.edu\<user>` as the Folder
+3. Enter `\\smb.ccv.brown.edu\<user>`as the Folder
 4. Check "Connect using different credentials"
 5. Click "Finish"
 6. Enter your AD user name. If your computer is not in Active Directory \(AD\), you should enter your username in the format **ad\username**
