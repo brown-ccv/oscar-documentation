@@ -45,7 +45,7 @@ Do not load the module in your .modules or .bashrc file. Otherwise, your VNC ses
 {% hint style="info" %}
 If you load the module in your .modules or .bashrc file, you may need to have the following lines in your .bashrc as well to be able to start a VNC session:
 
-unset SESSIN\_MANAGER
+unset SESSION\_MANAGER
 
 unset DBUS\_SESSION\_BUS\_ADDRESS
 {% endhint %}
