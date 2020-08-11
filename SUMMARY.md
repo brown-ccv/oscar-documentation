@@ -10,7 +10,7 @@
 * [SSH \(Terminal\)](connecting-to-oscar/ssh/README.md)
   * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding.md)
 * [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
-* [CIFS \(Local Mount\)](connecting-to-oscar/cifs.md)
+* [SMB \(Local Mount\)](connecting-to-oscar/cifs.md)
 * [CIFS  non-AD \(Local Mount\)](connecting-to-oscar/cifs-non-ad-local-mount.md)
 
 ## Accounts on Oscar
