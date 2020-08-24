@@ -109,9 +109,9 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
 1. Right-click "Computer" and select "Map Network Drive"
 2. Select an unassigned drive letter
 3. To mount specific volumes:
-4. * For Home directory, enter`\\smb.ccv.brown.edu/home/<user>`
-   * For Scratch space, enter`\\smb.ccv.brown.edu/scratch/<user>`
-   * For Data directory, enter`\\smb.ccv.brown.edu/data/<pi_group>/<user>`
+4. * For Home directory, enter`\\smb.ccv.brown.edu\home\<user>`
+   * For Scratch space, enter`\\smb.ccv.brown.edu\scratch\<user>`
+   * For Data directory, enter`\\smb.ccv.brown.edu\data\<pi_group>\<user>`
      * To check your`<pi_group>`run 'groups' command.
 5. Check "Connect using different credentials"
 6. Click "Finish"
