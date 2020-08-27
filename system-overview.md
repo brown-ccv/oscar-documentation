@@ -5,7 +5,7 @@
 Oscar has  386 compute nodes including 33 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, cave, debug, and test partitions.
 
 {% hint style="info" %}
-Nodes could be down for repair. Use 'sinfo' check node status on oscar.
+Nodes could be down for repair. Use 'sinfo' to check node status on oscar.
 {% endhint %}
 
 ### batch
