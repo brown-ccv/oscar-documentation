@@ -2,7 +2,7 @@
 
 ## Compute Nodes
 
-Oscar has  393 compute nodes including 33 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, cave, debug, and test partitions.
+Oscar has  392 compute nodes including 33 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, cave, debug, and test partitions.
 
 {% hint style="info" %}
 Nodes could be down for repair. Use 'sinfo' to check node status on oscar.
@@ -98,11 +98,11 @@ The gpu-he partition is for programs/jobs which need to access high-end GPUs. Th
 
 ### vnc
 
-The vnc partition is for users to run programs/jobs in an graphical desktop environment. There are 34 nodes int the vnc partition.
+The vnc partition is for users to run programs/jobs in an graphical desktop environment. There are 33 nodes int the vnc partition.
 
 | Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Inet Broadwell \(E5-2697A v4\) | 32 | 755 | 2 | 1080ti \(11G\) | gpu718 |
+| Inet Broadwell \(E5-2697A v4\) | 32 | 755 | 1 | 1080ti \(11G\) | gpu718 |
 | Intel Haswell \(ES-2650 v3\) | 20 | 125 | 32 | n/a | node901 - node917, node929 - node 943 |
 
 ### bigmem
