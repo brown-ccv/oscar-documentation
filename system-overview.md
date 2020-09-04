@@ -78,23 +78,23 @@ The batch partition is for  programs/jobs which need neither GPUs nor large memo
 
 The gpu partition is for programs/jobs which require GPUs. There are 27 nodes in the gpu partition.
 
-| Model | Cores per Node | Usable Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Inet Broadwell \(E5-2697A v4\) | 32 | 755 | 1 | 1080ti \(11G\) | gpu717 |
-| Intel Skylake \(Gold 5122\) | 8 | 93 | 4 | titanv \(12G\) | gpu1201 - gpu1204 |
-| Intel Skylake \(Gold 5122\) | 8 | 187 | 2 | p100 \(12G\) | gpu1207, gpu1209 |
-| Intel Skylake \(Gold 6126\) | 8 | 187 | 7 | p100 \(12G\) | gpu1210 - gpu1216 |
-| Intel Cascade Lake \(Gold 6142\) | 32 | 376 | 3 | titanrtx \(24G\) | gpu1401 -  gpu1403 |
-| Intel Cascade Lake \(Gold 6242\) | 32 | 376 | 10 | quadrortx \(24G\) | gpu2001 - gpu2010 |
+| Model | Cores per Node | Usable Memory \(GB\) | Node Count | GPUs Per Node | GPU \(GPU Memory\) | Nodes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Inet Broadwell \(E5-2697A v4\) | 32 | 755 | 1 | 8 | 1080ti \(11G\) | gpu717 |
+| Intel Skylake \(Gold 5122\) | 8 | 93 | 4 | 4 | titanv \(12G\) | gpu1201 - gpu1204 |
+| Intel Skylake \(Gold 5122\) | 8 | 187 | 2 | 4 | p100 \(12G\) | gpu1207, gpu1209 |
+| Intel Skylake \(Gold 6126\) | 8 | 187 | 7 | 4 | p100 \(12G\) | gpu1210 - gpu1216 |
+| Intel Cascade Lake \(Gold 6142\) | 32 | 376 | 3 | 5 | titanrtx \(24G\) | gpu1401 -  gpu1403 |
+| Intel Cascade Lake \(Gold 6242\) | 32 | 376 | 10 | 10 | quadrortx \(24G\) | gpu2001 - gpu2010 |
 
 ### gpu-he
 
 The gpu-he partition is for programs/jobs which need to access high-end GPUs. There are 5 nodes in the gpu-he partition.
 
-| Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| Intel Skylake \(Gold 6126\) | 24 | 187 | 3 | v100 \(32G\) | gpu1210-gpu1212 |
-| Intel Broadwell \(E5-2698 v4\) | 40 | 503 | 2 | v100 \(32G\) | gpu1404-gpu1405 |
+| Model | Cores per Node | Memory \(GB\) | Node Count | GPUs Per Node | GPU \(GPU Memory\) | Nodes |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Intel Skylake \(Gold 6126\) | 24 | 187 | 3 | 4 | v100 \(32G\) | gpu1210-gpu1212 |
+| Intel Broadwell \(E5-2698 v4\) | 40 | 503 | 2 | 8 | v100 \(32G\) | gpu1404-gpu1405 |
 
 ### vnc
 
