@@ -133,6 +133,15 @@ For the anaoconda/2020.02 module, users can activate an environment  by the foll
 conda activate conda_environment_name
 ```
 
+If you need to activate a conda environment in a bash script, you need source the conda.sh as shown in the follwoing example bash script:
+
+```text
+#!/usr/bin/bash
+module load anaconda/2020.02
+source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
+conda activate my_env
+```
+
 For the anaconda/3-5.2.0 module, users can activate an environment by the following command:
 
 ```text
