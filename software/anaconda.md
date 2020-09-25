@@ -13,6 +13,10 @@ anaconda/2-4.3.0  anaconda/2020.02  anaconda/3-5.2.0
 anaconda/2-5.3.0  anaconda/3-4.3.0  
 ```
 
+{% hint style="danger" %}
+Do not activate a conda environment before submitting a batch job if the batch job activates a conda environment. Otherwise, the batch job will not be able to activate the conda environment and hence fail.
+{% endhint %}
+
 ### anaconda/2020.02
 
 This is the newest anaconda module on Oscar. The first time you load the anaconda/2020.02 module, you need initialize the environment by running the following command:
