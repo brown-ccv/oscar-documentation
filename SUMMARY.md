@@ -12,6 +12,7 @@
 * [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
 * [SMB \(Local Mount\)](connecting-to-oscar/cifs.md)
 * [CIFS  non-AD \(Local Mount\)](connecting-to-oscar/cifs-non-ad-local-mount.md)
+* [Remote IDE](connecting-to-oscar/remote-ide.md)
 
 ## Accounts on Oscar
 
