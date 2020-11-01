@@ -2,7 +2,7 @@
 
 Globus Online provides a transfer service for moving data between institutions such as Brown and XSEDE facilities. You can also use Globus to transfer files between these institutions and your local machine. Files can be transferred using the Globus web interface or the command-line interface.
 
-### Using Globus
+## Access Oscar Collection
 
 1. Navigate to [https://www.globus.org/](https://www.globus.org/), then click the 'Login' button in Figure 1.                                          
 
@@ -53,6 +53,8 @@ Note that the &lt;pi\_group&gt;, &lt;user\_name&gt;, &lt;folder\_name&gt; should
 ![Figure 12. Confirmation of Saved Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.32.24-pm.png)
 
 ![Figure 13. Access Bookmarks](../../.gitbook/assets/screen-shot-2020-10-30-at-4.34.43-pm.png)
+
+## Transfer data
 
 11. If you want to use Globus Online to move data to/from your own machine, you can install Globus Connect Personal. Installing Globus Connect Personal allows you to create an endpoint on your computer that you can use to transfer data to and from your computer. For installation, if you have started a transfer between two remote machines you don't have to keep your computer connect to Globus. When the transfer is complete you will receive an email.  details see: [https://www.globus.org/globus-connect-personal](https://www.globus.org/globus-connect-personal)
 
