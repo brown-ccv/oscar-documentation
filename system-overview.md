@@ -10,7 +10,7 @@ Nodes could be down for repair. Use 'sinfo' to check node status on oscar.
 
 ### batch
 
-The batch partition is for  programs/jobs which need neither GPUs nor large memory. There are 321 nodes in the batch partition
+The batch partition is for  programs/jobs which need neither GPUs nor large memory. There are 337 nodes in the batch partition
 
 <table>
   <thead>
@@ -70,6 +70,14 @@ The batch partition is for  programs/jobs which need neither GPUs nor large memo
         <p>node1333 - node1364,</p>
         <p>node1601 - node1664, node1701 - node1748</p>
       </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Intel Cascade Lake (Platinum 8268)</td>
+      <td style="text-align:left">48</td>
+      <td style="text-align:left">376</td>
+      <td style="text-align:left">16</td>
+      <td style="text-align:left">n/a</td>
+      <td style="text-align:left">node1749 - node1764</td>
     </tr>
   </tbody>
 </table>
