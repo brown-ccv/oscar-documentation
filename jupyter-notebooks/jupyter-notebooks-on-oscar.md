@@ -4,32 +4,32 @@
 
 The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html). 
 
-## Running Juypter Lab on Oscar
+## Running Jupyter Lab on Oscar
 
-There are a couple of ways to use [Juypter](https://jupyter.org/) Lab on Oscar.   You can run a Jupyter Lab
+There are a couple of ways to use [Jupyter](https://jupyter.org/) Lab on Oscar.   You can run a Jupyter Lab
 
 * in a VNC session 
 * using a batch job
 * in an interactive session
 
- With the batch job or interactive session method, you use a browser on your machine to connect to your Juypter Lab server on Oscar.  
+ With the batch job or interactive session method, you use a browser on your machine to connect to your Jupyter Lab server on Oscar. 
 
 {% hint style="warning" %}
-Do not run jupyter lab on login nodes.
+Do not run Jupyter Lab on login nodes.
 {% endhint %}
 
 ## In a VNC Session
 
-Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a jupyter lab, enter
+Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a Jupyter lab, enter
 
 ```text
 jupyter-lab
 ```
 
-This will start the Jupyter lab server  and open up a browser with the lab
+This will start the Jupyter lab server and open up a browser with the lab
 
 {% hint style="info" %}
-If you installed Juypter notebook/lab with pip you may need to give the full path:
+If you installed Jupyter notebook/lab with pip you may need to give the full path:
 
 ~/.local/bin/jupyter-lab
 {% endhint %}
@@ -43,7 +43,7 @@ If you installed Juypter notebook/lab with pip you may need to give the full pat
 
 ### 1. Submit batch script
 
-Here is an example batch script to start at Juypter lab server on an Oscar compute node
+Here is an example batch script to start at Jupyter lab server on an Oscar compute node
 
 ```text
 #!/bin/bash
@@ -74,7 +74,7 @@ module load anaconda/3-5.2.0
 ```
 
 {% hint style="info" %}
-If you installed Juypter notebook/lab with pip you may need to give the full path:
+If you installed Jupyter notebook/lab with pip you may need to give the full path:
 
 `~/.local/bin/jupyter-lab --no-browser --port=$ipnport --ip=$ipnip`
 {% endhint %}
@@ -135,7 +135,7 @@ d
 3. Open a browser to view the notebook.
 4. Use `scancel` to end the batch job when you are done.
 
-### 1.Start jupter lab in in interactive job
+### 1.Start Jupyter lab in in interactive job
 
 Start a [Interactive job](../submitting-jobs/interact.md) and then in your interactive seesion  enter
 
