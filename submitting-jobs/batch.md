@@ -91,7 +91,7 @@ The table below summarizes some of the more useful options for`sbatch` .
 
 ### Passing environment variables to a batch job
 
-When a user log in to Oscar, there are pre-set environment variables such as HOME, which are the user's login environment variables. A user may modify an existing enviornmet variable, or add a new environment variable. So when a user submit a slurm batch job, the user's current environment variables may differ from the user's login environment. By default, a user's current environment variables, instead of the user's login environment variables, are accessible to the user's batch jobs on Oscar.
+When a user logs into Oscar, there are pre-set environment variables such as HOME, which are the user's login environment variables. A user may modify an existing enviornmet variable, or add a new environment variable. So when a user submits a slurm batch job, the user's current environment variables may differ from the user's login environment. By default, a user's current environment variables, instead of the user's login environment variables, are accessible to the user's batch jobs on Oscar.
 
 To modify or add an environment variable, run the following command:
 
@@ -109,7 +109,7 @@ export my_variable=my_value
 
 After the step above to modify or add an environment variable, your batch job can access the environment variable _my\_variable_ whose value is _my\_value_.
 
-To export more than one environment variables, just list all the name=value pairs separated by a comma:
+To export more than one environment variables, just list all the name=value pairs separated by commas:
 
 ```bash
 #SBATCH --export=my_variable1=my_value1,my_variable2=my_value2,my_variable3=my_value3
@@ -125,7 +125,7 @@ The input file test.txt has multiple lines where each line is a directory:
 /users/yliu385/data/yliu385
 ```
 
-The loop.sh script read each line \(directory\) from the input file, pass the directory as an environment variable to a batch job:
+The loop.sh script reads each line \(directory\) from the input file and passes the directory as an environment variable to a batch job:
 
 ```bash
 #!/bin/bash
@@ -140,7 +140,7 @@ while IFS= read -r line; do
 done < $1
 ```
 
-The test.job is a job script, which run the test.sh to process the directory passed as an variable environment:
+The test.job is a job script, which runs the test.sh to process the directory passed as an environment variable:
 
 ```bash
 #!/bin/sh
@@ -151,7 +151,7 @@ The test.job is a job script, which run the test.sh to process the directory pas
 ./test.sh $directory
 ```
 
-The test.sh is a bash script which just simplies echo the directory:
+The test.sh is a bash script which simply echoes the directory:
 
 ```bash
 #!/bin/bash
@@ -167,9 +167,9 @@ If you run `./loop.sh`, then three jobs are submitted. Each job generates an out
 ./test.sh argument: /users/yliu385/data/yliu385/Test/
 ```
 
-### Using variables to set slurm job name, output and error file names
+### Using variables to set slurm job name, output filename, and error filename
 
-Variables can be passed at the sbatch command line to set job name, output and error file names, as shown in the following example:
+Variables can be passed at the sbatch command line to set the job name, output and error file names, as shown in the following example:
 
 ```bash
 t=`date +"%Y-%m-%d"`

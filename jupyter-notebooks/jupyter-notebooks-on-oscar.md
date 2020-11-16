@@ -2,7 +2,7 @@
 
 ## Installing Jupyter Lab
 
-The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html). 
+The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter lab](https://jupyter.readthedocs.io/en/latest/install.html). 
 
 ## Running Jupyter Lab on Oscar
 
@@ -20,30 +20,30 @@ Do not run Jupyter Lab on login nodes.
 
 ## In a VNC Session
 
-Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a Jupyter lab, enter
+Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a Jupyter Lab, enter
 
 ```text
 jupyter-lab
 ```
 
-This will start the Jupyter lab server and open up a browser with the lab
+This will start the Jupyter lab server and open up a browser with the lab.
 
 {% hint style="info" %}
-If you installed Jupyter notebook/lab with pip you may need to give the full path:
+If you installed Jupyter Lab with pip, you may need to give the full path:
 
-~/.local/bin/jupyter-lab
+`~/.local/bin/jupyter-lab`
 {% endhint %}
 
 ## Using a Batch Job
 
-1. submit an ssh tunnel to the server.
-2. Setup an ssh tunnel to the server.
+1. Submit an ssh tunnel to the server.
+2. Set up an ssh tunnel to the server.
 3. Open a browser to view the lab.
 4. Use `scancel` to end the batch job when you are done.
 
 ### 1. Submit batch script
 
-Here is an example batch script to start at Jupyter lab server on an Oscar compute node
+Here is an example batch script to start a Jupyter Lab server on an Oscar compute node
 
 ```text
 #!/bin/bash
@@ -74,7 +74,7 @@ module load anaconda/3-5.2.0
 ```
 
 {% hint style="info" %}
-If you installed Jupyter notebook/lab with pip you may need to give the full path:
+If you installed Jupyter Lab with pip, you may need to give the full path:
 
 `~/.local/bin/jupyter-lab --no-browser --port=$ipnport --ip=$ipnip`
 {% endhint %}
@@ -83,7 +83,7 @@ This script can be found in ~/batch\_scripts.  Copy this example and submit this
 
 `sbatch jupyter.sh`
 
-Once your batch job is running  there will be a file `jupyter-log-`{jobid}`.txt`containing the info you need to connect to your jupyter notebook server on Oscar.   To check if your job is running you can use  `myq`
+Once your batch job is running  there will be a file named `jupyter-log-`{jobid}`.txt`containing the information you need to connect to your Jupyter lab server on Oscar.   To check if your job is running, use `myq`.
 
 The output from `myq` will look something like this:
 
@@ -100,11 +100,11 @@ Pending:
 
 ### 2. Setup an ssh tunnel to the notebook server
 
-In this example the jobID is 7239096. To view the notebook server info, use `cat.` For this example:
+In this example the jobID is 7239096. To view the lab server information, use `cat`. For this example:
 
 `cat jupyter-log-7239096.txt`
 
-Open a terminal on your machine and copy and past the  `ssh -N -L ........` line in to a terminal **on your machine**.
+Open a terminal **on your machine** and copy and paste the `ssh -N -L ........` line into the terminal.
 
 ```text
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
@@ -112,15 +112,15 @@ Open a terminal on your machine and copy and past the  `ssh -N -L ........` line
 
 Enter your Oscar password.  Note it will appear that nothing has happened.
 
-### 3. Open a browser to view the notebook
+### 3. Open a browser to view the lab
 
-Open a browser on your local machine to the address given in `cat jupyter-log-{jobid}.txt.`
+Open a browser on your local machine to the address given in `cat jupyter-log-{jobid}.txt`.
 
 ```text
 localhost:9349  (prefix w/ https:// if using password)
 ```
 
-The notebook will ask for a token.  Copy the token from `jupyter-log-{jobid}.txt.` Then your notebook will start.
+The lab will ask for a token.  Copy the token from `jupyter-log-{jobid}.txt`. Then your lab will start.
 
 {% hint style="warning" %}
 Remember to `scancel {jobid}` when you are done with your notebook session
@@ -128,16 +128,14 @@ Remember to `scancel {jobid}` when you are done with your notebook session
 
 ## In an Interactive Session
 
-d
-
-1. Start jupyter lab in an interactive job
+1. Start Jupyter Lab in an interactive job
 2. Setup an ssh tunnel to the server.
 3. Open a browser to view the notebook.
 4. Use `scancel` to end the batch job when you are done.
 
-### 1.Start Jupyter lab in in interactive job
+### 1.Start Jupyter Lab in in interactive job
 
-Start a [Interactive job](../submitting-jobs/interact.md) and then in your interactive seesion  enter
+Start an [Interactive job](../submitting-jobs/interact.md) and then in your interactive session  enter the following:
 
 ```text
 unset XDG_RUNTIME_DIR
@@ -149,7 +147,7 @@ echo $ipnip
 jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
 ```
 
-Output like below indicates that Jupyter Lab starts:
+An output similar to the one below indicates that Jupyter Lab has started:
 
 > $ jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
 >
@@ -171,7 +169,7 @@ Output like below indicates that Jupyter Lab starts:
 
 ### 2. Setup an ssh tunnel to the server
 
-Open a terminal on your machine and tenter the following line in  a terminal **on your machine**. You need replace $ipnip and $ipnport with the values from the two `echo` commands in the previous step.
+Open a terminal **on your machine** and enter the following line \(replace $ipnip and $ipnport with the values from the two `echo` commands in the previous step\).
 
 ```text
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
@@ -187,9 +185,9 @@ Open a browser on your local machine to the address:
 localhost:$ipnport  (prefix w/ https:// if using password)
 ```
 
-Again, you need to replace `$ipnport` with the value from the first `echo` command in Step 1. The notebook will ask for a token.  You can copy the token from the ouput of Step 2.
+Again, you need to replace `$ipnport` with the value from the first `echo` command in Step 1. The notebook will ask for a token.  You can copy the token from the output from Step 2.
 
-### 4. Press 'Ctl+C' twice to kill your Jupyter Lab server
+### 4. Press Ctrl+C twice to kill your Jupyter Lab server
 
-Once you finish and no longer need the Jupyter Lab server, you can kill the server by pressing 'Ctl+C' twice in your interactive session.
+Once you finish and no longer need the Jupyter Lab server, you can kill the server by pressing Ctrl+C twice in your interactive session.
 
