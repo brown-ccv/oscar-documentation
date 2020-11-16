@@ -2,15 +2,15 @@
 
 ## Compute Nodes
 
-Oscar has  409 compute nodes including 33 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, and  debug partitions.
+Oscar has  409 compute nodes including 33 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, and debug partitions.
 
 {% hint style="info" %}
-Nodes could be down for repair. Use 'sinfo' to check node status on oscar.
+Nodes could be down for repair. Use the `sinfo` command to check node status on Oscar.
 {% endhint %}
 
 ### batch
 
-The batch partition is for  programs/jobs which need neither GPUs nor large memory. There are 337 nodes in the batch partition
+The batch partition is for programs/jobs which need neither GPUs nor large memory. There are 337 nodes in the batch partition.
 
 <table>
   <thead>
@@ -106,7 +106,7 @@ The gpu-he partition is for programs/jobs which need to access high-end GPUs. Th
 
 ### vnc
 
-The vnc partition is for users to run programs/jobs in an graphical desktop environment. There are 33 nodes int the vnc partition.
+The vnc partition is for users to run programs/jobs in an graphical desktop environment. There are 33 nodes in the vnc partition.
 
 | Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -115,7 +115,7 @@ The vnc partition is for users to run programs/jobs in an graphical desktop envi
 
 ### bigmem
 
-The bigmem parition is for programs/jobs which requires large memory. There are 4 nodes int he bigmem partition
+The bigmem partition is for programs/jobs which require large memory. There are 4 nodes in the bigmem partition.
 
 | Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -123,7 +123,7 @@ The bigmem parition is for programs/jobs which requires large memory. There are 
 
 ### debug
 
-The debug partition is for users to debug programs/jobs. There are 2 nodes in the debug parition. 
+The debug partition is for users to debug programs/jobs. There are 2 nodes in the debug partition. 
 
 | Model | Cores per Node | Memory \(GB\) | Node Count | GPU \(GPU Memory\) | Nodes |
 | :--- | :--- | :--- | :--- | :--- | :--- |

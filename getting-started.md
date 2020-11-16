@@ -1,6 +1,6 @@
 # Quickstart Guide
 
-This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B)
+This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B).
 
 ### OSCAR
 
@@ -12,9 +12,9 @@ It has two login nodes and several hundred compute nodes. When users log in thro
 
 ### What username and password should I be using?
 
-* If you are at Brown and have requested a regular CCV account, your Oscar login will be authenticated using your Brown credentials itself, i.e. the same username and password that you use to login to any Brown service such as "canvas". _We have seen login problems with the Brown credentials for some users so accounts moved to the Red Hat 7 system after September 1st 2018 can also log in to Red Hat 7 with their CCV password._
-* If it is a temporary guest account \(e.g. as part of a class\), you should have been provided with a username of the format "guestxxx" along with a password.
-* If you are an external user, you will have to get a sponsored ID at Brown through the department with which you are associated, before requesting an account on Oscar. Once you have the sponsored ID at Brown, you can [request an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) on Oscar and use your Brown username and password to login.
+* If you are at Brown and have requested a regular CCV account, your Oscar login will be authenticated using your Brown credentials, i.e. the same username and password that you use to log into any Brown service such as "canvas". _We have seen login problems with the Brown credentials for some users so accounts moved to the RedHat7 system after September 1st 2018 can also log into RedHat7 with their CCV password._
+* If you have a temporary guest account \(e.g. as part of a class\), you should have been provided with a username of the format "guestxxx" along with a password.
+* If you are an external user, you will have to get a sponsored ID at Brown through the department with which you are associated before requesting an account on Oscar. Once you have the sponsored ID at Brown, you can [request an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) on Oscar and use your Brown username and password to log in.
 
 ### Connecting to Oscar for the first time
 
@@ -34,7 +34,7 @@ RSA key fingerprint is SHA256:Nt***************vL3cH7A.
 Are you sure you want to continue connecting (yes/no)? 
 ```
 
-You can type `yes` . You will be prompted for your password. Note nothing will show up on the screen when you type in your password, just type it in and press enter. You will now be in your home directory on Oscar. In your terminal you will see a prompt like this:
+You can type `yes` . You will be prompted for your password. Note that nothing will show up on the screen when you type in your password; just type it in and press enter. You will now be in your home directory on Oscar. In your terminal you will see a prompt like this:
 
 ```text
 [mhamilton@login004 ~]$ 
@@ -64,7 +64,7 @@ To change your [CIFS](connecting-to-oscar/cifs.md) password, use the command:
 $ smbpasswd
 ```
 
-Note if you ask for a password reset from CCV, both the SSH and [CIFS](connecting-to-oscar/cifs.md) password will be reset.
+Note that if you ask for a password reset from CCV, both the SSH password and the [CIFS](connecting-to-oscar/cifs.md) password will be reset.
 
 Password reset rules:
 
@@ -84,15 +84,15 @@ Password reset rules:
 
 ## File system
 
-Users on Oscar have three places to store files.
+Users on Oscar have three places to store files:
 
 * home
 * scratch
 * data
 
-Note guest and class accounts may not have a data directory. Users who are members of more than one research group may have access to multiple data directories.
+Note that guest and class accounts may not have a data directory. Users who are members of more than one research group may have access to multiple data directories.
 
-To see how much space you have you can use the command `myquota`. Below is an example output
+To see how much space you have, use the command `myquota`. Below is an example output:
 
 ```text
                    Block Limits                              |           File Limits              
@@ -104,14 +104,14 @@ FILESET data+apollo        11.05T      20T      24T        - |   459764  4194304
 ```
 
 {% hint style="danger" %}
-Files not accessed for 30 days may be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. Use ~/data for files you need to keep long term.
+Files not accessed for 30 days may be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is, the worse the read/write performance. Use ~/data for files you need to keep long term.
 {% endhint %}
 
-A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`. For more information on which directories are backed up and best practices for reading/writing files, see [Oscar's filesystem](managing-files/filesystem.md) and  [Best Practices](managing-files/io-best-practices.md). You can go over your quota up to the hard limit for a grace period \(14days\). This grace period is to give you time to manage your files. When the grace period expires you will be unable to write any files until you are back under quota.
+A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`. For more information on which directories are backed up and best practices for reading/writing files, see [Oscar's Filesystem](managing-files/filesystem.md) and  [Best Practices](managing-files/io-best-practices.md). You can go over your quota up to the hard limit for a grace period \(14 days\). This grace period is to give you time to manage your files. When the grace period expires you will be unable to write any files until you are back under quota.
 
 ## Software modules
 
-CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. To see the software available on Oscar use the command `module avail`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
+CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. To see the software available on Oscar, use the command `module avail`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
 
 ```text
 [mhamilton@login001 ~]$ module avail workshop
@@ -122,7 +122,7 @@ module: loading 'workshop/2.0'
 [mhamilton@login001 ~]$ 
 ```
 
-For a list of all PyModule commands see [Software Modules](software/software.md). If you have a request for software to be installed on Oscar, email support@ccv.brown.edu.
+For a list of all PyModule commands, see [Software Modules](software/software.md). If you have a request for software to be installed on Oscar, email support@ccv.brown.edu.
 
 ## Using a Desktop on Oscar
 
@@ -136,9 +136,9 @@ For download and installation instructions, [click here](connecting-to-oscar/vnc
 
 You are on Oscar's login nodes when you log in through SSH. You should not \(and would not want to\) run your programs on these nodes as these are shared by all active users to perform tasks like managing files and compiling programs.
 
-With so many active users, a shared cluster has to use a "job scheduler" to assign compute resources to users for running programs. When you submit a job \(a set of commands\) to the scheduler along with the resources you need, it puts your job in a queue. The job is run when the required resources \(cores, memory, etc.\) become available. Note that since Oscar is a shared resource, you must be prepared to wait for your job to start running and it can't be expected to start running straight away.
+With so many active users, a shared cluster has to use a "job scheduler" to assign compute resources to users for running programs. When you submit a job \(a set of commands\) to the scheduler along with the resources you need, it puts your job in a queue. The job is run when the required resources \(cores, memory, etc.\) become available. Note that since Oscar is a shared resource, you must be prepared to wait for your job to start running, and it can't be expected to start running straight away.
 
-Oscar uses the **SLURM** job scheduler. Batch jobs is the preferred mode of running programs, where all commands are mentioned in a "batch script" along with the required resources \(number of cores, wall-time, etc.\). However, there is also a way to run programs interactively.
+Oscar uses the **SLURM** job scheduler. Batch jobs are the preferred mode of running programs, where all commands are mentioned in a "batch script" along with the required resources \(number of cores, wall-time, etc.\). However, there is also a way to run programs interactively.
 
 For information on how to submit jobs on Oscar, see [Running Jobs](submitting-jobs/shared-machine.md). 
 
