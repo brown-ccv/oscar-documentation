@@ -110,6 +110,14 @@ Open a terminal **on your machine** and copy and paste the `ssh -N -L ........` 
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
 ```
 
+{% hint style="info" %}
+If you are using Windows, you can use any of the following options to open a terminal on your machine:
+
+* [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+* [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
+* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) \(we recommend Ubuntu as your Linux distribution\)
+{% endhint %}
+
 Enter your Oscar password.  Note it will appear that nothing has happened.
 
 ### 3. Open a browser to view the lab
@@ -174,6 +182,14 @@ Open a terminal **on your machine** and enter the following line \(replace $ipni
 ```text
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
 ```
+
+{% hint style="info" %}
+If you are using Windows, you can use any of the following options to open a terminal on your machine:
+
+* [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
+* [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
+* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) \(we recommend Ubuntu as your Linux distribution\)
+{% endhint %}
 
 Enter your Oscar password.  Note it will appear that nothing has happened.
 
