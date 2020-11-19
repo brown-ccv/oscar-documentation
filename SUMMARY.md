@@ -28,7 +28,9 @@
 * [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
-* [Version Control](managing-files/version-control.md)
+* [Version Control](managing-files/version-control/README.md)
+  * [SSH Agent Forwarding](managing-files/version-control/ssh-agent-forwarding.md)
+  * [Key Generation & Agent Forwarding with PuTTY](managing-files/version-control/key-generation-and-agent-forwarding-with-putty.md)
 
 ## Submitting jobs
 
