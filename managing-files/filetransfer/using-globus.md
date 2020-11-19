@@ -28,7 +28,7 @@ Globus Online provides a transfer service for moving data between institutions s
 
 ![Figure 6. Identity Selection](../../.gitbook/assets/screen-shot-2020-10-30-at-4.12.12-pm.png)
 
-7. Click the 'Allow' button in Figure 7 to grant permissions to Globus Web App. You should read Terms of Service and Privacy Policy in the page.
+7. Click the 'Allow' button in Figure 7 to grant permissions to Globus Web App. You should read the Terms of Service and Privacy Policy.
 
 ![Figure 8. Grant Permissions](../../.gitbook/assets/screen-shot-2020-10-30-at-4.14.18-pm.png)
 
@@ -36,7 +36,7 @@ Globus Online provides a transfer service for moving data between institutions s
 
 ![Figure 9. Oscar Collection](../../.gitbook/assets/screen-shot-2020-10-30-at-4.17.24-pm.png)
 
-9.  You may click the folders in the list to select a folder to access, or enter in the Path box as followings:
+9.  You may navigate through directories by clicking on them or entering one of the following in the 'Path' textbox:
 
 * data directory - /data/&lt;pi\_group&gt;/&lt;user\_name&gt;/&lt;folder\_name&gt;
 * scratch directory - /scratch/&lt;user\_name&gt;/&lt;folder\_name&gt;
@@ -46,7 +46,7 @@ Note that the &lt;pi\_group&gt;, &lt;user\_name&gt;, &lt;folder\_name&gt; should
 
 ![Figure 10. Select Folder](../../.gitbook/assets/screen-shot-2020-10-30-at-4.24.45-pm.png)
 
-10. You may bookmark your selected folder, by clicking the Bookmark icon which is to the right of the Path search textbox, entering the name for the selected folder, and then click the 'Create Bookmark' button as shown in Figure 11.  After that, a confirmation for creating bookmark is displayed as in Figure 12. Once a bookmark is saved, you can access it later by clicking the 'BOOKMARKS' icon in the left panel,  and then click the bookmark from the list of your saved bookmarks, as shown in Figure 13.
+10. You may bookmark your selected folder, by clicking the Bookmark icon which is to the right of the Path search textbox, entering the name for the selected folder, and then click the 'Create Bookmark' button as shown in Figure 11.  After that, a confirmation will be displayed as in Figure 12. Once a bookmark is saved, you can access it later by clicking the 'BOOKMARKS' icon in the left panel,  and then click the bookmark from the list of your saved bookmarks, as shown in Figure 13.
 
 ![Figure 11. Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.29.14-pm.png)
 
@@ -66,8 +66,8 @@ Note that the &lt;pi\_group&gt;, &lt;user\_name&gt;, &lt;folder\_name&gt; should
 
 ### Tips for Transferring Data between Globus and Google Drive
 
-For Google Drive, there are "rates limits" on how much data and how many files a user can transfer in any 24 hours period. The following two tips can help to alleviate the restrictions from the rates limits:
+For Google Drive, there are "rates limits" on how much data and how many files a user can transfer in any 24 hour period. The following two tips can help to alleviate the restrictions from the rates limits:
 
-* transfer a subfolder as a job. A user can submit 2-3 jobs at a time
-* compress the folder or subfolders with a lot of small files, e.g., using tar, before the transfer
+* Transfer a subfolder as a job. A user can submit 2-3 jobs at a time.
+* If the folder or subfolder contains a lot of small files, compress the folder or subfolders using zip or tar before the transfer.
 
