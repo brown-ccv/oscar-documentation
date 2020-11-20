@@ -66,15 +66,19 @@ Open the site manage, then add a new site with the followings:
 
 ## 4. Globus online
 
-[Globus](https://www.globus.org) is a secure, reliable research data management service. If you are moving data from another institution that has a Globus endpoint, you can move data directory to Oscar. Oscar has two Globus endpoints:
+[Globus](https://www.globus.org) is a secure, reliable research data management service. You can move data directly to Oscar from anothe Globus endpoint. Oscar has one Globus endpoint:
 
 ```text
-brownccv#Brown-CCV-oscar-1
-brownccv#Brown-CCV-oscar-2
+Brown_CV_Oscar
 ```
 
-You can use either endpoint to move data to/from Oscar to another Globus endpoint.  
+{% hint style="danger" %}
+The two old endpoints will be retired on 12/1/2020
+
+brownccv\#Brown-CCV-oscar-1
+
+brownccv\#Brown-CCV-oscar-2
+{% endhint %}
+
 If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus](using-globus.md) section.
-
-
 
