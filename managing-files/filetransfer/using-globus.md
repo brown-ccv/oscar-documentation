@@ -1,5 +1,7 @@
 # Using Globus
 
+
+
 Globus Online provides a transfer service for moving data between institutions such as Brown and XSEDE facilities. You can also use Globus to transfer files between these institutions and your local machine. Files can be transferred using the Globus web interface or the command-line interface.
 
 ## Access Oscar Collection
@@ -30,11 +32,11 @@ Globus Online provides a transfer service for moving data between institutions s
 
 7. Click the 'Allow' button in Figure 7 to grant permissions to Globus Web App. You should read the Terms of Service and Privacy Policy.
 
-![Figure 8. Grant Permissions](../../.gitbook/assets/screen-shot-2020-10-30-at-4.14.18-pm.png)
+![Figure 7. Grant Permissions](../../.gitbook/assets/screen-shot-2020-10-30-at-4.14.18-pm.png)
 
-8. After authentication, the collection is displayed in File Manager as shown in Figure 9.
+8. After authentication, the collection is displayed in File Manager as shown in Figure 8.
 
-![Figure 9. Oscar Collection](../../.gitbook/assets/screen-shot-2020-10-30-at-4.17.24-pm.png)
+![Figure 8. Oscar Collection](../../.gitbook/assets/screen-shot-2020-10-30-at-4.17.24-pm.png)
 
 9.  You may navigate through directories by clicking on them or entering one of the following in the 'Path' textbox:
 
@@ -42,17 +44,17 @@ Globus Online provides a transfer service for moving data between institutions s
 * scratch directory - /scratch/&lt;user\_name&gt;/&lt;folder\_name&gt;
 * home directory - /home/&lt;user\_name&gt;/&lt;folder\_name&gt;
 
-Note that the &lt;pi\_group&gt;, &lt;user\_name&gt;, &lt;folder\_name&gt; should be replaced by a PI's group, an Oscar username, and the actual folder name to access, as illustrated in Figure 10.
+Note that the &lt;pi\_group&gt;, &lt;user\_name&gt;, &lt;folder\_name&gt; should be replaced by a PI's group, an Oscar username, and the actual folder name to access, as illustrated in Figure 9.
 
-![Figure 10. Select Folder](../../.gitbook/assets/screen-shot-2020-10-30-at-4.24.45-pm.png)
+![Figure 9. Select Folder](../../.gitbook/assets/screen-shot-2020-10-30-at-4.24.45-pm.png)
 
-10. You may bookmark your selected folder, by clicking the Bookmark icon which is to the right of the Path search textbox, entering the name for the selected folder, and then click the 'Create Bookmark' button as shown in Figure 11.  After that, a confirmation will be displayed as in Figure 12. Once a bookmark is saved, you can access it later by clicking the 'BOOKMARKS' icon in the left panel,  and then click the bookmark from the list of your saved bookmarks, as shown in Figure 13.
+10. You may bookmark your selected folder, by clicking the Bookmark icon which is to the right of the Path search textbox, entering the name for the selected folder, and then click the 'Create Bookmark' button as shown in Figure 10.  After that, a confirmation will be displayed as in Figure 11. Once a bookmark is saved, you can access it later by clicking the 'BOOKMARKS' icon in the left panel,  and then click the bookmark from the list of your saved bookmarks, as shown in Figure 12.
 
-![Figure 11. Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.29.14-pm.png)
+![Figure 10. Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.29.14-pm.png)
 
-![Figure 12. Confirmation of Saved Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.32.24-pm.png)
+![Figure 11. Confirmation of Saved Bookmark](../../.gitbook/assets/screen-shot-2020-10-30-at-4.32.24-pm.png)
 
-![Figure 13. Access Bookmarks](../../.gitbook/assets/screen-shot-2020-10-30-at-4.34.43-pm.png)
+![Figure 12. Access Bookmarks](../../.gitbook/assets/screen-shot-2020-10-30-at-4.34.43-pm.png)
 
 ## Transfer data
 
