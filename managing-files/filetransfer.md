@@ -21,6 +21,10 @@ There are several ways to move files between your machine and Oscar. Which metho
 3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
 4. [Globus online](filetransfer.md#4-globus-online)
 
+{% hint style="info" %}
+Globus online is the best for transferring large amount of data from other Globus endpoints like files.brown.edu. 
+{% endhint %}
+
 ## 1. CIFS
 
 You can drag and drop files from your machine to the Oscar filesystem with CIFS. This is an easy method for a small number of files.
@@ -80,5 +84,5 @@ brownccv\#Brown-CCV-oscar-1
 brownccv\#Brown-CCV-oscar-2
 {% endhint %}
 
-If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus]() section.
+If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Oscar section](https://docs.ccv.brown.edu/globus/creating-endpoints/using-globus-with-oscar) in the Globus documentation.
 
