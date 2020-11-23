@@ -144,7 +144,7 @@ When your job is pending \(PD\) in the queue, SLURM will display a reason why yo
 Please use the server **transfer.ccv.brown.edu** 
 
 1. From your machine to Oscar:  scp file1.txt userid@transfer.ccv.brown.edu From Oscar to another machine: ssh transfer transfer&gt; scp file1.txt userid@your-machine-name 
-2. Alternatively, Oscar has an endpoint for "Globusonline" \([https://www.globus.org](https://www.globus.org)\) that you can use to more effectively transfer files. See our manual page on how to use [Globus Online](../managing-files/filetransfer/using-globus.md) to transfer files.
+2. Alternatively, Oscar has an endpoint for "Globusonline" \([https://www.globus.org](https://www.globus.org)\) that you can use to more effectively transfer files. See our manual page on how to use [Globus Online]() to transfer files.
 
 ## XSEDE
 

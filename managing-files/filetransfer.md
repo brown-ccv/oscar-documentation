@@ -16,10 +16,10 @@ Oscar has transfer nodes with a high speed conection for quickly moving data. To
 
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
-1. [CIFS](../../connecting-to-oscar/cifs.md)
-2. [Command line \(scp\)](./#2-command-line)
-3. [GUI application](./#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
-4. [Globus online](./#4-globus-online)
+1. [CIFS](../connecting-to-oscar/cifs.md)
+2. [Command line \(scp\)](filetransfer.md#2-command-line)
+3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
+4. [Globus online](filetransfer.md#4-globus-online)
 
 ## 1. CIFS
 
@@ -56,13 +56,13 @@ In general, you can specify the followings for your GUI programs:
 
 ### 3.3 [Cyberduck](https://cyberduck.io) for Mac
 
-![Figure 1 Cyberduck](../../.gitbook/assets/cyberduck.png)
+![Figure 1 Cyberduck](../.gitbook/assets/cyberduck.png)
 
 ### 3.1 [FileZilla](https://filezilla-project.org) for all platforms
 
 Open the site manage, then add a new site with the followings:
 
-![Figure 2 FileZilla](../../.gitbook/assets/screen-shot-2020-05-01-at-9.29.03-am.png)
+![Figure 2 FileZilla](../.gitbook/assets/screen-shot-2020-05-01-at-9.29.03-am.png)
 
 ## 4. Globus online
 
@@ -80,5 +80,5 @@ brownccv\#Brown-CCV-oscar-1
 brownccv\#Brown-CCV-oscar-2
 {% endhint %}
 
-If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus](using-globus.md) section.
+If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Using Globus]() section.
 

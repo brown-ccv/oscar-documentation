@@ -23,8 +23,7 @@
 ## Managing files
 
 * [Oscar's Filesystem](managing-files/filesystem.md)
-* [Transferring Files to and from Oscar](managing-files/filetransfer/README.md)
-  * [Using Globus](managing-files/filetransfer/using-globus.md)
+* [Transferring Files to and from Oscar](managing-files/filetransfer.md)
 * [Transferring Files between Oscar and files.brown.edu](managing-files/filetransfer-isilon.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
