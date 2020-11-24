@@ -20,11 +20,11 @@ If you have PuTTY and would prefer to not download any additional software, ther
 
 ## Using PuTTY
 
-These instructions will use `ssh -N -L 9283:172.20.209.14:9283 aduchnow@ssh.ccv.brown.edu` as an example command that could be found in the `jupyter-log-{jobid}.txt`  file.
+These instructions will use `ssh -N -L 9283:172.20.209.14:9283 username@ssh.ccv.brown.edu` as an example command that could be found in the `jupyter-log-{jobid}.txt`  file.
 
 Open PuTTY and enter your host name \(username@ssh.ccv.brown.edu\) in the textbox.
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 Next, navigate to the 'Tunnels' Menu \(click the '+' next to SSH in order to have it displayed\).
 
