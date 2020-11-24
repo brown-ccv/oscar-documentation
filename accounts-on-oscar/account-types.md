@@ -20,7 +20,7 @@ There are several types of accounts on Oscar.
 * Large Memory Priority
 * Condo
 
-{% hint style="success" %}
+{% hint style="info" %}
 More details on the cost can be found at the [CCV Rates page](https://ccv.brown.edu/services/rates/).
 {% endhint %}
 
