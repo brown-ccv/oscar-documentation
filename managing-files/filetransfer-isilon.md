@@ -17,7 +17,17 @@ The department file servers \(also known as Isilon\) are:
 * \\files.brown.edu{sharename} \(miscellaneous shares\)
 * \\smblrs.ccv.brown.edu/Research \(miscellaneous shares\)
 
+You may use either Globus \(recommended\) or smbclient to transfer data between files.brown.edu and Oscar.
+
+## Globus
+
+Follow [the instructions here for transferring data between files.brown.edu and Oscar](https://app.gitbook.com/@brown-cis/s/globus/getting-started/transfer-data).
+
+## smbclient
+
 You can transfer files between Department File Servers and Oscar using [smbclient](https://www.samba.org/samba/docs/man/manpages-3/smbclient.1.html).
+
+### Transfer Instructions
 
 1\) Log into our dedicated system for transferring files in/out of Oscar:
 
@@ -57,7 +67,7 @@ Replace SHARE\_NAME, DIRECTORY\_NAME, and BROWN\_ID. DIRECTORY\_NAME is an optio
    screen -r
 ```
 
-## smbclient basics
+### smbclient basics
 
 * `put` is upload to Department File Servers
 

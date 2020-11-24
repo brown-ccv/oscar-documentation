@@ -17,13 +17,9 @@ Oscar has transfer nodes with a high speed conection for quickly moving data. To
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
 1. [CIFS](../connecting-to-oscar/cifs.md)
-2. [Command line \(scp\)](filetransfer.md#2-command-line)
+2. [Command line](filetransfer.md#2-command-line) \(scp\)
 3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
-4. [Globus online](filetransfer.md#4-globus-online)
-
-{% hint style="info" %}
-Globus online is the best for transferring large amount of data from other Globus endpoints like files.brown.edu. 
-{% endhint %}
+4. [Globus online](filetransfer.md#4-globus-online) \(best for large transfers\)
 
 ## 1. CIFS
 
