@@ -20,12 +20,8 @@ The following partitions are available to all Oscar users:
 | :--- | :--- |
 | batch | general purpose computing |
 | debug | short wait time, short run time partition for debugging |
-| vnc | ? |
 | gpu | GPU nodes |
-| gpu-he | High End GPU nodes \(?\) |
 | gpu-debug | short wait time, short run time partition for gpu debugging |
-| gpu-condo | ? |
-| gk-gpu-condo |  |
 | bigmem | large memory nodes |
 | smp | older large memory nodes |
 
@@ -33,12 +29,12 @@ The following partitions are available to all Oscar users:
 For current rates and limits see [https://ccv.brown.edu/services/rates/](https://ccv.brown.edu/services/rates/)
 {% endhint %}
 
-## batch
+## batch partition
 
 * General purpose computing
 * Priority is determined by account type \(from highest
 
-  to lowest: condo, priority, exploratory\)
+  to lowest: condo, premium, exploratory\)
 
 Condo limits apply to the group \(i.e., they reflect the sum of all users on the condo\). Condo users can check the limits on their condo with the command `condos`.
 
@@ -46,18 +42,18 @@ Condo limits apply to the group \(i.e., they reflect the sum of all users on the
 There is no limit on the time for condo jobs, but users should be aware that planned maintenance on the machine may occur \(one month’s notice is given prior to any planned maintenance\).
 {% endhint %}
 
-## debug
+## debug partition
 
 * Short wait time, short run time access for debugging
 * All users have the same limits and priority on the debug partition
 
-## gpu
+## gpu partition
 
 * For GPU-based jobs
-* GPU Priority users get higher priority and more resources than free users on the GPU partition
+* Premium users get higher priority and more resources than free users on the GPU partition
 * Condo users submit to the gpu partition with normal or priority access \(if they have a priority account in addition to their condo\)
 
-## gpu-debug
+## gpu-debug partition
 
 * Short wait time, short run time gpu access for debugging
 * All users have the same limits and priority on the gpu-debug partition
@@ -65,11 +61,8 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 ## bigmem
 
 * For jobs requiring large amounts of memory
-* Priority users get higher priority and more resources than free users on the bigmem partition
+* Premium users get higher priority and more resources than free users on the bibmem partition
 * Condo users submit to the bigmem partition with normal or priority access \(if they have a priority account in addition to their condo\)
-* For jobs requiring large amounts of memory
-* Premium users get higher priority and more resources than free users on the SMP partition
-* Condo users submit to the SMP partition with normal or priority access \(if they have a priority account in addition to their condo\)
 
 ## smp partition
 

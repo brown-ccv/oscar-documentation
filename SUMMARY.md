@@ -72,6 +72,7 @@
 
 * [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar-1.md)
 * [Jupyter Labs on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
+* [Tunneling into Jupyter with Windows](jupyter-notebooks/tunneling-into-jupyter-with-windows.md)
 
 ## Debugging
 

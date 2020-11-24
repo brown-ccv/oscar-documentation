@@ -111,11 +111,7 @@ Open a terminal **on your machine** and copy and paste the `ssh -N -L ........` 
 ```
 
 {% hint style="info" %}
-If you are using Windows, you can use any of the following options to open a terminal on your machine \(ranked in order of least difficult to set up\):
-
-* [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
-* [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
-* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) \(we recommend Ubuntu as your Linux distribution\)
+If you are using Windows, follow the[ Tunneling into Jupyter with Windows](https://docs.ccv.brown.edu/oscar/jupyter-notebooks/tunneling-into-jupyter-with-windows) documentation to complete this step.
 {% endhint %}
 
 Enter your Oscar password.  Note it will appear that nothing has happened.
@@ -184,11 +180,7 @@ Open a terminal **on your machine** and enter the following line \(replace $ipni
 ```
 
 {% hint style="info" %}
-If you are using Windows, you can use any of the following options to open a terminal on your machine \(ranked in order of least difficult to set up\):
-
-* [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)
-* [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html)
-* [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install-win10) \(we recommend Ubuntu as your Linux distribution\)
+If you are using Windows, follow the[ Tunneling into Jupyter with Windows](https://docs.ccv.brown.edu/oscar/jupyter-notebooks/tunneling-into-jupyter-with-windows) documentation to complete this step.
 {% endhint %}
 
 Enter your Oscar password.  Note it will appear that nothing has happened.
