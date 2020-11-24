@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Transferring Files between Oscar and files.brown.edu
+# Transferring Files between Oscar and Campus File Services \(Files and LRS\)
 
 The department file servers \(also known as Isilon\) are:
 
