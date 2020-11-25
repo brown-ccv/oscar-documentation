@@ -28,6 +28,7 @@ To view _all_ partitions \(including ones you don't have access to\), replace th
 | debug | short wait time, short run time partition for debugging |
 | vnc | graphical desktop environment |
 | gpu | GPU nodes |
+| gpu-he | High End GPU nodes |
 | gpu-debug | short wait time, short run time partition for gpu debugging |
 | bigmem | large memory nodes |
 
@@ -65,6 +66,12 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 * For GPU-based jobs
 * GPU Priority users get higher priority and more resources than free users on the GPU partition
 * Condo users submit to the gpu partition with normal or priority access \(if they have a priority account in addition to their condo\)
+
+### gpu-he
+
+* For GPU-based jobs
+* Uses Tesla V100 GPUs
+* Restricted to High End GPU Priority users
 
 ### gpu-debug
 
