@@ -18,6 +18,7 @@
 
 * [Account Types](accounts-on-oscar/account-types.md)
 * [Passwords](accounts-on-oscar/passwords.md)
+* [Associations & Quality of Service \(QOS\)](accounts-on-oscar/associations-and-quality-of-service.md)
 
 ## Managing files
 
