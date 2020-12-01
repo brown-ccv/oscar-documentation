@@ -1,5 +1,7 @@
 # MPI Applications for Slurm Migration
 
+## Applications to Migrate
+
 | Software | Current Module Name | New Modue Name |
 | :--- | :--- | :--- |
 | cesm | 1.2.1 | planned |
@@ -75,3 +77,7 @@
 | vasp | 6.1.1\_ompi405\_yqi27 | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 |
 | wrf | 3.6.1 | planned |
 
+## Deprecated Applications
+
+* mpi/mvapich2-2.3a\_gcc
+* 
