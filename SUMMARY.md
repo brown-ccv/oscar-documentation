@@ -3,6 +3,7 @@
 * [Oscar](README.md)
 * [System Overview](system-overview.md)
 * [Quickstart Guide](getting-started.md)
+* [MPI Applications for Slurm Migration](mpi-applications-for-slurm-migration.md)
 * [Citing CCV](citing-ccv.md)
 
 ## Connecting to Oscar
