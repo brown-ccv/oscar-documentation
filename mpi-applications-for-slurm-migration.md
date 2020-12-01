@@ -64,9 +64,9 @@
 | qmcpack | 3.9.2\_openmpi\_4.0.1\_gcc | planned |
 | quantumespresso | 6.1 | planned |
 | quantumespresso | 6.3 | planned |
-| quantumespresso | 6.4 | 6.4\_openmpi\_4.0.5\_intel\_slurm20 |
+| quantumespresso | 6.4 | quantumespresso/6.4\_openmpi\_4.0.5\_intel\_slurm20 |
 | quantumespresso | 6.4.1 | planned |
-| quantumespresso | 6.5 | 6.4\_openmpi\_4.0.5\_intel\_slurm20 |
+| quantumespresso | 6.5 | quantumespresso/6.5\_openmpi\_4.0.5\_intel\_slurm20 |
 | siesta | 3.2 | planned |
 | siesta | 4.1 | planned |
 | su2 | 7.0.1 | planned |
