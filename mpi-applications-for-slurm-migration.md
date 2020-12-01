@@ -79,8 +79,16 @@
 
 ## Deprecated Applications
 
+* mpi/cave\_mvapich2\_2.3rc2\_gcc
+* mpi/cave\_mvapich2\_2.3b\_gcc
 * mpi/mvapich2-2.3a\_gcc
 * mpi/mvapich2-2.3a\_intel
-* openmpi\_3.1.3\_gcc
+* mpi/mvapich2-2.3b\_gcc
+* mpi/mvapich2-2.3.1\_gcc
+* mpi/openmpi\_2.0.3\_gcc
+* mpi/openmpi\_3.1.3\_gcc
+* mpi/openmpi\_4.0.0\_gcc
+* mpi/openmpi\_4.0.0\_gcc\_i8
 * mpi/openmpi\_4.0.1\_gcc
-
+* mpi/openmpi\_4.0.3\_gcc
+* 
