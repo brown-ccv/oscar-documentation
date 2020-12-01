@@ -2,7 +2,7 @@
 
 | Software | Current Module Name | New Modue Name | Status |
 | :--- | :--- | :--- | :--- |
-| cesm | 1.2.1 |  |  |
+| cesm | 1.2.1 | planned |  |
 | cesm | 1.2.2 |  |  |
 | cesm | 2.1.1 |  |  |
 | dedalus | 2.1905 | 2.1905\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 | Completed |
