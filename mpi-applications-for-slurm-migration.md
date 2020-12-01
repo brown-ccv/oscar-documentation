@@ -80,4 +80,7 @@
 ## Deprecated Applications
 
 * mpi/mvapich2-2.3a\_gcc
-* 
+* mpi/mvapich2-2.3a\_intel
+* openmpi\_3.1.3\_gcc
+* mpi/openmpi\_4.0.1\_gcc
+
