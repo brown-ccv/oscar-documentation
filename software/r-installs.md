@@ -2,7 +2,9 @@
 
 ## Installing R packages
 
-We get a lot of requests to install R packages. While we will continue to do this, users should also be aware that they can install R packages for themselves. This documentation shows you how to install R packages locally \(without root access\) on Oscar.
+Users should install R packages for themselves locally. This documentation shows you how to install R packages locally \(without root access\) on Oscar.
+
+If the package you want to install has operating-system-level dependencies \(i.e. the package depends on core libraries\), then we can install it as a module. 
 
 ### Installing an R package
 
