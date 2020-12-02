@@ -44,7 +44,11 @@ You can customize the default environment that is loaded when you login by putti
 module load python/3.5.2
 ```
 
-python/3.5.2 will be loaded every time you log in. 
+python/3.5.2 will be loaded every time you log in.
+
+{% hint style="info" %}
+If you have not yet created a `.modules`file in your home directory, you will have to create one and then add the commands you wish to have as defaults to that file.
+{% endhint %}
 
 ### What modules actually do...
 
