@@ -1,4 +1,4 @@
-# MPI Applications for Slurm Migration
+# Slurm Migration
 
 ## Access the New Slurm Cluster
 
@@ -13,7 +13,7 @@ The new slurm 20.02.6 is built with pmix. So jobs with all MPI applications shou
 srun --mpi=pmix <mpi_application>
 ```
 
-## Applications to Migrate
+## MPI Applications to Migrate
 
 | Software | Current Module Name | New Modue Name |
 | :--- | :--- | :--- |
@@ -90,7 +90,7 @@ srun --mpi=pmix <mpi_application>
 | vasp | 6.1.1\_ompi405\_yqi27 | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 |
 | wrf | 3.6.1 | planned |
 
-## Deprecated Applications
+## Deprecated MPI Applications
 
 * mpi/cave\_mvapich2\_2.3rc2\_gcc
 * mpi/cave\_mvapich2\_2.3b\_gcc
