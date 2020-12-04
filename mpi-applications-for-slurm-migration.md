@@ -1,5 +1,13 @@
 # MPI Applications for Slurm Migration
 
+## Submit Jobs with MPI Applications for New Slurm
+
+The new slurm 20.02.6 is built with pmix. So jobs with all MPI applications should be submitted with the following command:
+
+```text
+srun --mpi=pmix <mpi_application>
+```
+
 ## Applications to Migrate
 
 | Software | Current Module Name | New Modue Name |
