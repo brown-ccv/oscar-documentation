@@ -1,5 +1,10 @@
 # MPI Applications for Slurm Migration
 
+## Access the New Slurm Cluster
+
+* connect to oscar by ssh or vnc
+* ssh login005 or login006
+
 ## Submit Jobs with MPI Applications for New Slurm
 
 The new slurm 20.02.6 is built with pmix. So jobs with all MPI applications should be submitted with the following command:
