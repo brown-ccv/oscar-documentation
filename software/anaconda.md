@@ -129,15 +129,28 @@ conda create -p  /path/to/install/conda_environment_name
 
 ### Activate a Conda Environment
 
-After creating a conda environment, users can activate a conda environment to install or access packages in the environment. The command is slightly different for anaconda modules.
+After creating a conda environment, users can activate a conda environment to install or access packages in the environment. The command is slightly different for different anaconda modules.
 
-For the anaoconda/2020.02 module, users can activate an environment  by the following command:
+For the anaoconda/2020.02 module, users can activate an environment with the following command:
 
 ```text
 conda activate conda_environment_name
 ```
 
-If you need to activate a conda environment in a bash script, you need source the conda.sh as shown in the follwoing example bash script:
+For the anaconda/3-5.2.0 module, users can activate an environment with the following command:
+
+```text
+source activate conda_environment_name
+```
+
+{% hint style="info" %}
+The commands above will only work if:
+
+* A conda environment with the specified name \(`conda_environment_name` in the example\) exists
+* The appropriate anaconda module has been loaded \(if you are unsure about this one, consult [this documentation](https://docs.ccv.brown.edu/oscar/software/modules)\)
+{% endhint %}
+
+If you need to activate a conda environment in a bash script, you need to source the conda.sh as shown in the following example bash script:
 
 ```text
 #!/usr/bin/bash
@@ -146,21 +159,29 @@ source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
 conda activate my_env
 ```
 
-For the anaconda/3-5.2.0 module, users can activate an environment by the following command:
+{% hint style="info" %}
+If you are using anaconda/3-5.2.0, replace the instances of `2020.02` with `3-5.2.0`.
+{% endhint %}
+
+{% hint style="info" %}
+After installing packages in an active environment \(instructions below\), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment \(before the script even starts\) will be available through the environment after it is activated \(line 4 in the code above\).
+{% endhint %}
+
+To deactivate a conda environment, simply use the following command:
 
 ```text
-source activate conda_environment_name
+conda deactivate
 ```
 
 ### Install Packages in an Active Conda Environment
 
-To install a package, we need first activate a conda environment, and the run
+To install a package, we need to first activate a conda environment, and then run
 
 ```text
 conda install package_name=version
 ```
 
-The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package form the conda\_forge channel, run
+The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package from the conda\_forge channel, run
 
 ```text
 conda install -c conda_forge conda_environment_name
@@ -176,7 +197,7 @@ conda remove -n conda_environment_name --all
 
 ### Remove Caches
 
-Condo may dowload lots of packages when installing a package. A user may use up all quota due to the downloaded packages, To remove the downloaded packges, run
+Conda may download lots of additional packages when installing a package. A user may use up all quota due to these downloaded packages. To remove the downloaded packges, run
 
 ```text
 conda clean --all
