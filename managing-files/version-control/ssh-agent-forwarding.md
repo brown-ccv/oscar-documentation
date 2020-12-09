@@ -13,7 +13,7 @@ $ eval $(ssh-agent)
 Agent pid 48792
 ```
 
-Next, add your ssh private keys to the running agent. This stem may be repeated for every key pair you use to connect to different git servers. For most, this file is called `id_rsa` and will live in `~/.ssh/id_rsa`. If you set a password for your ssh keys the agent will prompt you to enter them.
+Next, add your ssh private keys to the running agent. This stem may be repeated for every key pair you use to connect to different git servers. For most, this file is called `id_rsa` and will live in `~/.ssh/id_rsa`. If you set a password for your ssh keys, the agent will prompt you to enter them.
 
 ```text
 $ ssh-add ~/.ssh/id_rsa
@@ -28,7 +28,7 @@ ssh-add -L
 ssh-rsa AAAAB3NzaC1y...CQ0jPj2VG3Mjx2NR broarr@CIS2L0CFHV2J
 ```
 
-Then ssh into Oscar with the `-A` option. `-A` will forward your ssh-agent to Oscar enabling you to use the ssh keys on your laptop while logged into Oscar.
+Then ssh into Oscar with the `-A` option. `-A` will forward your ssh-agent to Oscar, enabling you to use the ssh keys on your laptop while logged into Oscar.
 
 ```text
 $ ssh -AX ssh.ccv.brown.edu
@@ -49,7 +49,7 @@ module: loading 'intel/2017.0'
 [broarr@login004 ~]$
 ```
 
-Confirm your ssh-agent was properly forwarded by checking GitHub \(or any other VCS servers you use\). If the ssh command fails your agent has not been properly forwarded.
+Confirm your ssh-agent was properly forwarded by checking GitHub \(or any other VCS servers you use\). If the ssh command fails, your agent has not been properly forwarded.
 
 ```text
 [broarr@login004 ~]$ ssh git@github.com
@@ -58,7 +58,7 @@ Hi broarr! You've successfully authenticated, but GitHub does not provide shell 
 Connection to github.com closed.
 ```
 
-To make these changes permanent, add an entry to the ssh config on your local machine. This config file lives at `~/.ssh/config`. If that file does not exist, create it, then add the following in that file replacing `User` with the user you use to connect to Oscar.
+To make these changes permanent, add an entry to the ssh config on your local machine. This config file lives at `~/.ssh/config`. If that file does not exist, create it, then add the following in that file, replacing `User` with the user you use to connect to Oscar.
 
 ```text
 Host oscar
@@ -68,5 +68,7 @@ Host oscar
         User broarr
 ```
 
+{% hint style="success" %}
 Now you can log into Oscar with X11 and ssh-agent forwarding by running `ssh oscar`.
+{% endhint %}
 
