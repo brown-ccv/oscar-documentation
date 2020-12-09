@@ -54,6 +54,8 @@ In general, you can specify the followings for your GUI programs:
 
 ### 3.1 [WinSCP](https://winscp.net/eng/index.php) for Windows
 
+![WinSCP Session Creation](../.gitbook/assets/image%20%2811%29.png)
+
 ### 3.3 [Cyberduck](https://cyberduck.io) for Mac
 
 ![Figure 1 Cyberduck](../.gitbook/assets/cyberduck.png)
