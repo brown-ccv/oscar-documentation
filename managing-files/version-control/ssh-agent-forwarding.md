@@ -2,6 +2,10 @@
 
 When using VCS systems such as git or mercurial, it's common to use SSH to connect to VCS servers to push and pull code. SSH provides a method of sharing the ssh keys on your local machine with Oscar. This feature is called Agent Forwarding. This allows you to keep your keys on your local machine and still access your chosen VCS systems via SSH. Below are instructions on how to configure your SSH connection to forward ssh-agent.
 
+{% hint style="info" %}
+If you wish to use PuTTY for Agent Forwarding \(a good option for Windows users without a Unix shell\), use [this documentation](https://docs.ccv.brown.edu/oscar/managing-files/version-control/key-generation-and-agent-forwarding-with-putty).
+{% endhint %}
+
 First, start your `ssh-agent`. 
 
 ```text
