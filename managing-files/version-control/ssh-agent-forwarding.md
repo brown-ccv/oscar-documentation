@@ -6,14 +6,23 @@ When using VCS systems such as git or mercurial, it's common to use SSH to conne
 If you wish to use PuTTY for Agent Forwarding \(a good option for Windows users without a Unix shell\), use [this documentation](https://docs.ccv.brown.edu/oscar/managing-files/version-control/key-generation-and-agent-forwarding-with-putty).
 {% endhint %}
 
-First, start your `ssh-agent`. 
+## Start the SSH-Agent
+
+First, start your `ssh-agent` with the command below. 
 
 ```text
 $ eval $(ssh-agent)
+```
+
+You should see an output similar to this:
+
+```text
 Agent pid 48792
 ```
 
-Next, add your ssh private keys to the running agent. This stem may be repeated for every key pair you use to connect to different git servers. For most, this file is called `id_rsa` and will live in `~/.ssh/id_rsa`. If you set a password for your ssh keys, the agent will prompt you to enter them.
+## Add Key\(s\)
+
+Next, add your ssh private keys to the running agent \(using the `ssh-add` command on line 1\). This step may be repeated for every key pair you use to connect to different git servers. For most, this file is called `id_rsa` and will live in `~/.ssh/id_rsa`. If you set a password for your ssh keys, the agent will prompt you to enter them.
 
 ```text
 $ ssh-add ~/.ssh/id_rsa
@@ -21,17 +30,19 @@ Enter passphrase for /Users/broarr/.ssh/id_rsa:
 Identity added: /Users/broarr/.ssh/id_rsa (broarr@CIS2L0CFHV2J)
 ```
 
-Confirm the ssh keys have been loaded into the agent.
+Confirm the ssh keys have been loaded into the agent with `ssh-add -L`:
 
 ```text
-ssh-add -L
+$ ssh-add -L
 ssh-rsa AAAAB3NzaC1y...CQ0jPj2VG3Mjx2NR broarr@CIS2L0CFHV2J
 ```
 
-Then ssh into Oscar with the `-A` option. `-A` will forward your ssh-agent to Oscar, enabling you to use the ssh keys on your laptop while logged into Oscar.
+## Connect to Oscar
+
+Now ssh into Oscar with the `-A` option as shown on the first line below \(replace `username` with your Oscar username\). `-A` will forward your ssh-agent to Oscar, enabling you to use the ssh keys on your laptop while logged into Oscar.
 
 ```text
-$ ssh -AX ssh.ccv.brown.edu
+$ ssh -AX username@ssh.ccv.brown.edu
 Warning: untrusted X11 forwarding setup failed: xauth key data not generated
 Last login: Fri Nov 13 13:51:51 2020 from ssh4.oscar.ccv.brown.edu
 Welcome to Oscar! This login node is shared among many users: please be
@@ -57,6 +68,8 @@ PTY allocation request failed on channel 0
 Hi broarr! You've successfully authenticated, but GitHub does not provide shell access.
 Connection to github.com closed.
 ```
+
+## Make Changes Persistent
 
 To make these changes permanent, add an entry to the ssh config on your local machine. This config file lives at `~/.ssh/config`. If that file does not exist, create it, then add the following in that file, replacing `User` with the user you use to connect to Oscar.
 
