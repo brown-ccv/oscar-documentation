@@ -4,11 +4,15 @@
 
 ### 1. Remove Known Host Entry
 
-Please run the following command on your local machine \(Mac/Linux\) to update the known\_hosts file. 
+* for Mac/Linux, run the following command
 
 ```
 ssh-keygen -R "ssh.ccv.brown.edu"
 ```
+
+* For Windows
+  * PuTTY: when PuTTY displays the warning message, click Yes to update PuTTY's cache with the new RSA key
+  * Windows Terminal :  enter 'yes' when you are asked "Are you sure you want to continue connecting \(yes/no\)".
 
 ### 2. Brown AD Password Only
 
