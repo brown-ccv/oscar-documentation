@@ -65,10 +65,10 @@ srun --mpi=pmix <mpi_application>
 | meshlab | 20190129\_qt59 | planned |  |
 | Molpro |  | 2020.1\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
 | n2p2 | 1.0.0 | planned |  |
-| newchem | 6.8-openmpi | planned |  |
-| openfoam | 4.1 | planned |  |
-| openfoam | 4.1a | planned |  |
-| openfoam | 7 | planned |  |
+| nwchem | 7.0 | 7.0.2\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
+| openfoam | 4.1 | 4.1-openmpi\_3.1.6\_gcc\_10.2\_slurm20 |  |
+| openfoam | 4.1a |  |  |
+| openfoam | 7 |  |  |
 | osu-mpi | 5.3.2 | planned |  |
 | osu-mpi | 5.6.2\_mvapich2-2.3a\_gcc | planned |  |
 | paraview | 5.1.0 | planned |  |
@@ -142,6 +142,7 @@ srun --mpi=pmix <mpi_application>
 * mpi/openmpi\_4.0.3\_gcc
 * mpi/openmpi\_4.0.4\_gcc
 * mpi/5.6.1\_openmpi\_2.0.3
+* nwchem/6.8-openmpi
 
 |  |  |
 | :--- | :--- |
