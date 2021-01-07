@@ -2,8 +2,27 @@
 
 ## Access the New Slurm Cluster
 
-* connect to oscar by ssh or vnc
-* ssh login005 or login006
+### 1. Remove Known Host Entry
+
+Please run the following command on your local machine \(Mac/Linux\) to update the known\_hosts file. 
+
+```
+ssh-keygen -R "ssh.ccv.brown.edu"
+```
+
+### 2. Brown AD Password Only
+
+Users can only log into Oscar using their Brown AD password.  Local Oscar passwords no longer work.
+
+{% hint style="info" %}
+You can change your Brown AD password at [https://myaccount.brown.edu](https://myaccount.brown.edu)
+{% endhint %}
+
+### 3. Duo and Passwordless SSH
+
+### 4. File Owner and Access Issue
+
+Due to the changes of uid in Oscar, some users may have issues accessing their files and/or directories. Please contact support@ccv.brown.edu if you have issues.
 
 ## Submit Jobs with MPI Applications for New Slurm
 
@@ -38,11 +57,7 @@ srun --mpi=pmix <mpi_application>
 | hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
 | hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
 | hdf5 | n/a | 1.12.0\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
-| lammps | 17-Nov-16 | planned |
-| lammps | 11Aug17\_serial | planned |
-| lammps | 16-Mar-18 | planned |
-| lammps | 7-Aug-19 | planned |
-| lammps | 22-Aug-18 | planned |
+| lammps |  | 29Oct20\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
 | meme | 5.0.5 | planned |
 | meshlab | 20190129\_qt59 | planned |
 | Molpro | 2012.1.15 | planned |
@@ -109,4 +124,12 @@ srun --mpi=pmix <mpi_application>
 * mpi/openmpi\_4.0.3\_gcc
 * mpi/openmpi\_4.0.4\_gcc
 * mpi/5.6.1\_openmpi\_2.0.3
+* lammps/11Aug17
+* lammps/11Aug17\_serial
+* lammps/16Mar18
+* lammps/17Nov16
+* lammps/22Aug18
+
+  |  |  |
+  | :--- | :--- |
 
