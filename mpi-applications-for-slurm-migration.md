@@ -14,7 +14,7 @@ ssh-keygen -R "ssh.ccv.brown.edu"
   * PuTTY: when PuTTY displays the warning message, click '**Yes**' to update PuTTY's cache with the new RSA key
   * Windows Terminal :  enter '**yes'** when you are asked "Are you sure you want to continue connecting \(yes/no\)".
 
-### 2. Brown AD Password Only
+### 2. Brown AD Password Only for Login
 
 Users can only log into Oscar using their Brown AD password.  Local Oscar passwords no longer work.
 
