@@ -42,7 +42,7 @@ A job array is a special type of job submission that allows you to submit many r
 
 #### How do I run a MPI job on Oscar?
 
-MPI is a type of programming interface. Programs written with MPI can run on and communicate across multiple nodes. You can run MPI-capable programs by calling  `srun --mpi=pmi2  <program>` in your batch script. For more detailed info, visit our manual page on [MPI programs](../submitting-jobs/mpi-jobs.md). 
+MPI is a type of programming interface. Programs written with MPI can run on and communicate across multiple nodes. You can run MPI-capable programs by calling  `srun --mpi=pmix  <program>` in your batch script. For more detailed info, visit our manual page on [MPI programs](../submitting-jobs/mpi-jobs.md). 
 
 #### I have some MPI-enabled source code. How can I compile it on Oscar? 
 
