@@ -73,29 +73,14 @@ srun --mpi=pmix <mpi_application>
 | openfoam | 7 |  |  |
 | osu-mpi | 5.3.2 | planned |  |
 | osu-mpi | 5.6.2\_mvapich2-2.3a\_gcc | planned |  |
-| paraview | 5.1.0 | planned |  |
-| paraview | 5.1.0\_yurt | planned |  |
-| paraview | 5.4.1 | planned |  |
-| paraview | 5.6.0\_yurt | planned |  |
-| paraview | 5.6.0\_no\_scalable | planned |  |
-| paraview | 5.8.0 | planned |  |
-| paraview | 5.8.0\_mesa | planned |  |
-| petsc | 3.7.5 | planned |  |
-| petsc | 3.7.7 | planned |  |
-| petsc | 3.8.3 | planned |  |
+| paraview |  | 5.8.1\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
+| petsc |  | 3.14.2\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
 | polychord | 2 | planned |  |
 | prophet | augustegm\_1.2 | planned |  |
-| qmcpack | 3.7.0 | planned |  |
-| qmcpack | 3.9.1 | planned |  |
-| qmcpack | 3.9.1\_openmpi\_3.1.3\_gcc | planned |  |
-| qmcpack | 3.9.1\_openmpi\_3.1.6 | planned |  |
-| qmcpack | 3.9.1\_openmpi\_3.1.6\_gcc | planned |  |
-| qmcpack | 3.9.2\_openmpi\_4.0.1\_gcc | planned |  |
-| quantumespresso | 6.1 | planned |  |
-| quantumespresso | 6.3 | planned |  |
-| quantumespresso | 6.4 | quantumespresso/6.4\_openmpi\_4.0.5\_intel\_slurm20 |  |
-| quantumespresso | 6.4.1 | planned |  |
-| quantumespresso | 6.5 | quantumespresso/6.5\_openmpi\_4.0.5\_intel\_slurm20 |  |
+| qmcpack |  | 3.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
+| quantumespresso | 6.6 | 6.6\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
+| quantumespresso | 6.4 | 6.4\_openmpi\_4.0.5\_intel\_slurm20 |  |
+| quantumespresso | 6.5 | 6.5\_openmpi\_4.0.5\_intel\_slurm20 |  |
 | siesta | 3.2 | planned |  |
 | siesta | 4.1 | planned |  |
 | su2 | 7.0.1 | planned |  |
@@ -104,7 +89,7 @@ srun --mpi=pmix <mpi_application>
 | vasp | 5.4.4 | 5.4.4\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
 | vasp | 5.4.4\_intel | 5.4.4\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |  |
 | vasp | 6.1.1\_ompi405\_yqi27 | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 |  |
-| wrf | 3.6.1 | planned |  |
+| wrf |  | 4.2.1\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
 
 ## Deprecated MPI Applications
 
@@ -145,6 +130,30 @@ srun --mpi=pmix <mpi_application>
 * mpi/openmpi\_4.0.4\_gcc
 * mpi/5.6.1\_openmpi\_2.0.3
 * nwchem/6.8-openmpi
+* paraview/5.1.0
+* paraview/5.1.0\_yurt
+* paraview/5.4.1
+* paraview/5.6.0\_no\_scalable
+* paraview/5.6.0\_yurt
+* paraview/5.8.0
+* paraview/5.8.0\_mesa
+* paraview/5.8.0\_release
+* petsc/3.7.5
+* petsc/3.7.7
+* petsc/3.8.3
+* qmcpack/3.7.0
+* qmcpack/3.9.1
+* qmcpack/3.9.1\_openmpi\_3.1.6
+* qmcpack/3.9.2\_intel\_2020
+* qmcpack/3.9.2\_openmpi\_4.0.1\_gcc
+* qmcpack/3.9.2\_openmpi\_4.0.4\_gcc
+* quantumespresso/6.1
+* quantumespresso/6.3
+* quantumespresso/6.4
+* quantumespresso/6.4.1
+* quantumespresso/6.5
+* quantumespresso/6.6
+* wrf/3.6.1
 
 |  |  |
 | :--- | :--- |
