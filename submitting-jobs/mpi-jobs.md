@@ -39,7 +39,7 @@ mpi/<implementation>-<version>_<base compiler>
 
 ### `srun` instead of `mpirun`
 
-**Use `srun --mpi=pmi2` to run MPI programs.** All MPI implementations listed above except `openmpi_1.8.3_gcc` and `openmpi_1.10.7_gcc` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
+**Use `srun --mpi=pmix` to run MPI programs.** All MPI implementations listed above except `openmpi_1.8.3_gcc` and `openmpi_1.10.7_gcc` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
 
 The `--mpi=pmi2` flag is also required to match the configuration with which MPI is installed on Oscar.
 
@@ -60,7 +60,7 @@ $ salloc -n 4
 Once the allocation is fulfilled, you can run MPI programs with the `srun` command:
 
 ```text
-$ srun --mpi=pmi2 ./my-mpi-program ...
+$ srun --mpi=pmix ./my-mpi-program ...
 ```
 
 When you are finished running MPI commands, you can release the allocation by exiting the shell:
@@ -72,7 +72,7 @@ $ exit
 Also, if you only need to run a single MPI program, you can skip the `salloc` command and specify the resources in a single `srun`command:
 
 ```text
-$ srun -N <# nodes> -n <# MPI tasks> -p <partition> -t <minutes> --mpi=pmi2 ./my-mpi-program
+$ srun -N <# nodes> -n <# MPI tasks> -p <partition> -t <minutes> --mpi=pmix ./my-mpi-program
 ```
 
 This will create the allocation, run the MPI program, and release the allocation.
@@ -107,7 +107,7 @@ Here is a sample batch script to run an MPI program:
 # Load required modules
 module load mpi
 
-srun --mpi=pmi2 MyMPIProgram
+srun --mpi=pmix MyMPIProgram
 ```
 
 ## Hybrid MPI+OpenMP
@@ -127,7 +127,7 @@ If your program has multi-threading capability using OpenMP, you can have severa
 module load mpi
 
 export OMP_NUM_THREADS=4
-srun --mpi=pmi2 ./MyMPIProgram
+srun --mpi=pmix ./MyMPIProgram
 ```
 
 The above batch script will launch 4 MPI tasks - 2 on each node - and allocate 4 CPUs for each task \(total 16 cores for the job\). Setting `OMP_NUM_THREADS` governs the number of threads to be used, although this can also be set in the program.
