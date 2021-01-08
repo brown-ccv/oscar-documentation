@@ -93,7 +93,7 @@ srun --mpi=pmix <mpi_application>
 
 ## Deprecated MPI Applications
 
-* * global\_arrays/5.6.1\_openmpi\_2.0.3
+* global\_arrays/5.6.1\_openmpi\_2.0.3
 * gpaw/1.2.0\_hpcx\_2.7.0\_gcc
 * gpaw/1.2.0\_mvapich2-2.3a\_gcc
 * gromacs/2016.6
