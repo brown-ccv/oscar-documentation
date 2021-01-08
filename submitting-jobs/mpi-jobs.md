@@ -41,7 +41,7 @@ mpi/<implementation>-<version>_<base compiler>
 
 **Use `srun --mpi=pmix` to run MPI programs.** All MPI implementations listed above except `openmpi_1.8.3_gcc` and `openmpi_1.10.7_gcc` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
 
-The `--mpi=pmi2` flag is also required to match the configuration with which MPI is installed on Oscar.
+The `--mpi=pmix` flag is also required to match the configuration with which MPI is installed on Oscar.
 
 ## Running MPI programs - Interactive
 
