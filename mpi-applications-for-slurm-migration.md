@@ -40,56 +40,64 @@ srun --mpi=pmix <mpi_application>
 
 ## MPI Applications to Migrate
 
-| Software | Current Module Name | New Modue Name |  |
-| :--- | :--- | :--- | :--- |
-| cesm | 1.2.1 | planned |  |
-| cesm | 1.2.2 | planned |  |
-| cesm | 2.1.1 | planned |  |
-| dedalus | 2.1905 | 2.1905\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| fenics | 2018.1.0 | planned |  |
-| global\_arrays |  | 5.8\_openmpi\_4.0.5\_gcc\_10.2\_slurm20gpawgpaw |  |
-| gpaw |  | 20.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
-| gpaw |  | 20.10\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
-| gromacs |  | gromacs/2020.4\_gpu\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |  |
-| gromacs |  | gromacs/2020.4\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |  |
-| gromacs | 2020.1 | gromacs/2020.4\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |  |
-| gromacs | 2018.2 | gromacs/2018.2\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |  |
-| hdf5 | 1.10.1\_parallel | 1.10.1\_mvapich2-2.3.5\_gcc\_10.2\_slurm20 |  |
-| hdf5 | 1.10.5\_parallel | 1.10.5\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |  |
-| hdf5 | 1.10.5\_openmpi\_4.0.0\_gcc | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| hdf5 | 1.10.5\_openmpi\_3.1.3\_gcc | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| hdf5 | 1.10.5\_fortran | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
-| hdf5 | n/a | 1.12.0\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
-| lammps |  | 29Oct20\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| meme | 5.0.5 | planned |  |
-| meshlab | 20190129\_qt59 | planned |  |
-| Molpro |  | 2020.1\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| n2p2 | 1.0.0 | planned |  |
-| nwchem | 7.0 | 7.0.2\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
-| openfoam | 4.1 | 4.1-openmpi\_3.1.6\_gcc\_10.2\_slurm20 |  |
-| openfoam | 4.1a |  |  |
-| openfoam | 7 |  |  |
-| osu-mpi | 5.3.2 | planned |  |
-| osu-mpi | 5.6.2\_mvapich2-2.3a\_gcc | planned |  |
-| paraview |  | 5.8.1\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
-| petsc |  | 3.14.2\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
-| polychord | 2 | planned |  |
-| prophet | augustegm\_1.2 | planned |  |
-| qmcpack |  | 3.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
-| quantumespresso | 6.6 | 6.6\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |  |
-| quantumespresso | 6.4 | 6.4\_openmpi\_4.0.5\_intel\_slurm20 |  |
-| quantumespresso | 6.5 | 6.5\_openmpi\_4.0.5\_intel\_slurm20 |  |
-| siesta | 3.2 | planned |  |
-| siesta | 4.1 | planned |  |
-| su2 | 7.0.1 | planned |  |
-| su2 | 7.0.2 | planned |  |
-| vasp | 5.4.1 | 5.4.1\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |  |
-| vasp | 5.4.4 | 5.4.4\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |  |
-| vasp | 5.4.4\_intel | 5.4.4\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |  |
-| vasp | 6.1.1\_ompi405\_yqi27 | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 |  |
-| wrf |  | 4.2.1\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |  |
+| Software | Current Module Name | New Modue Name |
+| :--- | :--- | :--- |
+| cesm | 1.2.1 | planned |
+| cesm | 1.2.2 | planned |
+| cesm | 2.1.1 | planned |
+| dedalus | 2.1905 | 2.1905\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| fenics | 2018.1.0 | planned |
+| global\_arrays |  | 5.8\_openmpi\_4.0.5\_gcc\_10.2\_slurm20gpawgpaw |
+| gpaw |  | 20.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
+| gpaw |  | 20.10\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
+| gromacs |  | gromacs/2020.4\_gpu\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |
+| gromacs |  | gromacs/2020.4\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |
+| gromacs | 2020.1 | gromacs/2020.4\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |
+| gromacs | 2018.2 | gromacs/2018.2\_hpcx\_2.7.0\_gcc\_10.2\_slurm20 |
+| hdf5 | 1.10.1\_parallel | 1.10.1\_mvapich2-2.3.5\_gcc\_10.2\_slurm20 |
+| hdf5 | 1.10.5\_parallel | 1.10.5\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |
+| hdf5 | 1.10.5\_openmpi\_4.0.0\_gcc | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| hdf5 | 1.10.5\_openmpi\_3.1.3\_gcc | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| hdf5 | 1.10.5\_fortran | 1.10.5\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| hdf5 | n/a | 1.10.7\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| hdf5 | n/a | 1.12.0\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| lammps |  | 29Oct20\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| meme | 5.0.5 | planned |
+| meshlab | 20190129\_qt59 | planned |
+| Molpro |  | 2020.1\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| mpi |  | hpcx\_2.7.0\_gcc\_10.2\_slurm20 |
+| mpi |  | hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
+| mpi |  | mvapich2-2.3.5\_gcc\_10.2\_slurm20 |
+| mpi |  | mvapich2-2.3.5\_intel\_2020.2\_slurm20 |
+| mpi | openmpi\_2.0.3\_intel | openmpi\_2.0.3\_intel\_2020.2\_slurm20 |
+| mpi | openmpi\_3.1.6 | openmpi\_3.1.6\_gcc\_10.2\_slurm20 |
+| mpi | openmpi\_4.0.5_\__gcc | openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| mpi | openmpi\_4.0.5\_icc | openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| n2p2 | 1.0.0 | planned |
+| nwchem | 7.0 | 7.0.2\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| openfoam | 4.1 | 4.1-openmpi\_3.1.6\_gcc\_10.2\_slurm20 |
+| openfoam | 4.1a |  |
+| openfoam | 7 |  |
+| osu-mpi | 5.3.2 | planned |
+| osu-mpi | 5.6.2\_mvapich2-2.3a\_gcc | planned |
+| paraview |  | 5.8.1\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| petsc |  | 3.14.2\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
+| polychord | 2 | planned |
+| prophet | augustegm\_1.2 | planned |
+| qmcpack |  | 3.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
+| quantumespresso | 6.6 | 6.6\_openmpi\_4.0.5\_intel\_2020.2\_slurm20 |
+| quantumespresso | 6.4 | 6.4\_openmpi\_4.0.5\_intel\_slurm20 |
+| quantumespresso | 6.5 | 6.5\_openmpi\_4.0.5\_intel\_slurm20 |
+| siesta | 3.2 | planned |
+| siesta | 4.1 | planned |
+| su2 | 7.0.1 | planned |
+| su2 | 7.0.2 | planned |
+| vasp | 5.4.1 | 5.4.1\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |
+| vasp | 5.4.4 | 5.4.4\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| vasp | 5.4.4\_intel | 5.4.4\_mvapich2-2.3.5\_intel\_2020.2\_slurm20 |
+| vasp | 6.1.1\_ompi405\_yqi27 | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 |
+| wrf |  | 4.2.1\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
 
 ## Deprecated MPI Applications
 
