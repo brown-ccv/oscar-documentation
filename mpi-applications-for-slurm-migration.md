@@ -45,7 +45,7 @@ srun --mpi=pmix <mpi_application>
 | cesm | 1.2.1 | planned |
 | cesm | 1.2.2 | planned |
 | cesm | 2.1.1 | planned |
-| dedalus | 2.1905 | 2.1905\_openmpi\_4.0.5\_gcc\_10.2\_slurm20 |
+| dedalus | 2.1905 | dedalus/2.1905\_openmpi\_4.05\_gcc\_10.2\_slurm20 |
 | fenics | 2018.1.0 | planned |
 | global\_arrays |  | 5.8\_openmpi\_4.0.5\_gcc\_10.2\_slurm20gpawgpaw |
 | gpaw |  | 20.10.0\_hpcx\_2.7.0\_intel\_2020.2\_slurm20 |
