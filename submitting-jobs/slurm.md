@@ -34,7 +34,7 @@ To view _all_ partitions \(including ones you don't have access to\), replace th
 
 **batch** is the default partition.
 
-For current rates and limits see [https://ccv.brown.edu/services/rates/](https://ccv.brown.edu/services/rates/)​‌.
+For current rates and limits, check [our website](https://ccv.brown.edu/services/rates/).
 
 ## Partition Details
 
@@ -59,7 +59,7 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 ### vnc
 
 * These nodes are for running VNC sessions/jobs
-* Priority is based on account type?
+* Account type may affect Priority
 
 ### gpu
 

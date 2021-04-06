@@ -1,14 +1,11 @@
 # Common Problems
 
-## VNC problems
+## Difficulty creating a VNC session
 
-**Solution:**
+If you find yourself having difficulty starting a VNC session, try the following steps:
 
-1. Note that you have to use the same username and password that you
-
-   use for SSH'ing to Oscar.
-
-2. Make sure you are using the latest version from the [VNC page](vnc)
+1. Ensure that you are using the same username and password that you use for SSH'ing to Oscar.
+2. Make sure you are using the latest version from the [VNC page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/vnc)
 3. Check the Java version on your computer. We recommend at least java
 
    version 8.
@@ -44,7 +41,7 @@ FILESET data+apollo        11.05T      20T      24T        - |   459764  4194304
 
 There are limits on the amount of data as well as number of files. "Grace" is the grace period you have left after you exceed the quota. After the grace period expires, you will not be allowed to write to files and a "disk quota exceeded" error will be shown. "HLIMIT" is the highest limit which can't be breached even in the grace period.
 
-If you find you are above quota limits, you can delete or compress files to bring down your usage. If your home directory is over limits, you can move files to your data directory. You can also simply ask your PI to get additional storage allocation. Here are the [rates](doc/rates).
+If you find you are above quota limits, you can delete or compress files to bring down your usage. If your home directory is over limits, you can move files to your data directory. You can also simply ask your PI to get additional storage allocation. Here are the [rates](https://ccv.brown.edu/services/rates/).
 
 ## Your account has expired
 

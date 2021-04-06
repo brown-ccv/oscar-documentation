@@ -19,7 +19,7 @@ Both these modules include the `pip`and `virtualenv`commands, but do not include
 There are several ways for users to install python packages on Oscar
 
 * using a **virtual environment**
-* using conda
+* using [conda](https://docs.conda.io/en/latest/)
 * into their home directory
 * into a custom location
 * from source into a custom location

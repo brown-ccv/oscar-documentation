@@ -8,7 +8,7 @@ To use the recommend Python modules, use the following commands to load the rele
 
 `module load python/3.7.4`  
 
-Users can install any Python package they require by following the instructions given on the   [Installing Python Packages](python-installs.md) page.
+Users can install any Python package they require by following the instructions given on the [Installing Python Packages](python-installs.md) page.
 
 {% hint style="info" %}
 Intel provides optimized packages for numerical and scientific work that you can install through[ pip](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and) or [anaconda](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda). 

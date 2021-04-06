@@ -8,7 +8,7 @@ Oscar is the shared compute cluster operated by CCV.
 
 Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar.
 
-It has two login nodes and several hundred compute nodes. When users log in through SSH, they are first put on one of the login nodes which are shared among several users at a time. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes. Running computationally intensive or memory intensive programs on the login node slows down the system for all users. Any processes taking up too much CPU or memory on a login node will be killed. **Please do not run Matlab on the login nodes.**
+It has two login nodes and several hundred compute nodes. When users log in through Secure Shell \(SSH\), they are first put on one of the login nodes which are shared among several users at a time. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes from your own computer. Running computationally intensive or memory intensive programs on the login node slows down the system for all users. Any processes taking up too much CPU or memory on a login node will be killed. **Please do not run Matlab on the login nodes.**
 
 ### What username and password should I be using?
 
@@ -24,7 +24,9 @@ To log in to Oscar you need Secure Shell \(SSH\) on your computer. Mac and Linux
 ssh <username>@ssh.ccv.brown.edu
 ```
 
-Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), a free SSH client for Windows. In PuTTY, use `<username>@ssh.ccv.brown.edu` or `<username>@ssh4.ccv.brown.edu` for the Host Name.
+Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), a free SSH client for Windows. Once you've installed PuTTY, open the client and use `<username>@ssh.ccv.brown.edu`for the Host Name and click Open. The configuration should look similar to the screenshot below.
+
+![](.gitbook/assets/putty-capture-2-resized.png)
 
 The first time you connect to Oscar you will see a message like:
 
@@ -92,6 +94,8 @@ Users on Oscar have three places to store files:
 
 Note that guest and class accounts may not have a data directory. Users who are members of more than one research group may have access to multiple data directories.
 
+From the home directory, you can use the command `ls` to see your scratch directory and your data directory \(if you have one\) and use `cd` to navigate into them if needed.
+
 To see how much space you have, use the command `myquota`. Below is an example output:
 
 ```text
@@ -107,11 +111,13 @@ FILESET data+apollo        11.05T      20T      24T        - |   459764  4194304
 Files not accessed for 30 days may be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is, the worse the read/write performance. Use ~/data for files you need to keep long term.
 {% endhint %}
 
-A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`. For more information on which directories are backed up and best practices for reading/writing files, see [Oscar's Filesystem](managing-files/filesystem.md) and  [Best Practices](managing-files/io-best-practices.md). You can go over your quota up to the hard limit for a grace period \(14 days\). This grace period is to give you time to manage your files. When the grace period expires you will be unable to write any files until you are back under quota.
+A good practice is to configure your application to read any initial input data from `~/data` and write all output into `~/scratch`. Then, when the application has finished, move or copy data you would like to save from `~/scratch` to `~/data`. For more information on which directories are backed up and best practices for reading/writing files, see [Oscar's Filesystem](managing-files/filesystem.md) and  [Best Practices](managing-files/io-best-practices.md). You can go over your quota up to the hard limit for a grace period. This grace period is to give you time to manage your files. When the grace period expires you will be unable to write any files until you are back under quota.
+
+You can also transfer files to and from the Oscar Filesystem from your own computer. See [Transferring Files to and from Oscar](managing-files/filetransfer.md).
 
 ## Software modules
 
-CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. To see the software available on Oscar, use the command `module avail`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
+CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. To see the software available on Oscar, use the command `module avail`. You can load any one of these software modules using `module load <module>`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
 
 ```text
 [mhamilton@login001 ~]$ module avail workshop
@@ -130,6 +136,8 @@ You can connect remotely to a graphical desktop environment on Oscar using CCV's
 
 Using VNC, you can run graphical user interface \(GUI\) applications like Matlab, Mathematica, etc. while having access to Oscar's compute power and file system.
 
+![The desktop display on VNC](.gitbook/assets/vnc-capture-cropped-resized.png)
+
 For download and installation instructions, [click here](connecting-to-oscar/vnc.md#instructions).
 
 ## Running Jobs
@@ -146,7 +154,7 @@ There is also extensive documentation on the web on using SLURM \([quick start g
 
 ## Where to get help
 
-* Many online resources: [SLURM](https://slurm.schedmd.com/), [Linux](http://tldp.org/LDP/intro-linux/html/), [stackoverflow](http://stackoverflow.com/)
+* Online resources: [SLURM](https://slurm.schedmd.com/), [Linux Documentation](https://tldp.org/LDP/intro-linux/html/),  [Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands), [stackoverflow](http://stackoverflow.com/)
 * CCV's page detailing [common problems](getting-help/faq.md) you might face on Oscar
 * Email [support@ccv.brown.edu](mailto:support@ccv.brown.edu)
 

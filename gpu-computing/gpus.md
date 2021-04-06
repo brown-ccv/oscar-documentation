@@ -11,13 +11,13 @@ To view the various GPUs available on Oscar, use the command
 To start an [interactive](../submitting-jobs/interact.md) session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
 
 ```text
-$ interact -q gpu -g 
+$ interact -q gpu -g 1
 ```
 
-To start an interactive session on a particular GPU type \(v100, QuadroRTX, 1080ti, p100 etc\) use the feature `-f` option:
+To start an interactive session on a particular GPU type \(QuadroRTX, 1080ti, p100 etc\) use the feature `-f` option:
 
 ```text
-interact -q gpu -f v100
+interact -q gpu -f quadrortx
 ```
 
 ## GPU Batch Job

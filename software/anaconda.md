@@ -1,6 +1,6 @@
 # Anaconda
 
-Anaconda provides Python, R and other packages for scietific computing including data sciences, machine learning, etc.  
+Anaconda provides Python, R and other packages for scientific computing including data sciences, machine learning, etc.  
 
 ## Anaconda Modules
 

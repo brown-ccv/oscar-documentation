@@ -8,7 +8,7 @@ description: >-
 
 ## Where Can You Run
 
-Currently, Singularity 3.6.1 has been installed and is operational on all compute nodes attached to the batch, gpu, and VNC partitions. These instructions may not work on the private condo nodes. If you experience any issues using Singularity, please contact support through the [Support Ticket System](../getting-help/ticket.md).
+Currently, Singularity 3.6.1 has been installed and is operational on all compute nodes attached to the batch, gpu, and VNC partitions.  If you experience any issues using Singularity, please contact support through the [Support Ticket System](../getting-help/ticket.md).
 
 ## How to Load Singularity <a id="how-to-load-singularity"></a>
 

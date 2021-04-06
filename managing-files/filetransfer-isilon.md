@@ -8,16 +8,9 @@ weight: 0
 icon: check
 ---
 
-# Transferring Files between Oscar and Campus File Services \(Files and LRS\)
+# Transferring Files between Oscar and Campus File Storage \(Replicated and Non-Replicated\)
 
-The department file servers \(also known as Isilon\) are:
-
-* \\files.brown.edu\dfs \(departmental/personal shares\)
-* \\files.brown.edu\research \(research shares\)
-* \\files.brown.edu{sharename} \(miscellaneous shares\)
-* \\smblrs.ccv.brown.edu/Research \(miscellaneous shares\)
-
-You may use either Globus \(recommended\) or smbclient to transfer data between files.brown.edu and Oscar.
+You may use either Globus \(recommended\) or smbclient to transfer data between  Oscar and Campus File Storage.
 
 ## Globus
 
@@ -25,7 +18,7 @@ Follow [the instructions here for transferring data between files.brown.edu and 
 
 ## smbclient
 
-You can transfer files between Department File Servers and Oscar using [smbclient](https://www.samba.org/samba/docs/man/manpages-3/smbclient.1.html).
+You can transfer files between Campus File Storage and Oscar using [smbclient](https://www.samba.org/samba/docs/man/manpages-3/smbclient.1.html).
 
 ### Transfer Instructions
 
@@ -41,13 +34,13 @@ You can transfer files between Department File Servers and Oscar using [smbclien
     screen
 ```
 
-3\) To use Oscar's high-speed connection to files.brown.edu
+3\) To use Oscar's high-speed connection to Campus File Storage - Replicated:
 
 ```text
     smbclient "//smb.isi.ccv.brown.edu/SHARE_NAME" -D DIRECTORY_NAME -U "ad\BROWN_ID" -m SMB3
 ```
 
-Similarly to access LRS \(Locally Redundant Share\)  
+Similarly to access Campus File Storage - Non-Replicated \( LRS: Locally Redundant Share\)  
 
 ```text
 smbclient "//smblrs.ccv.brown.edu/Research" -D DIRECTORY_NAME -U "ad\BROWN_ID" -m SMB3
@@ -69,15 +62,15 @@ Replace SHARE\_NAME, DIRECTORY\_NAME, and BROWN\_ID. DIRECTORY\_NAME is an optio
 
 ### smbclient basics
 
-* `put` is upload to Department File Servers
+* `put` is upload to Campus File Storage
 
 Usage: `put <local_file> [remote file name]`
 
-Copy `<local_file>` from Oscar to Deparment File Servers. The remote file name is optional \(use if you want to rename the file\)
+Copy `<local_file>` from Oscar to Campus File Storage. The remote file name is optional \(use if you want to rename the file\)
 
 * `get` is download to Oscar
 
-Usage: `get <remote_file> [local file name]` Copy `<remote_file>` from the Deparment File Servers to Oscar. The local file name is optional \(use if you want to rename the file\)
+Usage: `get <remote_file> [local file name]` Copy `<remote_file>` from the Campus File Storage to Oscar. The local file name is optional \(use if you want to rename the file\)
 
 ### Moving more than one file:
 

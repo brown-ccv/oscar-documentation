@@ -25,7 +25,9 @@ The `-X` allows Oscar to display windows on your machine. This allows you to ope
 
 Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html), a free SSH client for Windows.
 
-In PuTTY, use `username@ssh.ccv.brown.edu` as the Host Name.
+In PuTTY, use `username@ssh.ccv.brown.edu` as the Host Name and click Open.
+
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 ## Connecting to Oscar for the First Time
 

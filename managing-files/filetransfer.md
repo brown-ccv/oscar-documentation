@@ -71,7 +71,7 @@ Open the site manage, then add a new site with the followings:
 [Globus](https://www.globus.org) is a secure, reliable research data management service. You can move data directly to Oscar from anothe Globus endpoint. Oscar has one Globus endpoint:
 
 ```text
-Brown_CV_Oscar
+Brown_CCV_Oscar
 ```
 
 {% hint style="danger" %}

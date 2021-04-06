@@ -88,13 +88,13 @@ You can use the old CIFS mount`smb://oscarcifs.ccv.brown.edu.`[`Documentation he
 
    ```bash
    # Home
-   //smb.ccv.brown.edu/home/<user> /mnt/rhome cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser> 0 0
+   //smb.ccv.brown.edu/home/<user> /mnt/rhome cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
 
    # Scratch 
-   //smb.ccv.brown.edu/scratch/<user> /mnt/rscratch cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser> 0 0
+   //smb.ccv.brown.edu/scratch/<user> /mnt/rscratch cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
 
    # Data
-   //smb.ccv.brown.edu/data/<pi_group>/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localUser> 0 0
+   //smb.ccv.brown.edu/data/<pi_group>/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localUser>,domain=ad.brown.edu 0 0
    ```
 
 7. Replace`<localUser>`to the login used on your Linux workstation.

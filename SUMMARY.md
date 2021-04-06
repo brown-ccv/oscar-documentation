@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Oscar](README.md)
-* [System Overview](system-overview.md)
+* [Oscar - Brown University's Supercomputer](README.md)
+* [System Hardware](system-overview.md)
 * [Quickstart Guide](getting-started.md)
+* [Short "How to" Videos](short-videos.md)
 * [Slurm Migration](mpi-applications-for-slurm-migration.md)
 * [Citing CCV](citing-ccv.md)
 
@@ -25,7 +26,8 @@
 
 * [Oscar's Filesystem](managing-files/filesystem.md)
 * [Transferring Files to and from Oscar](managing-files/filetransfer.md)
-* [Transferring Files between Oscar and Campus File Services \(Files and LRS\)](managing-files/filetransfer-isilon.md)
+* [Transferring Files between Oscar and Campus File Storage \(Replicated and Non-Replicated\)](managing-files/filetransfer-isilon.md)
+* [Inspecting Disk Usage \(Ncdu\)](managing-files/inspecting-disk-usage-ncdu.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
 * [Version Control](managing-files/version-control/README.md)
