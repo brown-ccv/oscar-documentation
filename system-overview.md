@@ -4,7 +4,7 @@
 
 | Category | Specifications |
 | :--- | :--- |
-| Computer Nodes | 443 |
+| Computer Nodes | 445 |
 | GPU Nodes | 27 |
 | Login Nodes | 2 |
 | Large Memory Nodes \(&gt;512GB\) | 4 |
