@@ -10,10 +10,6 @@ icon: check
 
 # Transferring Files to and from Oscar
 
-{% hint style="info" %}
-Oscar has transfer nodes with a high speed conection for quickly moving data. To use the transfer nodes use`ssh.ccv.brown.edu` as the host address.
-{% endhint %}
-
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
 1. [CIFS](../connecting-to-oscar/cifs.md)
@@ -63,14 +59,6 @@ In general, you can specify the followings for your GUI programs:
 ```text
 Brown_CCV_Oscar
 ```
-
-{% hint style="danger" %}
-The two old endpoints will be retired on 12/1/2020
-
-brownccv\#Brown-CCV-oscar-1
-
-brownccv\#Brown-CCV-oscar-2
-{% endhint %}
 
 If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Oscar section](https://docs.ccv.brown.edu/globus/creating-endpoints/using-globus-with-oscar) in the Globus documentation.
 
