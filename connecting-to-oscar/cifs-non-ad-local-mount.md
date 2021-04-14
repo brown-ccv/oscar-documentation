@@ -4,6 +4,10 @@ description: For users unable to use smb.ccv.brown.edu
 
 # CIFS  non-AD \(Local Mount\)
 
+{% hint style="danger" %}
+CIFS is not available until furter notice!
+{% endhint %}
+
 {% hint style="warning" %}
 This is for users unable to use `smb.ccv.brown.edu`
 {% endhint %}

@@ -19,6 +19,10 @@ There are several ways to move files between your machine and Oscar. Which metho
 
 ## 1. CIFS
 
+{% hint style="danger" %}
+CIFS is not available until further notice!
+{% endhint %}
+
 You can drag and drop files from your machine to the Oscar filesystem with CIFS. This is an easy method for a small number of files.
 
 ## 2. Command line
