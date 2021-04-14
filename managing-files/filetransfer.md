@@ -43,7 +43,7 @@ To copy a file from Oscar to your computer:
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
 
-## 3. GUI programs for transferring files using the `scp` or `sftp` protocol
+## 3. GUI programs for transferring files using the `scp`  protocol
 
 In general, you can specify the followings for your GUI programs:
 
