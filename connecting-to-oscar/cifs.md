@@ -9,14 +9,10 @@ icon: check
 
 # SMB \(Local Mount\)
 
-{% hint style="danger" %}
-SMB is not available until further notice!
-{% endhint %}
-
 CCV users can access their home, data, and scratch directories as a local mount on their own Windows, Mac, or Linux system using the Common Internet File System \(CIFS\) protocol \(also called Samba\). This allows you to use applications on your machine to open files stored on Oscar. It is also a convenient way to move files between Oscar and your own machine, as you can drag and drop files.
 
 {% hint style="info" %}
-To use SMB you will need to be on the Brown network. On campus use the 'Brown' wifi network. Off campus use the [Brown VPN client](https://vpn.brown.edu).
+To use SMB you will need to be connected to the VPN. Please refer to the [Brown VPN client](https://vpn.brown.edu) for installing the VPN Client. 
 {% endhint %}
 
 Users should ensure that the date and time are set correctly on their machine. Now you are ready to mount your CCV directories locally. Instructions for each of the various operating systems are given below.
