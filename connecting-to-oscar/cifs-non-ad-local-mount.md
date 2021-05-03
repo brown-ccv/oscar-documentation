@@ -13,7 +13,7 @@ This is for users unable to use `smb.ccv.brown.edu`
 CCV users can access their home, data, and scratch directories as a local mount on their own Windows, Mac, or Linux system using the Common Internet File System \(CIFS\) protocol \(also called Samba\). This allows you to use applications on your machine to open files stored on Oscar. It is also a convenient way to move files between Oscar and your own machine, as you can drag and drop files.
 
 {% hint style="info" %}
-To use CIFS you will need to be connected to the VPN please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
+To use CIFS you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
 {% endhint %}
 
 Users should ensure that the date and time are set correctly on their machine. Once the date and time are correct, [use SSH to connect to Oscar](https://app.gitbook.com/@brown-cis/s/oscar/~/drafts/-Lg4RZ07lpbY8-GXym-g/primary/connecting-to-oscar/ssh) to set your CIFS password. Once logged in, run the command:

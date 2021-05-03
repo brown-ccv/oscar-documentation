@@ -20,16 +20,24 @@ The MPI module is called "mpi". The different implementations \(mvapich2, openmp
 ```text
 $ module avail mpi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ name: mpi*/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mpi/cave_mvapich2_2.3b_gcc    mpi/openmpi_1.10.7_gcc
-mpi/cave_mvapich2_2.3b_intel  mpi/openmpi_1.8.3_gcc
-mpi/mvapich2-2.3a_gcc         mpi/openmpi_2.0.3_gcc
-mpi/mvapich2-2.3a_intel       mpi/openmpi_2.0.3_intel
-mpi/mvapich2-2.3a_pgi         mpi/openmpi_2.0.3_pgi
-mpi/mvapich2-2.3b_gcc
-
+mpi/cave_mvapich2_2.3b_gcc
+mpi/cave_mvapich2_2.3b_intel
+mpi/cave_mvapich2_2.3rc2_gcc
+mpi/hpcx_2.7.0_gcc_10.2_slurm20
+mpi/hpcx_2.7.0_intel_2020.2_slurm20
+mpi/mvapich2-2.3.5_gcc_10.2_slurm20
+mpi/mvapich2-2.3.5_intel_2017.0_slurm20
+mpi/mvapich2-2.3.5_intel_2020.2_slurm20
+mpi/openmpi_2.0.3_intel_2020.2_slurm20
+mpi/openmpi_3.1.6_gcc_10.2_slurm20
+mpi/openmpi_4.0.0_gcc
+mpi/openmpi_4.0.1_gcc
+mpi/openmpi_4.0.5_gcc_10.2_slurm20
+mpi/openmpi_4.0.5_intel_2020.2_slurm20
+mpi4py/3.0.1_py3.6.8
 ```
 
-You can just use "`module load mpi`" to load the default version which is `mpi/mvapich2-2.3a_gcc`. This is the recommended version.
+You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.5_gcc_10.2_slurm20`. This is the recommended version.
 
 The module naming format is
 
