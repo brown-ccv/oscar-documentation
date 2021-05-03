@@ -61,7 +61,7 @@ In general, you can specify the followings for your GUI programs:
 [Globus](https://www.globus.org) is a secure, reliable research data management service. You can move data directly to Oscar from anothe Globus endpoint. Oscar has one Globus endpoint:
 
 ```text
-Brown_CCV_Oscar
+BrownU_CCV_Oscar
 ```
 
 If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Oscar section](https://docs.ccv.brown.edu/globus/creating-endpoints/using-globus-with-oscar) in the Globus documentation.
