@@ -10,7 +10,7 @@ description: Access Oscar's file-system remotely from VSCode.
 2. In VSCode, select  **Remote-SSH: Connect to Host…** and enter
 
 ```
-username@transfer.ccv.brown.edu
+<username>@desktop.ccv.brown.edu
 ```
 
 {% hint style="info" %}
