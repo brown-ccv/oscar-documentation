@@ -29,6 +29,8 @@ You can drag and drop files from your machine to the Oscar filesystem with CIFS.
 
 **Mac and Linux**
 
+**SCP**
+
 You can use `scp` to transfer files. For example to copy a file from your computer to Oscar:
 
 ```text
@@ -39,6 +41,14 @@ To copy a file from Oscar to your computer:
 
 ```text
      scp <username>@ssh.ccv.brown.edu:/path/to/source/file /path/to/destination/file
+```
+
+**RSYNC**
+
+You can use `rsync` to sync files across your local computer to Oscar:
+
+```text
+rsync -azvp --progress path/to/source/file <username>@ssh.ccv.brown.edu:/path/to/destination/file
 ```
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
