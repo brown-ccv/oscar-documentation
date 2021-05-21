@@ -23,9 +23,7 @@ There are several types of accounts on Oscar.
 
 Investigators may also purchase condos to grant access to computing resources for others working with them. After a condo is purchased, they can have users request to join the condo group through the "Request Access to Existing Condo" option on the [account form](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) on the CCV homepage. Condo groups will typically have the name `<PI group>-condo` or `carney-<PI group>-condo`.
 
-{% hint style="info" %}
-To check which type of account you are on or which condos you are a part of, run the command `id <username>` or `groups <username>` and verify the group\(s\) that you are a part of.
-{% endhint %}
+Toi check which type of account you are on or which condos you are a part of, run the command`groups <username>` or`id <username>` and verify the group\(s\) that you are a part of above. If you requested an Exploratory Account without PI, you will likely be in the `nopi` group. If you requested an Exploratory Account with PI, you will be in the PI's group that you requested
 
 {% hint style="success" %}
 To request a priority account or a condo, use the [account form](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) on the CCV homepage. For more information on resources available to priority accounts and costs, visit the [CCV Rates page](https://ccv.brown.edu/services/rates/).
