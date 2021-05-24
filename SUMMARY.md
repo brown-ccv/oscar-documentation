@@ -108,8 +108,9 @@
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
 * [CCV User Policies](getting-help/ccv-user-policies.md)
 
-## CESM
+## Installing Software Packages Locally <a id="local-install"></a>
 
-* [Using a CESM module](cesm/cesm.md)
-* [Installing your own version of CESM](cesm/installing-your-own-version-of-cesm.md)
+* [Using a CESM module](local-install/cesm.md)
+* [Installing your own version of CESM](local-install/installing-your-own-version-of-cesm.md)
+* [Installing your own version of Quantum Espresso](local-install/installing-your-own-version-of-quantum-espresso.md)
 
