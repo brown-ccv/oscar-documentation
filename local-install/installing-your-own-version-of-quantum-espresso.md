@@ -108,9 +108,9 @@ git clone https://gitlab.com/olivieroandreussi/Environ.git
    make pw
    ```
 
-## Installing with QMCpack
+## Installing with QMCPACK
 
-1. Download qmcpack
+1. Download QMCPACK
 
    ```text
    git clone https://github.com/QMCPACK/qmcpack.git
