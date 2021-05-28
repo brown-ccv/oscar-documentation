@@ -10,7 +10,8 @@
 ## Connecting to Oscar
 
 * [SSH \(Terminal\)](connecting-to-oscar/ssh/README.md)
-  * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding.md)
+  * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding/README.md)
+    * [SSH Key Login \(Passwordless SSH\)](connecting-to-oscar/ssh/x-forwarding/ssh-key-login-passwordless-ssh.md)
 * [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
 * [SMB \(Local Mount\)](connecting-to-oscar/cifs.md)
 * [CIFS  non-AD \(Local Mount\)](connecting-to-oscar/cifs-non-ad-local-mount.md)
