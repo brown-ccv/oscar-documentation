@@ -19,7 +19,7 @@ myq                   List only your own jobs.
 allq                  List all jobs, but organized by partition, and a summary of the nodes in use in the
                       partition.
 allq <partition>      List all jobs in a single partition.
-myjobinfo`            Get the time and memory used for your jobs.
+myjobinfo            Get the time and memory used for your jobs.
 ```
 
 ## Canceling jobs
