@@ -2,7 +2,7 @@
 
 
 
-These instructions are for users who need to install their own version of Quantum Espresso. 
+These instructions are for users who need to install their own version of Qmcpack. 
 
 {% hint style="warning" %}
 Do not load the 'qmcpack' module.  If you have a 'qmcpack' module loaded, unload it:
@@ -10,14 +10,14 @@ Do not load the 'qmcpack' module.  If you have a 'qmcpack' module loaded, unload
 `module unload`qmcpack
 {% endhint %}
 
-Step 1: Create a new directory where you want to install Quantum Espresso:
+Step 1: Create a new directory where you want to install Qmcpack:
 
 ```text
 mkdir -p qmcpack/src
 cd qmcpack/src/
 ```
 
-Step 2: Download the version of Quantum Espresso you want from the GitHub repo:
+Step 2: Download the version of Qmcpack you want from the GitHub repo:
 
 ```text
 https://github.com/QEF/q-e/releases
@@ -58,7 +58,7 @@ make -j 8
 make install 
 ```
 
-Step 5 \(Optional\): Adding QuantumEspresso to your path
+Step 5 \(Optional\): Adding Qmcpack to your path
 
 Add the following lines to your ~/.bashrc
 
