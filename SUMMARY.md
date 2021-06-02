@@ -114,4 +114,5 @@
 * [Using a CESM module](local-install/cesm.md)
 * [Installing your own version of CESM](local-install/installing-your-own-version-of-cesm.md)
 * [Installing your own version of Quantum Espresso](local-install/installing-your-own-version-of-quantum-espresso.md)
+* [Installing your own version of Qmcpack](local-install/installing-your-own-version-of-qmcpack.md)
 
