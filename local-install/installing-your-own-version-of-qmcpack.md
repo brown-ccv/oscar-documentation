@@ -37,7 +37,6 @@ module load boost/1.68
 module load cmake/3.15.4
 
 cd build
-CC=icc CXX=icpc F77=ifort FC=ifort ./configure --prefix=/users/<username>/data/quantum-espresso/
 
 cmake -DCMAKE_INSTALL_PREFIX=/users/<username>/qmcpack/ -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx \
 -DQE_BIN=/gpfs/runtime/opt/quantumespresso/6.4_openmpi_4.0.5_intel_2020.2_slurm20/bin/ \
