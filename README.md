@@ -99,6 +99,14 @@ Oscar users can connect to Oscar by
   * service may be brought down for 3-5 days
   * occurs annually
   * 4-week prior notification provided
+* **Emergency Maintenance:**
+  * 30 - 60 minutes downtime
+  * may occur at anytime
+  * email notification provided
+* **Major Upgrade Maintenance:**
+  * service may be brought down for 3-5 days
+  * occurs annually
+  * 4-week prior notification provided
 
 ## Unplanned Outage
 
