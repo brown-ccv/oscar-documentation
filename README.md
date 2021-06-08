@@ -83,10 +83,22 @@ Oscar users can connect to Oscar by
 
 ## Maintenance Schedule
 
-* **Nondisruptive Maintenance -** may occur at any time, no notification provided, non-disruptive work, including software changes, maintenance, and testing
-* **Monthly Scheduled Maintenance** - first Tuesday of the month, 8:00 am - 12:00 noon, no notification provided\) - no downtime expected, but there may be limited degradation of performance
-* **Unscheduled Maintenance -** \(occurs very rarely, the 4-week prior notification provided\) - CCV tries to avoid whenever possible; maximum 1-day downtime
-* **Major Upgrade Maintenance -** occurs annually, 4-week prior notification provided - service may be brought down for 3-5 days
+* **Nondisruptive Maintenance:** 
+  * non-disruptive work, including software changes, maintenance, and testing
+  * may occur at any time
+  * no notification provided
+* **Monthly Scheduled Maintenance:**
+  * no downtime expected, but there may be limited degradation of performance
+  * first Tuesday of the month, 8:00 am - 12:00 noon
+  * no notification provided
+* **Unscheduled Maintenance:**
+  * maximum 1 day downtime
+  * occurs very rarely, CCV tries to avoid whenever possible
+  * 4-week prior notification provided
+* **Major Upgrade Maintenance:**
+  * service may be brought down for 3-5 days
+  * occurs annually
+  * 4-week prior notification provided
 
 ## Unplanned Outage
 
