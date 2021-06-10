@@ -88,7 +88,7 @@
 
 * [Matlab GUI](matlab/matlab-gui.md)
 * [Matlab Batch Jobs](matlab/matlab-batch.md)
-* [Improving Performance and Memory Managament](matlab/performance.md)
+* [Improving Performance and Memory Management](matlab/performance.md)
 * [Parallel Matlab](matlab/parallel-matlab.md)
 
 ## Singularity Containers

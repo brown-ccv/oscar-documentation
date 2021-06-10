@@ -8,7 +8,7 @@ weight: 0
 icon: check
 ---
 
-# Improving Performance and Memory Managament
+# Improving Performance and Memory Management
 
 Matlab programs often suffer from poor performance and running out of memory. Among other things, you can refer the following web pages for best practices for an efficient code:
 
