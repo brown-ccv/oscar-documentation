@@ -39,7 +39,7 @@ DO NOT upload or send the private key.
 **Step 3 : Copy the public key to Oscar**
 
 ```text
-ssh-copy-id <username>@ssh7.ccv.brown.edu
+ssh-copy-id <username>@ssh.ccv.brown.edu
 ```
 
 You will be prompted for a Password. The public key will be appended to the `authorized_keys` file on Oscar. 
@@ -47,7 +47,7 @@ You will be prompted for a Password. The public key will be appended to the `aut
 **Step 4 : Login to Oscar using your SSH keys** 
 
 ```text
-ssh <username>@ssh7.ccv.brown.edu
+ssh <username>@sshvpn.ccv.brown.edu
 ```
 
 If everything went well, you will be logged in immediately. 
