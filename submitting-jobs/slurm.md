@@ -83,7 +83,6 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 * For jobs requiring large amounts of memory
 * Priority users get higher priority and more resources than free users on the bigmem partition
 * Condo users submit to the bigmem partition with normal or priority access \(if they have a priority account in addition to their condo\)
-* For jobs requiring large amounts of memory
 * Premium users get higher priority and more resources than free users on the SMP partition
 * Condo users submit to the SMP partition with normal or priority access \(if they have a priority account in addition to their condo\)
 
