@@ -11,12 +11,26 @@ icon: check
 
 To log in to Oscar you need Secure Shell \(SSH\) on your computer.
 
+There are two options for signing into Oscar: with or without VPN.
+
+{% hint style="info" %}
+If you are connected to the Brown VPN, you have the option of [using an SSH key pair](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh) to connect to Oscar without having to enter your password.
+{% endhint %}
+
 ## macOS and Linux
 
-To log in to Oscar, open a terminal and type
+To log in to Oscar, open a terminal and
+
+* If you are not connected to the Brown VPN, use the following command:
 
 ```bash
 ssh -X username@ssh.ccv.brown.edu
+```
+
+* If you are connected to the Brown VPN, use the following command:
+
+```bash
+ssh -X username@sshvpn.ccv.brown.edu
 ```
 
 The `-X` allows Oscar to display windows on your machine. This allows you to open and use GUI-based applications, such as the text editor `gedit`.
@@ -25,9 +39,13 @@ The `-X` allows Oscar to display windows on your machine. This allows you to ope
 
 Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html), a free SSH client for Windows.
 
-In PuTTY, use `username@ssh.ccv.brown.edu` as the Host Name and click Open.
+* If you are not connected to the Brown VPN, use `username@ssh.ccv.brown.edu` as the Host Name and click Open.
 
-![](../../.gitbook/assets/image%20%2821%29.png)
+![](../../.gitbook/assets/image%20%2826%29.png)
+
+* If you are connected to the Brown VPN, use `username@sshvpn.ccv.brown.edu` as the Host Name and click Open.
+
+![](../../.gitbook/assets/image%20%2825%29.png)
 
 ## Connecting to Oscar for the First Time
 
@@ -50,7 +68,7 @@ Nothing will show up on the screen as you type in your password. Just type it in
 You will now be in your home directory on Oscar. In your terminal you will see a prompt like this:
 
 ```text
-[mhamilton@login004 ~]$
+[username@login004 ~]$
 ```
 
 Congratulations, you are now on one of the Oscar login nodes! The login nodes are for administrative tasks such as editing files and compiling code. To use Oscar for computation you will need to use the compute nodes. To get to the compute nodes from the login nodes you can either start an interactive session on a compute node, or submit a batch job.
