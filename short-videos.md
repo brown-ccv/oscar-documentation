@@ -7,6 +7,5 @@
 * [VNC to Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=55a9ae59-d00b-4e30-809a-acf501265da6)
 * [Batch Job Submission on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0bb329f4-3208-496f-8fe8-ad0f012949d7)
 * [Linux Basics for Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5962a33f-a0ae-4d4e-9a4b-ad11012fe331)
-
-
+* [How to Use Modules in Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb688701-3a1e-4a96-a1bd-ad51012c0d6b)
 
