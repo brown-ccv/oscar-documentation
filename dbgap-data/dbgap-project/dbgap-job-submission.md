@@ -1,8 +1,4 @@
----
-description: This page describes how to submit dbGaP jobs on Oscar.
----
-
-# Running dbGaP Jobs
+# dbGaP Job Submission
 
 All dbGaP data is stored on Isilon share mounted automatically when a user requests an interactive dbGaP session. 
 

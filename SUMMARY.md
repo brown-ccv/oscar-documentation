@@ -119,6 +119,6 @@
 ## dbGaP Data
 
 * [dbGaP Project](dbgap-data/dbgap-project/README.md)
-  * [DbGaP Data Transfers](dbgap-data/dbgap-project/dbgap-data-transfers/README.md)
-    * [Running dbGaP Jobs](dbgap-data/dbgap-project/dbgap-data-transfers/running-dbgap-jobs.md)
+  * [dbGaP Data Transfers](dbgap-data/dbgap-project/dbgap-data-transfers.md)
+  * [dbGaP Job Submission](dbgap-data/dbgap-project/dbgap-job-submission.md)
 

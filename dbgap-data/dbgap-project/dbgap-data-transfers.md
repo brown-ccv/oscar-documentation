@@ -1,4 +1,4 @@
-# DbGaP Data Transfers
+# dbGaP Data Transfers
 
 The DbGap xfer server is available to import and export data for DbGaP-based projects. Group membership is required for users to log in `dbg_import, dbg_export`. Connectivity to the xfer server is restricted to Brown networks, remote users will need to first log into the F5 VPN for access. Instructions for downloading new datasets and exporting results are not similar and require different client software.  
 ****
