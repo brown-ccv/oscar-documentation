@@ -12,6 +12,10 @@ icon: check
 
 ### Submitting jobs using batch scripts
 
+{% hint style="info" %}
+If you'd prefer to see the following instructions in a video, we have a [tutorial on batch job submission on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0bb329f4-3208-496f-8fe8-ad0f012949d7).
+{% endhint %}
+
 To run a batch job on Oscar, you first have to write a script that describes what resources you need and how your program will run. Some example batch scripts are available in your home directory on Oscar, in the directory:
 
 ```bash
