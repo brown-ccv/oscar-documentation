@@ -42,6 +42,6 @@ Sessions are limited to a designated period of time \(maximum of 7 days, dependi
 {% endhint %}
 
 {% hint style="info" %}
-Having trouble starting a session? See [Common Problems](../getting-help/common-problems.md) or [File a Support Ticket](../getting-help/ticket.md)
+Having trouble starting a session? [Watch our VNC tutorial](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9d443b81-6620-4952-8451-acf70133c703). If you're still having trouble, see [Common Problems](../getting-help/common-problems.md) or [File a Support Ticket](../getting-help/ticket.md)
 {% endhint %}
 
