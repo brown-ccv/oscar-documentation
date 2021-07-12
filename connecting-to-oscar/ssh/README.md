@@ -47,6 +47,10 @@ Windows users need to install an SSH client. We recommend [PuTTY](http://www.chi
 
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
+{% hint style="info" %}
+Confused? Watch our [tutorial on PuTTY installation](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9323efff-236f-4408-8006-acf3012bea9b).
+{% endhint %}
+
 ## Connecting to Oscar for the First Time
 
 The first time you connect to Oscar you will see a message about the authenticity of the host:
