@@ -2,6 +2,10 @@
 
 CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. The advantage of the modules approach is that it allows multiple versions of the same software to be installed at the same time. With the modules approach, you can "load'' and "unload'' modules to dynamically control your environment.
 
+{% hint style="info" %}
+Check out our [tutorial on using modules on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb688701-3a1e-4a96-a1bd-ad51012c0d6b)!
+{% endhint %}
+
 ### Module commands
 
 | command    |  |
