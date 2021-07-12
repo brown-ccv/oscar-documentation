@@ -8,7 +8,11 @@ Oscar is the shared compute cluster operated by CCV.
 
 Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar.
 
-It has two login nodes and several hundred compute nodes. When users log in through Secure Shell \(SSH\), they are first put on one of the login nodes which are shared among several users at a time. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes from your own computer. Running computationally intensive or memory intensive programs on the login node slows down the system for all users. Any processes taking up too much CPU or memory on a login node will be killed. **Please do not run Matlab on the login nodes.**
+{% hint style="info" %}
+If you'd like a brief introduction to Linux commands, watch [our tutorial on Linux basics on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5962a33f-a0ae-4d4e-9a4b-ad11012fe331).
+{% endhint %}
+
+Oscar has two login nodes and several hundred compute nodes. When users log in through Secure Shell \(SSH\), they are first put on one of the login nodes which are shared among several users at a time. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes from your own computer. Running computationally intensive or memory intensive programs on the login node slows down the system for all users. Any processes taking up too much CPU or memory on a login node will be killed. **Please do not run Matlab on the login nodes.**
 
 ### What username and password should I be using?
 
