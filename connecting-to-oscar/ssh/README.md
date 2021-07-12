@@ -35,6 +35,10 @@ ssh -X username@sshvpn.ccv.brown.edu
 
 The `-X` allows Oscar to display windows on your machine. This allows you to open and use GUI-based applications, such as the text editor `gedit`.
 
+{% hint style="info" %}
+Watch our videos on [SSHing on Linux](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b2112f1f-488f-4f8b-add9-acfb00f71bcf) and [SSHing on Mac](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9d443b81-6620-4952-8451-acf70133c703).
+{% endhint %}
+
 ## Windows
 
 Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html), a free SSH client for Windows.
@@ -48,7 +52,7 @@ Windows users need to install an SSH client. We recommend [PuTTY](http://www.chi
 ![](../../.gitbook/assets/image%20%2825%29.png)
 
 {% hint style="info" %}
-Confused? Watch our [tutorial on PuTTY installation](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9323efff-236f-4408-8006-acf3012bea9b).
+Confused? Watch our [tutorial on PuTTY installation](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9323efff-236f-4408-8006-acf3012bea9b) or [SSHing to Oscar on Windows](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1b172848-b8b3-42f7-ba20-acf3012ee4c5).
 {% endhint %}
 
 ## Connecting to Oscar for the First Time
