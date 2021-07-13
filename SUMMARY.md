@@ -4,6 +4,7 @@
 * [System Hardware](system-overview.md)
 * [Quickstart Guide](getting-started.md)
 * [Short "How to" Videos](short-videos.md)
+* [Quick Reference](quick-reference.md)
 * [Slurm Migration](mpi-applications-for-slurm-migration.md)
 * [Citing CCV](citing-ccv.md)
 
