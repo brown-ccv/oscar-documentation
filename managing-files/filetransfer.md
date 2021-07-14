@@ -34,13 +34,13 @@ You can drag and drop files from your machine to the Oscar filesystem with CIFS.
 You can use `scp` to transfer files. For example to copy a file from your computer to Oscar:
 
 ```text
-scp /path/to/source/file <username>@ssh.ccv.brown.edu:/path/to/destination/file
+scp /path/to/source/file <username>@transfer.ccv.brown.edu:/path/to/destination/file
 ```
 
 To copy a file from Oscar to your computer:
 
 ```text
-scp <username>@ssh.ccv.brown.edu:/path/to/source/file /path/to/destination/file
+scp <username>@transfer.ccv.brown.edu:/path/to/source/file /path/to/destination/file
 ```
 
 **RSYNC**
@@ -48,7 +48,7 @@ scp <username>@ssh.ccv.brown.edu:/path/to/source/file /path/to/destination/file
 You can use `rsync` to sync files across your local computer to Oscar:
 
 ```text
-rsync -azvp --progress path/to/source/directory <username>@ssh.ccv.brown.edu:/path/to/destination/directory
+rsync -azvp --progress path/to/source/directory <username>@transfer.ccv.brown.edu:/path/to/destination/directory
 ```
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
@@ -57,14 +57,48 @@ rsync -azvp --progress path/to/source/directory <username>@ssh.ccv.brown.edu:/pa
 
 In general, you can specify the followings for your GUI programs:
 
-* Protocol: SCP File Transfer Protocol
-* Host: ssh.ccv.brown.edu
+* Protocol: SFTP
+* Host: transfer.ccv.brown.edu
 * User: your Oscar username
 * Password: your Oscar password
 
 ### 3.1 [WinSCP](https://winscp.net/eng/index.php) for Windows
 
-![WinSCP Session Creation](../.gitbook/assets/image%20%2811%29.png)
+![Figure 1 WinSCP Session Creation](../.gitbook/assets/image%20%2811%29.png)
+
+### 3.2 FileZilla
+
+#### 3.21. Disable Timeout
+
+**Click the 'Edit' menu and then select the 'Settings' submenu, and then change the Timeout to 0 to disable, as shown in Figure 2**
+
+
+
+![Figure 2 Disable Timeout](../.gitbook/assets/filezilla-settings.png)
+
+#### 3.2.2 Add a New Site
+
+**Open the Site Manager as show in Figure 3.**
+
+![Figure 3 Open Site Manager](../.gitbook/assets/filezilla-site-manager.png)
+
+**Click the 'New Site' button to add a new site, as shown in Figure 4:**
+
+![Figure 4 New Site](../.gitbook/assets/filezilla-new-site.png)
+
+**Limit the number of simultaneous connections to 1, as shown in Figure 5.**
+
+![Figure 5 Limit Simultaneous Connections](../.gitbook/assets/filezilla-concurrent-connection.png)
+
+Click the 'Connect' button to connect to Oscar and transfer files.
+
+### 3.3 Cyberduck
+
+![Figure 6 Cyberduck Connection](../.gitbook/assets/cyberduck-connection.png)
+
+You may see a popup window on 'Unknown Fingerprint'.  You just need to check the 'Always' option and click 'Allow'. This is windows should not pop up again unless the transfer server is changed again.
+
+![Figure 7 Unknown Fingerprint](../.gitbook/assets/cyberduck-unknown-fingerprint.png)
 
 ## 4. Globus online
 
