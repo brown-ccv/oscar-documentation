@@ -5,7 +5,7 @@ description: This page describes how to set up SSH key authentication.
 # SSH Key Login \(Passwordless SSH\)
 
 {% hint style="info" %}
-For passwordless SSH one must be connected to the [VPN ](http://vpn.brown.edu)and use hostname _ssh7.ccv.brown.edu_
+For passwordless SSH one must be connected to the [VPN ](http://vpn.brown.edu)and use hostname _sshcampus.ccv.brown.edu_
 {% endhint %}
 
 ### Mac / Linux 
@@ -47,7 +47,7 @@ You will be prompted for a Password. The public key will be appended to the `aut
 **Step 4 : Login to Oscar using your SSH keys** 
 
 ```text
-ssh <username>@sshvpn.ccv.brown.edu
+ssh <username>@sshcampus.ccv.brown.edu
 ```
 
 If everything went well, you will be logged in immediately. 

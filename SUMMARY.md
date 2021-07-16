@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Oscar - Brown University's Supercomputer](README.md)
+* [Oscar - Brown University's Cluster](README.md)
 * [System Hardware](system-overview.md)
 * [Quickstart Guide](getting-started.md)
 * [Short "How to" Videos](short-videos.md)
