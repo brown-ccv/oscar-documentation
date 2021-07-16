@@ -190,7 +190,7 @@ Enter your Oscar password.  Note it will appear that nothing has happened.
 Open a browser on your local machine to the address:
 
 ```text
-localhost:$ipnport  (prefix w/ https:// if using password)
+localhost:$ipnport  (prefix w/ http:// if using password)
 ```
 
 Again, you need to replace `$ipnport` with the value from the first `echo` command in Step 1. The notebook will ask for a token.  You can copy the token from the output from Step 2.
