@@ -1,3 +1,9 @@
+---
+description: >-
+  This page contains Linux commands commonly used on Oscar, basic module
+  commands, and definitions for common terms used within this documentation.
+---
+
 # Quick Reference
 
 ### Common Linux Commands
