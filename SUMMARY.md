@@ -117,9 +117,9 @@
 * [Installing your own version of Quantum Espresso](local-install/installing-your-own-version-of-quantum-espresso.md)
 * [Installing your own version of Qmcpack](local-install/installing-your-own-version-of-qmcpack.md)
 
-## dbGaP Data
+## dbGaP <a id="dbgap-data"></a>
 
-* [dbGaP Project](dbgap-data/dbgap-project.md)
+* [dbGaP Architecture](dbgap-data/dbgap-project.md)
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
 * [dbGaP Job Submission](dbgap-data/dbgap-job-submission.md)
 

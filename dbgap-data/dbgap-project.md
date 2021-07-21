@@ -2,7 +2,7 @@
 description: This page describes in detail how to run dbGaP workloads on Oscar.
 ---
 
-# dbGaP Project
+# dbGaP Architecture
 
 The database of Genotypes and Phenotypes \(dbGaP\) was developed to archive and distribute the data and results from studies that have investigated the interaction of genotype and phenotype in Humans. The PI is responsible for completing the [NIH dbGaP application online](https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login).   
 
