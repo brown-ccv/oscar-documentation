@@ -8,7 +8,7 @@ All dbGaP data is stored on Isilon share mounted automatically when a user reque
 interact -q dbgap -n 20 -m 20g -t 01:00:00
 ```
 
-Group membership for`dbgap, dbgap_group_name, dbg_import, dbg_export` along with SLURM associations are required for working with dbGaP. 
+Group membership for`dbgap, dbg_PiLastName, dbg_import, dbg_export` along with SLURM associations are required for working with dbGaP. 
 
 **Step 2:** Understand the dbGaP Data Hierarchy
 
