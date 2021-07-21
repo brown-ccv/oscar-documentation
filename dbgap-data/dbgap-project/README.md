@@ -6,7 +6,7 @@ description: This page describes in detail how to run dbGaP workloads on Oscar.
 
 The database of Genotypes and Phenotypes \(dbGaP\) was developed to archive and distribute the data and results from studies that have investigated the interaction of genotype and phenotype in Humans. The PI is responsible for completing the [NIH dbGaP application online](https://dbgap.ncbi.nlm.nih.gov/aa/wga.cgi?page=login).   
 
-## dbGAP Architecture
+#### dbGaP Oscar Implementation
 
 The dbGaP data is classified as controlled-access data. The workflow on Oscar is architected to store data on the Isilon enterprise storage and compute will be performed on nodes in the dbgap slurm partition.
 
