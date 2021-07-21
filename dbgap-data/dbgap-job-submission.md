@@ -66,9 +66,3 @@ srun --mpi=pmix fasterq-dump --ngc your_file.ngc SRR1234567.sra
 
 Any output files including SLURM out and err files must be written to `/dbGaP/results` directory. 
 
-
-
-
-
-
-
