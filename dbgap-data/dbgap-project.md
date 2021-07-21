@@ -23,19 +23,3 @@ The dbGaP data is classified as controlled-access data. The workflow on Oscar is
 
 * PI determines the members of the AD group and is responsible for data security.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
