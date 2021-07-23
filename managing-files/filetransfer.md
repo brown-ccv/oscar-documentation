@@ -17,13 +17,9 @@ There are several ways to move files between your machine and Oscar. Which metho
 3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
 4. [Globus online](filetransfer.md#4-globus-online) \(best for large transfers\)
 
-## 1. CIFS
+## 1. SMB
 
-{% hint style="danger" %}
-CIFS is not available until further notice!
-{% endhint %}
-
-You can drag and drop files from your machine to the Oscar filesystem with CIFS. This is an easy method for a small number of files.
+You can drag and drop files from your machine to the Oscar filesystem via SMB. This is an easy method for a small number of files. Please refer to this [page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/cifs) for mounting filesystem via SMB. 
 
 ## 2. Command line
 
