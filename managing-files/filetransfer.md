@@ -12,7 +12,7 @@ icon: check
 
 There are several ways to move files between your machine and Oscar. Which method you choose will depend on how much data you need to move and your personal preference for each method.
 
-1. [CIFS](../connecting-to-oscar/cifs.md)
+1. [SMB](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/cifs)
 2. [Command line](filetransfer.md#2-command-line) \(scp\)
 3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
 4. [Globus online](filetransfer.md#4-globus-online) \(best for large transfers\)
