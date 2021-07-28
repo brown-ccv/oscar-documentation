@@ -30,13 +30,13 @@ You can drag and drop files from your machine to the Oscar filesystem via SMB. T
 You can use `scp` to transfer files. For example to copy a file from your computer to Oscar:
 
 ```text
-scp /path/to/source/file <username>@transfer.ccv.brown.edu:/path/to/destination/file
+scp /path/to/source/file <username>@ssh.ccv.brown.edu:/path/to/destination/file
 ```
 
 To copy a file from Oscar to your computer:
 
 ```text
-scp <username>@transfer.ccv.brown.edu:/path/to/source/file /path/to/destination/file
+scp <username>@ssh.ccv.brown.edu:/path/to/source/file /path/to/destination/file
 ```
 
 **RSYNC**
@@ -44,14 +44,14 @@ scp <username>@transfer.ccv.brown.edu:/path/to/source/file /path/to/destination/
 You can use `rsync` to sync files across your local computer to Oscar:
 
 ```text
-rsync -azvp --progress path/to/source/directory <username>@transfer.ccv.brown.edu:/path/to/destination/directory
+rsync -azvp --progress path/to/source/directory <username>@ssh.ccv.brown.edu:/path/to/destination/directory
 ```
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
 
 ## 3. GUI programs for transferring files using the `scp`  protocol
 
-In general, you can specify the followings for your GUI programs:
+In general, you can specify the following for your GUI programs:
 
 * Protocol: SFTP
 * Host: transfer.ccv.brown.edu

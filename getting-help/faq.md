@@ -137,14 +137,27 @@ When your job is pending \(PD\) in the queue, SLURM will display a reason why yo
 2. **Specific resource busy**: if you request very specific resources \(e.g., a specific processor\) you then have to wait for that specific resource to become available while other similar resources may be going unused. 
 3. **Specified resource not available**: if you request something that is not or may never be available, your job will simply wait in the queue. E.g., requesting 64 GB of RAM on a 64 GB node will never run because the system needs at least 1 GB for itself so you should reduce your request to less than 64. 
 
-## TRANSFERING FILES
+## TRANSFERRING FILES
 
 #### How do I transfer big files to/from Oscar? 
 
 Please use the server **transfer.ccv.brown.edu** 
 
-1. From your machine to Oscar:  scp file1.txt userid@transfer.ccv.brown.edu From Oscar to another machine: ssh transfer transfer&gt; scp file1.txt userid@your-machine-name 
-2. Alternatively, Oscar has an endpoint for "Globusonline" \([https://www.globus.org](https://www.globus.org)\) that you can use to more effectively transfer files. See our manual page on how to use [Globus Online]() to transfer files.
+1. Transfer local file to Oscar:  
+
+```text
+sftp <username>@transfer.ccv.brown.edu 
+put /path/local_file
+```
+
+2. Transfer remote file on Oscar to the local system: 
+
+```text
+sftp <username>@transfer.ccv.brown.edu 
+get -r filename.txt 
+```
+
+Alternatively, Oscar has an endpoint for "Globusonline" \([https://www.globus.org](https://www.globus.org)\) that you can use to more effectively transfer files. See our manual page on how to use [Globus Online]() to transfer files.
 
 ## XSEDE
 
