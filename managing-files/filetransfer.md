@@ -106,3 +106,16 @@ BrownU_CCV_Oscar
 
 If you want to use Globus Online to move data to/from you own machine, you can install Globus Connect Personal. For more instructions on how to use Globus, see the [Oscar section](https://docs.ccv.brown.edu/globus/creating-endpoints/using-globus-with-oscar) in the Globus documentation.
 
+## 5. LFTP
+
+[LFTP](https://lftp.yar.ru/) is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent). It has bookmarks, a built-in mirror command, can transfer several files in parallel and was designed with reliability in mind.
+You can use the `LFTP` module from Oscar to transfer data from any (S)FTP server you have access to directly to Oscar. Below are the main `LFTP` commands to get you started:
+
+```text
+module load lftp  # To load the LFTP module from Oscar
+lftp -u login,passwd MyAwesomeUrl  # To connect to your (S)FTP server
+ls   # To list files on the (S)FTP server
+!ls  # To list files in your directory on Oscar
+get MyAwesomeFile  # To download a single file
+mget -d MyAwesomeDirectory  # To download a directory
+```
