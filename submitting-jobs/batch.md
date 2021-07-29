@@ -66,7 +66,11 @@ The `sbatch` command will return a number, which is your **Job ID**. You can vie
 tail -10 slurm-<jobid>.out
 ```
 
-Alternatively, you can mention the file names where you want to dump the standard output and errors using the `-o` and `-e` flags.
+Alternatively, you can mention the file names where you want to dump the standard output and errors using the `-o` and `-e` flags. You can use `%j` within the output/error filenames to add the id of the job. If you would like to change your output file to be MyOutput-&lt;job-id&gt;, you can add the following line to your batch job:
+
+```bash
+#SBATCH -o my-output-%j.out
+```
 
 ### sbatch command options
 
