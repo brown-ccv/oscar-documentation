@@ -19,7 +19,7 @@ There are several ways to move files between your machine and Oscar. Which metho
 
 ## 1. SMB
 
-You can drag and drop files from your machine to the Oscar filesystem via SMB. This is an easy method for a small number of files. Please refer to this [page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/cifs) for mounting filesystem via SMB. 
+You can drag and drop files from your machine to the Oscar filesystem via SMB. This is an easy method for a small number of files. Please refer to this [page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/cifs) for mounting filesystem via SMB.
 
 ## 2. Command line
 
@@ -68,8 +68,6 @@ In general, you can specify the following for your GUI programs:
 
 **Click the 'Edit' menu and then select the 'Settings' submenu, and then change the Timeout to 0 to disable, as shown in Figure 2**
 
-
-
 ![Figure 2 Disable Timeout](../.gitbook/assets/filezilla-settings.png)
 
 #### 3.2.2 Add a New Site
@@ -92,7 +90,7 @@ Click the 'Connect' button to connect to Oscar and transfer files.
 
 ![Figure 6 Cyberduck Connection](../.gitbook/assets/cyberduck-connection.png)
 
-You may see a popup window on 'Unknown Fingerprint'.  You just need to check the 'Always' option and click 'Allow'. This is windows should not pop up again unless the transfer server is changed again.
+You may see a popup window on 'Unknown Fingerprint'. You just need to check the 'Always' option and click 'Allow'. This is windows should not pop up again unless the transfer server is changed again.
 
 ![Figure 7 Unknown Fingerprint](../.gitbook/assets/cyberduck-unknown-fingerprint.png)
 
@@ -108,8 +106,7 @@ If you want to use Globus Online to move data to/from you own machine, you can i
 
 ## 5. LFTP
 
-[LFTP](https://lftp.yar.ru/) is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent). It has bookmarks, a built-in mirror command, can transfer several files in parallel and was designed with reliability in mind.
-You can use the `LFTP` module from Oscar to transfer data from any (S)FTP server you have access to directly to Oscar. Below are the main `LFTP` commands to get you started:
+[LFTP](https://lftp.yar.ru/) is a sophisticated file transfer program supporting a number of network protocols \(ftp, http, sftp, fish, torrent\). It has bookmarks, a built-in mirror command, can transfer several files in parallel and was designed with reliability in mind. You can use the `LFTP` module from Oscar to transfer data from any \(S\)FTP server you have access to directly to Oscar. Below are the main `LFTP` commands to get you started:
 
 ```text
 module load lftp  # To load the LFTP module from Oscar
@@ -119,3 +116,4 @@ ls   # To list files on the (S)FTP server
 get MyAwesomeFile  # To download a single file
 mget -d MyAwesomeDirectory  # To download a directory
 ```
+

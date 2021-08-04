@@ -54,6 +54,7 @@
 * [Submitting GPU Jobs](gpu-computing/submit-gpu.md)
 * [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
+* [Ampere Architecture GPUs](gpu-computing/ampere-architecture-gpus.md)
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
 
 ## Large Memory Computing
