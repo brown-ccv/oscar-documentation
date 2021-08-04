@@ -22,10 +22,10 @@ You can transfer files between Campus File Storage and Oscar using [smbclient](h
 
 ### Transfer Instructions
 
-1\) Log into our dedicated system for transferring files in/out of Oscar:
+1\) Log into Oscar:
 
 ```text
-   ssh transfer.ccv.brown.edu
+   ssh ssh.ccv.brown.edu
 ```
 
 2\) Start a screen session. This will allow you to reattach to your terminal window if you disconnect.
