@@ -5,7 +5,7 @@ description: >-
   to use the IDL module on Oscar run IDL programs.
 ---
 
-# Using  IDL
+# IDL
 
 ## Setting Up IDL
 
