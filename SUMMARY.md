@@ -73,6 +73,7 @@
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 * [Anaconda](software/anaconda.md)
 * [Screen](software/screen.md)
+* [Gaussian](software/gaussian.md)
 * [IDL](software/using-idl.md)
 
 ## Jupyter Notebooks/Labs <a id="jupyter-notebooks"></a>
