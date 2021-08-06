@@ -10,7 +10,11 @@ description: >-
 
 In order to use Gaussian on Oscar, you must be a part of the `g09` group. To check your groups, run the `groups` command in the terminal.
 
-You must first choose a Gaussian module to load. To see the available Gaussian modules, run `module avail gauss`. You can load a Gaussian module using the command `module load <module-name>`. 
+You must first choose a Gaussian module to load. To see available Gaussian modules, run `module avail gauss`. You can load a Gaussian module using the command `module load <module-name>`. 
+
+### Available Versions
+
+* Gaussian 9 \(g09\)
 
 ## Running Gaussian
 
