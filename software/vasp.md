@@ -11,7 +11,13 @@ description: >-
 
 In order to use VASP, you must be a part of the `vasp` group on Oscar. To check your groups, run the `groups` command in the terminal.
 
-First, you must choose which VASP module to load. You can see the available modules using `module avail vasp`. You can then load your preferred VASP module using `module load <module-name>`.
+First, you must choose which VASP module to load. You can see the available modules using `module avail vasp`. You can load your preferred VASP module using `module load <module-name>`.
+
+### Available Versions
+
+* VASP 5.4.1
+* VASP 5.4.4
+* VASP 6.1.1
 
 ## Running VASP
 
