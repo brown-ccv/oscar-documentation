@@ -36,7 +36,3 @@ mpirun -n 2 vasp_std
 If you're not sure how many cores you should include in your calculation, refer to [Selecting the right amount of cores for a VASP calculation](https://www.nsc.liu.se/~pla/blog/2015/01/12/vasp-how-many-cores/)
 {% endhint %}
 
-The mpirun command is used to launch an MPI job.
-
-
-
