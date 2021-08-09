@@ -22,7 +22,7 @@ allq <partition>      List all jobs in a single partition.
 myjobinfo            Get the time and memory used for your jobs.
 ```
 
-## Viewing estimated time for pending jobs
+## Viewing estimated time until completion for pending jobs
 
 ```bash
 squeue -u <your-username> -t PENDING --start
