@@ -82,20 +82,85 @@ $ man sbatch
 
 The table below summarizes some of the more useful options for`sbatch` .
 
-| option | purpose |
-| :--- | :--- |
-| `-J` | Specify the job name that will be displayed when when listing the job |
-| `-n` | Number of tasks \(= number of cores, if "--cpus-per-task" or "-c" option is not mentioned\) |
-| `-c` | Number of CPUs or cores per task \(on the same node\) |
-| `-N` | Number of nodes |
-| `-t` | Runtime, as HH:MM:SS |
-| `--mem=` | Requested memory per node |
-| `-p` | Request a specific partition |
-| `-o` | Filename for standard output from the job |
-| `-e` | Filename for standard error from the job |
-| `-C` | Add a feature constraint \(a tag that describes a type of node\). Note: you can view the available features on Oscar with the `nodes`command. |
-| `--mail-type=` | Specify the events that you should be notified of by email: BEGIN, END, FAIL, REQUEUE, and ALL |
-| `--mail-user=` | Email ID where you should be notified |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">option</th>
+      <th style="text-align:left">purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>-J</code>
+      </td>
+      <td style="text-align:left">Specify the job name that will be displayed when when listing the job</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-n</code>
+      </td>
+      <td style="text-align:left">Number of tasks (= number of cores, if &quot;--cpus-per-task&quot; or
+        &quot;-c&quot; option is not mentioned)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-c</code>
+      </td>
+      <td style="text-align:left">Number of CPUs or cores per task (on the same node)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-N</code>
+      </td>
+      <td style="text-align:left">Number of nodes</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-t</code>
+      </td>
+      <td style="text-align:left">Runtime, as HH:MM:SS</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>--mem=</code>
+      </td>
+      <td style="text-align:left">Requested memory per node</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-p</code>
+      </td>
+      <td style="text-align:left">Request a specific partition</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-o</code>
+      </td>
+      <td style="text-align:left">Filename for standard output from the job</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-e</code>
+      </td>
+      <td style="text-align:left">Filename for standard error from the job</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>-C</code>
+      </td>
+      <td style="text-align:left">
+        <p>Add a feature constraint (a tag that describes a type of node).
+          <br />Note: you can view the available features on Oscar with the <code>nodes</code>command
+          or <code>sinfo -o &quot;%20N %10c %10m %25f %10G &quot;</code>
+        </p>
+        <p>You can also select multiple feature constraints using &apos;|&apos;,
+          i.e. #SBATCH -C quadrortx|intel</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>--mail-type=</code>
+      </td>
+      <td style="text-align:left">Specify the events that you should be notified of by email: BEGIN, END,
+        FAIL, REQUEUE, and ALL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>--mail-user=</code>
+      </td>
+      <td style="text-align:left">Email ID where you should be notified</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Passing environment variables to a batch job
 
