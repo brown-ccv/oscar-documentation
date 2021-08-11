@@ -44,7 +44,7 @@ Given a valid .gjf file \(we'll call it `test-file.gjf`\), we can use the follow
 #SBATCH -p batch
 
 # Run the command
-srun g09 test-file.gjf
+g09 test-file.gjf
 ```
 
 Then queue the script using
