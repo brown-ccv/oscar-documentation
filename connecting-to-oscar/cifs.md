@@ -15,6 +15,10 @@ CCV users can access their home, data, and scratch directories as a local mount 
 To use SMB you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
 {% endhint %}
 
+{% hint style="info" %}
+A user's Windows machine is required to have [Crowdstrike Home](https://www.brown.edu/information-technology/software/catalog/crowdstrike-home) installed on the Windows machine to use SMB.
+{% endhint %}
+
 Users should ensure that the date and time are set correctly on their machine. Now you are ready to mount your CCV directories locally. Instructions for each of the various operating systems are given below.
 
 {% hint style="warning" %}
