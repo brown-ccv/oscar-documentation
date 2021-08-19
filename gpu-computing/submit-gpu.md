@@ -51,3 +51,9 @@ To submit this script:
 sbatch my_script.sh
 ```
 
+## DGX GPU Nodes in the GPU-HE Partition
+
+All the nodes in the gpu-he partition have V100 GPUs. However, two of them are DGX nodes \(gpu1404/1405\) which have 8 GPUs. When a gpu-he job requests for more than 4 GPUs, the job will automatically be allocated to the DGX nodes. 
+
+The other non-DGX nodes actually have  a better NVLink interconnect topology as all of them have direct links to the other. So the non-DGX nodes are better for a gpu-he job if the job does not require more than 4 GPUs. 
+
