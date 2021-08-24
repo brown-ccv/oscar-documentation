@@ -11,6 +11,10 @@ icon: check
 
 To log in to Oscar you need Secure Shell \(SSH\) on your computer.
 
+{% hint style="info" %}
+You need log in using your Brown password. Old Oscar password can not be used for ssh any more.
+{% endhint %}
+
 There are two options for signing into Oscar: with or without VPN.
 
 {% hint style="info" %}
