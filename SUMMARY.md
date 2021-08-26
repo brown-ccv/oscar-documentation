@@ -76,6 +76,7 @@
 * [VASP](software/vasp.md)
 * [Gaussian](software/gaussian.md)
 * [IDL](software/using-idl.md)
+* [MPI4PY](software/mpi4py.md)
 
 ## Jupyter Notebooks/Labs <a id="jupyter-notebooks"></a>
 
