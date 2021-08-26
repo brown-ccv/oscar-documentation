@@ -20,18 +20,27 @@ from mpi4py import MPI
 
 ### Example Script
 
-Here is an example python script that uses MPI:
+Here is an example python script `mpi4pytest.py` that uses MPI:
 
 ```text
 from mpi4py import MPI
 import sys
 
-size = MPI.COMM_WORLD.Get_size()
-rank = MPI.COMM_WORLD.Get_rank()
-name = MPI.Get_processor_name()
+def print_hello(rank, size, name):
+  msg = "Hello World! I am process {0} of {1} on {2}.\n"
+  sys.stdout.write(msg.format(rank, size, name))
 
-sys.stdout.write("Hello, world! I am process %d of %d on %s.\n"%(rank,size,name))
+if __name__ == "__main__":
+  size = MPI.COMM_WORLD.Get_size()
+  rank = MPI.COMM_WORLD.Get_rank()
+  name = MPI.Get_processor_name()
+
+  print_hello(rank, size, name)
 ```
+
+{% hint style="info" %}
+The file `mpi4pytest.py`  __can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
+{% endhint %}
 
 ## Conda Environment
 
@@ -65,7 +74,7 @@ $ python -c "import mpi4py"
 If no errors result from running the command, the installation has worked correctly.
 {% endhint %}
 
-Here is an example batch job that uses  `mpi4pytest.py` and the conda environment setup:
+Here is an example batch job script `mpi4pytest_conda.sh` that uses  `mpi4pytest.py` and the conda environment setup:
 
 ```text
 #!/bin/bash
@@ -83,10 +92,6 @@ srun --mpi=pmix python mpi4pytest.py
 ```
 
 {% hint style="info" %}
-The file _mpi4pytest.py_ and the example batch file _mpi4py\_conda.sh can be found at /gpfs/runtime/softwareexamples/mpi4py/_
-{% endhint %}
-
-{% hint style="info" %}
 The example script above runs the python script on two nodes by using the `#SBATCH -N 2` command. For more information on `#SBATCH` options, see our [documentation](https://docs.ccv.brown.edu/oscar/submitting-jobs/batch#sbatch-command-options).
 {% endhint %}
 
@@ -97,8 +102,8 @@ Start by creating and activating a python virtual environment:
 ```text
 $ module load python/2.7.16
 $ cd
-$ virtualenv env
-$ source ~/env/bin/activate
+$ virtualenv my_env
+$ source my_env/bin/activate
 ```
 
 Once you have activated your conda environment, run the following command to install `mpi4py`:
@@ -108,7 +113,7 @@ $ python -m pip install mpi4py
 $ deactivate
 ```
 
-Here is an example batch job that uses [the python script above](https://docs.ccv.brown.edu/oscar/software/MPI4PY#example-script) \(referenced as `mpi4pytest.py`\) and the python virtual environment setup:
+Here is an example batch job script `mpi4pytest_virtualenv.sh`  and the python virtual environment setup:
 
 ```text
 #!/bin/bash
@@ -120,7 +125,7 @@ module load python/2.7.16
 module load mpi/openmpi_4.0.5_gcc_10.2_slurm20
 module load gcc/10.2
 module load cuda/11.1.1
-source ~/env/bin/activate
+source my_env/bin/activate
 
 srun --mpi=pmix python mpi4pytest.py
 ```
