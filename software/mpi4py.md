@@ -85,8 +85,7 @@ Here is an example batch job script `mpi4pytest_conda.sh` that uses  `mpi4pytest
 module load anaconda/2020.02
 source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
 conda activate my_env
-module load gcc/10.2
-module load cuda/11.1.1
+module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm2 gcc/10.2 cuda/11.1.1
 
 srun --mpi=pmix python mpi4pytest.py
 ```
@@ -101,7 +100,6 @@ Start by creating and activating a python virtual environment:
 
 ```text
 $ module load python/2.7.16
-$ cd
 $ virtualenv my_env
 $ source my_env/bin/activate
 ```
@@ -122,9 +120,7 @@ Here is an example batch job script `mpi4pytest_virtualenv.sh`  and the python v
 #SBATCH --mem=1G
 
 module load python/2.7.16
-module load mpi/openmpi_4.0.5_gcc_10.2_slurm20
-module load gcc/10.2
-module load cuda/11.1.1
+module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm2 gcc/10.2 cuda/11.1.1
 source my_env/bin/activate
 
 srun --mpi=pmix python mpi4pytest.py
