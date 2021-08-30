@@ -16,6 +16,7 @@ There are several ways to move files between your machine and Oscar. Which metho
 2. [Command line](filetransfer.md#2-command-line) \(scp\)
 3. [GUI application](filetransfer.md#3-gui-programs-for-transferring-files-using-the-scp-or-sftp-protocol)
 4. [Globus online](filetransfer.md#4-globus-online) \(best for large transfers\)
+5. [LFTP](filetransfer.md#5-lftp)
 
 ## 1. SMB
 
@@ -114,6 +115,7 @@ lftp -u login,passwd MyAwesomeUrl  # To connect to your (S)FTP server
 ls   # To list files on the (S)FTP server
 !ls  # To list files in your directory on Oscar
 get MyAwesomeFile  # To download a single file
-mget -d MyAwesomeDirectory  # To download a directory
+mirror # To download everything as is from the server
+mirror --directory=/name_of_directory/ # To download a specific directory
 ```
 
