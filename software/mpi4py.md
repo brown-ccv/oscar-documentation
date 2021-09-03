@@ -55,7 +55,7 @@ $ conda activate my_env
 Once you have activated your conda environment, run the following commands to install `mpi4py`:
 
 ```text
-$ module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm2
+$ module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm20
 $ module load gcc/10.2 cuda/11.1.1
 $ pip install python=3.7 mpi4py
 ```
@@ -85,7 +85,7 @@ Here is an example batch job script `mpi4pytest_conda.sh` that uses  `mpi4pytest
 module load anaconda/2020.02
 source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
 conda activate my_env
-module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm2 gcc/10.2 cuda/11.1.1
+module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm20 gcc/10.2 cuda/11.1.1
 
 srun --mpi=pmix python mpi4pytest.py
 ```
@@ -120,7 +120,7 @@ Here is an example batch job script `mpi4pytest_virtualenv.sh`  and the python v
 #SBATCH --mem=1G
 
 module load python/2.7.16
-module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm2 gcc/10.2 cuda/11.1.1
+module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm20 gcc/10.2 cuda/11.1.1
 source my_env/bin/activate
 
 srun --mpi=pmix python mpi4pytest.py
