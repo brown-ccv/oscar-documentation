@@ -63,7 +63,7 @@ This section is only relevant for **guest accounts** as regular accounts will si
 To change your Oscar login password, use the command:
 
 ```text
-$ passwd
+$ yppasswd
 ```
 
 You will be asked to enter your old password, then your new password twice.
