@@ -62,7 +62,7 @@ In general, you can specify the following for your GUI programs:
 * Protocol: SFTP
 * Host: transfer.ccv.brown.edu
 * User: your Oscar username
-* Password: your Oscar password
+* Password: your Brown password
 
 ### 3.1 [WinSCP](https://winscp.net/eng/index.php) for Windows
 
