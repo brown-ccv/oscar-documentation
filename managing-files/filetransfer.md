@@ -50,7 +50,11 @@ rsync -azvp --progress path/to/source/directory <username>@ssh.ccv.brown.edu:/pa
 
 **Windows** On Windows, if you have PuTTY installed, you can use it's `pscp` function from the terminal.
 
-## 3. GUI programs for transferring files using the `scp`  protocol
+## 3. GUI programs for transferring files using the `sftp`  protocol and `transfer.ccv.brown.edu` hostname
+
+* **DUO is required if you are not connected to approved networks, e.g., home network**
+  * **There is no interactive terminal message but your Phone will get a prompt automatically** 
+* **DUO is NOT required if you are connected to approved Brown networks**
 
 In general, you can specify the following for your GUI programs:
 
