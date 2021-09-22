@@ -39,13 +39,13 @@ Host login-node
     ProxyCommand ssh -q -W %h:%p jump-box
 ```
 
-4.  In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
+5.  In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
 
 ![](../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
 ![](../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
 
-5. After a moment, VS Code will connect to the SSH server and set itself up.
+6. After a moment, VS Code will connect to the SSH server and set itself up.
 
 
 
