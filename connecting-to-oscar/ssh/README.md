@@ -21,6 +21,12 @@ There are two options for signing into Oscar: with or without VPN.
 If you are connected to the Brown VPN, you have the option of [using an SSH key pair](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh) to connect to Oscar without having to enter your password.
 {% endhint %}
 
+## Summary of SSH Hosts
+
+* `ssh.ccv.brown.edu` You can connect from anywhere. You will need Two Factor Authentication
+* `sshcampus.ccv.brown.edu` You can connect when whithin Brown Wifi, Network or VPN. You will need Two Factor Authentication unless you  [set up passwordless authentication](ssh-key-login-passwordless-ssh.md).
+* `desktop.ccv.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide.md), i.e., Visual Studio Code.
+
 ## macOS and Linux
 
 To log in to Oscar, open a terminal and
@@ -34,7 +40,7 @@ ssh -X username@ssh.ccv.brown.edu
 * If you are connected to the Brown VPN, use the following command:
 
 ```bash
-ssh -X username@sshvpn.ccv.brown.edu
+ssh -X username@sshcampus.ccv.brown.edu
 ```
 
 The `-X` allows Oscar to display windows on your machine. This allows you to open and use GUI-based applications, such as the text editor `gedit`.
