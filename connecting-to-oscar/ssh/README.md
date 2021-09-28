@@ -25,7 +25,7 @@ If you are connected to the Brown VPN, you have the option of [using an SSH key 
 
 * `ssh.ccv.brown.edu` You can connect from anywhere. You will need Two Factor Authentication
 * `sshcampus.ccv.brown.edu` You can connect when whithin Brown Wifi, Network or VPN. You will need Two Factor Authentication unless you  [set up passwordless authentication](ssh-key-login-passwordless-ssh.md).
-* `desktop.ccv.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide.md), i.e., Visual Studio Code.
+* `desktop.ccv.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide/), i.e., Visual Studio Code.
 
 ## macOS and Linux
 

@@ -14,7 +14,7 @@ description: Access Oscar's file-system remotely from VSCode.
 
 Search for `symlink` and make sure the symlink searching is unchecked
 
-![](../.gitbook/assets/screen-shot-2021-07-27-at-9.52.23-am.png)
+![](../../.gitbook/assets/screen-shot-2021-07-27-at-9.52.23-am.png)
 
 3. Make sure you have a working key-pair setup for passwordless authentication. If you don't have one setup please refer to this [documentation page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh):
 
@@ -41,9 +41,9 @@ Host login-node
 
 5.  In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
 
-![](../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
+![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
-![](../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
+![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
 
 6. After a moment, VS Code will connect to the SSH server and set itself up.
 

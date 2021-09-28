@@ -16,7 +16,8 @@
 * [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
 * [SMB \(Local Mount\)](connecting-to-oscar/cifs.md)
 * [CIFS  non-AD \(Local Mount\)](connecting-to-oscar/cifs-non-ad-local-mount.md)
-* [Remote IDE](connecting-to-oscar/remote-ide.md)
+* [Remote IDE](connecting-to-oscar/remote-ide/README.md)
+  * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
 
 ## Accounts on Oscar
 
