@@ -14,6 +14,10 @@
 | Operating Systems | RedHat EL 7.3 \(Linux\) |
 | Job Scheduler | Slurm Workload Manager |
 
+## Active Nodes per partition
+
+![](.gitbook/assets/partition.png)
+
 ## Compute Nodes
 
 Oscar has 425 compute nodes including 27 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, and debug partitions.
