@@ -38,6 +38,8 @@ For current rates and limits, check [our website](https://ccv.brown.edu/services
 
 ## Partition Details
 
+ Below are brief summary of partitions.  For the details of nodes in partitions, please see [here](../system-overview.md).
+
 ### batch
 
 * General purpose computing
