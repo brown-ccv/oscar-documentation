@@ -4,11 +4,11 @@
 
 | Category | Specifications |
 | :--- | :--- |
-| Computer Nodes | 443 |
-| GPU Nodes | 27 |
+| Computer Nodes | 341 |
+| GPU Nodes | 45 |
 | Login Nodes | 2 |
 | Large Memory Nodes \(&gt;512GB\) | 4 |
-| Total CPU Cores | 13100 |
+| Total CPU Cores | 11792 |
 | Total GPUs | 199 |
 | Total Storage \(GPFS Filesystem\) | 3.27PB |
 | Operating Systems | RedHat EL 7.3 \(Linux\) |
