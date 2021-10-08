@@ -16,11 +16,23 @@
 
 ## Active Nodes per partition
 
+**Partition**
+
+| **Total Nodes** | Total CPU Cores | Cores/Node | Mem/Node \(GB\) |  |
+| :--- | :--- | :--- | :--- | :--- |
+| batch | 262 | 9040 | 24-48 | 95-385 |
+| gpu | 34 | 1448 | 8-64 | 95-1030 |
+| gpu-he | 11 | 488 | 24-64 | 192-1030 |
+| bigmem | 4 | 128 | 32 | 772-2146 |
+| vnc | 23 | 568 | 24-32 | 95-773 |
+| debug | 4 | 96 | 24 | 95 |
+| gpu-debug | 3 | 24 | 8 | 192 |
+
 ![](.gitbook/assets/partition.png)
 
 ## Compute Nodes
 
-Oscar has 425 compute nodes including 27 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, and debug partitions.
+Oscar has 425 compute nodes including 45 GPU nodes in the batch, gpu, gpu-he, vnc, bigmem, and debug partitions.
 
 {% hint style="info" %}
 Nodes could be down for repair. Use the `sinfo` command to check node status on Oscar.
