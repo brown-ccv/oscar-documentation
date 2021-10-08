@@ -28,7 +28,7 @@ Oscar has  compute nodes in the partitions listed below.
 
 Below are nodes details including cores and memory for all partitions. 
 
-![Nodes  in Partitions](.gitbook/assets/ccv-doc-partitions%20%281%29.png)
+![Compute Nodes  in Partitions](.gitbook/assets/ccv-doc-partitions%20%281%29.png)
 
 {% hint style="info" %}
 Nodes could be down for repair. Use the `sinfo` command to check node status on Oscar.
