@@ -16,7 +16,7 @@
 
 ## Compute Nodes
 
-Oscar has  compute nodes in the partitions mentioned below.
+Oscar has  compute nodes in the partitions listed below.
 
 * **batch** - The batch partition is for programs/jobs which need neither GPUs nor large memory.
 * **bigmem** - The bigmem partition is for programs/jobs which require large memory. 
