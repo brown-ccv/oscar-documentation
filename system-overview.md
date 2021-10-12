@@ -2,17 +2,7 @@
 
 ## Oscar Specifications
 
-| Category                        | Specifications         |
-| ------------------------------- | ---------------------- |
-| Computer Nodes                  | 341                    |
-| GPU Nodes                       | 45                     |
-| Login Nodes                     | 2                      |
-| Large Memory Nodes (>512GB)     | 4                      |
-| Total CPU Cores                 | 11792                  |
-| Total GPUs                      | 199                    |
-| Total Storage (GPFS Filesystem) | 3.27PB                 |
-| Operating Systems               | RedHat EL 7.3 (Linux)  |
-| Job Scheduler                   | Slurm Workload Manager |
+![](<.gitbook/assets/Screen Shot 2021-10-12 at 3.46.43 PM (1).png>)
 
 ## Compute Nodes
 
