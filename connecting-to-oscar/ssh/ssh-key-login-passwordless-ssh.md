@@ -2,7 +2,7 @@
 description: This page describes how to set up SSH key authentication.
 ---
 
-# SSH Key Login \(Passwordless SSH\)
+# SSH Key Login (Passwordless SSH)
 
 {% hint style="info" %}
 For passwordless SSH one must be connected to the [VPN ](http://vpn.brown.edu)and use hostname _sshcampus.ccv.brown.edu_
@@ -14,7 +14,7 @@ For passwordless SSH one must be connected to the [VPN ](http://vpn.brown.edu)an
 
 Before generating new SSH key pair first check if you have an SSH key on your local machine. 
 
-```text
+```
 ls -al ~/.ssh/id_*.pub
 ```
 
@@ -22,7 +22,7 @@ If there are existing keys, please move to Step 3
 
 #### Step 2 : Generate a new SSH Keypair
 
-```text
+```
 ssh-keygen -t rsa
 ```
 
@@ -38,21 +38,19 @@ DO NOT upload or send the private key.
 
 **Step 3 : Copy the public key to Oscar**
 
-```text
+```
 ssh-copy-id <username>@ssh.ccv.brown.edu
 ```
 
 You will be prompted for a Password. The public key will be appended to the `authorized_keys` file on Oscar. 
 
-**Step 4 : Login to Oscar using your SSH keys** 
+**Step 4 : Login to Oscar using your SSH keys **
 
-```text
+```
 ssh <username>@sshcampus.ccv.brown.edu
 ```
 
 If everything went well, you will be logged in immediately. 
-
-
 
 
 

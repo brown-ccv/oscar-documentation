@@ -1,26 +1,16 @@
----
-title: Cuda Compiling
-date: '2019-01-31T22:03:45.000Z'
-draft: false
-project: Oscar
-section: GPU Computing
-weight: 0
-icon: check
----
-
 # Compiling CUDA
 
 ## Compiling with CUDA
 
-To compile a CUDA program on Oscar, first load the CUDA [module](/doc/software) with:
+To compile a CUDA program on Oscar, first load the CUDA [module](https://app.gitbook.com/doc/software) with:
 
-```text
+```
 $ module load cuda
 ```
 
 The CUDA compiler is called `nvcc`, and for compiling a simple CUDA program it uses syntax simlar to `gcc`:
 
-```text
+```
 $ nvcc -o program source.cu
 ```
 
@@ -28,7 +18,7 @@ $ nvcc -o program source.cu
 
 The Oscar GPU nodes feature NVIDIA M2050 cards with the Fermi architecture, which supports CUDA's "compute capability" 2.0. To fully utilize the hardware optimizations available in this architecture, add the `-arch=sm_20` flag to your compile line:
 
-```text
+```
 $ nvcc -arch=sm_20 -o program source.cu
 ```
 
@@ -40,11 +30,10 @@ The Fermi architecture has two levels of memory cache similar to the L1 and L2 c
 
 You can increase the amount of L1 cache to 48KB at compile time by adding the flags `-Xptxas -dlcm=ca` to your compile line:
 
-```text
+```
 $ nvcc -Xptxas -dlcm=ca -o program source.cu
 ```
 
 If your kernel primarily accesses global memory and uses less than 16KB of shared memory, you may see a benefit by increasing the L1 cache size.
 
 If your kernel has a simple memory access pattern, you may have better results by explicitly caching global memory into shared memory from within your kernel. You can turn off the L1 cache using the flags `–Xptxas –dlcm=cg`.
-

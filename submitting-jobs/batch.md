@@ -1,13 +1,3 @@
----
-title: Batch
-date: '2019-01-31T22:04:57.000Z'
-draft: false
-project: Oscar
-section: Submitting jobs
-weight: 0
-icon: check
----
-
 # Batch Jobs
 
 ### Submitting jobs using batch scripts
@@ -36,7 +26,7 @@ By default, a batch job will reserve 1 core and 2.8GB of memory per core for you
 #SBATCH -t 1:00:00
 ```
 
-The above lines request 4 cores \(`-n`\), 16GB of memory **per node** \(`--mem`\), and one hour of runtime \(`-t`\). After you have described the resources you want allocated for the job, you then give the commands that you want to be executed.
+The above lines request 4 cores (`-n`), 16GB of memory **per node** (`--mem`), and one hour of runtime (`-t`). After you have described the resources you want allocated for the job, you then give the commands that you want to be executed.
 
 {% hint style="warning" %}
 All of the `#SBATCH` instructions in your batch script must appear **before the commands** you want to run.
@@ -50,7 +40,7 @@ sbatch <jobscript>
 
 ### Submitting jobs from the command line
 
-As an alternative to requesting resources within your batch script, it is possible to define the resources requested as command-line options to `sbatch`. For example, the command below requests 4 cores \(`-n`\), 16GB of memory **per node** \(`--mem`\), and one hour of runtime \(`-t`\) to run the job defined in the batch script.
+As an alternative to requesting resources within your batch script, it is possible to define the resources requested as command-line options to `sbatch`. For example, the command below requests 4 cores (`-n`), 16GB of memory **per node** (`--mem`), and one hour of runtime (`-t`) to run the job defined in the batch script.
 
 ```bash
 sbatch -n 4 -t 1:00:00 --mem=16G <jobscript>
@@ -66,7 +56,7 @@ The `sbatch` command will return a number, which is your **Job ID**. You can vie
 tail -10 slurm-<jobid>.out
 ```
 
-Alternatively, you can mention the file names where you want to dump the standard output and errors using the `-o` and `-e` flags. You can use `%j` within the output/error filenames to add the id of the job. If you would like to change your output file to be MyOutput-&lt;job-id&gt;, you can add the following line to your batch job:
+Alternatively, you can mention the file names where you want to dump the standard output and errors using the `-o` and `-e` flags. You can use `%j` within the output/error filenames to add the id of the job. If you would like to change your output file to be MyOutput-\<job-id>, you can add the following line to your batch job:
 
 ```bash
 #SBATCH -o my-output-%j.out
@@ -82,85 +72,20 @@ $ man sbatch
 
 The table below summarizes some of the more useful options for`sbatch` .
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">option</th>
-      <th style="text-align:left">purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>-J</code>
-      </td>
-      <td style="text-align:left">Specify the job name that will be displayed when when listing the job</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-n</code>
-      </td>
-      <td style="text-align:left">Number of tasks (= number of cores, if &quot;--cpus-per-task&quot; or
-        &quot;-c&quot; option is not mentioned)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-c</code>
-      </td>
-      <td style="text-align:left">Number of CPUs or cores per task (on the same node)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-N</code>
-      </td>
-      <td style="text-align:left">Number of nodes</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-t</code>
-      </td>
-      <td style="text-align:left">Runtime, as HH:MM:SS</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--mem=</code>
-      </td>
-      <td style="text-align:left">Requested memory per node</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-p</code>
-      </td>
-      <td style="text-align:left">Request a specific partition</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-o</code>
-      </td>
-      <td style="text-align:left">Filename for standard output from the job</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-e</code>
-      </td>
-      <td style="text-align:left">Filename for standard error from the job</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>-C</code>
-      </td>
-      <td style="text-align:left">
-        <p>Add a feature constraint (a tag that describes a type of node).
-          <br />Note: you can view the available features on Oscar with the <code>nodes</code>command
-          or <code>sinfo -o &quot;%20N %10c %10m %25f %10G &quot;</code>
-        </p>
-        <p>You can also select multiple feature constraints using &apos;|&apos;,
-          i.e. #SBATCH -C quadrortx|intel</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--mail-type=</code>
-      </td>
-      <td style="text-align:left">Specify the events that you should be notified of by email: BEGIN, END,
-        FAIL, REQUEUE, and ALL</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>--mail-user=</code>
-      </td>
-      <td style="text-align:left">Email ID where you should be notified</td>
-    </tr>
-  </tbody>
-</table>
+| option         | purpose                                                                                                                                                                                                                                                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-J`           | Specify the job name that will be displayed when when listing the job                                                                                                                                                                                                                                                   |
+| `-n`           | Number of tasks (= number of cores, if "--cpus-per-task" or "-c" option is not mentioned)                                                                                                                                                                                                                               |
+| `-c`           | Number of CPUs or cores per task (on the same node)                                                                                                                                                                                                                                                                     |
+| `-N`           | Number of nodes                                                                                                                                                                                                                                                                                                         |
+| `-t`           | Runtime, as HH:MM:SS                                                                                                                                                                                                                                                                                                    |
+| `--mem=`       | Requested memory per node                                                                                                                                                                                                                                                                                               |
+| `-p`           | Request a specific partition                                                                                                                                                                                                                                                                                            |
+| `-o`           | Filename for standard output from the job                                                                                                                                                                                                                                                                               |
+| `-e`           | Filename for standard error from the job                                                                                                                                                                                                                                                                                |
+| `-C`           | <p>Add a feature constraint (a tag that describes a type of node). <br>Note: you can view the available features on Oscar with the <code>nodes</code>command or <code>sinfo -o "%20N %10c %10m %25f %10G "</code></p><p>You can also select multiple feature constraints using '|', i.e. #SBATCH -C quadrortx|intel</p> |
+| `--mail-type=` | Specify the events that you should be notified of by email: BEGIN, END, FAIL, REQUEUE, and ALL                                                                                                                                                                                                                          |
+| `--mail-user=` | Email ID where you should be notified                                                                                                                                                                                                                                                                                   |
 
 ### Passing environment variables to a batch job
 
@@ -180,7 +105,7 @@ export my_variable=my_value
 #SBATCH --export=my_variable=my_value
 ```
 
-After the step above to modify or add an environment variable, your batch job can access the environment variable _my\_variable_ whose value is _my\_value_.
+After the step above to modify or add an environment variable, your batch job can access the environment variable _my_variable_ whose value is _my_value_.
 
 To export more than one environment variables, just list all the name=value pairs separated by commas:
 
@@ -198,7 +123,7 @@ The input file test.txt has multiple lines where each line is a directory:
 /users/yliu385/data/yliu385
 ```
 
-The loop.sh script reads each line \(directory\) from the input file and passes the directory as an environment variable to a batch job:
+The loop.sh script reads each line (directory) from the input file and passes the directory as an environment variable to a batch job:
 
 ```bash
 #!/bin/bash
@@ -248,4 +173,3 @@ Variables can be passed at the sbatch command line to set the job name, output a
 t=`date +"%Y-%m-%d"`
 sbatch --job-name=test.$t --output=test.out.$t --error=test.err.$t test.job
 ```
-
