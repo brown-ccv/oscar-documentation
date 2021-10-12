@@ -1,14 +1,6 @@
----
-Title: Oscar
-type: Oscar
-level: Main
-weight: 0
-icon: oscar.svg
----
-
 # Oscar - Brown University's Cluster
 
-Oscar - Ocean State Center for Advanced Resources - is Brown University's supercomputer for both research and classes. Oscar is maintained and supported by ****[**Center for Computation and Visualization \(CCV\)**](https://ccv.brown.edu/). 
+Oscar - Ocean State Center for Advanced Resources - is Brown University's supercomputer for both research and classes. Oscar is maintained and supported by** **[**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu). 
 
 Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if there are any questions on Oscar.
 
@@ -16,7 +8,7 @@ Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if th
 
  If you do not have an Oscar account, you can request one by **clicking the following link**:
 
-{% embed url="https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B" %}
+{% embed url="https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B" %}
 
 Anyone with a Brown account can get a **free Exploratory accoun**t on Oscar, or **pay for priority accounts**. A free Exploratory account allows:
 
@@ -40,9 +32,10 @@ Authorized users must comply with the following Brown University policies:
 
 Users can run their computing-intensive and/or long runtime jobs/program in Oscar to take advantage of high performance computing resources there, as highlighted below:
 
-* 13,100 cores on 443 nodes
-* 27 GPU nodes
-* 4 Large memory nodes \(&gt;512GB\)
+* 2 Login nodes
+* 11,792 cores on 341 nodes
+* 45 GPU nodes
+* 4 Large memory nodes (>512GB)
 * Mellanox InfiniBand network
 
 Please refer to the details at[ Oscar hardware](system-overview.md). 
@@ -53,7 +46,7 @@ Hundreds of users can share computing resources in Oscar.  [Slurm is used in Osc
 
 Users **should not run computations or simulations on the login nodes**, because they are shared with other users. You can use the login nodes to compile your codes, manage files, and launch jobs on the compute nodes.
 
-To allow users sharing access to Oscar, there are **limits on the maximum number of pending and running jobs** a user account may have/submit:
+To allow users sharing access to Oscar, there are **limits on the maximum number of pending and running jobs **a user account may have/submit:
 
 * 1200 for a priority account
 * 1000 for an exploratory account
@@ -66,11 +59,11 @@ To allow users sharing access to Oscar, there are **limits on the maximum number
 
 ## Storage
 
-Oscar has 3.27PB storage from the General Parallel File System \(GPFS\) of IBM, which provides high performance access of storage. Users have Home, Scratch, and Data directories as their storage with quota  in Oscar. Please refer to the details at [Oscar's filesystem](managing-files/filesystem.md).
+Oscar has 3.27PB storage from the General Parallel File System (GPFS) of IBM, which provides high performance access of storage. Users have Home, Scratch, and Data directories as their storage with quota  in Oscar. Please refer to the details at [Oscar's filesystem](managing-files/filesystem.md).
 
 **Access and User Accounts** - User accounts are controlled via central authentication and directories on HPC are only deleted on the request of the user, PI, or departmental chair.
 
-**Files not accessed for 30 days will be deleted from your scratch directory.** Use ~/data for files you wish to keep long term.
+**Files not accessed for 30 days will be deleted from your scratch directory.** Use \~/data for files you wish to keep long term.
 
 Users can[ transfer files](managing-files/filetransfer.md) from and to[ Oscar filesystem](managing-files/filesystem.md). In particular, users can [transfer files between Oscar filesystem and Campus File Storage.](managing-files/filetransfer-isilon.md) 
 
@@ -83,7 +76,7 @@ Oscar users can connect to Oscar by
 
 ## Maintenance Schedule
 
-* **Non-disruptive Maintenance:** 
+* **Non-disruptive Maintenance: **
   * non-disruptive work, including software changes, maintenance, and testing
   * may occur at any time
   * no notification provided
@@ -94,7 +87,7 @@ Oscar users can connect to Oscar by
 * **Unscheduled Maintenance:**
   * maximum 1 day downtime
   * occurs very rarely and includes any unplanned emergency issues that arise
-  * Prior notification provided \(depending on the issue, 1 day to 4 weeks advance notice provided\)
+  * Prior notification provided (depending on the issue, 1 day to 4 weeks advance notice provided)
 * **Major Upgrade Maintenance:**
   * service may be brought down for 3-5 days
   * occurs annually
@@ -106,7 +99,7 @@ Oscar users can connect to Oscar by
   * Send email to [support@ccv.brown.edu](mailto:support@ccv.brown.edu). A ticket will get created and CCV staff will attempt to address the issue as soon as possible.
 * During Non-Business Hours:
   * Send email to [support@ccv.brown.edu](mailto:support@ccv.brown.edu).
-  * Call CIS Operations Center at \(401\) 863-7562. A ticket will get created and CCV staff will be contacted to address the issue.
+  * Call CIS Operations Center at (401) 863-7562. A ticket will get created and CCV staff will be contacted to address the issue.
 
 
 
@@ -116,7 +109,6 @@ CCV staff support for researchers seeking help with statistical modeling, machin
 
 CCV staff provides tutorials on using Oscar for classes, groups and individual. Please check [CCV Events](https://events.brown.edu/ccv/all) for upcoming trainings and office hours.
 
-CCV provides short videos \(coming soon\) for users to learn as well.
+CCV provides short videos (coming soon) for users to learn as well.
 
-## 
-
+##
