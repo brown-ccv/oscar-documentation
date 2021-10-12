@@ -30,12 +30,8 @@ Below are node details including cores and memory for all partitions.
 
 ![Compute Nodes  in Partitions](<.gitbook/assets/ccv-doc-partitions (1).png>)
 
-{% hint style="info" %}
-Nodes could be down for repair. Use the `sinfo` command to check node status on Oscar.
-{% endhint %}
-
 ## Hardware details
 
-Hardware details for all partitions. GRES shows the number of GPUs. The AVAIL_FEATURES shows the features available for the --constraint option for slurm. This includes the available CPUS as well GPUs.
+Hardware details for all partitions. GRES shows the number of GPUs. The AVAIL_FEATURES shows the features available for the --constraint option for slurm. This includes the available CPUS as well GPUs 
 
 ![](<.gitbook/assets/Screen Shot 2021-10-12 at 12.03.33 PM.png>)
