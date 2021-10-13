@@ -10,12 +10,12 @@
 
 ## Connecting to Oscar
 
-* [SSH \(Terminal\)](connecting-to-oscar/ssh/README.md)
-  * [SSH Key Login \(Passwordless SSH\)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh.md)
+* [SSH (Terminal)](connecting-to-oscar/ssh/README.md)
+  * [SSH Key Login (Passwordless SSH)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh.md)
   * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding.md)
-* [VNC \(Virtual Desktop\)](connecting-to-oscar/vnc.md)
-* [SMB \(Local Mount\)](connecting-to-oscar/cifs.md)
-* [CIFS  non-AD \(Local Mount\)](connecting-to-oscar/cifs-non-ad-local-mount.md)
+* [VNC (Virtual Desktop)](connecting-to-oscar/vnc.md)
+* [SMB (Local Mount)](connecting-to-oscar/cifs.md)
+* [CIFS  non-AD (Local Mount)](connecting-to-oscar/cifs-non-ad-local-mount.md)
 * [Remote IDE](connecting-to-oscar/remote-ide/README.md)
   * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
 
@@ -23,14 +23,14 @@
 
 * [Account Types](accounts-on-oscar/account-types.md)
 * [Passwords](accounts-on-oscar/passwords.md)
-* [Associations & Quality of Service \(QOS\)](accounts-on-oscar/associations-and-quality-of-service.md)
+* [Associations & Quality of Service (QOS)](accounts-on-oscar/associations-and-quality-of-service.md)
 
 ## Managing files
 
 * [Oscar's Filesystem](managing-files/filesystem.md)
 * [Transferring Files to and from Oscar](managing-files/filetransfer.md)
-* [Transferring Files between Oscar and Campus File Storage \(Replicated and Non-Replicated\)](managing-files/filetransfer-isilon.md)
-* [Inspecting Disk Usage \(Ncdu\)](managing-files/inspecting-disk-usage-ncdu.md)
+* [Transferring Files between Oscar and Campus File Storage (Replicated and Non-Replicated)](managing-files/filetransfer-isilon.md)
+* [Inspecting Disk Usage (Ncdu)](managing-files/inspecting-disk-usage-ncdu.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
 * [Version Control](managing-files/version-control/README.md)
@@ -79,7 +79,7 @@
 * [IDL](software/using-idl.md)
 * [MPI4PY](software/mpi4py.md)
 
-## Jupyter Notebooks/Labs <a id="jupyter-notebooks"></a>
+## Jupyter Notebooks/Labs <a href="jupyter-notebooks" id="jupyter-notebooks"></a>
 
 * [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar-1.md)
 * [Jupyter Labs on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
@@ -116,16 +116,19 @@
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
 * [CCV User Policies](getting-help/ccv-user-policies.md)
 
-## Installing Software Packages Locally <a id="local-install"></a>
+## Installing Software Packages Locally <a href="local-install" id="local-install"></a>
 
 * [Using a CESM module](local-install/cesm.md)
 * [Installing your own version of CESM](local-install/installing-your-own-version-of-cesm.md)
 * [Installing your own version of Quantum Espresso](local-install/installing-your-own-version-of-quantum-espresso.md)
 * [Installing your own version of Qmcpack](local-install/installing-your-own-version-of-qmcpack.md)
 
-## dbGaP <a id="dbgap-data"></a>
+## dbGaP <a href="dbgap-data" id="dbgap-data"></a>
 
 * [dbGaP Architecture](dbgap-data/dbgap-project.md)
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
 * [dbGaP Job Submission](dbgap-data/dbgap-job-submission.md)
 
+## Visualization 🕶
+
+* [ParaView Remote Rendering](visualization/paraview-remote-rendering.md)
