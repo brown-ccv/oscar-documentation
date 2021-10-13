@@ -22,6 +22,6 @@ Below are node details including cores and memory for all partitions.
 
 ## Hardware details
 
-Hardware details for all partitions. GRES shows the number of GPUs. The AVAIL_FEATURES shows the features available for the --constraint option for slurm. This includes the available CPUS as well GPUs 
+Hardware details for all partitions. The AVAIL_FEATURES shows the features available for the --constraint option for slurm. This includes the available CPUS as well GPUs 
 
-![](<.gitbook/assets/Screen Shot 2021-10-12 at 12.03.33 PM.png>)
+![Hardware on each partition](.gitbook/assets/features.png)
