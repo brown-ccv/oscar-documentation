@@ -98,6 +98,10 @@
 * [Improving Performance and Memory Management](matlab/performance.md)
 * [Parallel Matlab](matlab/parallel-matlab.md)
 
+## Visualization 🕶
+
+* [ParaView Remote Rendering](visualization/paraview-remote-rendering.md)
+
 ## Singularity Containers
 
 * [Intro to Singularity](singularity-containers/untitled.md)
@@ -128,7 +132,3 @@
 * [dbGaP Architecture](dbgap-data/dbgap-project.md)
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
 * [dbGaP Job Submission](dbgap-data/dbgap-job-submission.md)
-
-## Visualization 🕶
-
-* [ParaView Remote Rendering](visualization/paraview-remote-rendering.md)
