@@ -33,10 +33,10 @@ Authorized users must comply with the following Brown University policies:
 Users can run their computing-intensive and/or long runtime jobs/program in Oscar to take advantage of high performance computing resources there, as highlighted below:
 
 * 2 Login nodes
-* 11,792 cores on 341 nodes
-* 45 GPU nodes
-* 4 Large memory nodes (>512GB)
+* 3.27 PB of storage
+* Red Hat EL 7.7 (Linux)
 * Mellanox InfiniBand network
+* Slurm Workload manager
 
 Please refer to the details at[ Oscar hardware](system-overview.md). 
 
