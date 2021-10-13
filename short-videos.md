@@ -8,4 +8,4 @@
 * [Batch Job Submission on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0bb329f4-3208-496f-8fe8-ad0f012949d7)
 * [Linux Basics for Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5962a33f-a0ae-4d4e-9a4b-ad11012fe331)
 * [How to Use Modules in Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb688701-3a1e-4a96-a1bd-ad51012c0d6b)
-
+* [Remote Rendering with ParaView in Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=526cb8b8-2ce3-439b-ab84-adc001569019)
