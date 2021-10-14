@@ -18,10 +18,10 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions. 
 
-![Compute Nodes  in Partitions](<.gitbook/assets/ccv-doc-partitions (1).png>)
+![](.gitbook/assets/partitions.png)
 
 ## Hardware details
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs 
 
-![Hardware on each partition](.gitbook/assets/features.png)
+![](<.gitbook/assets/features (1).png>)
