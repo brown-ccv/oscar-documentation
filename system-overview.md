@@ -2,26 +2,26 @@
 
 ## Oscar Specifications
 
-![](<.gitbook/assets/summary (2).png>)
+![](<.gitbook/assets/summary\_1025 (1).png>)
 
 ## Compute Nodes
 
 Oscar has compute nodes in the partitions listed below.
 
 * **batch **- The batch partition is for programs/jobs which need neither GPUs nor large memory.
-* **bigmem **- The bigmem partition is for programs/jobs which require large memory. 
+* **bigmem **- The bigmem partition is for programs/jobs which require large memory.&#x20;
 * **debug **- The debug partition is for users to debug programs/jobs.
 * **gpu **- The gpu partition is for programs/jobs which require GPUs.
-* **gpu-debug** - The gpu-debug partition is for users to debug gpu programs/jobs. 
-* **gpu-he** -The gpu-he partition is for programs/jobs which need to access high-end GPUs. 
-* **vnc** - The vnc partition is for users to run programs/jobs in an graphical desktop environment. 
+* **gpu-debug** - The gpu-debug partition is for users to debug gpu programs/jobs.&#x20;
+* **gpu-he** -The gpu-he partition is for programs/jobs which need to access high-end GPUs.&#x20;
+* **vnc** - The vnc partition is for users to run programs/jobs in an graphical desktop environment.&#x20;
 
-Below are node details including cores and memory for all partitions. 
+Below are node details including cores and memory for all partitions.&#x20;
 
-![](.gitbook/assets/partitions.png)
+![](.gitbook/assets/partition\_summary\_1025.png)
 
 ## Hardware details
 
-Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs 
+Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs&#x20;
 
-![](<.gitbook/assets/features (1).png>)
+![](.gitbook/assets/Features\_1025.png)

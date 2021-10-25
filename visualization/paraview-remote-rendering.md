@@ -12,11 +12,11 @@ The Center for Computation and Visualization (CCV) offers to the academic commun
 
 ## **Who benefits from this service? **
 
-The target audience for this service are members of the academic community that interact, and analyze large 3D datasets, i.e., point clouds, volumetric data, tiff-stacks and mesh-data. This includes groups working with microscopy data, MRI images, structural analysis, fluid dynamics, climate sciences, astrophysics and more. In fact, ParaView can handle over 100 different file formats. The remote rendering service is targeted to scenarios where the personal/lab computer setup may not have the resources to handle the size of the underlying datasets. Common obstacles are older GPU technology or low RAM availability which may cause performance issues. 
+The target audience for this service are members of the academic community that interact, and analyze large 3D datasets, i.e., point clouds, volumetric data, tiff-stacks and mesh-data. This includes groups working with microscopy data, MRI images, structural analysis, fluid dynamics, climate sciences, astrophysics and more. In fact, ParaView can handle over 100 different file formats. The remote rendering service is targeted to scenarios where the personal/lab computer setup may not have the resources to handle the size of the underlying datasets. Common obstacles are older GPU technology or low RAM availability which may cause performance issues.&#x20;
 
 ![Research areas that can benefit from ParaView's Remote Rendering Service](<../.gitbook/assets/image (17).png>)
 
-## Workflow Overview 
+## Workflow Overview&#x20;
 
 ![Workflow Overview](<../.gitbook/assets/Remote Rendering (1).png>)
 
@@ -64,12 +64,12 @@ run-remote-server -u your_brown_username@brown.edu
 The flag `-u`** **indicates where the confirmation email will be sent. Technically it could be any email address, but the remote render session can only be used by existing Oscar users.
 
 {% hint style="warning" %}
-The only mandatory parameter is **-u **\<user-email>. 
+The only mandatory parameter is **-u **\<user-email>.&#x20;
 {% endhint %}
 
 #### Memory Request
 
-The number of CPU cores and GPUs are determined by the memory request. 
+The number of CPU cores and GPUs are determined by the memory request.&#x20;
 
 By default, the `run-remote-server` script's minimum memory request is 45 GB (1 CPU/GPU ) and the maximum is 180 GB (4 CPU/GPU ). You can add more resources to your session using the `-m` flag. Every multiplier of 45GB adds a CPU core and a GPU. i.e :
 
@@ -108,7 +108,7 @@ After executing the command, the system will allocate resources, and it will sen
 NOTE: You might not receive the email instantly. Sometimes it may take a while before there are sufficient resources (i.e., GPUs) available. You will get the notification as soon as they are available for your use. You can also use the `myq` command to see the status of your job
 {% endhint %}
 
-## 2. Wait for the confirmation Email 
+## 2. Wait for the confirmation Email&#x20;
 
 In the email sent by the system has important information such as :
 
@@ -119,7 +119,7 @@ In the email sent by the system has important information such as :
 Please read it and get familiar on how the process works.
 
 {% hint style="info" %}
-Please, read the email carefully. It contains information about your connection such as server IP address and port. You need them in order to proceed with the next steps. 
+Please, read the email carefully. It contains information about your connection such as server IP address and port. You need them in order to proceed with the next steps.&#x20;
 {% endhint %}
 
 ## 3. Connect to the Server
@@ -129,7 +129,7 @@ There are two options to  connect to the remote server:
 * Your personal computer
 * VNC
 
-### 3.1 Setting up SSH Tunneling 
+### 3.1 Setting up SSH Tunneling&#x20;
 
 {% hint style="info" %}
 This step is only needed if you are using your personal computer and not VNC
@@ -160,16 +160,16 @@ This step will reset the scene, so before doing it make sure to save all your da
 
 1. Open Paraview Desktop Application (see the [prerequisites section](broken-reference))
 2. In paraview UI go to menu bar File -> Connect ..
-3.  Add Server:
+3. &#x20;Add Server:
    1. Name the connection ‘Remote Rendering’’
    2. Select Server type ‘Client / Server’,**.**
-   3. The host is the IP sent in the email. 
+   3. The host is the IP sent in the email.&#x20;
    4. The port also comes from the email
-   5. In the next screen, select Startup Type : Manual. 
+   5. In the next screen, select Startup Type : Manual.&#x20;
    6. Click on Save
    7. Select the new created connection and click ‘Connect’
 
- After a few seconds, you get connected to the HPC automatically.
+&#x20;After a few seconds, you get connected to the HPC automatically.
 
 {% hint style="info" %}
 In subsequent connections you can reuse the Server, but you will need to update the **host **and **port** values each time you launch a new server session
@@ -183,10 +183,10 @@ In Paraview UI go to the menu bar `View` and select `Memory Inspector`. You will
 
 ## Summary
 
-1.  Open a terminal an connect to Oscar (Follow [this link](https://docs.ccv.brown.edu/oscar/getting-started) to know how to do it)
+1. &#x20;Open a terminal an connect to Oscar (Follow [this link](https://docs.ccv.brown.edu/oscar/getting-started) to know how to do it)
 2. load the Paraview module `module load paraview/5.9.0`
-3.  Execute the command `run-remote-server -u your_brown_email@brown.edu`.
-4.  Wait for the email indicating the server is running 
+3. &#x20;Execute the command `run-remote-server -u your_brown_email@brown.edu`.
+4. &#x20;Wait for the email indicating the server is running&#x20;
 5. Connect to the server using Paraview Client
 
 If you find any issues following this guide or require additional help, do not hesitate contacting CCV services at `support@ccv.brown.edu`

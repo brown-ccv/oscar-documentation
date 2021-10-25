@@ -2,17 +2,17 @@
 
 ## Installing Jupyter Notebook
 
-The anaconda/3-5.2.0 module provides jupyter-notebook. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html). 
+The anaconda/3-5.2.0 module provides jupyter-notebook. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
 
 ## Running Jupyter Notebook on Oscar
 
 There are a couple of ways to use [Jupyter](https://jupyter.org) Notebook on Oscar.   You can run Jupyter Notebook
 
-* in a VNC session 
+* in a VNC session&#x20;
 * using a batch job
 * in an interactive session
 
- With the batch job or interactive session method, you use a browser on your machine to connect to your Jupyter Notebook server on Oscar.  
+&#x20;With the batch job or interactive session method, you use a browser on your machine to connect to your Jupyter Notebook server on Oscar. &#x20;
 
 {% hint style="info" %}
 Start by going to the directory you want to access when using Jupyter Notebook, and then start Jupyter Notebook. The directory where a Jupyter Notebook is started is the working directory for the Notebook.
@@ -83,7 +83,7 @@ If you installed Jupyter notebook with pip you may need to give the full path:
 `~/.local/bin/jupyter-notebook --no-browser --port-$ipnport --ip=$ipnip`
 {% endhint %}
 
-This script can be found in \~/batch_scripts.  Copy this example and submit this script with 
+This script can be found in \~/batch\_scripts.  Copy this example and submit this script with&#x20;
 
 `sbatch jupyter.sh`
 
@@ -163,7 +163,7 @@ An output similar to the one below indicates that Jupyter Notebook has started:
 >
 > \[I 13:35:25.948 NotebookApp] JupyterLab application directory is /gpfs/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
 >
-> \[I 13:35:25.975 NotebookApp] Serving notebooks from local directory: /gpfs_home/yliu385
+> \[I 13:35:25.975 NotebookApp] Serving notebooks from local directory: /gpfs\_home/yliu385
 >
 > \[I 13:35:25.975 NotebookApp] 0 active kernels
 >
@@ -173,13 +173,13 @@ An output similar to the one below indicates that Jupyter Notebook has started:
 >
 > \[I 13:35:25.975 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 >
-> \[C 13:35:25.994 NotebookApp] 
+> \[C 13:35:25.994 NotebookApp]&#x20;
 >
->     Copy/paste this URL into your browser when you connect for the first time,
+> &#x20;   Copy/paste this URL into your browser when you connect for the first time,
 >
->     to login with a token:
+> &#x20;   to login with a token:
 >
->         http://172.20.207.61:8855/?token=c58d7877cfcf1547dd8e6153123568f58dc6d5ce3f4c9d98\&token=c58d7877cfcf1547dd8e6153123568f58dc6d5ce3f4c9d98\
+> &#x20;       http://172.20.207.61:8855/?token=c58d7877cfcf1547dd8e6153123568f58dc6d5ce3f4c9d98\&token=c58d7877cfcf1547dd8e6153123568f58dc6d5ce3f4c9d98\
 >
 
 ### 2. Setup an ssh tunnel to the server
