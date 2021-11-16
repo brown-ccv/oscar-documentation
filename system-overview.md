@@ -2,7 +2,7 @@
 
 ## Oscar Specifications
 
-![](.gitbook/assets/summary1111.png)
+![](.gitbook/assets/summary1116.png)
 
 ## Compute Nodes
 
@@ -18,10 +18,10 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.&#x20;
 
-![](.gitbook/assets/partition\_summary1111.png)
+![](.gitbook/assets/partition\_summary1116.png)
 
 ## Hardware details
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs&#x20;
 
-![](.gitbook/assets/features1111.png)
+![](.gitbook/assets/features1116.png)
