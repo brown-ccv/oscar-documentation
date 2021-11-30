@@ -8,9 +8,9 @@ Common commands are:
 
 * start a new screen session with session name: `screen -S <name>`
 * list running sessions/screens: `screen -ls`
-* attach to session by name: `screen -r <name>`  
+* attach to session by name: `screen -r <name>` &#x20;
 * detach: `Ctrl+a d`
-* detach and logout (quick exit): `Ctrl+a d d`  
+* detach and logout (quick exit): `Ctrl+a d d` &#x20;
 * kill a screen session: `screen -XS session_name quit`
 
 ### Reconnecting to your screen session
@@ -27,13 +27,13 @@ In order to reconnect to a running `screen` session, you need to be connected to
 mkdir ~/.screen && chmod 700 ~/.screen
 ```
 
-*  Put the following line into your /.bashrc.  This tells the screen program to save the information of your screen sessions  in  the directory created in the previous step . This allows you to query your screen sessions across different login nodes. To make this change effective in your current sessions, you need run 'source /.bashrc' in each of your current session . However, you do not need to run 'source /bashrc' in your new sessions. 
+* &#x20;Put the following line into your /.bashrc.  This tells the screen program to save the information of your screen sessions  in  the directory created in the previous step . This allows you to query your screen sessions across different login nodes. To make this change effective in your current sessions, you need run 'source /.bashrc' in each of your current session . However, you do not need to run 'source /bashrc' in your new sessions.&#x20;
 
 ```
 export SCREENDIR=$HOME/.screen
 ```
 
-* **Name your new screen session **using the name of the login node. For instance, start your screen with a commnd similar to
+* **Name your new screen session** using the name of the login node. For instance, start your screen with a commnd similar to
 
 ```
 screen -S experiment1-login003

@@ -10,7 +10,7 @@ This service is new and is in Beta
 
 The Center for Computation and Visualization (CCV) offers to the academic community a way to visualize large datasets using Oscar and its powerful GPUs as a rendering server. The current GPU hardware and available memory on Oscar surpasses the common desktop models, offering a modern and robust solution to display large datasets in parallel jobs using the widely used  opensource software [Paraview](https://www.paraview.org). It is a simple two-steps process. Start the server and connect the client.
 
-## **Who benefits from this service? **
+## **Who benefits from this service?**&#x20;
 
 The target audience for this service are members of the academic community that interact, and analyze large 3D datasets, i.e., point clouds, volumetric data, tiff-stacks and mesh-data. This includes groups working with microscopy data, MRI images, structural analysis, fluid dynamics, climate sciences, astrophysics and more. In fact, ParaView can handle over 100 different file formats. The remote rendering service is targeted to scenarios where the personal/lab computer setup may not have the resources to handle the size of the underlying datasets. Common obstacles are older GPU technology or low RAM availability which may cause performance issues.&#x20;
 
@@ -61,10 +61,10 @@ module load paraview/5.9.0
 run-remote-server -u your_brown_username@brown.edu
 ```
 
-The flag `-u`** **indicates where the confirmation email will be sent. Technically it could be any email address, but the remote render session can only be used by existing Oscar users.
+The flag `-u` **** indicates where the confirmation email will be sent. Technically it could be any email address, but the remote render session can only be used by existing Oscar users.
 
 {% hint style="warning" %}
-The only mandatory parameter is **-u **\<user-email>.&#x20;
+The only mandatory parameter is **-u** \<user-email>.&#x20;
 {% endhint %}
 
 #### Memory Request
@@ -95,9 +95,9 @@ The following is the description of the command and the available configuration 
 
 `usage: run-remote-render [-n cores] [-t walltime] [-m memory] [-q queue] [-o outfile] [-g ngpus] [-u user brown email]`\
 `Allocates resources, start up the render server and send and email to the user requesting the service`\
-`options: `\
-`-t walltime as hh:mm:ss (default: 1:30:00) `\
-`-m memory as #[k|m|g] (default: 45G) `\
+`options:` \
+`-t walltime as hh:mm:ss (default: 1:30:00)` \
+`-m memory as #[k|m|g] (default: 45G)` \
 `-o outfile save a copy of the session's output to outfile (default: off)`\
 `-q slurm partition (gpu (default)| gpu-he)`\
 `-u brown email of the user requesting the service`
@@ -141,9 +141,9 @@ Open a terminal and execute the command:
 ssh -N -L <port-number>:<SERVER_IP>:<port-number> <your_brown_id>@ssh.ccv.brown.edu
 ```
 
-* **`<SERVER_IP> `  **This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email **
+* **`<SERVER_IP>`   **  This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
 * **`<port-number>`**This is the port exposed to access the rendering server. **Replace with the value sent in the confirmation email**
-* **`<your_brown_id>` **is your Brown username (It should be the same used to connect to Oscar)\
+* **`<your_brown_id>` ** is your Brown username (It should be the same used to connect to Oscar)\
 
 
 {% hint style="info" %}
@@ -172,7 +172,7 @@ This step will reset the scene, so before doing it make sure to save all your da
 &#x20;After a few seconds, you get connected to the HPC automatically.
 
 {% hint style="info" %}
-In subsequent connections you can reuse the Server, but you will need to update the **host **and **port** values each time you launch a new server session
+In subsequent connections you can reuse the Server, but you will need to update the **host** and **port** values each time you launch a new server session
 {% endhint %}
 
 ### Verifying the connection is set up correctly.

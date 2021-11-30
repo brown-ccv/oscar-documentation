@@ -1,6 +1,6 @@
 # Oscar - Brown University's Cluster
 
-Oscar - Ocean State Center for Advanced Resources - is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by** **[**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu).&#x20;
+Oscar - Ocean State Center for Advanced Resources - is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by **** [**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu).&#x20;
 
 Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if there are any questions on Oscar.
 
@@ -46,7 +46,7 @@ Hundreds of users can share computing resources in Oscar.  [Slurm is used in Osc
 
 Users **should not run computations or simulations on the login nodes**, because they are shared with other users. You can use the login nodes to compile your codes, manage files, and launch jobs on the compute nodes.
 
-To allow users sharing access to Oscar, there are **limits on the maximum number of pending and running jobs **a user account may have/submit:
+To allow users sharing access to Oscar, there are **limits on the maximum number of pending and running jobs** a user account may have/submit:
 
 * 1200 for a priority account
 * 1000 for an exploratory account
@@ -76,7 +76,7 @@ Oscar users can connect to Oscar by
 
 ## Maintenance Schedule
 
-* **Non-disruptive Maintenance: **
+* **Non-disruptive Maintenance:**&#x20;
   * non-disruptive work, including software changes, maintenance, and testing
   * may occur at any time
   * no notification provided

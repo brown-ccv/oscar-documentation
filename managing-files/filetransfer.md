@@ -43,9 +43,9 @@ rsync -azvp --progress path/to/source/directory <username>@ssh.ccv.brown.edu:/pa
 ## 3. GUI programs for transferring files using the `sftp`  protocol and `transfer.ccv.brown.edu` hostname
 
 * **DUO is required if you are not connected to approved networks, e.g., home network**
-  * **There is no interactive terminal message but your Phone will get a prompt automatically **
+  * **There is no interactive terminal message but your Phone will get a prompt automatically**&#x20;
 * **DUO is NOT required if you are connected to approved Brown networks**
-  * **A personal Windows computer must have**[** CrowdStrike**](https://www.brown.edu/information-technology/software/catalog/crowdstrike-home)** installed in order to be on approved Brown networks.**
+  * **A personal Windows computer must have**[ **CrowdStrike**](https://www.brown.edu/information-technology/software/catalog/crowdstrike-home) **installed in order to be on approved Brown networks.**
 
 In general, you can specify the following for your GUI programs:
 

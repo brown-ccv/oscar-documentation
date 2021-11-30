@@ -44,11 +44,11 @@ IDL>
 Note: To exit this environment, simply use the command `exit`
 {% endhint %}
 
-As is stated in the [IDL Documentation](https://www.l3harrisgeospatial.com/docs/using_idl_home.html), IDL in command-line mode "uses a text-only interface and sends output to your terminal screen or shell window." Thus, this is a mode in which you can enter commands and see their results in real time, but it is not where one should write full IDL programs.
+As is stated in the [IDL Documentation](https://www.l3harrisgeospatial.com/docs/using\_idl\_home.html), IDL in command-line mode "uses a text-only interface and sends output to your terminal screen or shell window." Thus, this is a mode in which you can enter commands and see their results in real time, but it is not where one should write full IDL programs.
 
 ## IDL Programs
 
-To write an_ _IDL program, you can use any of the text editors on Oscar (such as vim, emacs, and nano) or you can create the program in a file on your own computer and then copy that file to Oscar when you are finished. Here is an example (hello world) IDL program `idl_hello_world.pro`:
+To write an __ IDL program, you can use any of the text editors on Oscar (such as vim, emacs, and nano) or you can create the program in a file on your own computer and then copy that file to Oscar when you are finished. Here is an example (hello world) IDL program `idl_hello_world.pro`:
 
 ```
 PRO IDL_HELLO_WORLD

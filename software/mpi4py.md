@@ -39,7 +39,7 @@ if __name__ == "__main__":
 ```
 
 {% hint style="info" %}
-The file `mpi4pytest.py` _ _can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
+The file `mpi4pytest.py` __ can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
 {% endhint %}
 
 ## Conda Environment
@@ -111,7 +111,7 @@ $ python -m pip install mpi4py
 $ deactivate
 ```
 
-Here is an example batch job script` mpi4pytest_virtualenv.sh`  and the python virtual environment setup:
+Here is an example batch job script `mpi4pytest_virtualenv.sh`  and the python virtual environment setup:
 
 ```
 #!/bin/bash
