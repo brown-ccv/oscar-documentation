@@ -28,7 +28,7 @@ ssh-keygen -t rsa
 
 Press Enter to accept the default file location and file name.&#x20;
 
-The `ssh-keygen` will ask you to type a secure passphrase. This is optional but we highly recommend it. If you don't want to use a passphrase just press `Enter`
+The `ssh-keygen` will ask you to type a secure passphrase. This is optional. If you don't want to use a passphrase just press `Enter`
 
 Verify the SSH keys are generated correctly, you should see two files `id_rsa` and `id_rsa.pub` under `~/.ssh` directory.
 
