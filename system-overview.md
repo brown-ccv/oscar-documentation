@@ -26,6 +26,20 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.&#x20;
 
+
+
+
+
+| Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
+| --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
+| batch     | 262         | 9040        | 24-48          | n/a        | 95-385               |
+| bigmem    | 4           | 128         | 32             | n/a        | 772-2146             |
+| gpu       | 34          | 1448        | 8-64           | 269        | 95-1030              |
+| gpu-he    | 11          | 488         | 24-64          | 76         | 192-1030             |
+| debug     | 4           | 96          | 24             | n/a        | 95                   |
+| gpu-debug | 3           | 24          | 8              | 12         | 192                  |
+| vnc       | 23          | 568         | 24-32          | 16         | 95-773               |
+
 ![](.gitbook/assets/partsum15.png)
 
 ## Hardware details
