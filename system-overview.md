@@ -2,7 +2,15 @@
 
 ## Oscar Specifications
 
-![](.gitbook/assets/summary15.png)
+
+
+|                        |       |
+| ---------------------- | ----- |
+| **Compute Nodes**      | 341   |
+| **Total CPU Cores**    | 11792 |
+| **GPU Nodes**          | 45    |
+| **Total GPUs**         | 373   |
+| **Large Memory Nodes** | 4     |
 
 ## Compute Nodes
 
