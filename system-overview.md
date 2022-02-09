@@ -6,10 +6,10 @@
 
 |                        |       |
 | ---------------------- | ----- |
-| **Compute Nodes**      | 347   |
-| **Total CPU Cores**    | 12128 |
+| **Compute Nodes**      | 350   |
+| **Total CPU Cores**    | 12152 |
 | **GPU Nodes**          | 45    |
-| **Total GPUs**         | 373   |
+| **Total GPUs**         | 371   |
 | **Large Memory Nodes** | 4     |
 
 ## Compute Nodes
@@ -36,12 +36,12 @@ Below are node details including cores and memory for all partitions.&#x20;
 | gpu-he    | 11          | 488         | 24-64          | 76         | 192-1030             |
 | debug     | 4           | 96          | 24             | n/a        | 95                   |
 | gpu-debug | 3           | 24          | 8              | 12         | 192                  |
-| vnc       | 23          | 568         | 24-32          | 16         | 95-773               |
+| vnc       | 26          | 592         | 8-32           | 26         | 95-773               |
 
 
 
 ## Hardware details
 
-Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs&#x20;
+Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs
 
-![](.gitbook/assets/features131.png)
+![](.gitbook/assets/features29.png)
