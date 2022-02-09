@@ -18,6 +18,7 @@
 * [CIFS  non-AD (Local Mount)](connecting-to-oscar/cifs-non-ad-local-mount.md)
 * [Remote IDE](connecting-to-oscar/remote-ide/README.md)
   * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
+  * [Setup Debugger](connecting-to-oscar/remote-ide/setup-debugger.md)
 
 ## Accounts on Oscar
 
@@ -79,7 +80,7 @@
 * [IDL](software/using-idl.md)
 * [MPI4PY](software/mpi4py.md)
 
-## Jupyter Notebooks/Labs <a href="jupyter-notebooks" id="jupyter-notebooks"></a>
+## Jupyter Notebooks/Labs <a href="#jupyter-notebooks" id="jupyter-notebooks"></a>
 
 * [Jupyter Notebooks on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar-1.md)
 * [Jupyter Labs on Oscar](jupyter-notebooks/jupyter-notebooks-on-oscar.md)
@@ -120,14 +121,14 @@
 * [Meet with CCV Staff](getting-help/meet-ccv.md)
 * [CCV User Policies](getting-help/ccv-user-policies.md)
 
-## Installing Software Packages Locally <a href="local-install" id="local-install"></a>
+## Installing Software Packages Locally <a href="#local-install" id="local-install"></a>
 
 * [Using a CESM module](local-install/cesm.md)
 * [Installing your own version of CESM](local-install/installing-your-own-version-of-cesm.md)
 * [Installing your own version of Quantum Espresso](local-install/installing-your-own-version-of-quantum-espresso.md)
 * [Installing your own version of Qmcpack](local-install/installing-your-own-version-of-qmcpack.md)
 
-## dbGaP <a href="dbgap-data" id="dbgap-data"></a>
+## dbGaP <a href="#dbgap-data" id="dbgap-data"></a>
 
 * [dbGaP Architecture](dbgap-data/dbgap-project.md)
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
