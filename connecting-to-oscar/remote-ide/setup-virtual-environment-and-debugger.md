@@ -1,8 +1,6 @@
-# Setup Debugger
+# Setup virtual environment and debugger
 
-### Setting path to Python.VenvPath:
-
-1. If you have an existing virtual environment, proceed to step2. To create a new virtual environment
+1. If you have an existing virtual environment, proceed to step 2. Otherwise, to create a new virtual environment:
 
 ```
 $ virtualenv -p python3 my_env
@@ -11,7 +9,7 @@ $ source my_env/bin/activate
 $ pip install -r requirements.txt
 ```
 
-2\. Search for Python.VenvPath as shown in the picture below:
+2\. Search for `Python.VenvPath` as shown in the picture below:
 
 ![Select your virtual environment ](<../../.gitbook/assets/Screen Shot 2022-02-09 at 9.08.40 AM.png>)
 
