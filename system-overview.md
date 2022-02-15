@@ -2,8 +2,6 @@
 
 ## Oscar Specifications
 
-
-
 |                        |       |
 | ---------------------- | ----- |
 | **Compute Nodes**      | 350   |
@@ -26,8 +24,6 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.&#x20;
 
-
-
 | Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
 | --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
 | batch     | 268         | 9376        | 24-48          | n/a        | 95-385               |
@@ -38,10 +34,8 @@ Below are node details including cores and memory for all partitions.&#x20;
 | gpu-debug | 3           | 24          | 8              | 12         | 192                  |
 | vnc       | 26          | 592         | 8-32           | 26         | 95-773               |
 
-
-
 ## Hardware details
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs
 
-![](.gitbook/assets/features29.png)
+![](.gitbook/assets/features215.png)
