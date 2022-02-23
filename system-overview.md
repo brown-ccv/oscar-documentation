@@ -4,8 +4,8 @@
 
 |                        |       |
 | ---------------------- | ----- |
-| **Compute Nodes**      | 350   |
-| **Total CPU Cores**    | 12152 |
+| **Compute Nodes**      | 358   |
+| **Total CPU Cores**    | 12536 |
 | **GPU Nodes**          | 45    |
 | **Total GPUs**         | 371   |
 | **Large Memory Nodes** | 4     |
@@ -22,11 +22,13 @@ Oscar has compute nodes in the partitions listed below.
 * **gpu-he** -The gpu-he partition is for programs/jobs which need to access high-end GPUs.&#x20;
 * **vnc** - The vnc partition is for users to run programs/jobs in an graphical desktop environment.&#x20;
 
-Below are node details including cores and memory for all partitions.&#x20;
+Below are node details including cores and memory for all partitions.
+
+
 
 | Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
 | --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
-| batch     | 268         | 9376        | 24-48          | n/a        | 95-385               |
+| batch     | 276         | 9760        | 24-48          | n/a        | 95-385               |
 | bigmem    | 4           | 128         | 32             | n/a        | 772-2146             |
 | gpu       | 34          | 1448        | 8-64           | 269        | 95-1030              |
 | gpu-he    | 11          | 488         | 24-64          | 76         | 192-1030             |
@@ -36,6 +38,6 @@ Below are node details including cores and memory for all partitions.&#x20;
 
 ## Hardware details
 
-Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs
+Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs.
 
-![](.gitbook/assets/features215.png)
+![](.gitbook/assets/feat223.png)
