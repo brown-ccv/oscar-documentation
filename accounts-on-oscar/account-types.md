@@ -7,7 +7,7 @@ To request a priority account or a condo, use the [account form](https://brown.c
 ## Exploratory Account
 
 * Exploratory accounts are available to all members of the Brown community for **free**.
-* See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for detailed description of the resources
+* See the[ CCV Rates page ](https://ccv.brown.edu/rates/)for detailed description of the resources
 * Jobs are submitted to the **batch partition**. See the  [System Hardware](../system-overview.md) page for available hardware
 
 ## Priority Accounts
