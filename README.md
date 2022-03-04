@@ -18,8 +18,6 @@ Anyone with a Brown account can get a **free Exploratory accoun**t on Oscar, or 
 
 More details can be found at the [CCV Rates page](https://ccv.brown.edu/rates).
 
-{% embed url="https://ccv.brown.edu/services/rates" %}
-
 Individuals external to Brown can get access to Oscar by having a sponsored Brown account. Please work with your department to[ get sponsored Brown accounts](https://ithelp.brown.edu/kb/articles/request-a-brown-account-for-an-affiliate) for any external collaborators.
 
 Authorized users must comply with the following Brown University policies:
