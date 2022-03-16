@@ -1,5 +1,9 @@
 # Using File Explorer on OOD
 
+{% hint style="danger" %}
+## This service is NOT available to users at the moment. We are still testing it and we will update all users when this service is available
+{% endhint %}
+
 The filesystem on Oscar can be accessed through the file explorer on this web portal. The file explorer allows you
 
 * List files

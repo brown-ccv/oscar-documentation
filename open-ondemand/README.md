@@ -1,5 +1,11 @@
 # Open OnDemand
 
+
+
+{% hint style="danger" %}
+## This service is NOT available to users at the moment. We are still testing it and we will update all users when this service is available
+{% endhint %}
+
 Open OnDemand (OOD) is a web portal to the Oscar computing cluster. **An Oscar account is required to access Open OnDemand.** Visit this link in a web browser and sign in with your Brown username and password to access this portal.
 
 ### [Open on Demand](https://ood.ccv.brown.edu)
