@@ -50,13 +50,6 @@
 * [Condo/Priority Jobs](submitting-jobs/condo-priority-jobs.md)
 * [Dependent Jobs](submitting-jobs/dependent-jobs.md)
 
-***
-
-* [Open OnDemand](open-ondemand/README.md)
-  * [Using File Explorer on OOD](open-ondemand/using-file-explorer-on-ood.md)
-  * [Web-based Terminal App](open-ondemand/web-based-terminal-app.md)
-  * [Interactive Apps on OOD](open-ondemand/interactive-apps-on-ood.md)
-
 ## GPU Computing
 
 * [GPUs on Oscar](gpu-computing/gpus.md)
