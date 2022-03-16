@@ -1,7 +1,3 @@
----
-description: For users unable to use smb.ccv.brown.edu
----
-
 # CIFS  non-AD (Local Mount)
 
 
