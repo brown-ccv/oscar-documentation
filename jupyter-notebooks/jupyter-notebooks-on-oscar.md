@@ -2,17 +2,17 @@
 
 ## Installing Jupyter Lab
 
-The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter lab](https://jupyter.readthedocs.io/en/latest/install.html). 
+The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter lab](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
 
 ## Running Jupyter Lab on Oscar
 
-There are a couple of ways to use [Jupyter](https://jupyter.org/) Lab on Oscar.   You can run a Jupyter Lab
+There are a couple of ways to use [Jupyter](https://jupyter.org) Lab on Oscar.   You can run a Jupyter Lab
 
-* in a VNC session 
+* in a VNC session&#x20;
 * using a batch job
 * in an interactive session
 
- With the batch job or interactive session method, you use a browser on your machine to connect to your Jupyter Lab server on Oscar. 
+&#x20;With the batch job or interactive session method, you use a browser on your machine to connect to your Jupyter Lab server on Oscar.&#x20;
 
 {% hint style="warning" %}
 Do not run Jupyter Lab on login nodes.
@@ -22,7 +22,7 @@ Do not run Jupyter Lab on login nodes.
 
 Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a Jupyter Lab, enter
 
-```text
+```
 jupyter-lab
 ```
 
@@ -45,7 +45,7 @@ If you installed Jupyter Lab with pip, you may need to give the full path:
 
 Here is an example batch script to start a Jupyter Lab server on an Oscar compute node
 
-```text
+```
 #!/bin/bash
 #SBATCH --nodes 1
 #SBATCH -c 6
@@ -70,7 +70,7 @@ echo -e "
     "
 ## start an ipcluster instance and launch jupyter server
 module load anaconda/3-5.2.0
-~/.local/bin/jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
+jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
 ```
 
 {% hint style="info" %}
@@ -79,7 +79,7 @@ If you installed Jupyter Lab with pip, you may need to give the full path:
 `~/.local/bin/jupyter-lab --no-browser --port=$ipnport --ip=$ipnip`
 {% endhint %}
 
-This script can be found in ~/batch\_scripts.  Copy this example and submit this script with 
+This script can be found in \~/batch\_scripts.  Copy this example and submit this script with&#x20;
 
 `sbatch jupyter.sh`
 
@@ -87,7 +87,7 @@ Once your batch job is running  there will be a file named `jupyter-log-`{jobid}
 
 The output from `myq` will look something like this:
 
-```text
+```
 Jobs for user mhamilton
 
 Running:
@@ -106,7 +106,7 @@ In this example the jobID is 7239096. To view the lab server information, use `c
 
 Open a terminal **on your machine** and copy and paste the `ssh -N -L ........` line into the terminal.
 
-```text
+```
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
 ```
 
@@ -120,7 +120,7 @@ Enter your Oscar password.  Note it will appear that nothing has happened.
 
 Open a browser on your local machine to the address given in `cat jupyter-log-{jobid}.txt`.
 
-```text
+```
 localhost:9349  (prefix w/ https:// if using password)
 ```
 
@@ -141,7 +141,7 @@ Remember to `scancel {jobid}` when you are done with your notebook session
 
 Start an [Interactive job](../submitting-jobs/interact.md) and then in your interactive session  enter the following:
 
-```text
+```
 unset XDG_RUNTIME_DIR
 module load anaconda/3-5.2.0
 ipnport=$(shuf -i8000-9999 -n1)
@@ -155,27 +155,27 @@ An output similar to the one below indicates that Jupyter Lab has started:
 
 > $ jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
 >
-> \[I 13:12:03.404 LabApp\] JupyterLab beta preview extension loaded from /gpfs/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
+> \[I 13:12:03.404 LabApp] JupyterLab beta preview extension loaded from /gpfs/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
 >
-> \[I 13:12:03.404 LabApp\] JupyterLab application directory is /gpfs/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
+> \[I 13:12:03.404 LabApp] JupyterLab application directory is /gpfs/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
 >
-> \[I 13:12:03.410 LabApp\] Serving notebooks from local directory: /gpfs\_home/yliu385
+> \[I 13:12:03.410 LabApp] Serving notebooks from local directory: /gpfs\_home/yliu385
 >
-> \[I 13:12:03.410 LabApp\] 0 active kernels
+> \[I 13:12:03.410 LabApp] 0 active kernels
 >
-> \[I 13:12:03.410 LabApp\] The Jupyter Notebook is running at:
+> \[I 13:12:03.410 LabApp] The Jupyter Notebook is running at:
 >
-> \[I 13:12:03.410 LabApp\] http://172.20.209.7:9414/?**token=dd9936098d03b8195fc626f017c97ca56a054887d134cb1e**
+> \[I 13:12:03.410 LabApp] http://172.20.209.7:9414/?**token=dd9936098d03b8195fc626f017c97ca56a054887d134cb1e**
 >
-> \[I 13:12:03.410 LabApp\] Use Control-C to stop this server and shut down all kernels \(twice to skip confirmation\).
+> \[I 13:12:03.410 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 >
-> \[C 13:12:03.411 LabApp\]
+> \[C 13:12:03.411 LabApp]&#x20;
 
 ### 2. Setup an ssh tunnel to the server
 
-Open a terminal **on your machine** and enter the following line \(replace $ipnip and $ipnport with the values from the two `echo` commands in the previous step\).
+Open a terminal **on your machine** and enter the following line (replace $ipnip and $ipnport with the values from the two `echo` commands in the previous step).
 
-```text
+```
  ssh -N -L $ipnport:$ipnip:$ipnport user@ssh.ccv.brown.edu
 ```
 
@@ -189,7 +189,7 @@ Enter your Oscar password.  Note it will appear that nothing has happened.
 
 Open a browser on your local machine to the address:
 
-```text
+```
 localhost:$ipnport  (prefix w/ http:// if using password)
 ```
 
@@ -198,4 +198,3 @@ Again, you need to replace `$ipnport` with the value from the first `echo` comma
 ### 4. Press Ctrl+C twice to kill your Jupyter Lab server
 
 Once you finish and no longer need the Jupyter Lab server, you can kill the server by pressing Ctrl+C twice in your interactive session.
-
