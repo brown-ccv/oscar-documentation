@@ -20,6 +20,10 @@
   * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
   * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
   * [Setup virtual environment and debugger](connecting-to-oscar/remote-ide/setup-virtual-environment-and-debugger.md)
+* [Open OnDemand](connecting-to-oscar/open-ondemand/README.md)
+  * [Using File Explorer on OOD](connecting-to-oscar/open-ondemand/using-file-explorer-on-ood.md)
+  * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
+  * [Interactive Apps on OOD](connecting-to-oscar/open-ondemand/interactive-apps-on-ood.md)
 
 ## Accounts on Oscar
 
