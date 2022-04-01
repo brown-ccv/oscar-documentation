@@ -18,6 +18,7 @@
 * [CIFS  non-AD (Local Mount)](connecting-to-oscar/cifs-non-ad-local-mount.md)
 * [Remote IDE](connecting-to-oscar/remote-ide/README.md)
   * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
+  * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
   * [Setup virtual environment and debugger](connecting-to-oscar/remote-ide/setup-virtual-environment-and-debugger.md)
 
 ## Accounts on Oscar
