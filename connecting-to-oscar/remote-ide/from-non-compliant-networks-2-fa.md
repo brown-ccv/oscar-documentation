@@ -1,3 +1,7 @@
+---
+description: Accessing VSCode from Non-Brown compliant networks
+---
+
 # From Non-compliant Networks (2-FA)
 
 {% hint style="info" %}
