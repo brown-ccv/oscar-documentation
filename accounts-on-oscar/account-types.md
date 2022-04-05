@@ -56,22 +56,5 @@ PIs who purchase hardware (compute nodes) for the CCV machine get a Condo accoun
 
 Investigators may also purchase condos to grant access to computing resources for others working with them. After a condo is purchased, they can have users request to join the condo group through the "Request Access to Existing Condo" option on the [account form](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B) on the CCV homepage.&#x20;
 
-## Oscar Groups for Accounts
 
-| Account Type           | Group Name                                                                                                               |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Exploratory (free)     |                                                                                                                          |
-| HPC Priority           | `priority, priority1,priority2, ... ,priority5`                                                                          |
-| HPC Priority+          | `priority+`                                                                                                              |
-| Standard GPU Priority  | `pri-gpu`                                                                                                                |
-| Standard GPU Priority+ | `pri-gpu+`                                                                                                               |
-| High End GPU Priority  | `gpu-he`                                                                                                                 |
-| Large Memory Priority  | `pri-bigmem`                                                                                                             |
-| A PI's CPU condo       | `<PI_group>-condo`, e.g. ap31-condo                                                                                      |
-| A PI's GPU condo       | <p><code>&#x3C;PI_group>-gcondo</code>, or</p><p> <code>&#x3C;PI_group>-&#x3C;hardware_architecture>-gcondo,</code> </p> |
-| Research Project condo | `<project_name>-condo`.                                                                                                  |
-
-* To check which type of account you are on or which condos you are a part of, run the command`groups <username>` or`id <username>` and verify the group(s) that you are a part of above.&#x20;
-* If you requested an Exploratory Account without PI, you will likely be in the `nopi` group. If you requested an Exploratory Account with PI, you will be in the PI's group that you requested..
-* When a condo is deactivated/removed, a user may not be removed from its corresponding Oscar group.&#x20;
 
