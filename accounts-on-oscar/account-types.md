@@ -50,7 +50,9 @@ The following accounts are billed quarterly and offer more computational resourc
 * See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources
 *   Jobs are submitted to the **bigmem partition**. See the [System Hardware](../system-overview.md) page for available  hardware
 
-    ## Condo
+
+
+## Condo
 
 PIs who purchase hardware (compute nodes) for the CCV machine get a Condo account. Condo account users have the highest priority on the number of cores equivalent to the hardware they purchased. Condo accounts last for five years and give their owners access to 25% more CPU cores than they purchase for the first three years of their lifespan. GPU resources do not decrease over the lifetime of the condo.
 
