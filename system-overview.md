@@ -6,7 +6,7 @@
 | ---------------------- | ----- |
 | **Compute Nodes**      | 388   |
 | **Total CPU Cores**    | 13880 |
-| **GPU Nodes**          | 50    |
+| **GPU Nodes**          | 56    |
 | **Total GPUs**         | 377   |
 | **Large Memory Nodes** | 4     |
 
@@ -24,8 +24,6 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.
 
-
-
 | Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
 | --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
 | batch     | 303         | 11056       | 24-48          | n/a        | 95-385               |
@@ -35,6 +33,7 @@ Below are node details including cores and memory for all partitions.
 | debug     | 4           | 96          | 24             | n/a        | 95                   |
 | gpu-debug | 3           | 24          | 8              | 12         | 192                  |
 | vnc       | 26          | 592         | 8-32           | 26         | 95-773               |
+| viz       | 3           | 24          | 8              | 12         | 192                  |
 
 ## Hardware details
 
