@@ -37,6 +37,6 @@ Below are node details including cores and memory for all partitions.
 
 ## Hardware details
 
-Hardware details for all partitions. The Features column shows the features available for the --constraint option for slurm. This includes the available CPU types  as well GPUs.
+Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types  as well GPUs.
 
-![](.gitbook/assets/features47.png)
+![](.gitbook/assets/features48.png)
