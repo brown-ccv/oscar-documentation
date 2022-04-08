@@ -4,10 +4,10 @@
 
 |                        |       |
 | ---------------------- | ----- |
-| **Compute Nodes**      | 385   |
-| **Total CPU Cores**    | 13832 |
-| **GPU Nodes**          | 45    |
-| **Total GPUs**         | 371   |
+| **Compute Nodes**      | 388   |
+| **Total CPU Cores**    | 13880 |
+| **GPU Nodes**          | 50    |
+| **Total GPUs**         | 377   |
 | **Large Memory Nodes** | 4     |
 
 ## Compute Nodes
