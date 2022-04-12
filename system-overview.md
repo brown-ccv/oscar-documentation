@@ -24,6 +24,8 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.
 
+
+
 | Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
 | --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
 | batch     | 303         | 11056       | 24-48          | n/a        | 95-385               |
@@ -39,4 +41,4 @@ Below are node details including cores and memory for all partitions.
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types  as well GPUs.
 
-![](.gitbook/assets/features48.png)
+![](.gitbook/assets/feat412.png)
