@@ -4,8 +4,8 @@
 
 |                        |       |
 | ---------------------- | ----- |
-| **Compute Nodes**      | 388   |
-| **Total CPU Cores**    | 13880 |
+| **Compute Nodes**      | 392   |
+| **Total CPU Cores**    | 14072 |
 | **GPU Nodes**          | 56    |
 | **Total GPUs**         | 377   |
 | **Large Memory Nodes** | 4     |
@@ -28,7 +28,7 @@ Below are node details including cores and memory for all partitions.
 
 | Partition | Total Nodes | Total Cores | Cores Per Node | Total GPUs | Memory Per Node (GB) |
 | --------- | ----------- | ----------- | -------------- | ---------- | -------------------- |
-| batch     | 303         | 11056       | 24-48          | n/a        | 95-385               |
+| batch     | 307         | 11248       | 24-48          | n/a        | 95-385               |
 | bigmem    | 4           | 128         | 32             | n/a        | 772-2146             |
 | gpu       | 34          | 1448        | 8-64           | 269        | 95-1030              |
 | gpu-he    | 11          | 488         | 24-64          | 76         | 192-1030             |
@@ -39,6 +39,6 @@ Below are node details including cores and memory for all partitions.
 
 ## Hardware details
 
-Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types  as well GPUs.
+Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types as well GPUs.
 
-![](.gitbook/assets/feat412.png)
+![](.gitbook/assets/feat419.png)
