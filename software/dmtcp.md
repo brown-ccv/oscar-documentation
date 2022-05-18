@@ -82,6 +82,9 @@ The example job script `dmtcp_serial_job.sh` below does the following
 
 ```
 $ cat dmtcp_serial_job.sh 
+```
+
+```
 #!/bin/bash
 
 #SBATCH -n 1
@@ -98,6 +101,11 @@ else
 fi
 
 ```
+
+```
+```
+
+### First Submission - Launch a Program
 
 Submit `dmtcp_serial_job.sh` and then wait for the job to run until time out. Below shows the beginning and end of the job output file
 
@@ -131,6 +139,8 @@ $ tail slurm-5157871.out
 slurmstepd: error: *** JOB 5157871 ON node1139 CANCELLED AT 2022-05-18T09:43:58 DUE TO TIME LIMIT ***
 
 ```
+
+### Later Submissions - Restart from a Checkpoint
 
 Submit `dmtcp_serial_job.sh` and then wait for the job to run until time out.  Below shows the beginning of the job output file, which demonstrate that the job restarts from the checkpoint of the previous job.
 
