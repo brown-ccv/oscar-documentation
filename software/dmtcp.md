@@ -102,9 +102,6 @@ fi
 
 ```
 
-```
-```
-
 ### First Submission - Launch a Program
 
 Submit `dmtcp_serial_job.sh` and then wait for the job to run until time out. Below shows the beginning and end of the job output file
