@@ -75,16 +75,18 @@ $ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmt
 
 ## Batch Jobs
 
-The example job script `dmtcp_serial_job.sh` below does the following
+It is desirable goal that single job script can&#x20;
+
+* launch a program if there is checkpoints, or
+* automatically restarts from a checkpoint if there is one or more checkpoints
+
+The job script `dmtcp_serial_job.sh` below is an example which shows how to achieve the goal:
 
 * If there is no checkpoint in the current directory, launch the program `dmtcp_serial`&#x20;
 * If one or more checkpoints exist in the current directory, restart the program `dmtcp_serial` from the latest checkpoint
 
 ```
 $ cat dmtcp_serial_job.sh 
-```
-
-```
 #!/bin/bash
 
 #SBATCH -n 1
