@@ -6,6 +6,8 @@
 
 [Distributed Multithreaded checkpointing](https://dmtcp.sourceforge.io/) (DMTCP) checkpoints a running program on Linux with no modifications to the program or OS. It allows to restart running the program from a checkpoint.&#x20;
 
+## Modules
+
 To access dmtcp, load a dmtcp module. For example:
 
 `module load dmtcp/2.6.0`
