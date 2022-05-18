@@ -12,7 +12,7 @@ icon: check
 
 ## Partition Overview
 
-Oscar has the following [slurm](https://slurm.schedmd.com) partitions. The number and size of jobs allowed on Oscar vary with both partition and type of user account. You can email support@ccv.brown.edu if you need advice on which partitions to use‌.
+Oscar has the following [slurm](https://slurm.schedmd.com/) partitions. The number and size of jobs allowed on Oscar vary with both partition and type of user account. You can email support@ccv.brown.edu if you need advice on which partitions to use‌.
 
 To list partitions on Oscar available to your account, run the following command:
 

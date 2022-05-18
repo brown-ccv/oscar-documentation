@@ -6,7 +6,7 @@ The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anac
 
 ## Running Jupyter Lab on Oscar
 
-There are a couple of ways to use [Jupyter](https://jupyter.org) Lab on Oscar.   You can run a Jupyter Lab
+There are a couple of ways to use [Jupyter](https://jupyter.org/) Lab on Oscar.   You can run a Jupyter Lab
 
 * in a VNC session&#x20;
 * using a batch job

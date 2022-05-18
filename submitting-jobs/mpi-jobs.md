@@ -3,7 +3,7 @@
 Resources from the web on getting started with MPI:
 
 * [https://computing.llnl.gov/tutorials/mpi](https://computing.llnl.gov/tutorials/mpi)
-* [http://mpitutorial.com](http://mpitutorial.com)
+* [http://mpitutorial.com](http://mpitutorial.com/)
 * [http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro\_to\_MPI.pdf](http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro\_to\_MPI.pdf)
 
 MPI is a standard that dictates the semantics and features of "message passing". There are different implementations of MPI. Those installed on Oscar are

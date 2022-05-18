@@ -147,6 +147,6 @@ There is also extensive documentation on the web on using SLURM ([quick start gu
 
 ## Where to get help
 
-* Online resources: [SLURM](https://slurm.schedmd.com), [Linux Documentation](https://tldp.org/LDP/intro-linux/html/),  [Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands), [stackoverflow](http://stackoverflow.com)
+* Online resources: [SLURM](https://slurm.schedmd.com/), [Linux Documentation](https://tldp.org/LDP/intro-linux/html/),  [Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands), [stackoverflow](http://stackoverflow.com/)
 * CCV's page detailing [common problems](getting-help/faq.md) you might face on Oscar
 * Email [support@ccv.brown.edu](mailto:support@ccv.brown.edu)

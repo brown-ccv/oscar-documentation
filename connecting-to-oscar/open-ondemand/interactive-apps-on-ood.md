@@ -8,7 +8,7 @@ You can launch several different apps on the Open OnDemand (OOD) interface. All 
 
 ## Launching an App on OOD
 
-1. Open [https://ood.ccv.brown.edu](https://ood.ccv.brown.edu) on any browser of the your choice
+1. Open [https://ood.ccv.brown.edu](https://ood.ccv.brown.edu/) on any browser of the your choice
 2. &#x20;If prompted, enter your Brown username and password.
 3. &#x20;Click on the "Interactive Apps" tab at the top of the screen to see the list of available apps. This will open the form to enter the details of the job.
 4. Follow the instructions on the form to complete it. Some of fields can be left blank and OOD will choose the default option for you.

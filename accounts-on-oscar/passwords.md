@@ -7,5 +7,5 @@
 
 ### Changing Passwords
 
-Oscar  users should use their Brown passwords to log into Oscar. Users should change their Brown passwords at [myaccount.brown.edu](https://myaccount.brown.edu).
+Oscar  users should use their Brown passwords to log into Oscar. Users should change their Brown passwords at [myaccount.brown.edu](https://myaccount.brown.edu/).
 

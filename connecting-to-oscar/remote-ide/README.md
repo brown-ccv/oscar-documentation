@@ -7,7 +7,7 @@ description: Access Oscar's file-system remotely from VSCode.
 ## VSCode
 
 {% hint style="info" %}
-To use VSCode you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.&#x20;
+To use VSCode you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
 {% endhint %}
 
 To use VSCode you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.

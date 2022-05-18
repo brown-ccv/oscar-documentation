@@ -6,7 +6,7 @@ The anaconda/3-5.2.0 module provides jupyter-notebook. Users can also use pip or
 
 ## Running Jupyter Notebook on Oscar
 
-There are a couple of ways to use [Jupyter](https://jupyter.org) Notebook on Oscar.   You can run Jupyter Notebook
+There are a couple of ways to use [Jupyter](https://jupyter.org/) Notebook on Oscar.   You can run Jupyter Notebook
 
 * in a VNC session&#x20;
 * using a batch job

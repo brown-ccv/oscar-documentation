@@ -102,7 +102,7 @@ If you want to use Globus Online to move data to/from you own machine, you can i
 
 ## 5. LFTP
 
-[LFTP](https://lftp.yar.ru) is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent). It has bookmarks, a built-in mirror command, can transfer several files in parallel and was designed with reliability in mind. You can use the `LFTP` module from Oscar to transfer data from any (S)FTP server you have access to directly to Oscar. Below are the main `LFTP` commands to get you started:
+[LFTP](https://lftp.yar.ru/) is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent). It has bookmarks, a built-in mirror command, can transfer several files in parallel and was designed with reliability in mind. You can use the `LFTP` module from Oscar to transfer data from any (S)FTP server you have access to directly to Oscar. Below are the main `LFTP` commands to get you started:
 
 ```
 module load lftp  # To load the LFTP module from Oscar

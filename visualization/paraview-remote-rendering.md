@@ -8,13 +8,13 @@ description: Running Paraview Remote Rendering in Oscar
 This service is new and is in Beta
 {% endhint %}
 
-The Center for Computation and Visualization (CCV) offers to the academic community a way to visualize large datasets using Oscar and its powerful GPUs as a rendering server. The current GPU hardware and available memory on Oscar surpasses the common desktop models, offering a modern and robust solution to display large datasets in parallel jobs using the widely used  opensource software [Paraview](https://www.paraview.org). It is a simple two-steps process. Start the server and connect the client.
+The Center for Computation and Visualization (CCV) offers to the academic community a way to visualize large datasets using Oscar and its powerful GPUs as a rendering server. The current GPU hardware and available memory on Oscar surpasses the common desktop models, offering a modern and robust solution to display large datasets in parallel jobs using the widely used  opensource software [Paraview](https://www.paraview.org/). It is a simple two-steps process. Start the server and connect the client.
 
 ## **Who benefits from this service?**&#x20;
 
 The target audience for this service are members of the academic community that interact, and analyze large 3D datasets, i.e., point clouds, volumetric data, tiff-stacks and mesh-data. This includes groups working with microscopy data, MRI images, structural analysis, fluid dynamics, climate sciences, astrophysics and more. In fact, ParaView can handle over 100 different file formats. The remote rendering service is targeted to scenarios where the personal/lab computer setup may not have the resources to handle the size of the underlying datasets. Common obstacles are older GPU technology or low RAM availability which may cause performance issues.&#x20;
 
-![Research areas that can benefit from ParaView's Remote Rendering Service](<../.gitbook/assets/image (17).png>)
+![Research areas that can benefit from ParaView's Remote Rendering Service](<../.gitbook/assets/image (17) (1).png>)
 
 ## Workflow Overview&#x20;
 
