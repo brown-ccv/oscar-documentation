@@ -16,6 +16,7 @@ To access dmtcp, load a dmtcp module. For example:
 
 * dmtcp\_serial
 * dmtcp\_serial.c
+* dmtcp\_serial\_job.sh
 
 ## Basic Usage
 
@@ -23,22 +24,133 @@ To access dmtcp, load a dmtcp module. For example:
 
 The `dmtcp_lanuch` command launches a program, and automatically checkpoints the program. To specify the interval (seconds) for checkpoints, add the "`-i num_seconds`" option to the `dmtcp_lauch` command.&#x20;
 
-**Example:** the following command launches the program `dmtcp_serial` and checkpoints every 8 seconds (Figure 1).
+**Example:** the following command launches the program `dmtcp_serial` and checkpoints every 8 seconds.
 
-`dmtcp_launch -i 8 ./a.out`
+```
+$ dmtcp_launch -i 8 ./dmtcp_serial  
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+^C
+[yliu385@node1317 interact]$ ll
+total 2761
+-rw------- 1 yliu385 ccvstaff 2786466 May 18 11:18 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp
+lrwxrwxrwx 1 yliu385 ccvstaff      60 May 18 11:18 dmtcp_restart_script.sh -> dmtcp_restart_script_24f183c2194a7dc4-40000-42af82ef922a7.sh
+-rwxr--r-- 1 yliu385 ccvstaff   12533 May 18 11:18 dmtcp_restart_script_24f183c2194a7dc4-40000-42af82ef922a7.sh
+-rwxr-xr-x 1 yliu385 ccvstaff    8512 May 18 08:36 dmtcp_serial
+```
 
-![Figure 1 Launch a Program](../.gitbook/assets/oscar-dmtcp-launch.png)
-
-As shown in Figure 1, a checkpoint file (ckpt\_\*.dmtcp) is created, and can be used to restart the program
+As shown in the example above, a checkpoint file (`ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcpp`) is created, and can be used to restart the program
 
 ### Restart from a checkpoint
 
-The dmtcp\_resart command restarts a program from a checkpoint, and also automatically checkpoints the program. To specify the interval (seconds) for checkpoints, add the "`-i num_seconds`" option to the `dmtcp_restart` command.&#x20;
+The `dmtcp_resart` command restarts a program from a checkpoint, and also automatically checkpoints the program. To specify the interval (seconds) for checkpoints, add the "`-i num_seconds`" option to the `dmtcp_restart` command.&#x20;
 
-**Example:** the following command restarts the dmtcp\_serial program from a checkpoint, and checkpoints every 12 seconds
+**Example:** the following command restarts the `dmtcp_serial` program from a checkpoint, and checkpoints every 12 seconds
 
-`dmtcp_restart -i 12`&#x20;
+```
+$ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+^C
+[yliu385@node1317 interact]$ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
+ 15
+ 16
+ 17
+^C
 
-As shown in Figure 2, the second run of the `dmtcp_restart` command starts from the checkpoint saved by the first run of the `dmtcp_restart` command. _``_&#x20;
+```
 
-![Figure 2 Restart from a Checkpoint](../.gitbook/assets/oscar-dmtcp-restart.png)
+## Batch Jobs
+
+The example job script `dmtcp_serial_job.sh` below does the following
+
+* If there is no checkpoint in the current directory, launch the program `dmtcp_serial`&#x20;
+* If one or more checkpoints exist in the current directory, restart the program `dmtcp_serial` from the latest checkpoint
+
+```
+$ cat dmtcp_serial_job.sh 
+#!/bin/bash
+
+#SBATCH -n 1
+#SBATCH -t 5:00
+#SBATCH -J dmtcp_serial
+
+checkpoint_file=`ls ckpt_*.dmtcp -t|head -n 1`
+checkpoint_interval=8
+
+if [ -z $checkpoint_file ]; then
+    dmtcp_launch -i $checkpoint_interval ./dmtcp_serial
+else
+    dmtcp_restart -i $checkpoint_interval $checkpoint_file
+fi
+
+```
+
+Submit `dmtcp_serial_job.sh` and then wait for the job to run until time out. Below shows the beginning and end of the job output file
+
+```
+$ head  slurm-5157871.out -n 15
+## SLURM PROLOG ###############################################################
+##    Job ID : 5157871
+##  Job Name : dmtcp_serial
+##  Nodelist : node1139
+##      CPUs : 1
+##   Mem/CPU : 2800 MB
+##  Mem/Node : 65536 MB
+## Directory : /gpfs/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
+##   Job Started : Wed May 18 09:38:39 EDT 2022
+###############################################################################
+ls: cannot access ckpt_*.dmtcp: No such file or directory
+  1
+  2
+  3
+  4
+$ tail slurm-5157871.out
+ 147
+ 148
+ 149
+ 150
+ 151
+ 152
+ 153
+ 154
+ 155
+slurmstepd: error: *** JOB 5157871 ON node1139 CANCELLED AT 2022-05-18T09:43:58 DUE TO TIME LIMIT ***
+
+```
+
+Submit `dmtcp_serial_job.sh` and then wait for the job to run until time out.  Below shows the beginning of the job output file, which demonstrate that the job restarts from the checkpoint of the previous job.
+
+```
+$ head  slurm-5158218.out -n 15
+## SLURM PROLOG ###############################################################
+##    Job ID : 5158218
+##  Job Name : dmtcp_serial
+##  Nodelist : node1327
+##      CPUs : 1
+##   Mem/CPU : 2800 MB
+##  Mem/Node : 65536 MB
+## Directory : /gpfs/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
+##   Job Started : Wed May 18 09:50:39 EDT 2022
+###############################################################################
+ 153
+ 154
+ 155
+ 156
+ 157
+
+```
+
