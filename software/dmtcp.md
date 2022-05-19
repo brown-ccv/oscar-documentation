@@ -29,7 +29,8 @@ The `dmtcp_lanuch` command launches a program, and automatically checkpoints the
 **Example:** the following command launches the program `dmtcp_serial` and checkpoints every 8 seconds.
 
 ```
-$ dmtcp_launch -i 8 ./dmtcp_serial  
+$port=$(shuf -i 40000-60000 -n 1)
+$dmtcp_launch -p$port -i 8 ./dmtcp_serial  
   1
   2
   3
@@ -58,7 +59,8 @@ The `dmtcp_resart` command restarts a program from a checkpoint, and also automa
 **Example:** the following command restarts the `dmtcp_serial` program from a checkpoint, and checkpoints every 12 seconds
 
 ```
-$ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
+$port=$(shuf -i 40000-60000 -n 1)
+$dmtcp_restart -p $port -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
   9
  10
  11
@@ -67,7 +69,7 @@ $ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmt
  14
  15
 ^C
-[yliu385@node1317 interact]$ dmtcp_restart -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
+[yliu385@node1317 interact]$ dmtcp_restart -p $port -i 12 ckpt_dmtcp_serial_24f183c2194a7dc4-40000-42af86bb59385.dmtcp 
  15
  16
  17
@@ -97,11 +99,12 @@ $ cat dmtcp_serial_job.sh
 
 checkpoint_file=`ls ckpt_*.dmtcp -t|head -n 1`
 checkpoint_interval=8
+port=$(shuf -i 40000-60000 -n 1)
 
 if [ -z $checkpoint_file ]; then
-    dmtcp_launch -i $checkpoint_interval ./dmtcp_serial
+    dmtcp_launch -p $port -i $checkpoint_interval ./dmtcp_serial
 else
-    dmtcp_restart -i $checkpoint_interval $checkpoint_file
+    dmtcp_restart -p $port -i $checkpoint_interval $checkpoint_file
 fi
 
 ```
@@ -162,6 +165,41 @@ $ head  slurm-5158218.out -n 15
  155
  156
  157
+
+```
+
+## Job Array
+
+The following example script
+
+* creates a sub directory for each task of a job array, and then saves a task's checkpoint in the task's own sub directory when the job script is submitted for the first time
+* restarts checkpoints in task subdirectories when the job script is submitted for the second time or later
+
+```
+#!/bin/bash
+
+#SBATCH -n 1
+#SBATCH --array=1-4
+#SBATCH -t 5:00
+#SBATCH -J dmtcp_job_array
+
+checkpoint_interval=8
+port=$((SLURM_JOB_ID %20000 + 40000))
+task_dir=jobtask_$SLURM_ARRAY_TASK_ID
+
+if [ ! -d $task_dir ]; then
+    mkdir $task_dir
+    cd $task_dir
+    dmtcp_launch -p $port -i $checkpoint_interval ../dmtcp_serial
+else
+    cd $task_dir
+    checkpoint_file=`ls ckpt_*.dmtcp -t|head -n 1`
+    if [ -z $checkpoint_file ]; then
+        dmtcp_launch -p $port -i $checkpoint_interval ../dmtcp_serial
+    else
+        dmtcp_restart -p $port -i $checkpoint_interval $checkpoint_file
+    fi
+fi
 
 ```
 
