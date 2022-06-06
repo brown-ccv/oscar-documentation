@@ -22,7 +22,7 @@ Oscar has compute nodes in the partitions listed below.
 * **gpu-he** -The gpu-he partition is for programs/jobs which need to access high-end GPUs.&#x20;
 * **vnc** - The vnc partition is for users to run programs/jobs in an graphical desktop environment.&#x20;
 
-Below are node details including cores and memory for all partitions.
+Below are node details including cores and memory for all partitions.![](.gitbook/assets/feat66.png)
 
 | **Partition** | <p><strong>Total</strong><br><strong>Nodes</strong></p> | <p><strong>Total</strong><br><strong>Cores</strong></p> | <p><strong>Cores</strong><br><strong>Per Node</strong></p> | <p><strong>Total</strong><br><strong>GPUs</strong></p> | <p><strong>Memory Per</strong><br><strong>Node (GB)</strong></p> |
 | ------------- | ------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
@@ -39,4 +39,4 @@ Below are node details including cores and memory for all partitions.
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types as well GPUs.
 
-![](.gitbook/assets/feat26.png)
+![](<.gitbook/assets/feat66 (1).png>)
