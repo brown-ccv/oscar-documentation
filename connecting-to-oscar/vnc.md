@@ -19,7 +19,7 @@ The CCV VNC requires that you download a VNC client onto your machine.
 
 1. Ensure that you are either connected to [Brown VPN](http://vpn.brown.edu) or on a Brown Compliant Network (BrownWifi, ethernet etc).&#x20;
 2. Ensure you have a recent version of the Java JDK or JRE. These can be found on [Oracle's Java Download Page](http://www.oracle.com/technetwork/java/javase/downloads/).
-3. Download the [CCV VNC client](https://brownbox.brown.edu/download.php?hash=b00a6c89).
+3. Download the [CCV VNC client](https://brownbox.brown.edu/download.php?hash=b00a6c89) ([Alternate Link](https://drive.google.com/file/d/1MX20afDiKTJC58VzGvGU0GqD-F-8frit/view?usp=sharing)).
 4. If Java has been installed correctly you can now run `CCV_VNC_2.x.jar` by double clicking on it.&#x20;
    * On a Mac, you may need to first right click on the jar, choose "Open", and give the jar permission to run. For newer versions, you may need to open a terminal, `cd` into the directory where the jar file is, and then run `java -jar CCV_VNC_2.0.3.jar`.
    * On Windows, you may have to right click on the jar, Choose "Open with", and select the Java JDK.
