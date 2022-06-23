@@ -23,22 +23,21 @@ First, you must choose which VASP module to load. You can see the available modu
 
 Within a batch job, you should specify the number of MPI tasks as
 
-```text
+```
 mpirun -n <number-of-tasks> vasp_std
 ```
 
 If you would like 40 cores for your calculation, you would include the following in your batch script:
 
-```text
+```
 # 2 nodes
 #SBATCH -n 2
-# 20 CPUs per node/task
-#SBATCH -c 20
+# 20 tasks per node
+#SBATCH --ntasks-per-node=20
 
 mpirun -n 2 vasp_std
 ```
 
 {% hint style="info" %}
-If you're not sure how many cores you should include in your calculation, refer to [Selecting the right amount of cores for a VASP calculation](https://www.nsc.liu.se/~pla/blog/2015/01/12/vasp-how-many-cores/)
+If you're not sure how many cores you should include in your calculation, refer to [Selecting the right amount of cores for a VASP calculation](https://www.nsc.liu.se/\~pla/blog/2015/01/12/vasp-how-many-cores/)
 {% endhint %}
-
