@@ -10,8 +10,4 @@ icon: check
 
 # Visit Office Hours
 
-CCV holds weekly office hours. These are drop in sessions where we'll have one or more CCV staff members available to answer questions and help with any problems you have.
-
-{% hint style="info" %}
-Office hours are held held virtually via zoom. Please visit [this page](https://events.brown.edu/ccv/all) for details&#x20;
-{% endhint %}
+CCV holds weekly office hours. These are drop in sessions where we'll have one or more CCV staff members available to answer questions and help with any problems you have. Please visit [this page](https://events.brown.edu/ccv/all) for upcoming office hours and events.&#x20;
