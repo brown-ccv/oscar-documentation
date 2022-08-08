@@ -22,6 +22,7 @@
   * [Using File Explorer on OOD](connecting-to-oscar/open-ondemand/using-file-explorer-on-ood.md)
   * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
   * [Interactive Apps on OOD](connecting-to-oscar/open-ondemand/interactive-apps-on-ood.md)
+  * [Using Python or Conda environments in the Jupyter App](connecting-to-oscar/open-ondemand/using-python-or-conda-environments-in-the-jupyter-app.md)
 
 ## Accounts on Oscar
 
