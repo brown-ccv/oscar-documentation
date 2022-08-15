@@ -1,7 +1,7 @@
 # Account Types
 
 {% hint style="success" %}
-To request a priority account or a condo, use the [account form](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B) on the CCV homepage. For more information on resources available to priority accounts and costs, visit the [CCV Rates page](https://ccv.brown.edu/services/rates/).
+To request a priority account or a condo, use the [account form](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B) on the CCV homepage. For more information on resources available to priority accounts and costs, visit the [CCV Rates page](https://ccv.brown.edu/rates).
 {% endhint %}
 
 ## Exploratory Account
@@ -12,7 +12,7 @@ To request a priority account or a condo, use the [account form](https://brown.c
 
 ## Priority Accounts
 
-The following accounts are billed quarterly and offer more computational resources than the exploratory accounts. See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources
+The following accounts are billed quarterly and offer more computational resources than the exploratory accounts. See the[ CCV Rates page ](https://ccv.brown.edu/rates)for pricing and detailed description of the resources
 
 ### HPC Priority
 
@@ -22,7 +22,7 @@ The following accounts are billed quarterly and offer more computational resourc
     * HPC Priority&#x20;
     * HPC Priority+ (Twice the resources of HPC Priority)
 
-    See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources.
+    See the[ CCV Rates page ](https://ccv.brown.edu/rates)for pricing and detailed description of the resources.
 * Jobs are submitted to the **batch partition.** See the [System Hardware](../system-overview.md) page for available hardware
 
 ### Standard GPU Priority
@@ -33,21 +33,21 @@ The following accounts are billed quarterly and offer more computational resourc
     * Standard GPU Priority
     * Standard GPU Priority+ (Twice the resources of Standard GPU Priority)
 
-    See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources.
+    See the[ CCV Rates page ](https://ccv.brown.edu/rates)for pricing and detailed description of the resources.
 * Jobs are submitted to the **gpu partition**. See the [System Hardware](../system-overview.md) page for available GPU hardware
 
 ### High End GPU Priority
 
 * Intended for GPU jobs required high-end gpus. These offer the same number of CPUS as Standard GPU priority accounts
 * **High end GPUS like A40, v100 and a6000** are available
-* See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources
+* See the[ CCV Rates page ](https://ccv.brown.edu/rates)for pricing and detailed description of the resources
 * Jobs are submitted to the **gpu-he partition**. See the [System Hardware](../system-overview.md) page for available GPU hardware
 
 ### Large Memory Priority
 
 * Intended for jobs requiring large amounts of memory.
 * These accounts offer **2TB of memory** and **twice the wall-time** of exploratory accounts**.**
-* See the[ CCV Rates page ](https://ccv.brown.edu/services/rates/)for pricing and detailed description of the resources
+* See the[ CCV Rates page ](https://ccv.brown.edu/rates)for pricing and detailed description of the resources
 *   Jobs are submitted to the **bigmem partition**. See the [System Hardware](../system-overview.md) page for available  hardware
 
 
