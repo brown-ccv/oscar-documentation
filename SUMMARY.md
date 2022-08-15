@@ -2,6 +2,7 @@
 
 * [Oscar - Brown University's Cluster](README.md)
 * [System Hardware](system-overview.md)
+* [Account Information](account-types.md)
 * [Quickstart Guide](getting-started.md)
 * [Short "How to" Videos](short-videos.md)
 * [Quick Reference](quick-reference.md)
@@ -23,12 +24,6 @@
   * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
   * [Interactive Apps on OOD](connecting-to-oscar/open-ondemand/interactive-apps-on-ood.md)
   * [Using Python or Conda environments in the Jupyter App](connecting-to-oscar/open-ondemand/using-python-or-conda-environments-in-the-jupyter-app.md)
-
-## Accounts on Oscar
-
-* [Account Types](accounts-on-oscar/account-types.md)
-* [Passwords](accounts-on-oscar/passwords.md)
-* [Associations & Quality of Service (QOS)](accounts-on-oscar/associations-and-quality-of-service.md)
 
 ## Managing files
 
@@ -53,6 +48,7 @@
 * [MPI Jobs](submitting-jobs/mpi-jobs.md)
 * [Condo/Priority Jobs](submitting-jobs/condo-priority-jobs.md)
 * [Dependent Jobs](submitting-jobs/dependent-jobs.md)
+* [Associations & Quality of Service (QOS)](submitting-jobs/associations-and-quality-of-service.md)
 
 ## GPU Computing
 
