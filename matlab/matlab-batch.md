@@ -31,12 +31,12 @@ Matlab can be used within a batch script. Here is an example batch script for ru
 #SBATCH -e MyMatlabJob-%j.out
 
 # Run a matlab function called 'foo.m' in the same directory as this batch script.
-matlab -r "foo(1), exit"
+matlab -r "run foo.m; exit"
 ```
 
 This is also available in your home directory as the file:
 
-```text
+```
 ~/batch_scripts/matlab-serial.sh
 ```
 
@@ -44,7 +44,6 @@ Note the `exit` command at the end which is very important to include either the
 
 If the name of your batch script file is `matlab-serial.sh`, the batch job can be submitted using the following command:
 
-```text
+```
 sbatch matlab-serial.sh
 ```
-
