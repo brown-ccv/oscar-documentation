@@ -2,7 +2,7 @@
 
 
 
-These instructions are for users who need to install their own version of Qmcpack. 
+These instructions are for users who need to install their own version of Qmcpack.&#x20;
 
 {% hint style="warning" %}
 Do not load the 'qmcpack' module.  If you have a 'qmcpack' module loaded, unload it:
@@ -12,14 +12,14 @@ Do not load the 'qmcpack' module.  If you have a 'qmcpack' module loaded, unload
 
 Step 1: Create a new directory where you want to install Qmcpack:
 
-```text
+```
 mkdir -p qmcpack/src
 cd qmcpack/src/
 ```
 
 Step 2: Download the version of Qmcpack you want from the GitHub repo:
 
-```text
+```
 https://github.com/QEF/q-e/releases
 wget https://github.com/QMCPACK/qmcpack/archive/v3.10.0.tar.gz
 tar xvf v3.10.0.tar.gz
@@ -28,7 +28,7 @@ cd qmcpack-3.10.0/
 
 Step 3: Load the newer compiler module and configure it with custom flags.
 
-```text
+```
 module load mpi/openmpi_4.0.5_intel_2020.2_slurm20
 module load intel/2020.2 cuda/11.1.1
 module load hdf5/1.12.0_openmpi_4.0.5_intel_2020.2_slurm20
@@ -52,19 +52,18 @@ The --prefix PATH will be replaced by your custom install location
 
 Step 4: If you are happy with the configure flags then install them by:
 
-```text
+```
 make -j 8
 make install 
 ```
 
-Step 5 \(Optional\): Adding Qmcpack to your path
+Step 5 (Optional): Adding Qmcpack to your path
 
-Add the following lines to your ~/.bashrc
+Add the following lines to your \~/.bashrc
 
-```text
+```
 export PATH=/users/<username>/qmcpack/bin:$PATH
-export PYTHONPATH=/gpfs/<username>/qmcpack/qmcpack-3.10.0/nexus/lib:$PYTHONPATH
+export PYTHONPATH=/users/<username>/qmcpack/qmcpack-3.10.0/nexus/lib:$PYTHONPATH
 ```
 
-Restart the Oscar session or `source .bashrc` 
-
+Restart the Oscar session or `source .bashrc`&#x20;
