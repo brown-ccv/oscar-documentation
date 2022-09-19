@@ -3,14 +3,14 @@
 This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B).
 
 {% hint style="info" %}
-If you're confused about any acronyms or terms throughout the guide, check out our [Quick Reference](quick-reference.md) page to see definitions of commonly used terms
+If you're confused about any acronyms or terms throughout the guide, check out our [Quick Reference](quick-reference/) page to see definitions of commonly used terms
 {% endhint %}
 
 ### OSCAR
 
 Oscar is the shared compute cluster operated by CCV.
 
-Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar. Some of the most common commands you'll be using in Oscar can also be found on our [Quick Reference page](quick-reference.md).
+Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar. Some of the most common commands you'll be using in Oscar can also be found on our [Quick Reference page](quick-reference/).
 
 {% hint style="info" %}
 If you'd like a brief introduction to Linux commands, watch [our tutorial on Linux basics on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5962a33f-a0ae-4d4e-9a4b-ad11012fe331).
