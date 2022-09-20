@@ -24,9 +24,11 @@ Oscar has compute nodes in the partitions listed below.
 
 Below are node details including cores and memory for all partitions.
 
+
+
 | **Partition** | <p><strong>Total</strong><br><strong>Nodes</strong></p> | <p><strong>Total</strong><br><strong>Cores</strong></p> | <p><strong>Cores</strong><br><strong>Per Node</strong></p> | <p><strong>Total</strong><br><strong>GPUs</strong></p> | <p><strong>Memory Per</strong><br><strong>Node (GB)</strong></p> |
 | ------------- | ------------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
-| batch         | 307                                                     | 11248                                                   | 24-48                                                      | n/a                                                    | 95-385                                                           |
+| batch         | 303                                                     | 11056                                                   | 24-48                                                      | n/a                                                    | 95-385                                                           |
 | bigmem        | 4                                                       | 128                                                     | 32                                                         | n/a                                                    | 772-2146                                                         |
 | gpu           | 35                                                      | 1512                                                    | 8-64                                                       | 277                                                    | 95-1030                                                          |
 | gpu-he        | 11                                                      | 488                                                     | 24-64                                                      | 76                                                     | 192-1030                                                         |
@@ -39,4 +41,4 @@ Below are node details including cores and memory for all partitions.
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types as well GPUs.
 
-![](.gitbook/assets/feat88.png)
+<figure><img src=".gitbook/assets/feat920.png" alt=""><figcaption></figcaption></figure>

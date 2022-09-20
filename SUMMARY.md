@@ -6,7 +6,6 @@
 * [Quickstart Guide](getting-started.md)
 * [Short "How to" Videos](short-videos.md)
 * [Quick Reference](quick-reference/README.md)
-  * [Oscar Specific Commands](quick-reference/oscar-specific-commands.md)
   * [Common Acronyms and Terms](quick-reference/common-acronyms-and-terms.md)
   * [Managing Modules](quick-reference/managing-modules.md)
   * [Common Linux Commands](quick-reference/common-linux-commands.md)
