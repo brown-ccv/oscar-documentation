@@ -20,19 +20,19 @@ Snapshots can be found in the following directories.
 
 **Home** directory snapshot
 
-```text
+```
 /gpfs/.snapshots/<yyyy-mm-dd>/<home>/<username>/<path_to_file>
 ```
 
 **Data** directory snapshot
 
-```text
+```
 /gpfs/.snapshots/yyyy-mm-dd>/data/<groupname>/<username>/path_to_file>
 ```
 
 **Scratch** directory snapshot
 
-```text
+```
 /gpfs/.snapshots/<yyyy-mm-dd>/scratch/<username>/<path_to_file>
 ```
 
@@ -48,8 +48,3 @@ _e.g._:
 ls -l /gpfs/.snapshots/2020-07-15/home/ghopper/data
 lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs/.snapshots/2020-07-15/ghopper/scratch -> /gpfs/data/navy
 ```
-
-{% hint style="warning" %}
-If files to be restored were modified/deleted more than 7 days \(and less than 30 days\) ago and were in the HOME or DATA directory, you may contact us to retrieve them from nightly backups by providing the full path. Note that home and data directory backups are saved for the last 30 days only.
-{% endhint %}
-

@@ -10,13 +10,13 @@ icon: check
 
 # Oscar's Filesystem
 
-CCV uses IBM's General Parallel File System \(GPFS\). Users have a home, data, and scratch space.
+CCV uses IBM's General Parallel File System (GPFS). Users have a home, data, and scratch space.
 
-  **home** `~`
+&#x20; **home** `~`
 
 * 20GB of space
 * Optimized for many small files
-* Nightly backups \(30 days\)
+* Nightly backups (7 days)
 * Quota is per individual user
 * Grace period of 14 days
 
@@ -24,7 +24,7 @@ CCV uses IBM's General Parallel File System \(GPFS\). Users have a home, data, a
 
 * Each PI gets 256GB for free
 * Optimized for reading large files
-* Nightly backups \(30 days\)
+* Nightly backups (7 days)
 * Quota is by group
 * Grace period of 14 days
 
@@ -38,7 +38,7 @@ CCV uses IBM's General Parallel File System \(GPFS\). Users have a home, data, a
 * Grace period of 21 days
 
 {% hint style="warning" %}
-Files not accessed for 30 days will be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. **Use ~/data for files you need to keep long term.**
+Files not accessed for 30 days will be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. **Use \~/data for files you need to keep long term.**
 {% endhint %}
 
 {% hint style="warning" %}
@@ -55,7 +55,7 @@ Note: class or temporary accounts may not have a `~/data` directory!
 
 To see how much space you have on Oscar you can use the command `myquota`. Below is an example output
 
-```text
+```
                        Block Limits                              |           File Limits              
     Type    Filesystem           Used    Quota   HLIMIT    Grace |    Files    Quota   HLIMIT    Grace
     -------------------------------------------------------------|--------------------------------------
@@ -71,4 +71,3 @@ You can go over your quota up to the hard limit for a grace period. This grace p
 {% hint style="info" %}
 There is a quota for space used and for number of files. If you hit the hard limit on **either** of these you will be unable to write any more files until you are back under quota.
 {% endhint %}
-
