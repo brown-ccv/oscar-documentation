@@ -8,6 +8,10 @@ Open OnDemand (OOD) is a web portal to the Oscar computing cluster. **An Oscar a
 
 ## [Open on Demand](https://ood.ccv.brown.edu/)
 
+## Intro to Open OnDemand Slides
+
+{% embed url="https://docs.google.com/presentation/d/1TVkaYJ9bKsBl36j7peP91MDFS2hvgXA79KLgUpgACMs/edit?usp=sharing" %}
+
 OOD provides with a several resources for interacting with Oscar.
 
 * Use the [File Explorer](using-file-explorer-on-ood.md) in the portal to view, copy, download or delete files on Oscar.&#x20;
