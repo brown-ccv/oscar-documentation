@@ -1,9 +1,5 @@
 # Web-based Terminal App
 
-{% hint style="warning" %}
-## This service is still in Beta testing. If you find any bugs/issues with the service, we would appreciate your feedback at support@ccv.brown.edu
-{% endhint %}
-
 
 
 Open OnDemand offers a browser-based terminal app to access Oscar. Windows users who do not want to install an SSH client like Putty will find this app very useful.

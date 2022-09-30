@@ -1,9 +1,5 @@
 # Using File Explorer on OOD
 
-{% hint style="warning" %}
-## This service is still in Beta testing. If you find any bugs/issues with the service, we would appreciate your feedback at support@ccv.brown.edu
-{% endhint %}
-
 
 
 The filesystem on Oscar can be accessed through the file explorer on this web portal. The file explorer allows you

@@ -1,9 +1,5 @@
 # Interactive Apps on OOD
 
-{% hint style="warning" %}
-## This service is still in Beta testing. If you find any bugs/issues with the service, we would appreciate your feedback at support@ccv.brown.edu
-{% endhint %}
-
 You can launch several different apps on the Open OnDemand (OOD) interface. All of these apps start of a Slurm batch job on the Oscar cluster with the requested amount of resources. These jobs can access the filesystem on Oscar and all output files are written to the Oscar's file system.
 
 ## Launching an App on OOD
