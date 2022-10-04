@@ -17,23 +17,23 @@ anaconda/2-5.3.0  anaconda/2022.05  anaconda/3-5.2.0
 Do not activate a conda environment before submitting a batch job if the batch job activates a conda environment. Otherwise, the batch job will not be able to activate the conda environment and hence fail.
 {% endhint %}
 
-### anaconda/2020.02
+### anaconda/2022.05
 
 This is the newest anaconda module on Oscar. The first time you load the anaconda/2020.02 module, you need initialize the environment by running the following command:
 
 ```
 $conda init bash
-no change     /gpfs/runtime/opt/anaconda/2020.02/condabin/conda
-no change     /gpfs/runtime/opt/anaconda/2020.02/bin/conda
-no change     /gpfs/runtime/opt/anaconda/2020.02/bin/conda-env
-no change     /gpfs/runtime/opt/anaconda/2020.02/bin/activate
-no change     /gpfs/runtime/opt/anaconda/2020.02/bin/deactivate
-no change     /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
-no change     /gpfs/runtime/opt/anaconda/2020.02/etc/fish/conf.d/conda.fish
-no change     /gpfs/runtime/opt/anaconda/2020.02/shell/condabin/Conda.psm1
-no change     /gpfs/runtime/opt/anaconda/2020.02/shell/condabin/conda-hook.ps1
-no change     /gpfs/runtime/opt/anaconda/2020.02/lib/python3.7/site-packages/xontrib/conda.xsh
-no change     /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.csh
+no change     /gpfs/runtime/opt/anaconda/2022.05/condabin/conda
+no change     /gpfs/runtime/opt/anaconda/2022.05/bin/conda
+no change     /gpfs/runtime/opt/anaconda/2022.05/bin/conda-env
+no change     /gpfs/runtime/opt/anaconda/2022.05/bin/activate
+no change     /gpfs/runtime/opt/anaconda/2022.05/bin/deactivate
+no change     /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
+no change     /gpfs/runtime/opt/anaconda/2022.05/etc/fish/conf.d/conda.fish
+no change     /gpfs/runtime/opt/anaconda/2022.05/shell/condabin/Conda.psm1
+no change     /gpfs/runtime/opt/anaconda/2022.05/shell/condabin/conda-hook.ps1
+no change     /gpfs/runtime/opt/anaconda/2022.05/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.csh
 modified      /users/yliu385/.bashrc
 
 ==> For changes to take effect, close and re-open your current shell. <==
@@ -59,7 +59,7 @@ unset DBUS\_SESSION\_BUS\_ADDRESS
 Anaconda uses conda to install packages and manage their depenencies. You can use conda to manage [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). To access conda, you need to load an Anaconda module. For example,
 
 ```
-module load anaconda/2020.02
+module load anaconda/2022.05
 ```
 
 or
@@ -131,7 +131,7 @@ conda create -p  /path/to/install/conda_environment_name
 
 After creating a conda environment, users can activate a conda environment to install or access packages in the environment. The command is slightly different for different anaconda modules.
 
-For the anaoconda/2020.02 module, users can activate an environment with the following command:
+For the anaoconda/2022.05 module, users can activate an environment with the following command:
 
 ```
 conda activate conda_environment_name
@@ -154,13 +154,13 @@ If you need to activate a conda environment in a bash script, you need to source
 
 ```
 #!/usr/bin/bash
-module load anaconda/2020.02
+module load anaconda/2022.05
 source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
 conda activate my_env
 ```
 
 {% hint style="info" %}
-If you are using anaconda/3-5.2.0, replace the instances of `2020.02` with `3-5.2.0`.
+If you are using anaconda/3-5.2.0, replace the instances of `2022.05` with `3-5.2.0`.
 {% endhint %}
 
 {% hint style="info" %}
