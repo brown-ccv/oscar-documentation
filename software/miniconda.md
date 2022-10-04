@@ -9,11 +9,10 @@ description: >-
 
 ## Modules
 
-$ module avail miniconda
+The newest module miniconda/4.12.0 is recommeded.
 
-```
-miniconda/4.10    miniconda/4.12.0  
-```
+<pre><code><strong>$ module avail miniconda
+</strong>miniconda/4.10    miniconda/4.12.0  </code></pre>
 
 ## Conda
 
