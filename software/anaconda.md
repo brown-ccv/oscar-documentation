@@ -1,16 +1,16 @@
 # Anaconda
 
-Anaconda provides Python, R and other packages for scientific computing including data sciences, machine learning, etc.  
+Anaconda provides Python, R and other packages for scientific computing including data sciences, machine learning, etc. &#x20;
 
 ## Anaconda Modules
 
-There are several anaconda modules available on Oscar. To list all anaconda modules, run `module avail anaconda`. The anaconda/3-5.2.0 module is recommended.
+There are several anaconda modules available on Oscar. To list all anaconda modules, run `module avail anaconda`. The anaconda/2022.5 module is recommended.
 
-```text
+```
 $ module avail anaconda
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ name: anaconda*/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-anaconda/2-4.3.0  anaconda/2020.02  anaconda/3-5.2.0  
-anaconda/2-5.3.0  anaconda/3-4.3.0  
+anaconda/2-4.3.0  anaconda/2020.02  anaconda/3-4.3.0  
+anaconda/2-5.3.0  anaconda/2022.05  anaconda/3-5.2.0  
 ```
 
 {% hint style="danger" %}
@@ -21,7 +21,7 @@ Do not activate a conda environment before submitting a batch job if the batch j
 
 This is the newest anaconda module on Oscar. The first time you load the anaconda/2020.02 module, you need initialize the environment by running the following command:
 
-```text
+```
 $conda init bash
 no change     /gpfs/runtime/opt/anaconda/2020.02/condabin/conda
 no change     /gpfs/runtime/opt/anaconda/2020.02/bin/conda
@@ -58,13 +58,13 @@ unset DBUS\_SESSION\_BUS\_ADDRESS
 
 Anaconda uses conda to install packages and manage their depenencies. You can use conda to manage [conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). To access conda, you need to load an Anaconda module. For example,
 
-```text
+```
 module load anaconda/2020.02
 ```
 
 or
 
-```text
+```
 module load anaconda/3-5.2.0
 ```
 
@@ -77,7 +77,7 @@ A user may install all needed software packages for a project in a conda environ
 
 The command 'conda info' shows important configurations for conda environment.
 
-```text
+```
 $ conda info
 
      active environment : None
@@ -110,20 +110,20 @@ $ conda info
 
 Below are some important configurations:
 
-* envs directories: a list of directories where a conda environment is installed by default. In the output of 'conda info' above, the first default directory to install a conda environment  is a $HOME/anaconda. 
+* envs directories: a list of directories where a conda environment is installed by default. In the output of 'conda info' above, the first default directory to install a conda environment  is a $HOME/anaconda.&#x20;
 * package cache: a list of directories where downloaded packages are stored.
 
 ### Create a New Conda Environment
 
 To create a new conda environment in a default directory, run the following command:
 
-```text
+```
 conda create -n conda_environment_name
 ```
 
 To create  a new conda environment in a different directory, run the following command:
 
-```text
+```
 conda create -p  /path/to/install/conda_environment_name
 ```
 
@@ -133,26 +133,26 @@ After creating a conda environment, users can activate a conda environment to in
 
 For the anaoconda/2020.02 module, users can activate an environment with the following command:
 
-```text
+```
 conda activate conda_environment_name
 ```
 
 For the anaconda/3-5.2.0 module, users can activate an environment with the following command:
 
-```text
+```
 source activate conda_environment_name
 ```
 
 {% hint style="info" %}
 The commands above will only work if:
 
-* A conda environment with the specified name \(`conda_environment_name` in the example\) exists
-* The appropriate anaconda module has been loaded \(if you are unsure about this one, consult [this documentation](https://docs.ccv.brown.edu/oscar/software/modules)\)
+* A conda environment with the specified name (`conda_environment_name` in the example) exists
+* The appropriate anaconda module has been loaded (if you are unsure about this one, consult [this documentation](https://docs.ccv.brown.edu/oscar/software/modules))
 {% endhint %}
 
 If you need to activate a conda environment in a bash script, you need to source the conda.sh as shown in the following example bash script:
 
-```text
+```
 #!/usr/bin/bash
 module load anaconda/2020.02
 source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
@@ -164,12 +164,12 @@ If you are using anaconda/3-5.2.0, replace the instances of `2020.02` with `3-5.
 {% endhint %}
 
 {% hint style="info" %}
-After installing packages in an active environment \(instructions below\), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment \(before the script even starts\) will be available through the environment after it is activated \(line 4 in the code above\).
+After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 4 in the code above).
 {% endhint %}
 
 To deactivate a conda environment, simply use the following command:
 
-```text
+```
 conda deactivate
 ```
 
@@ -177,13 +177,13 @@ conda deactivate
 
 To install a package, we need to first activate a conda environment, and then run
 
-```text
+```
 conda install package_name=version
 ```
 
 The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package from the conda\_forge channel, run
 
-```text
+```
 conda install -c conda_forge conda_environment_name
 ```
 
@@ -191,7 +191,7 @@ conda install -c conda_forge conda_environment_name
 
 To delete a conda environment, run
 
-```text
+```
 conda remove -n conda_environment_name --all
 ```
 
@@ -199,7 +199,6 @@ conda remove -n conda_environment_name --all
 
 Conda may download lots of additional packages when installing a package. A user may use up all quota due to these downloaded packages. To remove the downloaded packges, run
 
-```text
+```
 conda clean --all
 ```
-

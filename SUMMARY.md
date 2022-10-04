@@ -77,6 +77,7 @@
 * [Using CCMake](software/ccmake.md)
 * [Intro to Parallel Programming](software/intro-to-parallel-programming.md)
 * [Anaconda](software/anaconda.md)
+* [Miniconda](software/miniconda.md)
 * [DMTCP](software/dmtcp.md)
 * [Screen](software/screen.md)
 * [VASP](software/vasp.md)
