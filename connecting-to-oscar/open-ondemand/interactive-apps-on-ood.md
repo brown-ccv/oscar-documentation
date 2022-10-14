@@ -14,3 +14,11 @@ You can launch several different apps on the Open OnDemand (OOD) interface. All 
 {% hint style="warning" %}
 SLURM limits on resources such CPUs, memory, GPUs or time for each partition still applies for OOD jobs. Please keep these in mind before choosing these options on the OOD form.
 {% endhint %}
+
+{% hint style="info" %}
+When submit a batch  job from a terminal of the Desktop app or the Advanced Desktop app, users need to&#x20;
+
+* run `"unset SLURM_MEM_PER_NODE"`before submitting a job if the job needs to specify --mem-per-cpu
+* run "`unset SLURM_EXPORT_ENV"` before submitting an MPI job
+{% endhint %}
+
