@@ -56,39 +56,58 @@ In general, you can specify the following for your GUI programs:
 
 ### 3.1 [WinSCP](https://winscp.net/eng/index.php) for Windows
 
-![Figure 1 WinSCP Session Creation](<../.gitbook/assets/image (11).png>)
+#### 3.1.1 Limit Concurrent Transfer and Change Reconnect Options
+
+Click the `Options`and then `Preferences` menu in WinsCP. In the poped up window, click `Transfer` and then `Background` to  (Figure 1)
+
+* change `Maximal number of transfers at the same time` to 1
+* uncheck `Use multiple connections for single transfer`
+
+<figure><img src="../.gitbook/assets/winscp-max-connection.png" alt=""><figcaption><p>Figure 1 WinSCP Maximal Transfers</p></figcaption></figure>
+
+click `Endurace` to (Figure 2)
+
+* set `Automatically reconnect session` to 5 seconds
+* uncheck Automatically reconnect session, if it stalls
+* set `Keep reconnection for` to 10 seconds
+
+<figure><img src="../.gitbook/assets/winscp-reconnect.png" alt=""><figcaption><p>Figure 2 WinSCP Reconnect</p></figcaption></figure>
+
+#### 3.1.2 Add a New Site
+
+![Figure 3 WinSCP Session Creation](<../.gitbook/assets/image (11).png>)
 
 ### 3.2 FileZilla
 
-#### 3.21. Disable Timeout
+#### 3.2.1. Disable Timeout
 
-**Click the 'Edit' menu and then select the 'Settings' submenu, and then change the Timeout to 0 to disable, as shown in Figure 2**
+Click the `Edit` menu and then select the `Settings` submenu, and then change the `Timeout in seconds` to 0 to disable, as shown in Figure 2
 
-![Figure 2 Disable Timeout](../.gitbook/assets/filezilla-settings.png)
+![Figure 4 Disable Timeout](../.gitbook/assets/filezilla-settings.png)
 
 #### 3.2.2 Add a New Site
 
-**Open the Site Manager as show in Figure 3.**
+**Open the Site Manager as show in Figure 5.**
 
-![Figure 3 Open Site Manager](../.gitbook/assets/filezilla-site-manager.png)
+![Figure 5 Open Site Manager](../.gitbook/assets/filezilla-site-manager.png)
 
 **Click the 'New Site' button to add a new site, as shown in Figure 4:**
 
-![Figure 4 New Site](../.gitbook/assets/filezilla-new-site.png)
+![Figure 6 New Site](../.gitbook/assets/filezilla-new-site.png)
 
 **Limit the number of simultaneous connections to 1, as shown in Figure 5.**
 
-![Figure 5 Limit Simultaneous Connections](../.gitbook/assets/filezilla-concurrent-connection.png)
+![Figure 7 Limit Simultaneous Connections](../.gitbook/assets/filezilla-concurrent-connection.png)
 
 Click the 'Connect' button to connect to Oscar and transfer files.
 
 ### 3.3 Cyberduck
 
-![Figure 6 Cyberduck Connection](../.gitbook/assets/cyberduck-connection.png)
+![Figure 8 Cyberduck Connection](../.gitbook/assets/cyberduck-connection.png)
 
 You may see a popup window on 'Unknown Fingerprint'. You just need to check the 'Always' option and click 'Allow'. This is windows should not pop up again unless the transfer server is changed again.
 
-![Figure 7 Unknown Fingerprint](../.gitbook/assets/cyberduck-unknown-fingerprint.png)
+![Figure 9 Unknown Fingerprint](../.gitbook/assets/cyberduck-unknown-fingerprint.png)
 
 ## 4. Globus online
 
