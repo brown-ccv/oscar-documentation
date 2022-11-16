@@ -14,8 +14,14 @@
 ## Connecting to Oscar
 
 * [SSH (Terminal)](connecting-to-oscar/ssh/README.md)
-  * [SSH Key Login (Passwordless SSH)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh.md)
+  * [SSH Key Login (Passwordless SSH)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh/README.md)
+    * [Mac/Linux/Windows(PowerShell)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh/mac-linux-windows-powershell.md)
+    * [Windows(PuTTY)](connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh/windows-putty.md)
+  * [SSH Configuration File](connecting-to-oscar/ssh/ssh-configuration-file.md)
   * [X-Forwarding](connecting-to-oscar/ssh/x-forwarding.md)
+  * [SSH Agent Forwarding](connecting-to-oscar/ssh/ssh-agent-forwarding/README.md)
+    * [Mac/Linux](connecting-to-oscar/ssh/ssh-agent-forwarding/mac-linux.md)
+    * [Windows (PuTTY)](connecting-to-oscar/ssh/ssh-agent-forwarding/key-generation-and-agent-forwarding-with-putty.md)
 * [VNC (Virtual Desktop)](connecting-to-oscar/vnc.md)
 * [SMB (Local Mount)](connecting-to-oscar/cifs.md)
 * [Remote IDE](connecting-to-oscar/remote-ide/README.md)
@@ -36,9 +42,7 @@
 * [Inspecting Disk Usage (Ncdu)](managing-files/inspecting-disk-usage-ncdu.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)
-* [Version Control](managing-files/version-control/README.md)
-  * [SSH Agent Forwarding](managing-files/version-control/ssh-agent-forwarding.md)
-  * [Key Generation & Agent Forwarding with PuTTY](managing-files/version-control/key-generation-and-agent-forwarding-with-putty.md)
+* [Version Control](managing-files/version-control.md)
 
 ## Submitting jobs
 
