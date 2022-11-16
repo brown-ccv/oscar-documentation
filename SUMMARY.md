@@ -22,17 +22,17 @@
   * [SSH Agent Forwarding](connecting-to-oscar/ssh/ssh-agent-forwarding/README.md)
     * [Mac/Linux](connecting-to-oscar/ssh/ssh-agent-forwarding/mac-linux.md)
     * [Windows (PuTTY)](connecting-to-oscar/ssh/ssh-agent-forwarding/key-generation-and-agent-forwarding-with-putty.md)
-* [VNC (Virtual Desktop)](connecting-to-oscar/vnc.md)
-* [SMB (Local Mount)](connecting-to-oscar/cifs.md)
-* [Remote IDE](connecting-to-oscar/remote-ide/README.md)
-  * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
-  * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
-  * [Setup virtual environment and debugger](connecting-to-oscar/remote-ide/setup-virtual-environment-and-debugger.md)
 * [Open OnDemand](connecting-to-oscar/open-ondemand/README.md)
   * [Using File Explorer on OOD](connecting-to-oscar/open-ondemand/using-file-explorer-on-ood.md)
   * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
   * [Interactive Apps on OOD](connecting-to-oscar/open-ondemand/interactive-apps-on-ood.md)
   * [Using Python or Conda environments in the Jupyter App](connecting-to-oscar/open-ondemand/using-python-or-conda-environments-in-the-jupyter-app.md)
+* [SMB (Local Mount)](connecting-to-oscar/cifs.md)
+* [Remote IDE](connecting-to-oscar/remote-ide/README.md)
+  * [VSCode setup on Windows](connecting-to-oscar/remote-ide/vscode-setup-on-windows.md)
+  * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
+  * [Setup virtual environment and debugger](connecting-to-oscar/remote-ide/setup-virtual-environment-and-debugger.md)
+* [☠ VNC (Deprecated)](connecting-to-oscar/vnc.md)
 
 ## Managing files
 
