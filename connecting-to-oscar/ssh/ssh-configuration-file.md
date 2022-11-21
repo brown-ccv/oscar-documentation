@@ -97,15 +97,16 @@ Host desktop-oscar
     HostName ssh8.ccv.brown.edu
     IdentityFile ~/.ssh/id_rsa
     User &#x3C;username>
-    ForwardAgent yes
     
 <strong># When connecting from VSCODE use the following hosts
 </strong>Host vscode-oscar-campus
     HostName oscar2
-    ProxyCommand ssh -q -W -A %h:%p desktop-oscar-campus
+    User &#x3C;username>
+    ProxyCommand ssh -q -W %h:%p desktop-oscar-campus
 Host vscode-oscar
     HostName oscar2
-    ProxyCommand ssh -q -W -A %h:%p desktop-oscar</code></pre>
+    User &#x3C;username>
+    ProxyCommand ssh -q -W %h:%p desktop-oscar</code></pre>
 
 ### Connecting to your preconfigured host
 
