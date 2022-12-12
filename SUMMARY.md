@@ -74,6 +74,8 @@
 
 * [Software on Oscar](software/software.md)
 * [Using Modules](software/modules.md)
+* [Migration of MPI Applications](software/migration-of-mpi-applications/README.md)
+  * [Migration to Slurm 22](software/migration-of-mpi-applications/migration-to-slurm-22.md)
 * [Python on Oscar](software/python-on-oscar.md)
 * [Python in batch jobs](software/python-in-batch-jobs.md)
 * [Installing Python Packages](software/python-installs.md)
