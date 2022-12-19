@@ -2,9 +2,9 @@
 description: Access Oscar's file-system remotely from VSCode.
 ---
 
-# Remote IDE
+# Remote IDE (VSCode)
 
-## VSCode
+## VSCode one-time setup
 
 {% hint style="info" %}
 To use VSCode you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
@@ -12,74 +12,87 @@ To use VSCode you must be on a Brown compliant network or connected to the VPN. 
 
 To use VSCode you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
 
-1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VSCode
-2. Open VSCode settings&#x20;
+1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VSCode:
 
-* On Windows/Linux - **File** > **Preferences** > **Settings**
-* On macOS - **Code** > **Preferences** > **Settings**
+<figure><img src="../../.gitbook/assets/vscode_install.png" alt=""><figcaption></figcaption></figure>
+
+2\. Open VSCode settings and uncheck symlink:
+
+{% tabs %}
+{% tab title="Mac" %}
+**Code** > **Preferences** > **Settings**
+{% endtab %}
+
+{% tab title="Windows / Linux" %}
+**File** > **Preferences** > **Settings**
+{% endtab %}
+{% endtabs %}
 
 Search for `symlink` and make sure the symlink searching is unchecked
 
 ![](../../.gitbook/assets/screen-shot-2021-07-27-at-9.52.23-am.png)
 
-3\. Make sure you have a working key-pair setup for passwordless authentication. If you don't have one setup please refer to this [documentation page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh):
+3\. Make sure you have set up passwordless SSH authentication to Oscar. If you haven't, please refer to this [documentation page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh).
+
+4\. Edit the `config` file:
+
+{% tabs %}
+{% tab title="Mac / Linux" %}
+The `config` file is located at:
+
+`~/.ssh/config`
+{% endtab %}
+
+{% tab title="Windows" %}
+The `config` file is located at:
 
 ```
-ssh-copy-id <username>@ssh.ccv.brown.edu
+C:\Users\<uname>\.ssh\config
 ```
+{% endtab %}
+{% endtabs %}
 
-The public key will be automatically appended to the `authorized_keys` file on Oscar.&#x20;
-
-4\. Edit the `~/.ssh/config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.&#x20;
+Edit the `config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.&#x20;
 
 ```
 # Jump box with public IP address
 Host jump-box
-    HostName desktop.ccv.brown.edu
+    HostName poodcit4.services.brown.edu
     User <username>
 
 # Target machine with private IP address
-Host login-node
-    HostName oscar2
+Host ccv-vscode-node
+    HostName node1103
     User <username>
     ProxyCommand ssh -q -W %h:%p jump-box
 ```
 
-5\.  In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
+5\. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
-![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
+<figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
 
-6\. After a moment, VS Code will connect to the SSH server and set itself up.
+6\. One-time installation and set up of VSCode
 
+{% tabs %}
+{% tab title="Mac / Linux" %}
+After a moment, VS Code will connect to the SSH server and set itself up.
+{% endtab %}
 
+{% tab title="Windows" %}
+After a moment, VS Code will connect to the SSH server and set itself up. You might see the Firewall prompt, please click allow.&#x20;
 
-{% hint style="info" %}
-If you are connecting from non-Brown compliant network(s) please use this configuration instead.
-{% endhint %}
+![Allow Firewall connections](../../.gitbook/assets/capture\_5.png)
+{% endtab %}
+{% endtabs %}
 
-1. Under VSCode settings, search for <mark style="color:blue;">remote ssh timeout</mark> and manually enter a timeout value i.e. <mark style="color:blue;">50s</mark>. It should give you enough time to complete 2-Factor Authentication.
+## Reconnect to VSCode
 
-![](<../../.gitbook/assets/Screen Shot 2022-03-28 at 9.15.51 AM.png>)
+1. Click the green icon "Open a Remote Window" in the bottom left corner of VSCode Window. Then click "Connect to Host" in the drop down list.
 
-2\. Edit the `~/.ssh/config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-```
-# Jump box with public IP address
-Host jump-box
-  HostName ssh8.ccv.brown.edu
-  User <username>
-# Target machine with private IP address
-Host login-node
-  HostName oscar2
-  User <username>
-  ProxyCommand ssh -q -W %h:%p jump-box
-```
+2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
 
-3\. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
-
-![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
-
-![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
-
+<figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>

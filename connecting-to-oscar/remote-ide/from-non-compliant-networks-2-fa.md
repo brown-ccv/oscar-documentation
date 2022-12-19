@@ -30,8 +30,8 @@ Host jump-box
   HostName ssh8.ccv.brown.edu
   User <username>
 # Target machine with private IP address
-Host login-node
-  HostName oscar2
+Host ccv-vscode-node
+  HostName node1103
   User <username>
   ProxyCommand ssh -q -W %h:%p jump-box
 ```
@@ -40,5 +40,5 @@ Host login-node
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
-![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.59-am.png)
+<figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
 
