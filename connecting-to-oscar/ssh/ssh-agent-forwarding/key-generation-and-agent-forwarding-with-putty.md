@@ -10,7 +10,7 @@ description: >-
 
 1. Once adding your private key to Pageant, open PuTTY and navigate to the Auth menu.
 
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3).png>)
 
 2\. Check the 'Allow agent forwarding' checkbox, and return to the Session menu.
 

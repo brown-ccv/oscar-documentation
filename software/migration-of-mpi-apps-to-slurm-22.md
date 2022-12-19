@@ -1,4 +1,4 @@
-# Migration to Slurm 22
+# Migration of MPI Apps to Slurm 22
 
 In January 2023, Slurm will be migrated to version 22 for newer and faster applications. This may require you to rebuild your MPI applications. To help facilitate this, we are providing access to a test cluster with the new version of Slurm. Please note - some of the older, existing MPI modules will be deprecated and removed from the system in the near future. Please see below for details.
 
