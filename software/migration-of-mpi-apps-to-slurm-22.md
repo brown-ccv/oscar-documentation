@@ -117,19 +117,19 @@ We recommend using following MPI modules to build your custom applications:
 
 {% tabs %}
 {% tab title="GNU Configure Example" %}
-module load mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22
+`module load mpi/openmpi_4.0.7_gcc_10.2_slurm22`
 
-module load gcc/10.2 cuda/11.7.1
+`module load gcc/10.2 cuda/11.7.1`
 
-CC=mpicc CXX=mpicxx ./configure --prefix=/path/to/install/dir
+`CC=mpicc CXX=mpicxx ./configure --prefix=/path/to/install/dir`
 {% endtab %}
 
 {% tab title="CMAKE Configure Example" %}
-module load mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22
+`module load mpi/openmpi_4.0.7_gcc_10.2_slurm22`
 
-module load gcc/10.2 cuda/11.7.1
+`module load gcc/10.2 cuda/11.7.1`
 
-cmake -DCMAKE\_C\_COMPILER=mpicc DCMAKE\_CXX\_COMPILER=mpicxx ..
+`cmake -DCMAKE_C_COMPILER=mpicc DCMAKE_CXX_COMPILER=mpicxx ..`
 {% endtab %}
 {% endtabs %}
 

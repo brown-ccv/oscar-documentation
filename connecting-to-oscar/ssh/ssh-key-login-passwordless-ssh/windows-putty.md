@@ -8,7 +8,7 @@
 
 2\. Move your cursor around randomly in order to "salt" your key, while the key is being generated. Once the key is generated, you should see something like this:
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6).png>)
 
 3\. Replace the text in the 'Key comment:' field with something recognizable and enter a passphrase in the two fields below.&#x20;
 
