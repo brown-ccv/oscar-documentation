@@ -1,14 +1,24 @@
 # Migration of MPI Apps to Slurm 22
 
-In January 2023, Oscar will be migrating to use Slurm version 22. In addition to improvements to security and speed, this new version of Slurm will support both PMI and PMIX, provide REST APIs, and allow users to control job priority via `scontrol top <JobID>`. While most applications will be unaffected by these changes, applications built to make use of MPI may need to be rebuilt to work properly. To help facilitate this, we are providing users who use MPI-based applications (either through Oscar's module system or built by the user) with advanced access to a test cluster with the new version of Slurm for testing purposes. Instructions for gaining access to the test cluster, building MPI-based applications, and submitting MPI jobs using the new Slurm, are provided below.
+In January 2023, Oscar will be migrating to use Slurm version 22.&#x20;
+
+{% hint style="info" %}
+Slurm version 22
+
+* improves security and speed,
+* supports boths PM and PMIX, and&#x20;
+* provides REST APIs
+{% endhint %}
+
+While most applications will be unaffected by these changes, applications built to make use of MPI may need to be rebuilt to work properly. To help facilitate this, we are providing users who use MPI-based applications (either through Oscar's module system or built by the user) with advanced access to a test cluster with the new version of Slurm for testing purposes. Instructions for gaining access to the test cluster, building MPI-based applications, and submitting MPI jobs using the new Slurm, are provided below.
 
 Please note - some existing modules of MPI-based applications will be deprecated and removed from the system as part of this upgrade. A list of modules that will no longer be available to users following the upgrade is given at the bottom of the page.
 
 ## Instructions for Testing Applications with Slurm 22
 
-1. Request access to the Slurm 22 test cluster (email **support@ccv.brown.edu**).
+1. Request access to the Slurm 22 test cluster (email **support@ccv.brown.edu**)
 2. Connect to Oscar via either **SSH** or **OOD** (instructions below)
-3. Build your application (if necessary, see instructions below)
+3. Build your application using the new MPI applications listed below
 4. Submit your job
 
 {% hint style="danger" %}
@@ -58,7 +68,7 @@ If the "Current Module Version" for an application is blank, a new version is bu
 | Application     | Current Module Version                                                                                                                           | Migrated or New Module Version                                                                                                                                                   |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | abaqus          | 2021.1\_intel17                                                                                                                                  | 2021\_slurm22\_a                                                                                                                                                                 |
-| ambertools      |                                                                                                                                                  | amber22                                                                                                                                                                          |
+| **ambertools**  |                                                                                                                                                  | amber22                                                                                                                                                                          |
 | boost           | 1.69                                                                                                                                             | 1.69\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                         |
 | CharMM          | CharMM/c47b1\_slurm20                                                                                                                            | CharMM/c47b1                                                                                                                                                                     |
 | cp2k            |                                                                                                                                                  | 2022.2 suffix slurm22                                                                                                                                                            |
