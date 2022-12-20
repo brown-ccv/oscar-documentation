@@ -1,42 +1,51 @@
 # Migration of MPI Apps to Slurm 22
 
-In January 2023, Slurm will be migrated to version 22 for newer and faster applications. This may require you to rebuild your MPI applications. To help facilitate this, we are providing access to a test cluster with the new version of Slurm. Please note - some of the older, existing MPI modules will be deprecated and removed from the system in the near future. Please see below for details.
+In January 2023, Oscar will be migrating to use Slurm version 22. In addition to improvements to security and speed, this new version of Slurm will support both PMI and PMIX, provide REST APIs, and allow users to control job priority via `scontrol top <JobID>`. While most applications will be unaffected by these changes, applications built to make use of MPI may need to be rebuilt to work properly. To help facilitate this, we are providing users who use MPI-based applications (either through Oscar's module system or built by the user) with advanced access to a test cluster with the new version of Slurm for testing purposes. Instructions for gaining access to the test cluster, building MPI-based applications, and submitting MPI jobs using the new Slurm, are provided below.
 
-## Instructions for Testing Applications of New Slurm
+Please note - some existing modules of MPI-based applications will be deprecated and removed from the system as part of this upgrade. A list of modules that will no longer be available to users following the upgrade is given at the bottom of the page.
 
-{% hint style="info" %}
-Users need to contact **support@ccv.brown.edu** to request the access to submitting jobs to the new Slurm.&#x20;
+## Instructions for Testing Applications with Slurm 22
+
+1. Request access to the Slurm 22 test cluster (email **support@ccv.brown.edu**).
+2. Connect to Oscar via either **SSH** or **OOD** (instructions below)
+3. Build your application (if necessary, see instructions below)
+4. Submit your job
+
+{% hint style="danger" %}
+Users must contact **support@ccv.brown.edu** to obtain access to the  test partition in order to submit jobs using Slurm 22.&#x20;
 {% endhint %}
 
-### SSH
+### Connecting via SSH
 
-1. `ssh into Oscar`
-2. `ssh slurm02` from a terminal
-3. `ssh node1947`
+1. Connect to Oscar using the `ssh` command in a terminal window
+2. From Oscar's command line, connect to the test cluster using the command `ssh node1947`
+3. From the node1947 command line, submit your jobs (either interactive or batch) as follows:
 
 {% tabs %}
 {% tab title="Interactive job" %}
-* `interact -q image-test` for _**cpu-only**_ tests, or&#x20;
-* `interact -q a5000-gcondo` for _**gpu**_ test.
+* For CPU-only jobs: `interact -q image-test`
+* For GPU jobs: `interact -q a5000-gcondo`
 {% endtab %}
 
 {% tab title="Batch job" %}
-* `#SBATCH -p image-test` for _**cpu-only**_ tests, or&#x20;
-* `#SBATCH -p a5000-gcondo` for _**gpu**_ test.
+Include the following line within your batch script and then submit using the `sbatch` command, as usual
+
+* For CPU-only jobs: `#SBATCH -p image-test`
+* For GPU jobs: `#SBATCH -p a5000-gcondo`
 {% endtab %}
 {% endtabs %}
 
-### OOD
+### Connecting via OOD
+
+1. Open a web browser and connect to **poodcit2.services.brown.edu**
+2. Login with your Oscar username and password
+3. Start a session using the Advanced Desktop App
+4. Select the **gpu** partition and click the **launch** button.
 
 {% hint style="info" %}
-* Only the Advanced Desktop App works.
-* The Advanced Desktop App can only submit to the _**gpu**_ partition.&#x20;
+* Only the Advanced Desktop App will connect to the test cluster
+* The Advanced Desktop App must connect to the _**gpu**_ partition&#x20;
 {% endhint %}
-
-1. Open a web browser and connect to **`poodcit2.services.brown.edu`**;
-2. Login with your Oscar username and password;
-3. Start an Advanced Desktop App session;
-4. Select the `gpu` partition and click the `launch` button.
 
 ## MPI Applications
 
@@ -46,64 +55,54 @@ Users need to contact **support@ccv.brown.edu** to request the access to submitt
 If the "Current Module Version" for an application is blank, a new version is built for the application.&#x20;
 {% endhint %}
 
-| Application     | Current Module Version                               | Migrated or New Module Version                              |
-| --------------- | ---------------------------------------------------- | ----------------------------------------------------------- |
-| abaqus          | 2021.1\_intel17                                      | 2021\_slurm22\_a                                            |
-| ambertools      |                                                      | amber22                                                     |
-| boost           | 1.69                                                 | 1.69\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                    |
-| CharMM          | CharMM/c47b1\_slurm20                                | CharMM/c47b1                                                |
-| cp2k            |                                                      | 2022.2 suffix slurm22                                       |
-| dedalus         | 2.1905                                               | 2.1905\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| dedalus         | 2.1905\_openmpi\_4.05\_gcc\_10.2\_slurm20            | 2.1905\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| esmf            | 8.4.0b12                                             | 8.4.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                   |
-| fftw            | 3.3.6                                                | 3.3.6\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                   |
-| fftw            | 3.3.8                                                | 3.3.10\_slurm22                                             |
-| global\_arrays  | 5.8\_openmpi\_4.0.5\_gcc\_10.2\_slurm20              | 5.8\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                     |
-| gpaw            | 21.1.0\_hpcx\_2.7.0\_gcc\_10.2\_slurm20              | 21.1.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| gpaw            | 21.1.0\_openmpi\_4.0.5\_gcc\_10.2\_slurm20           | 21.1.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| gpaw            | 21.1.0a\_openmpi\_4.0.5\_gcc\_10.2\_slurm20          | 21.1.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| gromacs         | 2018.2                                               | gromacs/2018.2\_mvapich2-2.3.5\_gcc\_10.2\_slurm22          |
-| hdf5            |                                                      | 1.10.8\_mvapich2\_2.3.5\_gcc\_10.2\_slurm22                 |
-| hdf5            |                                                      | 1.10.8\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                  |
-| hdf5            |                                                      | 1.10.8\_openmpi\_4.0.7\_intel\_2020.2\_slurm22              |
-| hdf5            |                                                      | 1.12.2\_openmpi\_4.0.7\_intel\_2020.2\_slurm22              |
-| hpcx            | mpi/hpcx\_2.7.0\_gcc\_10.2\_slurm20                  | mpi/hpcx\_2.7.0\_gcc\_10.2\_slurm22                         |
-| ior             | 3.3.0                                                | ior/3.3.0                                                   |
-| lammps          | 29Sep21\_openmpi\_4.0.5\_gcc\_10.2\_slurm20          | lammps/29Sep21\_openmpi\_4.0.7\_gcc\_10.2\_slurm22          |
-| meme            | 5.3.0                                                | 5.3.0\_slurm22                                              |
-| Molpro          | 2021.3.1                                             | 2021.3.1\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                |
-| mpi             | mvapich2-2.3.5\_gcc\_10.2\_slurm20                   | mvapich2-2.3.5\_gcc\_10.2\_slurm22                          |
-| mpi             |                                                      | openmpi\_4.0.7\_gcc\_10.2\_slurm22                          |
-| mpi             |                                                      | openmpi\_4.0.7\_intel\_2020.2\_slurm22                      |
-| mpi4py          |                                                      | 3.1.4\_py3.9.0\_slurm22                                     |
-| netcdf          | 4.7.4\_gcc\_10.2\_hdf5\_1.10.5                       | 4.7.4\_gcc\_10.2\_hdf5\_1.10.8\_slurm22                     |
-| netcdf          | 4.7.4\_intel\_2020.2\_hdf5\_1.12.0                   | 4.7.4\_gcc\_10.2\_hdf5\_1.12.2\_slurm22                     |
-| netcdf4-python  | 4.1.4.2                                              | 1.6.2                                                       |
-| osu-mpi         |                                                      | 5.6.3\_openmpi\_4.0.7\_gcc\_10.2                            |
-| petsc           |                                                      | petsc/3.18.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22            |
-| pnetcdf         | 1.12.3                                               | 1.12.3\_slurm22                                             |
-| qmcpack         | 3.9.2\_hpcx\_2.7.0\_gcc\_10.2\_slurm20               | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22           |
-| qmcpack         | 3.9.2\_openmpi\_4.0.0\_gcc\_8.3\_slurm20             | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22           |
-| qmcpack         | 3.9.2\_openmpi\_4.0.0\_gcc\_8.3\_slurm20\_complex    | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22           |
-| qmcpack         | 3.9.2\_openmpi\_4.0.1\_gcc                           |                                                             |
-| qmcpack         | 3.9.2\_openmpi\_4.0.4\_gcc                           | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22           |
-| qmcpack         | 3.9.2\_openmpi\_4.0.5\_intel\_2020.2\_slurm20        |                                                             |
-| quantumespresso | 6.4\_openmpi\_4.0.0\_gcc\_8.3\_slurm20               | quantumespresso/6.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22     |
-| quantumespresso | 6.4\_openmpi\_4.0.5\_intel\_2020.2\_slurm20          | quantumespresso/6.4\_openmpi\_4.0.7\_intel\_2020.2\_slurm22 |
-| quantumespresso | 7.0\_openmpi\_4.0.5\_intel\_2020.2\_slurm20          | quantumespresso/7.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22     |
-| vasp            | 5.4.1                                                | 5.4.1\_slurm22                                              |
-| vasp            | 5.4.1\_mvapich2-2.3.5\_intel\_2020.2\_slurm20        | 5.4.1\_slurm22                                              |
-| vasp            | 5.4.4                                                | 5.4.4\_slurm22                                              |
-| vasp            | 5.4.4\_intel                                         | 5.4.4\_slurm22                                              |
-| vasp            | 5.4.4\_mvapich2-2.3.5\_intel\_2020.2\_slurm20        | 5.4.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                   |
-| vasp            | 5.4.4\_openmpi\_4.0.5\_gcc\_10.2\_slurm20            | 5.4.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                   |
-| vasp            | 5.4.4a                                               | 5.4.4\_slurm22                                              |
-| vasp            | 6.1.1\_ompi405\_yqi27                                | 6.1.1\_ompi407\_yqi27\_slurm22                              |
-| vasp            | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20 | 6.1.1\_ompi407\_yqi27\_slurm22                              |
-| vasp            | 6.1.1\_yqi27                                         | 6.1.1\_ompi407\_yqi27\_slurm22                              |
-| vasp            | 6.3.0\_cfgoldsm                                      | 6.3.0\_cfgoldsm\_slurm22                                    |
-| vasp            | 6.3.2\_avandewa                                      | 6.3.2\_avandewa\_slurm22                                    |
-| wrf             |                                                      | 4.4.1\_openmpi\_4.0.7\_intel\_2020.2\_slurm22               |
+| Application     | Current Module Version                                                                                                                           | Migrated or New Module Version                                                                                                                                                   |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| abaqus          | 2021.1\_intel17                                                                                                                                  | 2021\_slurm22\_a                                                                                                                                                                 |
+| ambertools      |                                                                                                                                                  | amber22                                                                                                                                                                          |
+| boost           | 1.69                                                                                                                                             | 1.69\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                         |
+| CharMM          | CharMM/c47b1\_slurm20                                                                                                                            | CharMM/c47b1                                                                                                                                                                     |
+| cp2k            |                                                                                                                                                  | 2022.2 suffix slurm22                                                                                                                                                            |
+| **dedalus**     | <p>2.1905<br>2.1905_openmpi_4.05_gcc_10.2_slurm20</p>                                                                                            | 2.1905\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                       |
+| **esmf**        | 8.4.0b12                                                                                                                                         | 8.4.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                        |
+| fftw            | 3.3.6                                                                                                                                            | 3.3.6\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                        |
+| fftw            | 3.3.8                                                                                                                                            | 3.3.10\_slurm22                                                                                                                                                                  |
+| global\_arrays  | 5.8\_openmpi\_4.0.5\_gcc\_10.2\_slurm20                                                                                                          | 5.8\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                          |
+| **gpaw**        | <p>21.1.0_hpcx_2.7.0_gcc_10.2_slurm20<br>21.1.0_openmpi_4.0.5_gcc_10.2_slurm20<br>21.1.0a_openmpi_4.0.5_gcc_10.2_slurm20</p>                     | <p>21.1.0_openmpi_4.0.7_gcc_10.2_slurm22<br>21.1.0_openmpi_4.0.7_gcc_10.2_slurm22<br>21.1.0_openmpi_4.0.7_gcc_10.2_slurm22</p>                                                   |
+| gromacs         | 2018.2                                                                                                                                           | gromacs/2018.2\_mvapich2-2.3.5\_gcc\_10.2\_slurm22                                                                                                                               |
+| **hdf5**        |                                                                                                                                                  | <p>1.10.8_mvapich2_2.3.5_gcc_10.2_slurm22<br>1.10.8_openmpi_4.0.7_gcc_10.2_slurm22<br>1.10.8_openmpi_4.0.7_intel_2020.2_slurm22<br>1.12.2_openmpi_4.0.7_intel_2020.2_slurm22</p> |
+| ior             | 3.3.0                                                                                                                                            | 3.3.0                                                                                                                                                                            |
+| lammps          | 29Sep21\_openmpi\_4.0.5\_gcc\_10.2\_slurm20                                                                                                      | 29Sep21\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                      |
+| meme            | 5.3.0                                                                                                                                            | 5.3.0\_slurm22                                                                                                                                                                   |
+| Molpro          | 2021.3.1                                                                                                                                         | 2021.3.1\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                     |
+| **mpi**         | <p>hpcx_2.7.0_gcc_10.2_slurm20</p><p>mvapich2-2.3.5_gcc_10.2_slurm20<br>openmpi_4.0.5_gcc_10.2_slurm20<br>openmpi_4.0.5_intel_2020.2_slurm20</p> | <p>hpcx_2.7.0_gcc_10.2_slurm22</p><p>mvapich2-2.3.5_gcc_10.2_slurm22<br>openmpi_4.0.7_gcc_10.2_slurm22<br>openmpi_4.0.7_intel_2020.2_slurm22</p>                                 |
+| mpi4py          |                                                                                                                                                  | 3.1.4\_py3.9.0\_slurm22                                                                                                                                                          |
+| **netcdf**      | <p>4.7.4_gcc_10.2_hdf5_1.10.5<br>4.7.4_intel_2020.2_hdf5_1.12.0</p>                                                                              | <p>4.7.4_gcc_10.2_hdf5_1.10.8_slurm22<br>4.7.4_gcc_10.2_hdf5_1.12.2_slurm22</p>                                                                                                  |
+| netcdf4-python  | 4.1.4.2                                                                                                                                          | 1.6.2                                                                                                                                                                            |
+| osu-mpi         |                                                                                                                                                  | 5.6.3\_openmpi\_4.0.7\_gcc\_10.2                                                                                                                                                 |
+| petsc           |                                                                                                                                                  | petsc/3.18.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                 |
+| **pnetcdf**     | 1.12.3                                                                                                                                           | 1.12.3\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                       |
+| qmcpack         | 3.9.2\_hpcx\_2.7.0\_gcc\_10.2\_slurm20                                                                                                           | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                |
+| qmcpack         | 3.9.2\_openmpi\_4.0.0\_gcc\_8.3\_slurm20                                                                                                         | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                |
+| qmcpack         | 3.9.2\_openmpi\_4.0.0\_gcc\_8.3\_slurm20\_complex                                                                                                | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                |
+| qmcpack         | 3.9.2\_openmpi\_4.0.1\_gcc                                                                                                                       |                                                                                                                                                                                  |
+| qmcpack         | 3.9.2\_openmpi\_4.0.4\_gcc                                                                                                                       | qmcpack/3.9.2\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                |
+| qmcpack         | 3.9.2\_openmpi\_4.0.5\_intel\_2020.2\_slurm20                                                                                                    |                                                                                                                                                                                  |
+| quantumespresso | 6.4\_openmpi\_4.0.0\_gcc\_8.3\_slurm20                                                                                                           | quantumespresso/6.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                          |
+| quantumespresso | 6.4\_openmpi\_4.0.5\_intel\_2020.2\_slurm20                                                                                                      | quantumespresso/6.4\_openmpi\_4.0.7\_intel\_2020.2\_slurm22                                                                                                                      |
+| quantumespresso | 7.0\_openmpi\_4.0.5\_intel\_2020.2\_slurm20                                                                                                      | quantumespresso/7.0\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                          |
+| vasp            | 5.4.1                                                                                                                                            | 5.4.1\_slurm22                                                                                                                                                                   |
+| vasp            | 5.4.1\_mvapich2-2.3.5\_intel\_2020.2\_slurm20                                                                                                    | 5.4.1\_slurm22                                                                                                                                                                   |
+| vasp            | 5.4.4                                                                                                                                            | 5.4.4\_slurm22                                                                                                                                                                   |
+| vasp            | 5.4.4\_intel                                                                                                                                     | 5.4.4\_slurm22                                                                                                                                                                   |
+| vasp            | 5.4.4\_mvapich2-2.3.5\_intel\_2020.2\_slurm20                                                                                                    | 5.4.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                        |
+| vasp            | 5.4.4\_openmpi\_4.0.5\_gcc\_10.2\_slurm20                                                                                                        | 5.4.4\_openmpi\_4.0.7\_gcc\_10.2\_slurm22                                                                                                                                        |
+| vasp            | 5.4.4a                                                                                                                                           | 5.4.4\_slurm22                                                                                                                                                                   |
+| vasp            | 6.1.1\_ompi405\_yqi27                                                                                                                            | 6.1.1\_ompi407\_yqi27\_slurm22                                                                                                                                                   |
+| vasp            | 6.1.1\_openmpi\_4.0.5\_intel\_2020.2\_yqi27\_slurm20                                                                                             | 6.1.1\_ompi407\_yqi27\_slurm22                                                                                                                                                   |
+| vasp            | 6.1.1\_yqi27                                                                                                                                     | 6.1.1\_ompi407\_yqi27\_slurm22                                                                                                                                                   |
+| vasp            | 6.3.0\_cfgoldsm                                                                                                                                  | 6.3.0\_cfgoldsm\_slurm22                                                                                                                                                         |
+| vasp            | 6.3.2\_avandewa                                                                                                                                  | 6.3.2\_avandewa\_slurm22                                                                                                                                                         |
+| wrf             | 4.2.1\_hpcx\_2.7.0\_intel\_2020.2\_slurm20                                                                                                       |                                                                                                                                                                                  |
 
 ### Deprecated Modules
 
