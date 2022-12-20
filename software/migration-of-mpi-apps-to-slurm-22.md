@@ -104,6 +104,35 @@ If the "Current Module Version" for an application is blank, a new version is bu
 | vasp            | 6.3.2\_avandewa                                                                                                                                  | 6.3.2\_avandewa\_slurm22                                                                                                                                                         |
 | wrf             | 4.2.1\_hpcx\_2.7.0\_intel\_2020.2\_slurm20                                                                                                       |                                                                                                                                                                                  |
 
+### To build custom applications:
+
+We recommend using following MPI modules to build your custom applications:
+
+|                     |                                            |
+| ------------------- | ------------------------------------------ |
+| GCC based OpenMPI   | mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22     |
+| Intel based OpenMPI | mpi/openmpi\_4.0.7\_intel\_2020.2\_slurm22 |
+| MVAPICH             | mpi/mvapich2-2.3.5\_gcc\_10.2\_slurm22     |
+| Mellanox HPC-X      | mpi/hpcx\_2.7.0\_gcc\_10.2\_slurm22        |
+
+{% tabs %}
+{% tab title="GNU Configure Example" %}
+module load mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22
+
+module load gcc/10.2 cuda/11.7.1
+
+CC=mpicc CXX=mpicxx ./configure --prefix=/path/to/install/dir
+{% endtab %}
+
+{% tab title="CMAKE Configure Example" %}
+module load mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22
+
+module load gcc/10.2 cuda/11.7.1
+
+cmake -DCMAKE\_C\_COMPILER=mpicc DCMAKE\_CXX\_COMPILER=mpicxx ..
+{% endtab %}
+{% endtabs %}
+
 ### Deprecated Modules
 
 {% hint style="info" %}
