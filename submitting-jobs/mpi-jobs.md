@@ -17,27 +17,16 @@ We recommend using MVAPICH2 as it is integrated with the SLURM scheduler and opt
 
 The MPI module is called "mpi". The different implementations (mvapich2, openmpi, different base compilers) are in the form of versions of the module "mpi". This is to make sure that no two implementations can be loaded simultaneously, which is a common source of errors and confusion.
 
-```
-$ module avail mpi
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ name: mpi*/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-mpi/cave_mvapich2_2.3b_gcc
-mpi/cave_mvapich2_2.3b_intel
-mpi/cave_mvapich2_2.3rc2_gcc
-mpi/hpcx_2.7.0_gcc_10.2_slurm20
-mpi/hpcx_2.7.0_intel_2020.2_slurm20
-mpi/mvapich2-2.3.5_gcc_10.2_slurm20
-mpi/mvapich2-2.3.5_intel_2017.0_slurm20
-mpi/mvapich2-2.3.5_intel_2020.2_slurm20
-mpi/openmpi_2.0.3_intel_2020.2_slurm20
-mpi/openmpi_3.1.6_gcc_10.2_slurm20
-mpi/openmpi_4.0.0_gcc
-mpi/openmpi_4.0.1_gcc
-mpi/openmpi_4.0.5_gcc_10.2_slurm20
-mpi/openmpi_4.0.5_intel_2020.2_slurm20
-mpi4py/3.0.1_py3.6.8
-```
+<pre><code><strong>$ module avail mpi/
+</strong>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ name: mpi*/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    
+mpi/hpcx_2.7.0_gcc_10.2_slurm22                                     
+mpi/mvapich2-2.3.5_gcc_10.2_slurm22                             
+mpi/openmpi_4.0.7_gcc_10.2_slurm22                  
+mpi/openmpi_4.0.7_intel_2020.2_slurm22                                            
+mpi4py/3.1.4_py3.9.0_slurm22                    
+</code></pre>
 
-You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.5_gcc_10.2_slurm20`. This is the recommended version.
+You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.7_gcc_10.2_slurm20`. This is the recommended version.
 
 The module naming format is
 
@@ -47,7 +36,7 @@ mpi/<implementation>-<version>_<base compiler>
 
 ### `srun` instead of `mpirun`
 
-**Use `srun --mpi=pmix` to run MPI programs.** All MPI implementations listed above except `openmpi_1.8.3_gcc` and `openmpi_1.10.7_gcc` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
+**Use `srun --mpi=pmix` or `srun --mpi=pmi2` to run MPI programs.** All MPI implementations listed with suffix `_slurm22` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
 
 The `--mpi=pmix` flag is also required to match the configuration with which MPI is installed on Oscar.
 
