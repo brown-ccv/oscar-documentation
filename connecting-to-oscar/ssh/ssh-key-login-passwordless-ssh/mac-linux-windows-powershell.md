@@ -45,7 +45,7 @@ You will now need to copy your **public key** to Oscar. There are two ways to ac
 If your OS comes with the `ssh-copy-id` utility, then you'll be able to copy your public key into Oscar as follows:
 
 ```
-ssh-copy-id <username>@sshcampus.ccv.brown.edu
+ssh-copy-id <username>@ssh.ccv.brown.edu
 ```
 
 You will be prompted for a Password. The public key will be appended to the `authorized_keys` file on Oscar.&#x20;
@@ -53,7 +53,7 @@ You will be prompted for a Password. The public key will be appended to the `aut
 If you used a custom name for your key instead of the default `id_rsa` then you'll need pass the name of your key to `ssh-copy-id` i.e.,
 
 ```
-ssh-copy-id -i ~/.ssh/<keyname> <username>@sshcampus.ccv.brown.edu
+ssh-copy-id -i ~/.ssh/<keyname> <username>@ssh.ccv.brown.edu
 ```
 
 ### **Without ssh-copy-id**
