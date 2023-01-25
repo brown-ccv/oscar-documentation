@@ -26,7 +26,7 @@ mpi/openmpi_4.0.7_intel_2020.2_slurm22
 mpi4py/3.1.4_py3.9.0_slurm22                    
 </code></pre>
 
-You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.7_gcc_10.2_slurm20`. This is the recommended version.
+You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.7_gcc_10.2_slurm22`. This is the recommended version.
 
 The module naming format is
 
@@ -121,7 +121,7 @@ If your program has multi-threading capability using OpenMP, you can have severa
 #SBATCH --cpus-per-task=4
 
 # Load required modules
-module load mpi
+module load mpi/openmpi_4.0.7_gcc_10.2_slurm22
 
 export OMP_NUM_THREADS=4
 srun --mpi=pmix ./MyMPIProgram
