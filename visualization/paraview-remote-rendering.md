@@ -30,23 +30,25 @@ You can either download the Paraview Desktop App to your presonal computer or ac
 
 #### **Download Paraview Desktop to your desktop computer (Recommended)**
 
-Go to the official [Paraview Download website](https://www.paraview.org/download/). Select your Operational system (Linux, Windows or Mac) and get the file `ParaView-5.9.0-Windows-Python3`. Install in your environment, go to the installation directory and open Paraview.
+Go to the official [Paraview Download website](https://www.paraview.org/download/). Select your Operational system (Linux, Windows or Mac), get the ParaView-5.11.0--Python3.9 version that suit your local machine and run the Installer wizard.
 
 {% hint style="info" %}
-Not all versions will work. **You must select 5.9.0**
+Not all versions will work. **You must select 5.11.0**
 {% endhint %}
 
-1. [Connect to VNC](../connecting-to-oscar/vnc.md)
+### Using Paraview UI installed in Oscar
+
+1. Connect to [OpenOnDemand](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand)
 2. Open terminal: Applications - > Utilities -> Terminal (this might differ depending on the Operating System UI)
 3. Run the commands
 
 ```
-module load paraview/5.9.0
-paraview5.9_ui
+module load paraview/5.11.0_openmpi_4.0.7_intel_2020.2_slurm22
+paraview5.11_ui
 ```
 
 {% hint style="info" %}
-If this is your first time opening paraview,  it will take some minutes (don't despair!)
+If this is your first time opening paraview,  it will take a few minutes.
 {% endhint %}
 
 ## 1. Start the Server
@@ -56,7 +58,7 @@ You need to allocate the resources via SLURM indicating the amount of memory you
 In order to have the `run-remote-server` be found we need  to load the Paraview module that supports this service (this appends the correct path to out `PATH` environment variable)
 
 ```
-module load paraview/5.9.0
+module load paraview/5.11.0_openmpi_4.0.7_intel_2020.2_slurm22
 
 run-remote-server -u your_brown_username@brown.edu
 ```
@@ -184,7 +186,7 @@ In Paraview UI go to the menu bar `View` and select `Memory Inspector`. You will
 ## Summary
 
 1. &#x20;Open a terminal an connect to Oscar (Follow [this link](https://docs.ccv.brown.edu/oscar/getting-started) to know how to do it)
-2. load the Paraview module `module load paraview/5.9.0`
+2. &#x20;Load the Paraview module `module load paraview/5.11.0_openmpi_4.0.7_intel_2020.2_slurm22`
 3. &#x20;Execute the command `run-remote-server -u your_brown_email@brown.edu`.
 4. &#x20;Wait for the email indicating the server is running&#x20;
 5. Connect to the server using Paraview Client
