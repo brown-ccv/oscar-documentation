@@ -8,6 +8,10 @@ If you're confused about any acronyms or terms throughout the guide, check out o
 
 ### OSCAR
 
+{% hint style="success" %}
+
+{% endhint %}
+
 Oscar is the shared compute cluster operated by CCV.
 
 Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar. Some of the most common commands you'll be using in Oscar can also be found on our [Quick Reference page](quick-reference/).
@@ -125,13 +129,13 @@ For a list of all PyModule commands, see [Software Modules](software/software.md
 
 ## Using a Desktop on Oscar
 
-You can connect remotely to a graphical desktop environment on Oscar using CCV's [VNC client](connecting-to-oscar/vnc.md). The CCV VNC client integrates with the scheduling system on Oscar to create dedicated, persistent VNC sessions that are tied to a single user.
+You can connect remotely to a graphical desktop environment on Oscar using CCV's [VNC client](broken-reference). The CCV VNC client integrates with the scheduling system on Oscar to create dedicated, persistent VNC sessions that are tied to a single user.
 
 Using VNC, you can run graphical user interface (GUI) applications like Matlab, Mathematica, etc. while having access to Oscar's compute power and file system.
 
 ![The desktop display on VNC](.gitbook/assets/vnc-capture-cropped-resized.png)
 
-For download and installation instructions, [click here](connecting-to-oscar/vnc.md#instructions).
+For download and installation instructions, [click here](broken-reference).
 
 ## Running Jobs
 

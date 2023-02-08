@@ -31,7 +31,6 @@
 * [Remote IDE (VSCode)](connecting-to-oscar/remote-ide/README.md)
   * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
   * [Setup virtual environment and debugger](connecting-to-oscar/remote-ide/setup-virtual-environment-and-debugger.md)
-* [☠ VNC (Deprecated)](connecting-to-oscar/vnc.md)
 
 ## Managing files
 

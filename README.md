@@ -70,7 +70,7 @@ Users can[ transfer files](managing-files/filetransfer.md) from and to[ Oscar fi
 Oscar users can connect to Oscar by
 
 * [SSH](connecting-to-oscar/ssh/)
-* [VNC](connecting-to-oscar/vnc.md)
+* [VNC](broken-reference)
 
 ## Maintenance Schedule
 

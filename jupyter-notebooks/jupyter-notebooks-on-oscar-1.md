@@ -24,7 +24,7 @@ Do not run Jupyter Notebook on login nodes.
 
 ## In a VNC Session
 
-Start a [VNC session](../connecting-to-oscar/vnc.md), and open up a terminal in the VNC session . To start a Jupyter Notebook, enter
+Start a [VNC session](broken-reference), and open up a terminal in the VNC session . To start a Jupyter Notebook, enter
 
 ```
 jupyter-notebook

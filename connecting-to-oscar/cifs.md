@@ -79,15 +79,15 @@ Users should ensure that the date and time are set correctly on their machine. N
 
     ```bash
     # Home
-    //smb.ccv.brown.edu/home/<user> /mnt/rhome cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
+    //smb.ccv.brown.edu/home/<user> /mnt/rhome cifs credentials=/etc/cifspw,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
 
     # Scratch 
-    //smb.ccv.brown.edu/scratch/<user> /mnt/rscratch cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
+    //smb.ccv.brown.edu/scratch/<user> /mnt/rscratch cifs credentials=/etc/cifspw,nounix,uid=<localuser>,domain=ad.brown.edu 0 0
 
     # Data
-    //smb.ccv.brown.edu/data/<pi_group>/<user> /mnt/rdata cifs credentials=/etc/cifspw,vers=2.0,nounix,uid=<localUser>,domain=ad.brown.edu 0 0
+    //smb.ccv.brown.edu/data/<pi_group>/<user> /mnt/rdata cifs credentials=/etc/cifspw,nounix,uid=<localUser>,domain=ad.brown.edu 0 0
     ```
-7. Replace`<localUser>`to the login used on your Linux workstation.
+7. Replace`<localUser>`to the login used on your Linux workstation, and replace \<user> and \<pi\_group> with your Oscar username and PI group, respectively.
 8.  Mount the share:
 
     ```bash
