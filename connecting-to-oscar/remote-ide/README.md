@@ -34,6 +34,10 @@ Search for `symlink` and make sure the symlink searching is unchecked
 
 3\. Make sure you have set up passwordless SSH authentication to Oscar. If you haven't, please refer to this [documentation page](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/ssh/ssh-key-login-passwordless-ssh).
 
+{% hint style="info" %}
+If you have **Windows Subsystem for Linux (WSL)** installed in your computer, you need to follow the instructions for Windows (PowerShell).
+{% endhint %}
+
 4\. Edit the `config` file:
 
 {% tabs %}
@@ -51,6 +55,10 @@ C:\Users\<uname>\.ssh\config
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+If you have **Windows Subsystem for Linux (WSL)** installed in your computer, you need to follow the instructions for Windows (PowerShell).&#x20;
+{% endhint %}
 
 Edit the `config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.&#x20;
 
