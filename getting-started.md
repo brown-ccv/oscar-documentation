@@ -59,28 +59,6 @@ Congratulations, you are now on one of the Oscar login nodes.
 **Note: Please do not run computations or simulations on the login nodes**, because they are shared with other users. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes.
 {% endhint %}
 
-### Changing CIFS Passwords
-
-To change your [CIFS](connecting-to-oscar/cifs.md) password, use the command:
-
-```
-$ smbpasswd
-```
-
-Password reset rules:
-
-* minimum length: 8 characters
-*   should have characters from all 4 classes: upper-case letters,
-
-    lower-case letters, numbers and special characters
-* a character cannot appear more than twice in a row
-*   cannot have more than 3 upper-case, lower-case, or number characters
-
-    in a row
-* at least 3 characters should be different from the previous password
-* cannot be the same as username
-* should not include any of the words in the user's "full name"
-
 ## File system
 
 Users on Oscar have three places to store files:
