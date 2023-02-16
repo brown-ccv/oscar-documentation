@@ -19,7 +19,7 @@ Do not activate a conda environment before submitting a batch job if the batch j
 
 ### anaconda/2022.05
 
-This is the newest anaconda module on Oscar. The first time you load the anaconda/2020.02 module, you need initialize the environment by running the following command:
+This is the newest anaconda module on Oscar. The first time you load the anaconda/2022.05 module, you need initialize the environment by running the following command:
 
 ```
 $conda init bash
@@ -155,7 +155,7 @@ If you need to activate a conda environment in a bash script, you need to source
 ```
 #!/usr/bin/bash
 module load anaconda/2022.05
-source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
+source /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
 conda activate my_env
 ```
 
