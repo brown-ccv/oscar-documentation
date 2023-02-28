@@ -70,8 +70,7 @@ Users can[ transfer files](managing-files/filetransfer.md) from and to[ Oscar fi
 Oscar users can connect to Oscar by
 
 * [SSH](connecting-to-oscar/ssh/)
-* [Open OnDemand](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand)
-* [VS Code Remode IDE](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/remote-ide)
+* [VNC](broken-reference)
 
 ## Maintenance Schedule
 
