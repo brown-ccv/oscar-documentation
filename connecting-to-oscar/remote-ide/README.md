@@ -81,7 +81,7 @@ Host ccv-vscode-node
 
 <figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
 
-6\. One-time installation and set up of VSCode
+6\. Install and set up of VSCode
 
 {% tabs %}
 {% tab title="Mac / Linux" %}
@@ -95,25 +95,21 @@ After a moment, VS Code will connect to the SSH server and set itself up. You mi
 {% endtab %}
 {% endtabs %}
 
-## Reconnect to VSCode
-
-1. Click the green icon "Open a Remote Window" in the bottom left corner of VSCode Window. Then click "Connect to Host" in the drop down list.
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
-
-2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
-
-<figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
+7. Configure VSCode
 
 {% hint style="info" %}
 Important: Please run the following to add a settings.json file to your config. This is because the filewatcher and file searcher (rg) indexes all the files you have access to in your workspace. If you have a large dataset (e.g. machine learning) this can take a lot of resources on the vscode node.
 {% endhint %}
 
+Connect to VSCode first.
+
+You can either create a symlink via the `ln` command below,
+
 ```
 ln -s /gpfs/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
 ```
 
-You can either create a symlink (above command) or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file with following contents:
+or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file with following contents
 
 ```
 {
@@ -138,3 +134,13 @@ You can either create a symlink (above command) or manually create `/users/$USER
     }
 }
 ```
+
+## Reconnect to VSCode
+
+1. Click the green icon "Open a Remote Window" in the bottom left corner of VSCode Window. Then click "Connect to Host" in the drop down list.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
+
+<figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
