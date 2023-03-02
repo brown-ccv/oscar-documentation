@@ -104,3 +104,37 @@ After a moment, VS Code will connect to the SSH server and set itself up. You mi
 2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
 
 <figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Important: Please run the following to add a settings.json file to your config. This is because the filewatcher and file searcher (rg) indexes all the files you have access to in your workspace. If you have a large dataset (e.g. machine learning) this can take a lot of resources on the vscode node.
+{% endhint %}
+
+```
+ln -s /gpfs/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
+```
+
+You can either create a symlink (above command) or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file with following contents:
+
+```
+{
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "/usr/local/**": true,
+        "/gpfs/home/**": true,
+        "/gpfs/data/**": true,
+        "/gpfs/scratch/**": true
+    },
+    "search.followSymlinks": false,
+    "search.exclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "/usr/local/**": true,
+        "/gpfs/home/**": true,
+        "/gpfs/data/**": true,
+        "/gpfs/scratch/**": true
+    }
+}
+```
