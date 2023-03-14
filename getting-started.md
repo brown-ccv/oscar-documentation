@@ -107,13 +107,15 @@ For a list of all PyModule commands, see [Software Modules](software/software.md
 
 ## Using a Desktop on Oscar
 
-You can connect remotely to a graphical desktop environment on Oscar using CCV's [VNC client](broken-reference). The CCV VNC client integrates with the scheduling system on Oscar to create dedicated, persistent VNC sessions that are tied to a single user.
+You can connect remotely to a graphical desktop environment on Oscar using [CCV's OpenOnDemand](https://ood.ccv.brown.edu/). The OOD Desktop integrates with the scheduling system on Oscar to create dedicated, persistent VNC sessions that are tied to a single user.
 
 Using VNC, you can run graphical user interface (GUI) applications like Matlab, Mathematica, etc. while having access to Oscar's compute power and file system.
 
-![The desktop display on VNC](.gitbook/assets/vnc-capture-cropped-resized.png)
+<figure><img src=".gitbook/assets/Screenshot 2023-03-14 at 9.10.56 AM.png" alt=""><figcaption></figcaption></figure>
 
-For download and installation instructions, [click here](broken-reference).
+<figure><img src=".gitbook/assets/Screenshot 2023-03-14 at 9.11.06 AM.png" alt=""><figcaption><p>Choose a session that suits your needs</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/Screenshot 2023-03-14 at 9.14.23 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## Running Jobs
 
