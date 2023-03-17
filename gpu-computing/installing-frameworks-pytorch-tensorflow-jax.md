@@ -4,7 +4,7 @@ description: >-
   JAX, etc. on your Oscar account.
 ---
 
-# Installing Frameworks
+# Installing Frameworks (PyTorch, TensorFlow, Jax)
 
 {% hint style="info" %}
 Preface: Oscar is a heterogeneous cluster meaning we have nodes with different architecture GPUs (Pascal, Volta, Turing, and Ampere). We recommend building the environment first time on Ampere GPUs with the latest CUDA11 modules so it's backward compatible with older architecture GPUs.&#x20;
