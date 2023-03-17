@@ -1,12 +1,16 @@
 # Desktop App (VNC)
 
-## **Contents:**
+The Desktop app on Open OnDemand is a replacement for the older VNC Java client. This app allows you to launch a Desktop GUI on Oscar.
 
-* [Launching Desktop App (VNC)](desktop-app-vnc.md#launching-desktop-app-vnc)
-* [Reconnecting to session](desktop-app-vnc.md#reconnecting-to-session)
-* [Copying and pasting text](desktop-app-vnc.md#copying-and-pasting-text)
+{% hint style="info" %}
+Advanced users looking for more resources can try the [Desktop (Advanced) app](desktop-app-vnc.md#advanced-desktop).
+{% endhint %}
 
 ## Launching Desktop App (VNC)
+
+### 0. Launch Open OnDemand
+
+Click [here](https://ood.ccv.brown.edu) to launch Open OnDemand (OOD) and log in with you Brown Credentials.
 
 ### 1. Select the **`Desktop`** option in **`Interactive Apps`** dropdown list:
 
@@ -70,7 +74,7 @@ Click the side panel button on the extreme left hand side of the screen.
 {% endtab %}
 {% endtabs %}
 
-## Advanced Desktop
+## Desktop (Advanced)
 
 If you need **more** or **different** **resources** than those available from the default Desktop session, you should use the Advanced Desktop app. Resources requested here count against the resources allowed for your Oscar account.
 
