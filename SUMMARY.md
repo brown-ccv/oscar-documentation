@@ -62,10 +62,10 @@
 * [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
 * [Ampere Architecture GPUs](gpu-computing/ampere-architecture-gpus.md)
-* [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
 * [Installing Frameworks (PyTorch, TensorFlow, Jax)](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/README.md)
   * [Installing JAX](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-jax.md)
   * [Installing TensorFlow](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-tensorflow.md)
+* [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
 
 ## Large Memory Computing
 

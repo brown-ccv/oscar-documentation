@@ -4,15 +4,15 @@ description: The new Ampere architecture GPUs on Oscar (A6000's and RTX 3090's)
 
 # Ampere Architecture GPUs
 
-The new Ampere architecture GPUs do not support older CUDA modules. Users must re-compile their applications with the newer CUDA/11 or older modules. Here are detailed instructions to compile major frameworks such as PyTorch, TensorFlow. 
+The new Ampere architecture GPUs do not support older CUDA modules. Users must re-compile their applications with the newer CUDA/11 or older modules. Here are detailed instructions to compile major frameworks such as PyTorch, and TensorFlow.&#x20;
 
 ### PyTorch
 
-Users can install PyTorch from a pip virtual environment or use pre-built singularity containers provided by Nvidia NGC. 
+Users can install PyTorch from a pip virtual environment or use pre-built singularity containers provided by Nvidia NGC.&#x20;
 
 #### To install via virtual environment:
 
-```text
+```
 module load python/3.7.4
 module load cuda/11.3.1
 module load cudnn/8.2.0
@@ -20,7 +20,7 @@ module load cudnn/8.2.0
 virtualenv -p python3 pytorch.venv
 source pytorch.venv/bin/activate
 
-pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/cu111/torch_stable.html 
 ```
 
 #### To use NGC containers via Singularity :
@@ -67,6 +67,4 @@ singularity --version
 # Use environment from the singularity image
 singularity exec --nv pytorch:21.06-py3 python pytorch-cifar100/train.py -net vgg16 -gpu
 ```
-
-
 
