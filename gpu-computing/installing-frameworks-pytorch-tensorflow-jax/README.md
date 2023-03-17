@@ -18,7 +18,7 @@ In this example, we will install **PyTorch** (refer to sub-pages for TensorFlow 
 
 Here, -f = feature. We only need to build on Ampere once.&#x20;
 
-**Step 2:** Once your session has started on a compute node, run `nvidia-smi` to verify the GPU and then load appropriate modules&#x20;
+**Step 2:** Once your session has started on a compute node, run `nvidia-smi` to verify the GPU and then load the appropriate modules&#x20;
 
 ```
 module load python/3.11.0 openssl/3.0.0 cuda/11.7.1 cudnn/8.2.0
@@ -55,7 +55,7 @@ True
 'NVIDIA GeForce RTX 3090'
 ```
 
-If the above functons return `True` and GPU `model`, then its working correctly. You are all set, now you can install other necessary packages.
+If the above functions return `True` and GPU `model`, then it's working correctly. You are all set, now you can install other necessary packages.
 
 
 
