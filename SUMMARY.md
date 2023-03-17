@@ -63,6 +63,7 @@
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
 * [Ampere Architecture GPUs](gpu-computing/ampere-architecture-gpus.md)
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
+* [Installing Frameworks](gpu-computing/installing-frameworks.md)
 
 ## Large Memory Computing
 
