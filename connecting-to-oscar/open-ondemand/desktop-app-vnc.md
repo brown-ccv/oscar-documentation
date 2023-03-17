@@ -3,7 +3,7 @@
 The Desktop app on Open OnDemand is a replacement for the older VNC Java client. This app allows you to launch a Desktop GUI on Oscar.
 
 {% hint style="info" %}
-Advanced users looking for more resources can try the [Desktop (Advanced) app](desktop-app-vnc.md#advanced-desktop).
+Advanced users looking for more resources can try the [Desktop (Advanced) app](desktop-app-vnc.md#desktop-advanced).
 {% endhint %}
 
 ## Launching Desktop App (VNC)
