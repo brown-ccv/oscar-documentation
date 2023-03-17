@@ -75,7 +75,7 @@ click `Endurace` to (Figure 2)
 
 #### 3.1.2 Add a New Site
 
-![Figure 3 WinSCP Session Creation](<../.gitbook/assets/image (11).png>)
+![Figure 3 WinSCP Session Creation](<../.gitbook/assets/image (11) (1).png>)
 
 ### 3.2 FileZilla
 

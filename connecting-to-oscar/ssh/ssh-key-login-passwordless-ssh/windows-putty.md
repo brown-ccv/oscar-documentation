@@ -4,7 +4,7 @@
 
 1. Open PuTTYgen (this comes as part of the [PuTTY](https://www.chiark.greenend.org.uk/\~sgtatham/putty/latest.html) package), change the 'Number of bits in a generated key:' to 4096 (recommended), then click 'Generate'
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (1).png>)
 
 2\. Move your cursor around randomly in order to "salt" your key, while the key is being generated. Once the key is generated, you should see something like this:
 
@@ -22,7 +22,7 @@
 To open your system tray, click on the up arrow (looks like: ^ ) icon at the bottom right of your screen (assuming your taskbar is at the bottom of your screen).
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (1).png>)
 
 7\. Click on 'Add Key' and select the file you saved when generating your key earlier (Step 5). If it is requested, enter the passphrase you created at Step 3 to complete the process.
 

@@ -27,6 +27,7 @@
   * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
   * [Interactive Apps on OOD](connecting-to-oscar/open-ondemand/interactive-apps-on-ood.md)
   * [Using Python or Conda environments in the Jupyter App](connecting-to-oscar/open-ondemand/using-python-or-conda-environments-in-the-jupyter-app.md)
+  * [Desktop App (VNC)](connecting-to-oscar/open-ondemand/desktop-app-vnc.md)
 * [SMB (Local Mount)](connecting-to-oscar/cifs.md)
 * [Remote IDE (VSCode)](connecting-to-oscar/remote-ide/README.md)
   * [From Non-compliant Networks (2-FA)](connecting-to-oscar/remote-ide/from-non-compliant-networks-2-fa.md)
