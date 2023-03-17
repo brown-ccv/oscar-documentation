@@ -65,6 +65,7 @@
 * [Mixing MPI and CUDA](gpu-computing/mpi-cuda.md)
 * [Installing Frameworks (PyTorch, TensorFlow, Jax)](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/README.md)
   * [Installing JAX](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-jax.md)
+  * [Installing TensorFlow](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-tensorflow.md)
 
 ## Large Memory Computing
 
