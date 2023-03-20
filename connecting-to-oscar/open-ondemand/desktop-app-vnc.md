@@ -6,6 +6,10 @@ The Desktop app on Open OnDemand is a replacement for the older VNC Java client.
 Advanced users looking for more resources can try the [Desktop (Advanced) app](desktop-app-vnc.md#desktop-advanced).
 {% endhint %}
 
+{% hint style="danger" %}
+Do not load any `anaconda` module in your .modules or .bashrc file. These modules prevent Desktop sessions from starting correctly. You may load them inside the Desktop session.
+{% endhint %}
+
 ## Launching Desktop App (VNC)
 
 ### 0. Launch Open OnDemand
