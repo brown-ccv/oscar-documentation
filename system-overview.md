@@ -39,4 +39,4 @@ Below are node details including cores and memory for all partitions.
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types as well GPUs.
 
-<figure><img src=".gitbook/assets/feat37.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/feat43.png" alt=""><figcaption></figcaption></figure>
