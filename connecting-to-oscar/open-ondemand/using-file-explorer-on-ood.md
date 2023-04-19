@@ -15,7 +15,7 @@ The filesystem on Oscar can be accessed through the file explorer on this web po
 
 To access the file explorer, click "Files" -> "Home Directory" at the top of the screen.
 
-![](../../.gitbook/assets/file\_explorer.png)
+![](<../../.gitbook/assets/file\_explorer (1).png>)
 
 Check the documentation below for some of these services below:
 
@@ -37,14 +37,14 @@ Do not use "\~" in your directory path name. The path should start with "/users"
 2. Click the icon with the three dots -> Edit
 3. The file will open in a text editor in a new tab
 
-![](<../../.gitbook/assets/edit (1).png>)
+![](../../.gitbook/assets/edit.png)
 
 ### Download files or directories
 
 1. [Navigate to the directory](using-file-explorer-on-ood.md#changing-directories-on-file-explorer) that contains the file or directory.
 2. Click the icon with the three dots -> Download
 
-![](../../.gitbook/assets/download.png)
+![](<../../.gitbook/assets/download (1).png>)
 
 To download multiples files:
 
@@ -59,7 +59,7 @@ Directories are downloaded as zipped files on your computer.
 2. Click the "Upload" button.
 3. Follow the instructions on the screen. You can click the "Browse" buttons or drag and drop files.
 
-![](<../../.gitbook/assets/Upload (1).png>)
+![](../../.gitbook/assets/Upload.png)
 
 ### Launch a terminal
 
@@ -67,5 +67,5 @@ Directories are downloaded as zipped files on your computer.
 2. Click "Open in Terminal" at the top of the page.
 3. A web-based terminal will open in a new tab of your browser.  You will be logged into one of the login nodes.
 
-![](<../../.gitbook/assets/terminal (1).png>)
+![](../../.gitbook/assets/terminal.png)
 

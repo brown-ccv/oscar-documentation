@@ -48,7 +48,7 @@ As is stated in the [IDL Documentation](https://www.l3harrisgeospatial.com/docs/
 
 ## IDL Programs
 
-To write an __ IDL program, you can use any of the text editors on Oscar (such as vim, emacs, and nano) or you can create the program in a file on your own computer and then copy that file to Oscar when you are finished. Here is an example (hello world) IDL program `idl_hello_world.pro`:
+To write an IDL program, you can use any of the text editors on Oscar (such as vim, emacs, and nano) or you can create the program in a file on your own computer and then copy that file to Oscar when you are finished. Here is an example (hello world) IDL program `idl_hello_world.pro`:
 
 ```
 PRO IDL_HELLO_WORLD

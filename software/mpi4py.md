@@ -39,7 +39,7 @@ if __name__ == "__main__":
 ```
 
 {% hint style="info" %}
-The file `mpi4pytest.py` __ can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
+The file `mpi4pytest.py`  can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
 {% endhint %}
 
 ## Conda Environment

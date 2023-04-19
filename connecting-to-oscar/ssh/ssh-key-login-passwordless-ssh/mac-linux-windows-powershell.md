@@ -66,12 +66,12 @@ If your system does not come with the `ssh-copy-id` utility installed, then you'
 3. Login into Oscar via regular ssh `ssh <username>@ssh.ccv.brown.edu`. Once you are on the login node, open the authorized\_keys file with your text editor of choice e.g.,\
    \
    `vim ~/.ssh/authorized_keys`\
-   ``\
-   ``or\
+   \
+   or\
    \
    `nano ~/.ssh/authorized_keys`\
-   ``\
-   ``Add your public keys to **end** of this file. Save and exit.&#x20;
+   \
+   Add your public keys to **end** of this file. Save and exit.&#x20;
 
 ## **Step 4 : Login to Oscar using your SSH keys**&#x20;
 

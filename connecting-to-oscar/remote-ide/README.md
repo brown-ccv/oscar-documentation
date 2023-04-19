@@ -14,7 +14,7 @@ To use VSCode you will need to be connected to the VPN. Please install the [Brow
 
 1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VSCode:
 
-<figure><img src="../../.gitbook/assets/vscode_install.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/capture.png" alt=""><figcaption></figcaption></figure>
 
 2\. Open VSCode settings and uncheck symlink:
 

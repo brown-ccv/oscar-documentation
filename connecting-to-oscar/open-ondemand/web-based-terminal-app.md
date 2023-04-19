@@ -9,7 +9,7 @@ Open OnDemand offers a browser-based terminal app to access Oscar. Windows users
 1. Log in to [https://ood.ccv.brown.edu](https://ood.ccv.brown.edu)
 2. In the top menu, click `Clusters` -> `>_OSCAR Shell Access`
 
-![](../../.gitbook/assets/launch\_terminal.png)
+![](<../../.gitbook/assets/launch\_terminal (1).png>)
 
 A new tab will open and the web-based terminal app will be launched in it. The shell will be launched on one of the login nodes.
 
@@ -17,7 +17,7 @@ A new tab will open and the web-based terminal app will be launched in it. The s
 **The shell DOES NOT start on a compute node. Please do not run computations or simulations on the login nodes**, because they are shared with other users. You can use the login nodes to compile your code, manage files, and launch jobs on the compute nodes.&#x20;
 {% endhint %}
 
-![](../../.gitbook/assets/terminal\_screenshot.png)
+![](<../../.gitbook/assets/terminal\_screenshot (1).png>)
 
 3\. You are logged into one of the login nodes. You can [launch batch jobs ](../../submitting-jobs/batch.md)from this terminal or [start an interactive job](../../submitting-jobs/interact.md) for anything computationally intensive.
 

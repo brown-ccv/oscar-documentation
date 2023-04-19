@@ -12,7 +12,7 @@ Group membership for`dbgap, dbg_PiLastName, dbg_import, dbg_export` along with S
 
 **Step 2:** Understand the dbGaP Data Hierarchy
 
-The native GPFS file system (Home, Scratch, Data, Runtime) will be read-only access. All dbGaP related work must be done in the`/dbGaP`root directory. The __ `/dbGaP` directory has two sub-directories `data` & `results` . The downloaded datasets from the xfer server will be written to`/dbgap/import/user`and all output files will be written to the`/dbgap/results/username`directory. The hierarchy structure is:
+The native GPFS file system (Home, Scratch, Data, Runtime) will be read-only access. All dbGaP related work must be done in the`/dbGaP`root directory. The `/dbGaP` directory has two sub-directories `data` & `results` . The downloaded datasets from the xfer server will be written to`/dbgap/import/user`and all output files will be written to the`/dbgap/results/username`directory. The hierarchy structure is:
 
 ```
 psaluja@node1030:/dbGaP$ tree /dbGaP/

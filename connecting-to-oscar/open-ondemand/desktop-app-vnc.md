@@ -63,7 +63,7 @@ If you are using Google Chrome, switch on the "Clipboard" permission and you can
 1. Click the Lock icon to the left of the URL
 2. Switch on the "Clipboard" permission
 
-![](<../../.gitbook/assets/permissions (1).png>)
+![](../../.gitbook/assets/permissions.png)
 {% endtab %}
 
 {% tab title="Other Browsers" %}
@@ -96,7 +96,7 @@ Fill out the form with your required resources.&#x20;
 * **Partition**: Equivalent to `#SBATCH -p` option. The desktop session will run on this partition.
 * **Num Cores:** Equivalent to the `#SBATCH -n` option.
 * **Num GPUs**: Equivalent to the `#SBATCH --gres=gpu:` option. This field is **ignored** if the partition does not have any GPU nodes, e.g. batch
-* **Memory (GB):** Equivalent to the **** `#SBATCH --mem=` option.
+* **Memory (GB):** Equivalent to the  `#SBATCH --mem=` option.
 * **Reservation:** Equivalent to the `#SBATCH --reservation=` option. Leave **blank** if you are not using a reservation.&#x20;
 
 ### 3. Wait and Launch!

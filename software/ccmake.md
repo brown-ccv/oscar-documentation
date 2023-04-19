@@ -116,7 +116,7 @@ make -j 8
 ```
 {% endhint %}
 
-Once it  is done, your project will be installed in the path set in the **CMAKE\_INSTALL\_PREFIX** attribute  ****  as explained above.
+Once it  is done, your project will be installed in the path set in the **CMAKE\_INSTALL\_PREFIX** attribute  as explained above.
 
 If you have any questions or need help please email `support@ccv.brown.edu`.
 

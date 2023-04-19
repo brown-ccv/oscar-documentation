@@ -63,7 +63,7 @@ module load paraview/5.11.0_openmpi_4.0.7_intel_2020.2_slurm22
 run-remote-server -u your_brown_username@brown.edu
 ```
 
-The flag `-u` **** indicates where the confirmation email will be sent. Technically it could be any email address, but the remote render session can only be used by existing Oscar users.
+The flag `-u` indicates where the confirmation email will be sent. Technically it could be any email address, but the remote render session can only be used by existing Oscar users.
 
 {% hint style="warning" %}
 The only mandatory parameter is **-u** \<user-email>.&#x20;
@@ -143,9 +143,9 @@ Open a terminal and execute the command:
 ssh -N -L <port-number>:<SERVER_IP>:<port-number> <your_brown_id>@ssh.ccv.brown.edu
 ```
 
-* **`<SERVER_IP>`   **  This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
+* **`<SERVER_IP>` **  This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
 * **`<port-number>`**This is the port exposed to access the rendering server. **Replace with the value sent in the confirmation email**
-* **`<your_brown_id>` ** is your Brown username (It should be the same used to connect to Oscar)\
+* **`<your_brown_id>`** is your Brown username (It should be the same used to connect to Oscar)\
 
 
 {% hint style="info" %}

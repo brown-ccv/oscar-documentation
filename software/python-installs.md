@@ -23,7 +23,7 @@ In this document, we use angular brackets `<>` to denote command line options th
 {% endhint %}
 
 {% hint style="info" %}
-Note for python3 packages replace `python` with  `python3` **** and `pip` with `pip3`
+Note for python3 packages replace `python` with  `python3` and `pip` with `pip3`
 {% endhint %}
 
 {% hint style="info" %}

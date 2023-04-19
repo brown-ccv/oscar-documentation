@@ -1,6 +1,6 @@
 # Oscar - Brown University's Cluster
 
-Oscar - Ocean State Center for Advanced Resources - is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by **** [**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu/).&#x20;
+Oscar - Ocean State Center for Advanced Resources - is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by [**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu/).&#x20;
 
 Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if there are any questions on Oscar.
 
