@@ -184,7 +184,7 @@ conda install package_name=version
 The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package from the conda\_forge channel, run
 
 ```
-conda install -c conda_forge conda_environment_name
+conda install -c conda_forge package_name
 ```
 
 ### Delete a Conda Environment
