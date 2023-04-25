@@ -63,7 +63,7 @@ If you are using Google Chrome, switch on the "Clipboard" permission and you can
 1. Click the Lock icon to the left of the URL
 2. Switch on the "Clipboard" permission
 
-![](../../.gitbook/assets/permissions.png)
+![](<../../.gitbook/assets/permissions (1).png>)
 {% endtab %}
 
 {% tab title="Other Browsers" %}

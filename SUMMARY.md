@@ -22,6 +22,7 @@
   * [SSH Agent Forwarding](connecting-to-oscar/ssh/ssh-agent-forwarding/README.md)
     * [Mac/Linux](connecting-to-oscar/ssh/ssh-agent-forwarding/mac-linux.md)
     * [Windows (PuTTY)](connecting-to-oscar/ssh/ssh-agent-forwarding/key-generation-and-agent-forwarding-with-putty.md)
+  * [Arbiter2](connecting-to-oscar/ssh/arbiter2.md)
 * [Open OnDemand](connecting-to-oscar/open-ondemand/README.md)
   * [Using File Explorer on OOD](connecting-to-oscar/open-ondemand/using-file-explorer-on-ood.md)
   * [Web-based Terminal App](connecting-to-oscar/open-ondemand/web-based-terminal-app.md)
