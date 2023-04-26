@@ -14,7 +14,7 @@ Arbiter2 applies different limits to a user's processes depending on the user's 
 Arbiter2 limits apply only to the shared nodes, not compute nodes.
 {% endhint %}
 
-### Normal Limits
+### Normal Status and Limits
 
 Upon first log in, the user is in the normal status. These normal limits apply to all the user's processes on the node:
 
@@ -28,7 +28,7 @@ Upon first log in, the user is in the normal status. These normal limits apply t
 {% endtab %}
 {% endtabs %}
 
-### Penalty1 Limits
+### Penalty1 Status and Limits
 
 When a user's processes consume CPU time more than the default CPU time limit for a period of time, the user's status is changed to the penalty1 status. These penalty1 limits are applied:&#x20;
 
@@ -50,7 +50,7 @@ The user's status returns to the normal status after a user's processes consume 
 Penalty restrictions are enforced independently for each shared node, and the penalty status does not carry over between these nodes.
 {% endhint %}
 
-### Penalty2 Limits
+### Penalty2 Status and Limits
 
 When a user's processes consume more CPU time than the penalty1 limit for a period of time, the user is put in the penalty2 status, and the penalty2 limits apply to the user's processes.
 
@@ -68,7 +68,7 @@ In penalty2 status, the user's processes will be throttled if they consume more 
 
 The user's status returns to the normal status after a user's processes consume CPU time less than the penalty2 limit for **one hour**.
 
-### Penalty3 Limits
+### Penalty3 Status and Limits
 
 When a user's processes consume more CPU time than the penalty2 limit for a period of time, the user is put in the penalty3 status. These penalty3 limits apply to the user's processes.&#x20;
 
