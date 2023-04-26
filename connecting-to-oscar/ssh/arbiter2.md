@@ -20,7 +20,7 @@ Upon first log in, the user is in the normal status. These normal limits apply t
 
 {% tabs %}
 {% tab title="CPU Time" %}
-1/3 of the total CPU time. For example, a user's processes can use up to 1/6 of the total CPU time of the 24 cores on a login node.&#x20;
+1/3 of the total CPU time. For example, a user's processes can use up to 1/3 of the total CPU time of the 24 cores on a login node.&#x20;
 {% endtab %}
 
 {% tab title="Memory" %}
