@@ -39,7 +39,7 @@ Below are node details including cores and memory for all partitions.
 
 Hardware details for all partitions. The Features column shows the features available for the --constraint option for SLURM. This includes the available CPU types as well GPUs.
 
-| Partition | CPUS/ Node | Nodes | Total CPUs | GPUs/ Node | Total GPUs | Memory (GB) | Features                                                |
+| Partition | CPUs/ Node | Nodes | Total CPUs | GPUs/ Node | Total GPUs | Memory (GB) | Features                                                |
 | --------- | ---------- | ----- | ---------- | ---------- | ---------- | ----------- | ------------------------------------------------------- |
 | batch     | 48         | 164   | 7872       | n/a        | n/a        | 385         | 48core, intel, cascade, edr                             |
 | batch     | 32         | 40    | 1280       | n/a        | n/a        | 385         | 32core, intel, scalable, cascade, edr                   |
