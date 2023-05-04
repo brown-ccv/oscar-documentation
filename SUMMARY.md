@@ -9,7 +9,10 @@
   * [Common Acronyms and Terms](quick-reference/common-acronyms-and-terms.md)
   * [Managing Modules](quick-reference/managing-modules.md)
   * [Common Linux Commands](quick-reference/common-linux-commands.md)
+* [Getting Help](getting-help/README.md)
+  * [❓ FAQ](getting-help/faq.md)
 * [Citing CCV](citing-ccv.md)
+* [CCV User Policies](ccv-user-policies.md)
 
 ## Connecting to Oscar
 
@@ -124,15 +127,6 @@
 * [Accessing Oscar Filesystem](singularity-containers/accessing-oscar-filesystem.md)
 * [Example - Tensorflow](singularity-containers/example-tensorflow.md)
 * [Singularity Tips and Tricks](singularity-containers/singularity-tips-and-tricks.md)
-
-## Getting Help
-
-* [Common Problems](getting-help/common-problems.md)
-* [FAQ](getting-help/faq.md)
-* [File a Support Ticket](getting-help/ticket.md)
-* [Visit Office Hours](getting-help/office-hours.md)
-* [Meet with CCV Staff](getting-help/meet-ccv.md)
-* [CCV User Policies](getting-help/ccv-user-policies.md)
 
 ## Installing Software Packages Locally <a href="#local-install" id="local-install"></a>
 
