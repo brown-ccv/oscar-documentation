@@ -1,30 +1,42 @@
 # Version Control
 
-Version Control refers to the management of changes made to source code or any such large amount of information in a robust manner by multiple collaborators. Version Control is a crucial part of software development as it ensures data integrity during code sharing and also acts as a safeguard against accidental loss of changes made to the code. Moreover it allows multiple people to contribute to a code base in a transparent manner, preventing any loss of information. The two main types of version control systems are:
+### Git Overview
 
-1. Centralized Version Control System \(CVCS\) - eg. SVN \(Subversion\)
-2. Distributed Version Control system \(DVCS\) - eg. Git, Mercurial
+Version Control refers to the management of changes made to source code or any such large amount of information in a robust manner by multiple collaborators. Git is by far the most popular version control system. &#x20;
 
-In the CVCS model, a single large repository is maintained on a server. All clients \(read: contributors\) check out files from this server and submit changes to it. SVN \(Subversion\) is a very popular tool for CVC. Examples of organizations where SVN is used: Facebook, Apache Software Foundation.
+Git enables effective collaboration among developers. In a team setting, multiple developers often work on the same project simultaneously. With Git, each developer can work on their own local copy of the project, making changes and experimenting freely without affecting the main codebase. Git allows developers to merge their changes seamlessly, ensuring that modifications made by different individuals can be consolidated efficiently. It provides mechanisms to track who made specific changes, making it easier to understand the evolution of the project and identify potential issues.
 
-In the DVCS model, all clients have their own copy of the repository. They can maintain changes in their local repository and periodically sync with the central repository. A very popular tool is Git. Git has become more popular of late because of an emphasis on Open Source software. Online hosting sites like [GitHub](https://github.com) and [BitBucket](https://bitbucket.org) which are integrated with Git make it easier to distribute Open Source code. Moreover, they also allow better access control for different contributors.
 
-What model or tool to choose depends on your requirements. Both SVN and Git are installed on Oscar as modules. Here are some helpful links to get started with version control:
 
-* [Getting Started - About Version](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control) [Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-* [Apache Subversion](https://subversion.apache.org/docs) [Documentation](https://subversion.apache.org/docs)
-* [Atlassian Git Tutorials and Training](https://www.atlassian.com/git/tutorials)
+### Git Workflow
 
-### SVN at Brown
+Nearly all operations that are performed by Git are in you local computing environment, for the exception of few used purely to synchronize with a remote. Some of the most common git operations are depicted below. In summary a typical flow consists of making changes to your files, _staging_ them via `git add`, marking a save point via `git commit`, then finally syncing to your remote (e.g., GitHub) via `git push`. If you are pushing changes to your remote from multiple places, you can bring changes your most recent version using `git pull`, which is the equivalent of doing `git fetch` followed by a `git merge` operation
 
-CIS at Brown maintains a server where you can host your SVN repository. See this page for more information: [https://it.brown.edu/services/type/version-control-subversion](https://it.brown.edu/services/type/version-control-subversion)
+<figure><img src="../.gitbook/assets/git-basics.png" alt=""><figcaption></figcaption></figure>
+
+### Cheatsheet
+
+Below are some of the most commonly used Git commands. You can also get much more information by running `git --help`. And if you'd like to learn more there is an [excellent and thorough tutorial on Atlassian's website.](https://www.atlassian.com/git/tutorials/what-is-version-control)
+
+
+
+| Command                              | Summary                                                            |
+| ------------------------------------ | ------------------------------------------------------------------ |
+| `git add <FILENAME>`                 | Add files to staging area for next commit                          |
+| `git commit -m "my awesome message"` | Commit staged files                                                |
+| `git push`                           | Upload commit to remote repository                                 |
+| `git pull`                           | Get remote repo's commits and download (try and resolve conflicts) |
+| `git clone <URL>`                    | Download entire remote repository                                  |
 
 ### Git Configuration
 
-While using Git on Oscar, make sure that you [configure Git](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config) to have your correct Name and Email ID to avoid confusion while working with remote repositories \(eg. GitHub, BitBucket\).
+While using Git on Oscar, make sure that you [configure Git](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config) to have your correct Name and Email ID to avoid confusion while working with remote repositories (e.g., GitHub, GitLab, BitBucket).
 
 ```bash
 $ git config --global user.name "John Smith“
 $ git config --global user.email john@example.com
 ```
 
+### Getting Out of Trouble
+
+Git can sometimes be a bit tricky. And we all eventually find ourselves in a place where we want to undo something or fix a mistake we made with Git. [This website](https://ohshitgit.com/) (pardon the profanity) has a bunch of really excellent solutions to common problems we sometimes run in to with Git.
