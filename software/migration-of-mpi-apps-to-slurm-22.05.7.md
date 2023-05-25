@@ -100,12 +100,7 @@ If the "Current Module Version" for an application is blank, a new version is bu
 
 We recommend using following MPI modules to build your custom applications:
 
-| MPI                     | Oscar Module                               |
-| ----------------------- | ------------------------------------------ |
-| **GCC based OpenMPI**   | mpi/openmpi\_4.0.7\_gcc\_10.2\_slurm22     |
-| **Intel based OpenMPI** | mpi/openmpi\_4.0.7\_intel\_2020.2\_slurm22 |
-| **MVAPICH**             | mpi/mvapich2-2.3.5\_gcc\_10.2\_slurm22     |
-| **Mellanox HPC-X**      | mpi/hpcx\_2.7.0\_gcc\_10.2\_slurm22        |
+<table><thead><tr><th>MPI</th><th width="386.3333333333333">Oscar Module</th></tr></thead><tbody><tr><td><strong>GCC based OpenMPI</strong></td><td>mpi/openmpi_4.0.7_gcc_10.2_slurm22</td></tr><tr><td><strong>Intel based OpenMPI</strong></td><td>mpi/openmpi_4.0.7_intel_2020.2_slurm22</td></tr><tr><td><strong>MVAPICH</strong></td><td>mpi/mvapich2-2.3.5_gcc_10.2_slurm22</td></tr><tr><td><strong>Mellanox HPC-X</strong></td><td>mpi/hpcx_2.7.0_gcc_10.2_slurm22</td></tr></tbody></table>
 
 {% tabs %}
 {% tab title="GNU Configure Example" %}
