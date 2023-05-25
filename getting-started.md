@@ -1,16 +1,14 @@
-# Quickstart Guide
+# Getting Started
 
-This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B).
+{% hint style="info" %}
+This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B).&#x20;
+{% endhint %}
 
 {% hint style="info" %}
 If you're confused about any acronyms or terms throughout the guide, check out our [Quick Reference](quick-reference/) page to see definitions of commonly used terms
 {% endhint %}
 
 ### OSCAR
-
-{% hint style="success" %}
-
-{% endhint %}
 
 Oscar is the shared compute cluster operated by CCV.
 

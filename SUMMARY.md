@@ -1,9 +1,10 @@
 # Table of contents
 
 * [Oscar - Brown University's Cluster](README.md)
+* [Quickstart](quickstart.md)
+* [Getting Started](getting-started.md)
 * [System Hardware](system-overview.md)
 * [Account Information](account-types.md)
-* [Quickstart Guide](getting-started.md)
 * [Short "How to" Videos](short-videos.md)
 * [Quick Reference](quick-reference/README.md)
   * [Common Acronyms and Terms](quick-reference/common-acronyms-and-terms.md)
