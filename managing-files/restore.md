@@ -54,3 +54,7 @@ lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs/.snapshots/2020-07-15/ghopper/sc
 ### Restore a file from a snapshot taken between 8 and 30 days ago
 
 If you need one or more files from a nightly snapshot taken between 8 and 30 days ago, please contact support@ccv.brown.edu for help.
+
+{% hint style="danger" %}
+Files in the scratch directories (/gpfs/scratch, i.e., /users/\<username>/scratch) cannot be restored!
+{% endhint %}
