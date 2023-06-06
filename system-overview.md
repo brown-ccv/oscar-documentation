@@ -34,5 +34,5 @@ Hardware details for all partitions. The Features column shows the features avai
 
 ## GPU Features and GPU Memory
 
-<table><thead><tr><th width="333.3333333333333">GPU Features</th><th>GPU Memory</th></tr></thead><tbody><tr><td>a6000</td><td>48 GB</td></tr><tr><td>a40</td><td>45 GB</td></tr><tr><td>v100</td><td>32 GB</td></tr><tr><td>a5000</td><td>24 GB</td></tr><tr><td>quadrortx</td><td>25 GB</td></tr><tr><td>titanrtx</td><td>24 GB</td></tr><tr><td>geforce3090</td><td>24 GB</td></tr><tr><td>p100</td><td>12 GB</td></tr><tr><td>titanv</td><td>12 GB</td></tr><tr><td>1000ti</td><td>11 GB</td></tr><tr><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="333.3333333333333">GPU Features</th><th>GPU Memory</th></tr></thead><tbody><tr><td>a6000</td><td>48 GB</td></tr><tr><td>a40</td><td>45 GB</td></tr><tr><td>v100</td><td>32 GB</td></tr><tr><td>a5000</td><td>24 GB</td></tr><tr><td>quadrortx</td><td>24 GB</td></tr><tr><td>titanrtx</td><td>24 GB</td></tr><tr><td>geforce3090</td><td>24 GB</td></tr><tr><td>p100</td><td>12 GB</td></tr><tr><td>titanv</td><td>12 GB</td></tr><tr><td>1000ti</td><td>11 GB</td></tr><tr><td></td><td></td></tr></tbody></table>
 
