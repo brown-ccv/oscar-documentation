@@ -56,5 +56,5 @@ lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs/.snapshots/2020-07-15/ghopper/sc
 If you need one or more files from a nightly snapshot taken between 8 and 30 days ago, please contact support@ccv.brown.edu for help.
 
 {% hint style="danger" %}
-Files in the scratch directories (/gpfs/scratch, i.e., /users/\<username>/scratch) cannot be restored if it was modified or deleted 7 days ago! Please see [the /scratch purge policy here](filesystem.md).&#x20;
+Files in the scratch directories (/gpfs/scratch, i.e., /users/\<username>/scratch) cannot be restored if they are modified or deleted 7 days ago! Please see [the /scratch purge policy here](filesystem.md).&#x20;
 {% endhint %}
