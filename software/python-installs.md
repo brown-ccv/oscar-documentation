@@ -1,6 +1,6 @@
 # Installing Python Packages
 
-For Python 2, we recommend using the **python/2.7.16** module.   For Python 3, we recommend using the **python/3.7.4** module.&#x20;
+For Python 2, we recommend using the **python/2.7.16** module.   For Python 3, we recommend using the **python/3.9.0** module unless you know that all of your dependences support a newer versions.&#x20;
 
 {% hint style="info" %}
 Both these modules include the `pip`and `virtualenv`commands, but do not include other common Python packages (e.g., SciPy, NumPy). This affords individual users complete control over the packages they are using.
@@ -35,7 +35,7 @@ Intel provides optimized packages for numerical and scientific work that you can
 Virtual environments are a cleaner way to install python packages for a specific workflow. [This webpage](https://virtualenv.pypa.io/en/stable/) gives a good explanation of the use cases.    In the example below, a virtual environment called 'my\_cool\_science' is set up in your home directory:
 
 ```
-module load python/2.7.16
+module load python/3.9.0  # Or 2.7.16 if using python2
 cd ~
 virtualenv my_cool_science
 source ~/my_cool_science/bin/activate
