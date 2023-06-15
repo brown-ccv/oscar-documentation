@@ -30,15 +30,19 @@ Do **not** run Matlab on the Oscar login nodes. Request a compute node either wi
 
 ## VNC
 
-The [VNC](broken-reference) client provided by CCV is the best way to launch GUI applications on Oscar, including Matlab. From the terminal emulator in VNC use the `matlab-threaded` command to launch the Matlab GUI. For example,
+The [Open OnDemand desktop app](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand/desktop-app-vnc) is the best way to launch GUI applications on Oscar, including Matlab. Open a terminal in your session and load the version of Matlab needed. Then use the `matlab-threaded` command to launch the Matlab GUI. For example,
 
-```
-matlab-threaded
-```
+<pre><code><strong>module load matlab/2021a
+</strong><strong>matlab-threaded
+</strong></code></pre>
+
+{% hint style="info" %}
+Use <mark style="color:red;">`module avail matlab`</mark> to search for other Matlab versions to load.&#x20;
+{% endhint %}
 
 Here is a snapshot of what it looks like:
 
-![](https://web1.ccv.brown.edu/sites/default/files/Picture1\_0.png)
+<figure><img src="../.gitbook/assets/Screenshot_2023-05-11_at_1_17_30_PM.png" alt=""><figcaption></figcaption></figure>
 
 ## X11 Forwarding
 

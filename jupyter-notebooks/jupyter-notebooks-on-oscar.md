@@ -2,13 +2,13 @@
 
 ## Installing Jupyter Lab
 
-The anaconda/3-5.2.0 module provides jupyter-lab. Users can also use pip or anaconda to [install jupyter lab](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
+The anaconda modules provide jupyter-lab. Users can also use pip or anaconda to [install jupyter lab](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
 
 ## Running Jupyter Lab on Oscar
 
 There are a couple of ways to use [Jupyter](https://jupyter.org/) Lab on Oscar.   You can run a Jupyter Lab
 
-* in a VNC session&#x20;
+* in an [OOD Desktop App (VNC)](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand/desktop-app-vnc)&#x20;
 * using a batch job
 * in an interactive session
 
@@ -18,9 +18,9 @@ There are a couple of ways to use [Jupyter](https://jupyter.org/) Lab on Oscar. 
 Do not run Jupyter Lab on login nodes.
 {% endhint %}
 
-## In a VNC Session
+## In a OOD Desktop App VNC Session
 
-Start a [VNC session](broken-reference), and open up a terminal in the VNC session . To start a Jupyter Lab, enter
+Start an [OOD Desktop App (VNC)](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand/desktop-app-vnc) session, and open up a terminal in the VNC session. To start a Jupyter Lab, enter
 
 ```
 jupyter-lab

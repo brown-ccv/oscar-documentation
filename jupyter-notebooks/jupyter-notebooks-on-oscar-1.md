@@ -2,13 +2,13 @@
 
 ## Installing Jupyter Notebook
 
-The anaconda/3-5.2.0 module provides jupyter-notebook. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
+The anaconda modules provide jupyter-notebook. Users can also use pip or anaconda to [install jupyter notebook](https://jupyter.readthedocs.io/en/latest/install.html).&#x20;
 
 ## Running Jupyter Notebook on Oscar
 
 There are a couple of ways to use [Jupyter](https://jupyter.org/) Notebook on Oscar.   You can run Jupyter Notebook
 
-* in a VNC session&#x20;
+* in an [OOD Desktop App (VNC)](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand/desktop-app-vnc)
 * using a batch job
 * in an interactive session
 
@@ -22,9 +22,9 @@ Start by going to the directory you want to access when using Jupyter Notebook, 
 Do not run Jupyter Notebook on login nodes.
 {% endhint %}
 
-## In a VNC Session
+## In a OOD Desktop App VNC Session
 
-Start a [VNC session](broken-reference), and open up a terminal in the VNC session . To start a Jupyter Notebook, enter
+Start an [OOD Desktop App (VNC)](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand/desktop-app-vnc) session, and open up a terminal in the VNC session. To start a Jupyter Notebook, enter
 
 ```
 jupyter-notebook
