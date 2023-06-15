@@ -21,6 +21,10 @@ When you email `support@ccv.brown.edu` aim to include the following:
 
 Ask questions and search for previous problems at our [OSCAR Question and Answer Forum](https://github.com/brown-ccv/oscar-documentation/discussions/categories/q-a).
 
+### Slack
+
+Join our CCV-Share Slack workspace to discuss your questions with CCV Staff in the #oscar channel. [Sign-up here](https://ccv-share.slack.com)
+
 ### Office Hours
 
 CCV holds weekly office hours. These are drop in sessions where we'll have one or more CCV staff members available to answer questions and help with any problems you have. Please visit [this page](https://events.brown.edu/ccv/all) for upcoming office hours and events.&#x20;

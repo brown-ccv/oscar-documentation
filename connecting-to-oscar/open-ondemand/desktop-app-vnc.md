@@ -32,11 +32,7 @@ Click [here](https://ood.ccv.brown.edu) to launch Open OnDemand (OOD) and log in
 You may change the **Image Quality** if your internet connection is bad. Image quality can be changed in the middle of the session.
 {% endhint %}
 
-<div align="center">
-
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
-
-</div>
 
 ## Reconnecting to session
 
