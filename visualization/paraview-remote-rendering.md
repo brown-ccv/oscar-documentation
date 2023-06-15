@@ -20,13 +20,13 @@ The target audience for this service are members of the academic community that 
 
 ![Workflow Overview](<../.gitbook/assets/Remote Rendering (1).png>)
 
-Above is a graphical representation on how the parallel render server works using Oscar. The user logins to Oscar either via SSH or VNC session.  From the terminal, the user loads the Paraview module and executes the convinience script called `run-remote-server`to start the Paraview server session and allocate the memory and walltime limit. Once the server starts, the user receives an email with the information needed to access the server. Lastly,  the user connects the Paraview client (i.e., desktop application) to the server that is running in Oscar. The client displays images that are processed by the server (on Oscar) which reconstructs the information computed by the nodes.
+Above is a graphical representation on how the parallel render server works using Oscar. The user logins to Oscar either via SSH or Open-On-Demand virtual desktop session.  From the terminal, the user loads the Paraview module and executes the convinience script called `run-remote-server`to start the Paraview server session and allocate the memory and walltime limit. Once the server starts, the user receives an email with the information needed to access the server. Lastly,  the user connects the Paraview client (i.e., desktop application) to the server that is running in Oscar. The client displays images that are processed by the server (on Oscar) which reconstructs the information computed by the nodes.
 
 ## 0. Prerequisites
 
 ### **Paraview Desktop:**
 
-You can either download the Paraview Desktop App to your presonal computer or access the desktop application already installed in Oscar's VNC. Installing in your local computer may give you better interactivity.
+You can either download the Paraview Desktop App to your presonal computer or access the one already installed on Oscar. Working in your local computer might give you better interactivity.
 
 #### **Download Paraview Desktop to your desktop computer (Recommended)**
 
@@ -129,12 +129,12 @@ Please, read the email carefully. It contains information about your connection 
 There are two options to  connect to the remote server:
 
 * Your personal computer
-* VNC
+* Open On Demand Virtual Desktop
 
 ### 3.1 Setting up SSH Tunneling&#x20;
 
 {% hint style="info" %}
-This step is only needed if you are using your personal computer and not VNC
+This step is only needed if you are using your local preview installation (No Open On Demand)
 {% endhint %}
 
 Open a terminal and execute the command:
