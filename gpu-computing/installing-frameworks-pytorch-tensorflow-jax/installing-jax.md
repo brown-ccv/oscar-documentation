@@ -34,7 +34,7 @@ pip install --upgrade pip
 pip install --upgrade "jax[cuda]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html 
 ```
 
-**Step 5:** Test that PyTorch is able to detect GPUs
+**Step 5:** Test that JAX is able to detect GPUs
 
 ```
 python

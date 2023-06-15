@@ -20,7 +20,13 @@ Below are some of the most commonly used Git commands. You can also get much mor
 
 
 
-<table><thead><tr><th width="385">Command</th><th>Summary</th></tr></thead><tbody><tr><td><code>git add &#x3C;FILENAME></code></td><td>Add files to staging area for next commit</td></tr><tr><td><code>git commit -m "my awesome message"</code></td><td>Commit staged files </td></tr><tr><td><code>git push</code></td><td>Upload commit to remote repository</td></tr><tr><td><code>git pull</code></td><td>Get remote repo's commits and download (try and resolve conflicts)</td></tr><tr><td><code>git clone &#x3C;URL></code></td><td>Download entire remote repository</td></tr></tbody></table>
+| Command                              | Summary                                                            |
+| ------------------------------------ | ------------------------------------------------------------------ |
+| `git add <FILENAME>`                 | Add files to staging area for next commit                          |
+| `git commit -m "my awesome message"` | Commit staged files                                                |
+| `git push`                           | Upload commit to remote repository                                 |
+| `git pull`                           | Get remote repo's commits and download (try and resolve conflicts) |
+| `git clone <URL>`                    | Download entire remote repository                                  |
 
 ### Git Configuration
 

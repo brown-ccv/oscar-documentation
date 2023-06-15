@@ -30,7 +30,7 @@ pip install --upgrade pip
  pip install tensorflow
 ```
 
-**Step 5:** Test that PyTorch is able to detect GPUs
+**Step 5:** Test that TensorFlow is able to detect GPUs
 
 ```
 python
