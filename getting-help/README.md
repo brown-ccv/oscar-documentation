@@ -23,7 +23,7 @@ Ask questions and search for previous problems at our [OSCAR Question and Answer
 
 ### Slack
 
-Join our CCV-Share Slack workspace to discuss your questions with CCV Staff in the #oscar channel. [Sign-up here](https://ccv-share.slack.com)
+Join our CCV-Share Slack workspace to discuss your questions with CCV Staff in the #oscar channel. [Sign-up here](https://ccv-share.slack.com/signup#/)
 
 ### Office Hours
 
