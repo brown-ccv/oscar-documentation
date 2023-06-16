@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Oscar - Brown University's Cluster](README.md)
+* [Overview](README.md)
 * [Quickstart](quickstart.md)
 * [Getting Started](getting-started.md)
 * [System Hardware](system-overview.md)
