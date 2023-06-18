@@ -31,7 +31,7 @@ Host jump-box
   User <username>
 # Target machine with private IP address
 Host ccv-vscode-node
-  HostName node1103
+  HostName vscode1
   User <username>
   ProxyCommand ssh -q -W %h:%p jump-box
 ```
