@@ -16,26 +16,26 @@ Nightly snaphots of the file system are available for the last 30 days.
 CCV does not guarantee that each of the last 30 days will be available in snapshots because occasionally the snapshot process does not complete within 24 hours.
 {% endhint %}
 
-### Restore a file from a snapshot in the last 7 days
+### Restore a file from a snapshot in the last 30 days
 
-Nightly snapshots of the file system are available for the last 5-7 days can be found in the following directories.
+Nightly snapshots of the file system are available for the last 30 days can be found in the following directories.
 
 **Home** directory snapshot
 
 ```
-/gpfs/.snapshots/<yyyy-mm-dd>/<home>/<username>/<path_to_file>
+/oscar/home/.snapshots/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
 ```
 
 **Data** directory snapshot
 
 ```
-/gpfs/.snapshots/yyyy-mm-dd>/data/<groupname>/<username>/path_to_file>
+/oscar/data/.snapshots/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<groupname>/<username>/path_to_file>
 ```
 
 **Scratch** directory snapshot
 
 ```
-/gpfs/.snapshots/<yyyy-mm-dd>/scratch/<username>/<path_to_file>
+/oscar/scratch/.snapshots/scratch/Oscar_Daily_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
 ```
 
 To restore a file, copy the file from the snapshot to your directory.
@@ -47,14 +47,6 @@ Do **not** use the links in your home directory snapshot to try and retrieve sna
 _e.g._:
 
 ```bash
-ls -l /gpfs/.snapshots/2020-07-15/home/ghopper/data
-lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /gpfs/.snapshots/2020-07-15/ghopper/scratch -> /gpfs/data/navy
+ls -l /oscar/home/.snapshot/Osar_2023-06-22_00_00_00_UTC/ghopper/data
+lrwxrwxrwx 1 ghopper navy 22 Mar  1  2016 /oscar/home/.snapshot/Osar_2023-06-22_00_00_00_UTC/ghopper/data -> /oscar/data/navy
 ```
-
-### Restore a file from a snapshot taken between 8 and 30 days ago
-
-If you need one or more files from a nightly snapshot taken between 8 and 30 days ago, please contact support@ccv.brown.edu for help.
-
-{% hint style="danger" %}
-Files in the scratch directories (/gpfs/scratch, i.e., /users/\<username>/scratch) cannot be restored if they are modified or deleted 7 days ago! Please see [the /scratch purge policy here](filesystem.md).&#x20;
-{% endhint %}
