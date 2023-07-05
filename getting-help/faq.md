@@ -96,7 +96,7 @@ less output_filename
 
 Use the `spacebar` to move down the file, `b` to move back up the file, and `q` to quit.
 
-#### My job is not running how I indented it too. How do I cancel the job?
+#### My job is not running how I intended it to. How do I cancel the job?
 
 `scancel <JobID>` where `<JobID>` is the job allocation number, e.g. `13180139`
 
