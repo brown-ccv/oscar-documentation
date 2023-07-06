@@ -23,19 +23,19 @@ Nightly snapshots of the file system are available for the last 30 days can be f
 **Home** directory snapshot
 
 ```
-/oscar/home/.snapshots/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
+/oscar/home/.snapshot/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
 ```
 
 **Data** directory snapshot
 
 ```
-/oscar/data/.snapshots/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<groupname>/<username>/path_to_file>
+/oscar/data/.snapshot/Oscar_<yyyy-mm-dd>_00_00_00_UTC/<groupname>/<username>/path_to_file>
 ```
 
 **Scratch** directory snapshot
 
 ```
-/oscar/scratch/.snapshots/scratch/Oscar_Daily_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
+/oscar/scratch/.snapshot/scratch/Oscar_Daily_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
 ```
 
 To restore a file, copy the file from the snapshot to your directory.
