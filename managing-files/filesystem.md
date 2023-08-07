@@ -53,15 +53,13 @@ A good practice is to configure your application to read any initial input data 
 Note: class or temporary accounts may not have a `~/data` directory!
 {% endhint %}
 
-To see how much space you have on Oscar you can use the command `myquota`. Below is an example output
+To see how much space on your `~/data` directory, you can use the command `checkquota`. Below is an example output
 
 ```
-                       Block Limits                              |           File Limits              
-    Type    Filesystem           Used    Quota   HLIMIT    Grace |    Files    Quota   HLIMIT    Grace
-    -------------------------------------------------------------|--------------------------------------
-    USR     home               8.401G      20G      30G        - |    61832   524288  1048576        -
-    USR     scratch              332G     512G      12T        - |    14523   323539  4194304        -
-    FILESET data+apollo        11.05T      20T      24T        - |   459764  4194304  8388608        -
+Name                	Used (TB) 	Used Percent   	Soft Limit          	Hard Limit          	Used Inodes         	Soft Limit Inodes   	Hard Limit Inodes   	State     	Grace Period Expiration
+data+ccvstaff       	18.647    	77             	21990232555520      	26388279066624      	17380864            	25000000            	26000000            	OK        	None                   
+
+data+epscor         	114.211   	71             	170424302305280     	175921860444160     	69318286            	142606336           	144703488           	OK        	None                   
 ```
 
 {% hint style="warning" %}
