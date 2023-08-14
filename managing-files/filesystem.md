@@ -10,7 +10,7 @@ icon: check
 
 # Oscar's Filesystem
 
-CCV uses IBM's General Parallel File System (GPFS). Users have a home, data, and scratch space.
+CCV uses all-flash parallel filesystem (Vast Data). Users have a home, data, and scratch space.
 
 &#x20; **home** `~`
 
@@ -71,4 +71,8 @@ You can go over your quota up to the hard limit for a grace period. This grace p
 
 {% hint style="info" %}
 There is a quota for space used and for number of files. If you hit the hard limit on **either** of these you will be unable to write any more files until you are back under quota.
+{% endhint %}
+
+{% hint style="warning" %}
+Keep the number of files within the ranges from 0.5M (preferred) to 1M (upper limit). Going beyond this limit can lead to unexpected problems.
 {% endhint %}
