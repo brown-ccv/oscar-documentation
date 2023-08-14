@@ -69,13 +69,16 @@ Note that class accounts may not have a data directory. Users who are members of
 
 From the home directory, you can use the command `ls` to see your scratch directory and your data directory (if you have one) and use `cd` to navigate into them if needed.
 
-To see how much space in your `~/data` directory, use the command `checkquota`. Below is an example output:
+To see how much space in your directories, use the command `checkquota`. Below is an example output:
 
 ```
-Name                	Used (TB) 	Used Percent   	Soft Limit          	Hard Limit          	Used Inodes         	Soft Limit Inodes   	Hard Limit Inodes   	State     	Grace Period Expiration
-data+ccvstaff       	18.647    	77             	21990232555520      	26388279066624      	17380864            	25000000            	26000000            	OK        	None                   
-
-data+epscor         	114.211   	71             	170424302305280     	175921860444160     	69318286            	142606336           	144703488           	OK        	None                   
+$ checkquota
+Name       Path                 Used(G)    (%) Used   SLIMIT(G)  H-LIMIT(G) Used_Inodes     SLIMIT     HLIMIT     Usage_State  Grace_Period  
+ccvdemo1   /oscar/home          3.72       2          100        140        63539           2000000    3000000    OK           None          
+ccvdemo1   /oscar/scratch       0.00       0          512        10240      1               4000000    16000000   OK           None          
+Now fetching Data directory quotas...
+Name        Used(T)   (%) Used   SLIMIT(T)   HLIMIT(T)   Used_Inodes   SLIMIT    HLIMIT    Usage_State   Grace_Period  
+data+nopi   0.0       0          0.88        0.98        466           4194304   6291456   OK            None 
 ```
 
 {% hint style="danger" %}

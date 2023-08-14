@@ -62,7 +62,7 @@ The `sacct` command will list all of your completed jobs since midnight of the p
 
 #### How much storage am I using?
 
-The `checkquota` command on Oscar will print a summary of your usage on the data file systems. For more information, see our manual page on [File Systems](../managing-files/filesystem.md).
+The `checkquota` command on Oscar will print a summary of the usage of your directories. For more information, see our manual page on [File Systems](../managing-files/filesystem.md).
 
 #### My job keeps terminating unexpectedly with a "Killed" message, or without any errors. What happened?
 
