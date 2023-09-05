@@ -42,7 +42,7 @@ To setup, build, and run a case on Oscar:
 module load netcdf/4.9.0_intel_2020.2_hdf5_1.12.2_slurm22 \
             hdf5/1.12.2_openmpi_4.0.7_intel_2020.2_slurm22 \
             mpi/openmpi_4.0.7_intel_2020.2_slurm22 \
-            perl/5.30.0 \
+            perl/5.36.0 \
             intel/2020.2 \
             blas/3.7.0 \
             lapack/3.7.0
@@ -54,4 +54,4 @@ cd <CASENAME>
 ./case.submit
 ```
 
-By default, component log files, history files, and restart files for your case will be placed in /gpfs/home/\<username>/data/\<username>/archive/\<CASENAME>.
+By default, component log files, history files, and restart files for your case will be placed in /gpfs/home/$USER/data/$USER/archive/\<CASENAME>.
