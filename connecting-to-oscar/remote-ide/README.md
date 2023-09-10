@@ -10,6 +10,16 @@ description: Access Oscar's file-system remotely from VSCode.
 To use VSCode you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
 {% endhint %}
 
+{% hint style="warning" %}
+**September 10, 2023:** Some users have reported issues while connecting to the Oscar VSCode remote extension. This is due to a recent change introduced by VSCode. To address this issue
+
+Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
+
+Disable the Remote.SSH: Use Exec Server option
+
+<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+{% endhint %}
+
 To use VSCode you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
 
 1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VSCode:
@@ -75,7 +85,14 @@ Host ccv-vscode-node
     ProxyCommand ssh -q -W %h:%p jump-box
 ```
 
-5\. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
+5. _**September 10, 2023:**_ Some users have reported issues while connecting to the Oscar VSCode remote extension. This is due to a recent change introduced by VSCode. To address this issue
+
+```
+Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
+Disable the Remote.SSH: Use Exec Server option
+```
+
+6. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
