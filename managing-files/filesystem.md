@@ -14,31 +14,31 @@ CCV uses all-flash parallel filesystem (Vast Data). Users have a home, data, and
 
 &#x20; **home** `~`
 
-* 20GB of space
+* 100GB of space
 * Optimized for many small files
-* Nightly backups (7 days)
-* Quota is per individual user
-* Grace period of 14 days
+* 30 days snapshots
+* The quota is per individual user
+* A grace period of 14 days
 
 **data** `~/data`
 
 * Each PI gets 256GB for free
 * Optimized for reading large files
-* Nightly backups (7 days)
-* Quota is by group
-* Grace period of 14 days
+* 30 days snapshots
+* The quota is by group
+* A grace period of 14 days
 
 **scratch** `~/scratch`
 
-* 512GB of space - contact support@ccv.brown.edu increase on a temporary basis
+* 512G (soft-quota): 12T (hard-quota)
 * Optimized for reading/writing large files
-* NO BACKUPS
-* Purging: files not accessed for 30 days may be deleted
-* Quota is per individual user
-* Grace period of 21 days
+* 30 days snapshots
+* Purging: Files not accessed for 30 days may be deleted
+* The quota is per individual user
+* A grace period of 21 days
 
 {% hint style="warning" %}
-Files not accessed for 30 days will be deleted from your scratch directory. This is because scratch is high performance space. The fuller scratch is the worse the read/write performance. **Use \~/data for files you need to keep long term.**
+Files not accessed for 30 days will be deleted from your scratch directory. This is because scratch is high-performance space. The fuller scratch is the worse the read/write performance. **Use \~/data for files you need to keep long-term.**
 {% endhint %}
 
 {% hint style="warning" %}
