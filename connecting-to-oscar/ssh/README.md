@@ -24,7 +24,7 @@ If you are connected to the Brown VPN, you have the option of [using an SSH key 
 ## Summary of SSH Hosts
 
 * `ssh.ccv.brown.edu` You can connect from anywhere. You will need Two Factor Authentication
-* `sshcampus.ccv.brown.edu` You can connect when whithin Brown Wifi, Network or VPN. You will need Two Factor Authentication unless you  [set up passwordless authentication](ssh-key-login-passwordless-ssh/).
+* `sshcampus.ccv.brown.edu` You can connect when whithin Brown Wifi, Network or VPN. You will need to [set up passwordless authentication](ssh-key-login-passwordless-ssh/).
 * `desktop.ccv.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide/), i.e., Visual Studio Code.
 * `transfer.ccv.brown.edu` This host is used to [transfer files to/from oscar](../../managing-files/filetransfer.md#3.-gui-programs-for-transferring-files-using-the-sftp-protocol-and-transfer.ccv.brown.edu-hostname) using SFTP protocol
 
