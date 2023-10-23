@@ -1,22 +1,14 @@
----
-description: >-
-  This policy establishes requirements for the use and management of Brown
-  University's Center for Computation and Visualization resources.
----
+# CCV Account Information
 
-# CCV User Policies
 
-## Policy Purpose
-
-This policy establishes requirements for the use and management of Brown University’s Center for Computation and Visualization resources to ensure their integrity, confidentiality and availability in support of appropriate education, research, outreach, and administrative objectives.&#x20;
 
 ## Account Usage
 
-HPC users are not permitted to:
+Oscar users are not permitted to:
 
-* Share their accounts or passwords with others or enable unauthorized users to access Center for Computation and Visualization resources.
-* Use Center for Computation and Visualization resources for personal economic gain.&#x20;
-* Engage in unauthorized activity (Mining etc.) that intentionally impacts integrity of  resources.
+* Share their accounts or passwords with others or enable unauthorized users to access Center for Computation and Visualization resources
+* Use Center for Computation and Visualization resources for personal economic gain&#x20;
+* Engage in unauthorized activity (e.g., cryto currency mining etc.) that intentionally impacts integrity of  resources
 
 ## Storage
 
@@ -35,5 +27,5 @@ CCV reserves the right to remove any data at any time and/or transfer data or ot
 
 ## Accounts Validity
 
-* Accounts are valid for two years or validity of Brown AD credentials.
-* Renewals require PI’s written permission.
+* Once created, Oscar accounts are valid for duration of one's Brown AD credentials
+

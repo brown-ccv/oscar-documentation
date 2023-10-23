@@ -13,7 +13,7 @@
 * [Getting Help](getting-help/README.md)
   * [❓ FAQ](getting-help/faq.md)
 * [Citing CCV](citing-ccv.md)
-* [CCV User Policies](ccv-user-policies.md)
+* [CCV Account Information](ccv-user-policies.md)
 
 ## Connecting to Oscar
 
