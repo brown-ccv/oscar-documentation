@@ -27,7 +27,7 @@ module load python/3.11.0 openssl/3.0.0 cuda/11.7.1 cudnn/8.2.0
 **Step 3:** Create and activate the virtual environment
 
 ```
-virtualenv -p python3 pytorch.venv
+python3 -m venv pytorch.venv
 source pytorch.venv/bin/activate
 ```
 
