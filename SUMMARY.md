@@ -142,3 +142,7 @@
 * [dbGaP Architecture](dbgap-data/dbgap-project.md)
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
 * [dbGaP Job Submission](dbgap-data/dbgap-job-submission.md)
+
+## RHEL9 Migration
+
+* [RHEL-9 Migration](rhel9-migration/rhel-9-migration.md)
