@@ -1,5 +1,5 @@
 ---
-description: This page describes RHEL9 migration happening in January 2023
+description: Higher Throughput, More Secure, and Greener Computing!"
 ---
 
 # RHEL-9 Migration
@@ -14,9 +14,9 @@ Due to the new kernel and glibc majority of applications will break.&#x20;
 
 2. **We are also introducing a bunch of new features:**
 
-* **Upgraded OS -** Newer kernel and enhanced security patches
-* **Power Saving Mode:** Idle nodes in batch partition enter power-saving mode (\~40W). And resume latency-performance mode before jobs start
-* **GPU Direct Storage:** GDS enables a direct data path for direct memory access (DMA) transfers between GPU memory and storage, which avoids a bounce buffer through the CPU. This direct path increases system bandwidth and decreases the latency and utilization load on the CPU.
+* **Upgraded OS -** The OS has been upgraded with a newer kernel and improved security patches
+* **Power Saving Mode:** In the batch partition, idle nodes now enter a power-saving mode, consuming only about 40W. They seamlessly transition to high-performance mode just before job execution begins
+* **GPU Direct Storage:** GDS enables a direct data path for direct memory access (DMA) transfers between GPU memory and storage, which avoids a bounce buffer through the CPU. This direct path increases system bandwidth and decreases the latency and utilization load on the CPU
 * **SLURM Upgrade:** We have tuned the scheduler to provide much higher throughput. Now supports `json` and `yaml` formatting for all slurm commands
 * **SPACK & LMOD -** Newer industry standard for installing and managing applications on Oscar. We now support multple shells `bash,zsh & fish` etc
 
@@ -36,9 +36,7 @@ Due to the new kernel and glibc majority of applications will break.&#x20;
 
 3. **What are exact version changes?**
 
-<table><thead><tr><th width="199.33333333333331">Component</th><th width="300">Current Version</th><th>New Version</th></tr></thead><tbody><tr><td>Operating System</td><td>RHEL/7.9</td><td>RHEL/9.2</td></tr><tr><td>Kernel</td><td>3.10.0-1160.76.1</td><td>5.14.0-284.11.1</td></tr><tr><td>GLIBC</td><td>2.17-326</td><td>2.34-60</td></tr><tr><td>SLURM </td><td>22.05.7</td><td>23.02.6</td></tr><tr><td>Package Manager</td><td>PyModules</td><td>SPACK</td></tr></tbody></table>
-
-
+<table><thead><tr><th width="199.33333333333331">Component</th><th width="300">Current Version</th><th>New Version</th></tr></thead><tbody><tr><td>Operating System</td><td>RHEL-7.9</td><td>RHEL-9.2</td></tr><tr><td>Kernel</td><td>3.10.0-1160.76.1</td><td>5.14.0-284.11.1</td></tr><tr><td>GLIBC</td><td>2.17-326</td><td>2.34-60</td></tr><tr><td>SLURM </td><td>22.05.7</td><td>23.02.6</td></tr><tr><td>Nvidia Driver</td><td>535.54.03</td><td>535.113.01</td></tr><tr><td>Package Manager</td><td>PyModules</td><td>SPACK</td></tr></tbody></table>
 
 
 

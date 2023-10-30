@@ -146,3 +146,4 @@
 ## RHEL9 Migration
 
 * [RHEL-9 Migration](rhel9-migration/rhel-9-migration.md)
+* [Module Changes](rhel9-migration/module-changes.md)
