@@ -34,6 +34,16 @@ Due to the new kernel and glibc majority of applications will break.&#x20;
 
 </div>
 
+3. **How to access the new cluster?**
+
+To ensure a smooth transition, we've set aside a select group of nodes for you. To access them, connect from any current login node (e.g., login007, login009) using the command:
+
+```
+ssh login009
+```
+
+Please do not submit any long-running jobs, and use it for short preliminary testing.
+
 3. **What are exact version changes?**
 
 <table><thead><tr><th width="199.33333333333331">Component</th><th width="300">Current Version</th><th>New Version</th></tr></thead><tbody><tr><td>Operating System</td><td>RHEL-7.9</td><td>RHEL-9.2</td></tr><tr><td>Kernel</td><td>3.10.0-1160.76.1</td><td>5.14.0-284.11.1</td></tr><tr><td>GLIBC</td><td>2.17-326</td><td>2.34-60</td></tr><tr><td>SLURM </td><td>22.05.7</td><td>23.02.6</td></tr><tr><td>Nvidia Driver</td><td>535.54.03</td><td>535.113.01</td></tr><tr><td>Package Manager</td><td>PyModules</td><td>SPACK</td></tr></tbody></table>
