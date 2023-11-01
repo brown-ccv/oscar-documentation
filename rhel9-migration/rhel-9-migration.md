@@ -39,7 +39,7 @@ Due to the new kernel and glibc majority of applications will break.&#x20;
 
 3. **How to access the new cluster?**
 
-To ensure a smooth transition, we've set aside a select group of nodes for you. To access them, connect from any current login node (e.g., login007, login009) using the command:
+To ensure a smooth transition, we've set aside a select group of nodes for you. To access them, connect from any current login node (e.g., login007, login008) using the command:
 
 ```
 ssh login009
