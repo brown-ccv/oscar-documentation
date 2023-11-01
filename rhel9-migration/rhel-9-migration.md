@@ -19,6 +19,9 @@ Due to the new kernel and glibc majority of applications will break.&#x20;
 * **GPU Direct Storage:** GDS enables a direct data path for direct memory access (DMA) transfers between GPU memory and storage, which avoids a bounce buffer through the CPU. This direct path increases system bandwidth and decreases the latency and utilization load on the CPU
 * **SLURM Upgrade:** We have tuned the scheduler to provide much higher throughput. Now supports `json` and `yaml` formatting for all slurm commands
 * **SPACK & LMOD -** Newer industry standard for installing and managing applications on Oscar. We now support multple shells `bash,zsh & fish` etc
+* **Increased-core core count for GPU accounts:**
+
+<table><thead><tr><th width="226">Account</th><th width="100">Partition</th><th>Current core-limit</th><th>New core-limit</th></tr></thead><tbody><tr><td>Exploratory </td><td>gpu</td><td>4-cores</td><td>12-cores</td></tr><tr><td>Standard GPU Priority</td><td>gpu</td><td>16-cores</td><td>24-cores</td></tr><tr><td>Standard GPU Priority+</td><td>gpu</td><td>32-cores</td><td>48-cores</td></tr><tr><td>High-End GPU Priority</td><td>gpu-he</td><td>16-cores</td><td>24-cores</td></tr></tbody></table>
 
 <div align="left">
 
