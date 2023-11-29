@@ -146,4 +146,5 @@
 ## RHEL9 Migration
 
 * [RHEL-9 Migration](rhel9-migration/rhel-9-migration.md)
+* [LMOD - New Module System](rhel9-migration/lmod-new-module-system.md)
 * [Module Changes](rhel9-migration/module-changes.md)
