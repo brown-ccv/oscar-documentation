@@ -37,7 +37,7 @@ Virtual environments are a cleaner way to install python packages for a specific
 ```
 module load python/3.9.0  # Or 2.7.16 if using python2
 cd ~
-virtualenv my_cool_science
+python3 -m venv my_cool_science
 source ~/my_cool_science/bin/activate
 pip install <your package>
 deactivate
