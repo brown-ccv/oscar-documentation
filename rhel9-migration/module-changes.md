@@ -210,45 +210,45 @@ If a cell&#x20;
 | libzip                | libzip/1.3.2                                                                                    |
 | llvm                  | llvm/16.0.2                                                                                     |
 | macs                  | N/A - User install in their python/conda environments                                           |
-| mafft                 |                                                                                                 |
+| mafft                 | mafft/7.505                                                                                     |
 | magma-gpu             | magma/2.7.1                                                                                     |
-| maple                 |                                                                                                 |
-| mark                  |                                                                                                 |
-| materialstudio        |                                                                                                 |
-| mathematica           |                                                                                                 |
+| maple                 | maple/22                                                                                        |
+| mark                  | mark/2018.07.08                                                                                 |
+| materialstudio        | materialstudio/2020s                                                                            |
+| mathematica           | mathematica/13.2.0                                                                              |
 | matlab                | matlab/R2023a                                                                                   |
-| matplotlib            |                                                                                                 |
+| matplotlib            | N/A - User install in their python/conda environments                                           |
 | maven                 | maven/3.8.4                                                                                     |
-| mayavi                |                                                                                                 |
-| meme                  |                                                                                                 |
+| mayavi                | N/A - User install in their python/conda environments                                           |
+| meme                  | meme-mpi/5.3.0                                                                                  |
 | mentor-calibre        |                                                                                                 |
-| mercurial             |                                                                                                 |
+| mercurial             | mercurial/5.8                                                                                   |
 | meshlab               |                                                                                                 |
 | metaphlan             |                                                                                                 |
-| metis                 |                                                                                                 |
+| metis                 | metis/5.1.0                                                                                     |
 | miniconda             | miniconda3/22.11.1                                                                              |
-| minimap2              |                                                                                                 |
+| minimap2              | minimap2/2.14                                                                                   |
 | minvr                 |                                                                                                 |
-| mne                   |                                                                                                 |
-| molden                |                                                                                                 |
+| mne                   | N/A - User install in their python/conda environments                                           |
+| molden                | molden/6.7                                                                                      |
 | Molpro                |                                                                                                 |
 | mpfr                  | mpfr/4.2.0                                                                                      |
 | mpi                   | hpcx-mpi/4.1.5rc2s                                                                              |
 | mpi4py                |                                                                                                 |
 | mrcc                  |                                                                                                 |
 | mriconvert            |                                                                                                 |
-| mricrogl              |                                                                                                 |
+| mricrogl              | mricrogl/2022.07.20                                                                             |
 | mricron               | mricron/201909                                                                                  |
-| msmc                  | msmc2                                                                                           |
-| msprime               |                                                                                                 |
-| mujoco-py             |                                                                                                 |
-| MultiQC               | py-multiqc                                                                                      |
+| msmc                  | msmc2/2.1.4                                                                                     |
+| msprime               | N/A - User install in their python/conda environments                                           |
+| mujoco-py             | N/A - User install in their python/conda environments                                           |
+| MultiQC               | N/A - User install in their python/conda environments                                           |
 | multiwfn              |                                                                                                 |
-| mummer                |                                                                                                 |
-| muscle                |                                                                                                 |
+| mummer                | mummer4/4.0.0rc1                                                                                |
+| muscle                | muscle/3.8.1551                                                                                 |
 | mysql                 | mysql/8.0.29                                                                                    |
-| n2p2                  |                                                                                                 |
-| nbo                   |                                                                                                 |
+| n2p2                  | n2p2-mpi/2.2.0                                                                                  |
+| nbo                   | nbo/7.0                                                                                         |
 | nccl                  |                                                                                                 |
 | ncdu                  | ncdu/1.18.1                                                                                     |
 | ncl                   |                                                                                                 |
@@ -256,18 +256,17 @@ If a cell&#x20;
 | ncview                | ncview/2.1.8                                                                                    |
 | neovim                | neovim/0.9.4                                                                                    |
 | netcdf                | netcdf-c/4.7.4                                                                                  |
-| netpbm                |                                                                                                 |
-| neuron                |                                                                                                 |
+| netpbm                | netpbm/10.73.43                                                                                 |
+| neuron                | N/A - User install in their python/conda environments                                           |
 | ninja                 | ninja/1.11.1                                                                                    |
-| nipype                |                                                                                                 |
+| nipype                | N/A - User install in their python/conda environments                                           |
 | nlopt                 | nlopt/2.7.1                                                                                     |
 | node.js               | node-js/18.12.1                                                                                 |
-| numpy                 |                                                                                                 |
-| numpydoc              |                                                                                                 |
+| numpy                 | N/A - User install in their python/conda environments                                           |
+| numpydoc              | N/A - User install in their python/conda environments                                           |
 | nvhpc-sdk             |                                                                                                 |
-| nvidia-driver         |                                                                                                 |
 | nvtop                 | nvtop/3.0.1                                                                                     |
-| nwchem                | nwchem/7.2.0                                                                                    |
+| nwchem                | nwchem-mpi/7.2.0                                                                                |
 | obitools              |                                                                                                 |
 | octopus               |                                                                                                 |
 | openbabel             |                                                                                                 |
