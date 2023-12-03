@@ -233,7 +233,7 @@ If a cell&#x20;
 | molden                | molden/6.7                                                                                      |
 | Molpro                |                                                                                                 |
 | mpfr                  | mpfr/4.2.0                                                                                      |
-| mpi                   | hpcx-mpi/4.1.5rc2s                                                                              |
+| mpi                   | <ul><li>hpcx-mpi/4.1.5rc2s</li><li>openmpi/4.1.2</li></ul>                                      |
 | mpi4py                |                                                                                                 |
 | mrcc                  |                                                                                                 |
 | mriconvert            |                                                                                                 |
@@ -268,25 +268,25 @@ If a cell&#x20;
 | nvtop                 | nvtop/3.0.1                                                                                     |
 | nwchem                | nwchem-mpi/7.2.0                                                                                |
 | obitools              |                                                                                                 |
-| octopus               |                                                                                                 |
-| openbabel             |                                                                                                 |
+| octopus               | octopus-lunter/0.7.4                                                                            |
+| openbabel             | openbabel/3.1.1                                                                                 |
 | openblas              | openblas/0.3.23                                                                                 |
-| opencv                | opencv                                                                                          |
-| opencv-python         |                                                                                                 |
-| openexr               | openexr/2.3.0                                                                                   |
+| opencv                | opencv/4.6.0s                                                                                   |
+| opencv-python         | N/A - User install in their python/conda environments                                           |
+| openexr               | openexr/3.1.5                                                                                   |
 | openfoam              |                                                                                                 |
-| opengl                | mesa/                                                                                           |
+| opengl                | mesa/22.1.6                                                                                     |
 | openjpeg              | openjpeg/2.5.0                                                                                  |
 | openmolcas            |                                                                                                 |
-| openscenegraph        |                                                                                                 |
-| openslide             |                                                                                                 |
-| openslide-python      |                                                                                                 |
-| openssl               | openssl/3.0.7s                                                                                  |
-| orca                  | orca/5.0.7                                                                                      |
-| osgearth              |                                                                                                 |
+| openscenegraph        | N/A                                                                                             |
+| openslide             | openslide/3.4.1                                                                                 |
+| openslide-python      | N/A - User install in their python/conda environments                                           |
+| openssl               | <ul><li>openssl/3.0.7s</li><li>openssl/1.1.1t</li></ul>                                         |
+| orca                  | orca-mpi/5.0.7                                                                                  |
+| osgearth              | N/A                                                                                             |
 | ovito                 |                                                                                                 |
 | p7zip                 | p7zip/17.05                                                                                     |
-| pandas                |                                                                                                 |
+| pandas                | N/A - User install in their python/conda environments                                           |
 | pandoc                | pandoc/2.19.2                                                                                   |
 | paraview              |                                                                                                 |
 | patchelf              | patchelf/0.17.2                                                                                 |
@@ -298,25 +298,25 @@ If a cell&#x20;
 | petsc                 |                                                                                                 |
 | photoscan             |                                                                                                 |
 | picard-tools          | picard/2.26.2                                                                                   |
-| pigz                  |                                                                                                 |
-| planetaryviewer       |                                                                                                 |
-| plink                 |                                                                                                 |
-| plotly                |                                                                                                 |
+| pigz                  | pigz/2.7                                                                                        |
+| planetaryviewer       | N/A - User install in their python/conda environments                                           |
+| plink                 | plink/2.00                                                                                      |
+| plotly                | N/A - User install in their python/conda environments                                           |
 | plumed                |                                                                                                 |
-| pnetcdf               | parallel-netcdf                                                                                 |
-| popoolation2          |                                                                                                 |
-| prodigal              |                                                                                                 |
+| pnetcdf               | parallel-netcdf-mpi/1.12.3                                                                      |
+| popoolation2          | popoolation2/1.205s                                                                             |
+| prodigal              | prodigal/2.6.3                                                                                  |
 | proj                  | proj/9.2.0                                                                                      |
 | protobuf              | protobuf/3.22.2                                                                                 |
-| py2bit                |                                                                                                 |
-| pybigwig              |                                                                                                 |
-| pycharm               |                                                                                                 |
-| pymol                 |                                                                                                 |
-| pypy                  |                                                                                                 |
-| pysam                 |                                                                                                 |
-| pyscf                 |                                                                                                 |
-| python                | python/3.9.16                                                                                   |
-| pytorch               |                                                                                                 |
+| py2bit                | N/A - User install in their python/conda environments                                           |
+| pybigwig              | N/A - User install in their python/conda environments                                           |
+| pycharm               | pycharm-community/2021.3.3                                                                      |
+| pymol                 | N/A - User install in their python/conda environments                                           |
+| pypy                  | pypy/7.3.13                                                                                     |
+| pysam                 | N/A - User install in their python/conda environments                                           |
+| pyscf                 | N/A - User install in their python/conda environments                                           |
+| python                | (system RPM - python/3.9.16)                                                                    |
+| pytorch               | N/A - User install in their python/conda environments                                           |
 | qchem                 |                                                                                                 |
 | qgis                  |                                                                                                 |
 | qiime                 |                                                                                                 |
