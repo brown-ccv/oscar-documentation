@@ -7,7 +7,7 @@ If a cell&#x20;
 * is blank, that module will be installed later
 * says "(system RPM)", that software is installed on the nodes. Users don't need to load this module.&#x20;
 * says "N/A", that module will NOT be installed
-* lists a module , users can load this module using the command `module load <name>`
+* lists one or more modules , users can load a listed module using the command `module load <name>`
 
 | Old Oscar Module      | LMOD Module                                                                                     |
 | --------------------- | ----------------------------------------------------------------------------------------------- |
@@ -105,29 +105,29 @@ If a cell&#x20;
 | dsi                   |                                                                                                 |
 | dtitk                 | dtitk/2.3.1s                                                                                    |
 | eigen                 | eigen/3.4.0                                                                                     |
-| eigensoft             |                                                                                                 |
+| eigensoft             | eigensoft/7.2.1                                                                                 |
 | elbencho              |                                                                                                 |
-| emacs                 | emacs-27.2                                                                                      |
+| emacs                 | (system RPM)                                                                                    |
 | emboss                |                                                                                                 |
 | engineering           |                                                                                                 |
-| fastme                |                                                                                                 |
+| fastme                | fastme/2.1.5.1                                                                                  |
 | fastq\_screen         |                                                                                                 |
 | fastqc                | fastqc/0.11.9                                                                                   |
-| fasttree              |                                                                                                 |
+| fasttree              | fasttree/2.1.11                                                                                 |
 | fastx-toolkit         | fastx-toolkit/0.0.14                                                                            |
-| ferret                |                                                                                                 |
+| ferret                | ferret/7.6.0-                                                                                   |
 | ffmpeg                | ffmpeg/6.0                                                                                      |
 | fftw                  | fftw/3.3.10                                                                                     |
-| fiji                  |                                                                                                 |
-| fileZilla             |                                                                                                 |
+| fiji                  | fiji/20231107-1617                                                                              |
+| fileZilla             | filezilla/3.49.1                                                                                |
 | firefox               | firefox-102.9.0                                                                                 |
 | flashpca              |                                                                                                 |
 | freebayes             | freebayes/1.3.6                                                                                 |
-| freeglut              |                                                                                                 |
+| freeglut              | freeglut/3.2.2                                                                                  |
 | freesurfer            | freesurfer/7.3.2                                                                                |
 | freetype              | freetype/2.11.1                                                                                 |
-| fsl                   |                                                                                                 |
-| fv                    |                                                                                                 |
+| fsl                   | fsl/6.0.5.2s                                                                                    |
+| fv                    | fv/5.5.2                                                                                        |
 | gatk                  | gatk/4.3.0.0                                                                                    |
 | gaussian              | gaussian/09\_v1                                                                                 |
 | gaussview             |                                                                                                 |
