@@ -368,12 +368,12 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | splash                |                                                        |
 | spm                   |                                                        |
 | spyder                |                                                        |
-| sqlite                | sqlite/3.40.1                                          |
+| sqlite                | (system RPM)                                           |
 | sratoolkit            | sratoolkit/3.0.0                                       |
 | stacks                |                                                        |
 | star                  | star/2.7.10b                                           |
-| stata                 | stata                                                  |
-| statsmodels           | py-statsmodels/0.13.2                                  |
+| stata                 | stata/mp17                                             |
+| statsmodels           | N/A - Users install in their python/conda environments |
 | sublime               | sublime                                                |
 | subread               | subread/2.0.2                                          |
 | svn                   | subversion                                             |
