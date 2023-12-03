@@ -175,7 +175,7 @@ If a cell&#x20;
 | inkscape              | inkscape/1.3s                                                                                   |
 | intel                 | intel-oneapi-compilers/2023.1.0                                                                 |
 | intltool              | intltool/0.51.0                                                                                 |
-| ior                   | N/A                                                                                             |
+| ior                   | ior-mpi/3.3.0                                                                                   |
 | iq-tree               | iq-tree/2.1.3                                                                                   |
 | iraf                  |                                                                                                 |
 | isis                  |                                                                                                 |
@@ -186,30 +186,30 @@ If a cell&#x20;
 | json\_cpp             | jsoncpp/1.9.5                                                                                   |
 | json\_fortran         | json-fortran@8.3.0                                                                              |
 | julia                 | julia/1.9.0                                                                                     |
-| keras                 |                                                                                                 |
+| keras                 | N/A - User install in their python/conda environments                                           |
 | kneaddata             |                                                                                                 |
-| kraken                |                                                                                                 |
-| lammps                | lammps/20220623.3                                                                               |
-| lapack                |                                                                                                 |
+| kraken                | kraken/1.1.1                                                                                    |
+| lammps                | lammps-mpi/20220623.3                                                                           |
+| lapack                | netlib-lapack/3.11.0                                                                            |
 | leveldb               | leveldb/1.23                                                                                    |
-| lftp                  |                                                                                                 |
-| libarchive            |                                                                                                 |
+| lftp                  | lftp/4.9.2                                                                                      |
+| libarchive            | libarchive/3.6.2                                                                                |
 | libbeef               | libbeef/Nov2020                                                                                 |
-| libcutensor           |                                                                                                 |
-| libgd                 |                                                                                                 |
-| libgeotiff            | libgeotiff/1.6.0-voueb6b                                                                        |
+| libcutensor           | cutensor/1.5.0.3                                                                                |
+| libgd                 | libgd/2.3.3                                                                                     |
+| libgeotiff            | libgeotiff/1.6.0                                                                                |
 | libgit                | libgit2/1.6.4                                                                                   |
 | libjpeg               | libjpeg/9e                                                                                      |
 | libjpeg-turbo         | libjpeg-turbo/2.1.5                                                                             |
-| libpng12              | libpng/1.5.30                                                                                   |
-| libreoffice           |                                                                                                 |
+| libpng12              | libpng/1.6.39                                                                                   |
+| libreoffice           | libreoffice/7.2.2.sif                                                                           |
 | libtiff               | libtiff/4.5.0                                                                                   |
-| libvdwxc              |                                                                                                 |
+| libvdwxc              | libvdwxc-mpi/0.4.0                                                                              |
 | libwnck               | libwnck/3.24.1                                                                                  |
 | libxc                 | libxc/5.2.3                                                                                     |
-| libzip                |                                                                                                 |
-| llvm                  | llvm/14.0.6                                                                                     |
-| macs                  | py-macs2                                                                                        |
+| libzip                | libzip/1.3.2                                                                                    |
+| llvm                  | llvm/16.0.2                                                                                     |
+| macs                  | N/A - User install in their python/conda environments                                           |
 | mafft                 |                                                                                                 |
 | magma-gpu             | magma/2.7.1                                                                                     |
 | maple                 |                                                                                                 |
