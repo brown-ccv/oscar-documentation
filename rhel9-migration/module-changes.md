@@ -18,7 +18,7 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | ants                  | ants/2.4.3                                             |
 | apache-ant            | ant/1.10.13                                            |
 | argweaver             |                                                        |
-| aria2                 |                                                        |
+| aria2                 | aria2/1.36.0                                           |
 | ase                   | N/A - Users install in their python/conda environments |
 | aspera                |                                                        |
 | assura                |                                                        |
@@ -38,8 +38,8 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | bedtools              | bedtools2/2.31.0                                       |
 | binutils              | (system RPM)                                           |
 | biopython             | N/A - User install in their python/conda environments  |
-| bismark               | bismark/0.23.0-                                        |
-| blas                  | netlib-lapack/3.11.0-                                  |
+| bismark               | bismark/0.23.0                                         |
+| blas                  | netlib-lapack/3.11.0                                   |
 | blast                 | blast-plus/2.2.30                                      |
 | blat                  | blat/37                                                |
 | blender               | blender/4.0.0                                          |
@@ -50,13 +50,13 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | busco                 |                                                        |
 | bwa                   | bwa/0.7.17                                             |
 | bxh\_xcede\_tools     |                                                        |
-| bzip2                 | bzip2-1.0.8                                            |
+| bzip2                 | (system RPM)                                           |
 | cadence               |                                                        |
 | caffe                 |                                                        |
 | cantera               |                                                        |
 | cartopy               |                                                        |
 | casa                  |                                                        |
-| cave-utils            |                                                        |
+| cave-utils            | N/A                                                    |
 | cdhit                 | cdhit/4.8.1                                            |
 | cdo                   |                                                        |
 | cellranger            |                                                        |
