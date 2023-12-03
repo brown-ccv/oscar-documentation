@@ -390,33 +390,33 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | tn93                  |                                                        |
 | tophat                |                                                        |
 | tortoise              |                                                        |
-| tree                  |                                                        |
+| tree                  | tree/2.1.0-7                                           |
 | trimal                | trimal/1.4.1                                           |
 | trimgalore            | trimgalore/0.6.6                                       |
 | trimmomatic           | trimmomatic/0.39                                       |
 | trinity               |                                                        |
 | udunits               | udunits/2.2.28                                         |
 | usearch               | usearch/11.0.667                                       |
-| v8                    |                                                        |
+| v8                    | v8/3.14.5                                              |
 | vasp                  |                                                        |
 | vcftools              | vcftools/0.1.14                                        |
 | vep                   |                                                        |
-| vim                   | vim-common-8.2.2637                                    |
-| virtualgl             |                                                        |
+| vim                   | (system RPM)                                           |
+| virtualgl             | virtualgl/3.1                                          |
 | visit                 |                                                        |
-| vmd                   |                                                        |
-| vrg3d                 |                                                        |
-| vrpn                  |                                                        |
-| vscode                |                                                        |
+| vmd                   | vmd/1.9.3                                              |
+| vrg3d                 | N/A                                                    |
+| vrpn                  | N/A                                                    |
+| vscode                | vscode/1.84.2                                          |
 | vtk                   |                                                        |
 | wcstools              |                                                        |
 | weblogo               |                                                        |
 | workshop              |                                                        |
 | xcrysden              |                                                        |
-| xeyes                 |                                                        |
+| xeyes                 | xeyes/1.2.0                                            |
 | xfce                  |                                                        |
 | xgboost               |                                                        |
 | Xvfb                  | (system RPM)                                           |
 | yaml-cpp              |                                                        |
 | zlib                  | zlib/1.2.13                                            |
-| zsh                   | zsh-5.8                                                |
+| zsh                   | (system RPM)                                           |
