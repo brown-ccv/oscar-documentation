@@ -115,7 +115,7 @@ If a cell&#x20;
 | fastqc                | fastqc/0.11.9                                                                                   |
 | fasttree              | fasttree/2.1.11                                                                                 |
 | fastx-toolkit         | fastx-toolkit/0.0.14                                                                            |
-| ferret                | ferret/7.6.0-                                                                                   |
+| ferret                | ferret/7.6.0                                                                                    |
 | ffmpeg                | ffmpeg/6.0                                                                                      |
 | fftw                  | fftw/3.3.10                                                                                     |
 | fiji                  | fiji/20231107-1617                                                                              |
@@ -130,54 +130,52 @@ If a cell&#x20;
 | fv                    | fv/5.5.2                                                                                        |
 | gatk                  | gatk/4.3.0.0                                                                                    |
 | gaussian              | gaussian/09\_v1                                                                                 |
-| gaussview             |                                                                                                 |
-| gcc                   |                                                                                                 |
+| gaussview             | gaussview/v05                                                                                   |
+| gcc                   | (system RPM)                                                                                    |
 | gdal                  | gdal/3.7.0                                                                                      |
-| gdb                   | gdb-10.2                                                                                        |
-| gengetopt             |                                                                                                 |
+| gdb                   | (system RPM)                                                                                    |
 | geos                  | geos/3.11.2                                                                                     |
-| ghostscript           |                                                                                                 |
+| ghostscript           | ghostscript/10.0.0                                                                              |
 | gimp                  |                                                                                                 |
-| git                   | git-2.39.1                                                                                      |
+| git                   | (system RPM)                                                                                    |
 | gitlfs                | git-lfs/3.3.0                                                                                   |
 | glew                  | glew/2.2.0                                                                                      |
-| glm                   |                                                                                                 |
-| glmnet                |                                                                                                 |
-| global\_arrays        | globalarrays/5.8.2                                                                              |
-| globus                |                                                                                                 |
-| gmp                   |                                                                                                 |
+| glm                   | glm/0.9.9.8                                                                                     |
+| glmnet                | N/A - User install in their python/conda environments                                           |
+| global\_arrays        | globalarrays-mpi/5.8.                                                                           |
+| globus                | N/A - User install in their python/conda environments                                           |
+| gmp                   | gmp/6.2.1                                                                                       |
 | gnuplot               | gnuplot/5.4.3                                                                                   |
 | golang                | go/1.20.3                                                                                       |
 | gpaw                  |                                                                                                 |
-| grace                 |                                                                                                 |
+| grace                 | grace/5.1.25                                                                                    |
 | graphviz              | graphviz/8.0.1                                                                                  |
 | gromacs               |                                                                                                 |
 | gsl                   | gsl/2.7.1                                                                                       |
-| gsutil                | google-cloud-cli                                                                                |
-| guppy                 |                                                                                                 |
-| gurobi                |                                                                                                 |
-| h5py                  |                                                                                                 |
+| gsutil                |                                                                                                 |
+| guppy                 | <ul><li>guppy/6.0.1</li><li>guppy/6.1.2</li></ul>                                               |
+| gurobi                | gurobi/10.0.1                                                                                   |
+| h5py                  | N/A - User install in their python/conda environments                                           |
 | haplostrips           |                                                                                                 |
 | hdf5                  | hdf5/1.14.1-2                                                                                   |
-| hdfview               |                                                                                                 |
-| help2man              |                                                                                                 |
-| hmmer                 |                                                                                                 |
-| homer                 |                                                                                                 |
+| hdfview               | <ul><li>hdf5-mpi/1.12.2</li><li>hdf5/1.14.1-2</li></ul>                                         |
+| hmmer                 | hmmer-mpi/3.3.2                                                                                 |
+| homer                 | homer/4.11.1                                                                                    |
 | htop                  | htop/3.2.2                                                                                      |
-| htseq                 | py-htseq                                                                                        |
-| htslib                | htslib/1.16                                                                                     |
-| idba                  |                                                                                                 |
+| htseq                 | N/A - User install in their python/conda environments                                           |
+| htslib                | htslib/1.17                                                                                     |
+| idba                  | idba/1.1.3                                                                                      |
 | idemp                 |                                                                                                 |
 | idl                   | idl/8.8.2                                                                                       |
 | idl\_DEEPS            |                                                                                                 |
-| igraph                |                                                                                                 |
-| imagej                |                                                                                                 |
-| imagemagick           |                                                                                                 |
+| igraph                | igraph/0.7.1                                                                                    |
+| imagej                | imagej/154-linux64-java8                                                                        |
+| imagemagick           | imagemagick/7.1.1-3                                                                             |
 | incisive              |                                                                                                 |
-| inkscape              | inkscape                                                                                        |
+| inkscape              | inkscape/1.3s                                                                                   |
 | intel                 | intel-oneapi-compilers/2023.1.0                                                                 |
 | intltool              | intltool/0.51.0                                                                                 |
-| ior                   |                                                                                                 |
+| ior                   | N/A                                                                                             |
 | iq-tree               | iq-tree/2.1.3                                                                                   |
 | iraf                  |                                                                                                 |
 | isis                  |                                                                                                 |
