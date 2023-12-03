@@ -337,53 +337,52 @@ The table below lists old Oscar modules and their corresponding LMOD modules.
 | rstudio               |                                                        |
 | rsync                 | (system RPM)                                           |
 | ruby                  |                                                        |
-| rust                  |                                                        |
+| rust                  | rust/1.74.0s                                           |
 | sage                  | sage/9.5                                               |
-| salmon                | salmon                                                 |
+| salmon                | salmon/1.9.0                                           |
 | samtools              | samtools/1.16.1                                        |
 | SAS                   |                                                        |
 | scalable              |                                                        |
 | scalapack             | netlib-scalapack                                       |
 | schrodinger           |                                                        |
-| scikit-image          | py-scikit                                              |
-| scikit-learn          |                                                        |
-| scons                 |                                                        |
-| scotch                |                                                        |
-| seaborn               | py-seaborn                                             |
-| select                |                                                        |
+| scikit-image          | N/A - Users install in their python/conda environments |
+| scikit-learn          | N/A - Users install in their python/conda environments |
+| scons                 | scons/4.5.2                                            |
+| scotch                | scotch-mpi/7.0.3                                       |
+| seaborn               | N/A - Users install in their python/conda environments |
 | selscan               | selscan/2.0.0                                          |
 | seqkit                | seqkit/0.10.1                                          |
 | seqtk                 | seqtk/1.3                                              |
 | sextractor            |                                                        |
 | sga                   |                                                        |
-| sharc                 |                                                        |
-| singularity2          |                                                        |
-| six                   | py-six                                                 |
+| sharc                 | sharc-mpi/3.0.1                                        |
+| singularity2          | (system RPM)                                           |
+| six                   | N/A - Users install in their python/conda environments |
 | skewer                |                                                        |
-| slicer                |                                                        |
+| slicer                | slicer/5.4.0                                           |
 | slim                  | slim/4.0.1                                             |
-| snakemake             |                                                        |
+| snakemake             | N/A - Users install in their python/conda environments |
 | SNAP                  |                                                        |
 | spectre               |                                                        |
 | splash                |                                                        |
-| spm                   |                                                        |
-| spyder                |                                                        |
+| spm                   | spm/12\_r7606                                          |
+| spyder                | N/A - Users install in their python/conda environments |
 | sqlite                | (system RPM)                                           |
 | sratoolkit            | sratoolkit/3.0.0                                       |
-| stacks                |                                                        |
+| stacks                | stacks/2.65                                            |
 | star                  | star/2.7.10b                                           |
 | stata                 | stata/mp17                                             |
 | statsmodels           | N/A - Users install in their python/conda environments |
-| sublime               | sublime                                                |
+| sublime               | sublime-text/4.4143                                    |
 | subread               | subread/2.0.2                                          |
-| svn                   | subversion                                             |
+| svn                   | subversion/1.14.1                                      |
 | swarp                 |                                                        |
 | sympy                 |                                                        |
 | synopsys              |                                                        |
 | sysstat               | sysstat/12.5.4                                         |
 | tabix                 | tabix/2013-12-16                                       |
-| tecplot               | tecplot/2019r1                                         |
-| tensorflow            |                                                        |
+| tecplot               | tecplot/2022r1                                         |
+| tensorflow            | N/A - Users install in their python/conda environments |
 | tesseract             |                                                        |
 | texlive               | texlive/20220321                                       |
 | texstudio             | texstudio/3.0.1                                        |
