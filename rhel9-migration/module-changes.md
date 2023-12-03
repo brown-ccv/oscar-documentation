@@ -319,8 +319,8 @@ If a cell&#x20;
 | pytorch               | N/A - User install in their python/conda environments                                           |
 | qchem                 |                                                                                                 |
 | qgis                  |                                                                                                 |
-| qiime                 |                                                                                                 |
-| qit                   |                                                                                                 |
+| qiime                 | N/A - User install in their python/conda environments                                           |
+| qit                   | qit/2023-04-04                                                                                  |
 | qmcpack               |                                                                                                 |
 | qt                    | qt/5.15.9                                                                                       |
 | qualimap              | qualimap/2.2.1                                                                                  |
@@ -330,11 +330,11 @@ If a cell&#x20;
 | RAiSD                 | raisd/2.9                                                                                       |
 | raxml                 |                                                                                                 |
 | raxml-ng              |                                                                                                 |
-| rclone                |                                                                                                 |
-| repeatmasker          |                                                                                                 |
-| root                  |                                                                                                 |
+| rclone                | rclone/1.62.2                                                                                   |
+| repeatmasker          | repeatmasker-mpi/4.1.2-p1                                                                       |
+| root                  | root/6.28.04                                                                                    |
 | rsem                  | rsem/1.3.3                                                                                      |
-| rstudio               |                                                                                                 |
+| rstudio               | rstudio/2023.09.1                                                                               |
 | rsync                 | (system RPM)                                                                                    |
 | ruby                  |                                                                                                 |
 | rust                  | rust/1.74.0s                                                                                    |
@@ -377,17 +377,17 @@ If a cell&#x20;
 | subread               | subread/2.0.2                                                                                   |
 | svn                   | subversion/1.14.1                                                                               |
 | swarp                 |                                                                                                 |
-| sympy                 |                                                                                                 |
+| sympy                 | N/A - Users install in their python/conda environments                                          |
 | synopsys              |                                                                                                 |
 | sysstat               | sysstat/12.5.4                                                                                  |
 | tabix                 | tabix/2013-12-16                                                                                |
 | tecplot               | tecplot/2022r1                                                                                  |
 | tensorflow            | N/A - Users install in their python/conda environments                                          |
-| tesseract             |                                                                                                 |
+| tesseract             | tesseract/4.1.1                                                                                 |
 | texlive               | texlive/20220321                                                                                |
 | texstudio             | texstudio/3.0.1                                                                                 |
 | tmux                  | tmux/3.3a                                                                                       |
-| tn93                  |                                                                                                 |
+| tn93                  | tn93/1.0.12-                                                                                    |
 | tophat                |                                                                                                 |
 | tortoise              |                                                                                                 |
 | tree                  | tree/2.1.0-7                                                                                    |
@@ -417,6 +417,6 @@ If a cell&#x20;
 | xfce                  |                                                                                                 |
 | xgboost               |                                                                                                 |
 | Xvfb                  | (system RPM)                                                                                    |
-| yaml-cpp              |                                                                                                 |
+| yaml-cpp              | yaml-cpp/0.7.0                                                                                  |
 | zlib                  | zlib/1.2.13                                                                                     |
 | zsh                   | (system RPM)                                                                                    |
