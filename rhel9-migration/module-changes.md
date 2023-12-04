@@ -354,7 +354,7 @@ If a cell&#x20;
 | seqkit                | seqkit/0.10.1                                                                                   |
 | seqtk                 | seqtk/1.3                                                                                       |
 | sextractor            |                                                                                                 |
-| sga                   |                                                                                                 |
+| sga                   | N/A                                                                                             |
 | sharc                 | sharc-mpi/3.0.1                                                                                 |
 | singularity2          | (system RPM)                                                                                    |
 | six                   | N/A - Users install in their python/conda environments                                          |
@@ -362,7 +362,7 @@ If a cell&#x20;
 | slicer                | slicer/5.4.0                                                                                    |
 | slim                  | slim/4.0.1                                                                                      |
 | snakemake             | N/A - Users install in their python/conda environments                                          |
-| SNAP                  |                                                                                                 |
+| SNAP                  | N/A                                                                                             |
 | spectre               |                                                                                                 |
 | splash                |                                                                                                 |
 | spm                   | spm/12\_r7606                                                                                   |
@@ -389,7 +389,7 @@ If a cell&#x20;
 | tmux                  | tmux/3.3a                                                                                       |
 | tn93                  | tn93/1.0.12-                                                                                    |
 | tophat                |                                                                                                 |
-| tortoise              |                                                                                                 |
+| tortoise              | N/A                                                                                             |
 | tree                  | tree/2.1.0-7                                                                                    |
 | trimal                | trimal/1.4.1                                                                                    |
 | trimgalore            | trimgalore/0.6.6                                                                                |
@@ -403,7 +403,7 @@ If a cell&#x20;
 | vep                   |                                                                                                 |
 | vim                   | (system RPM)                                                                                    |
 | virtualgl             | virtualgl/3.1                                                                                   |
-| visit                 |                                                                                                 |
+| visit                 | N/A                                                                                             |
 | vmd                   | vmd/1.9.3                                                                                       |
 | vrg3d                 | N/A                                                                                             |
 | vrpn                  | N/A                                                                                             |
@@ -415,7 +415,7 @@ If a cell&#x20;
 | xcrysden              |                                                                                                 |
 | xeyes                 | xeyes/1.2.0                                                                                     |
 | xfce                  |                                                                                                 |
-| xgboost               |                                                                                                 |
+| xgboost               | xgboost/1.6.2                                                                                   |
 | Xvfb                  | (system RPM)                                                                                    |
 | yaml-cpp              | yaml-cpp/0.7.0                                                                                  |
 | zlib                  | zlib/1.2.13                                                                                     |
