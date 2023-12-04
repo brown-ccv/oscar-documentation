@@ -182,7 +182,7 @@ If a cell&#x20;
 | JAGS                  | jags/4.3.1                                                                                      |
 | java                  | openjdk/11.0.17\_8                                                                              |
 | jellyfish             |                                                                                                 |
-| jo                    |                                                                                                 |
+| jo                    | jo/1.9                                                                                          |
 | json\_cpp             | jsoncpp/1.9.5                                                                                   |
 | json\_fortran         | json-fortran@8.3.0                                                                              |
 | julia                 | julia/1.9.0                                                                                     |
@@ -293,7 +293,7 @@ If a cell&#x20;
 | paup                  | paup/4.0a168                                                                                    |
 | pcre2                 | pcre2/10.42                                                                                     |
 | pdftk                 |                                                                                                 |
-| pdsh                  |                                                                                                 |
+| pdsh                  | pdsh-chaos/22.12                                                                                |
 | perl                  | perl/5.36.0                                                                                     |
 | petsc                 |                                                                                                 |
 | photoscan             |                                                                                                 |
