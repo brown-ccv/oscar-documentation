@@ -50,14 +50,14 @@ If a cell&#x20;
 | bowtie                | bowtie/1.3.1                                                                                    |
 | bowtie2               | bowtie2/2.4.2                                                                                   |
 | brotli                | brotli/1.0.9                                                                                    |
-| busco                 |                                                                                                 |
+| busco                 | N/A - Users install in their python/conda environments                                          |
 | bwa                   | bwa/0.7.17                                                                                      |
 | bxh\_xcede\_tools     |                                                                                                 |
 | bzip2                 | (system RPM)                                                                                    |
 | cadence               | cadence/IC06.18.090                                                                             |
 | caffe                 |                                                                                                 |
 | cantera               |                                                                                                 |
-| cartopy               |                                                                                                 |
+| cartopy               | N/A - Users install in their python/conda environments                                          |
 | casa                  | casa/6.6.0-20-py3.8.el7                                                                         |
 | cave-utils            | N/A                                                                                             |
 | cdhit                 | cdhit/4.8.1                                                                                     |
@@ -106,7 +106,7 @@ If a cell&#x20;
 | dtitk                 | dtitk/2.3.1s                                                                                    |
 | eigen                 | eigen/3.4.0                                                                                     |
 | eigensoft             | eigensoft/7.2.1                                                                                 |
-| elbencho              |                                                                                                 |
+| elbencho              | N/A                                                                                             |
 | emacs                 | (system RPM)                                                                                    |
 | emboss                |                                                                                                 |
 | engineering           |                                                                                                 |
@@ -181,13 +181,13 @@ If a cell&#x20;
 | isis                  |                                                                                                 |
 | JAGS                  | jags/4.3.1                                                                                      |
 | java                  | openjdk/11.0.17\_8                                                                              |
-| jellyfish             |                                                                                                 |
+| jellyfish             | jellyfish/2.2.7                                                                                 |
 | jo                    | jo/1.9                                                                                          |
 | json\_cpp             | jsoncpp/1.9.5                                                                                   |
 | json\_fortran         | json-fortran@8.3.0                                                                              |
 | julia                 | julia/1.9.0                                                                                     |
 | keras                 | N/A - User install in their python/conda environments                                           |
-| kneaddata             |                                                                                                 |
+| kneaddata             | N/A - User install in their python/conda environments                                           |
 | kraken                | kraken/1.1.1                                                                                    |
 | lammps                | lammps-mpi/20220623.3                                                                           |
 | lapack                | netlib-lapack/3.11.0                                                                            |
@@ -234,7 +234,7 @@ If a cell&#x20;
 | Molpro                |                                                                                                 |
 | mpfr                  | mpfr/4.2.0                                                                                      |
 | mpi                   | <ul><li>hpcx-mpi/4.1.5rc2s</li><li>openmpi/4.1.2</li></ul>                                      |
-| mpi4py                |                                                                                                 |
+| mpi4py                | N/A - User install in their python/conda environments                                           |
 | mrcc                  |                                                                                                 |
 | mriconvert            | mriconvert/2.1.0                                                                                |
 | mricrogl              | mricrogl/2022.07.20                                                                             |
@@ -284,7 +284,7 @@ If a cell&#x20;
 | openssl               | <ul><li>openssl/3.0.7s</li><li>openssl/1.1.1t</li></ul>                                         |
 | orca                  | orca-mpi/5.0.7                                                                                  |
 | osgearth              | N/A                                                                                             |
-| ovito                 |                                                                                                 |
+| ovito                 | ovito/3.6.0                                                                                     |
 | p7zip                 | p7zip/17.05                                                                                     |
 | pandas                | N/A - User install in their python/conda environments                                           |
 | pandoc                | pandoc/2.19.2                                                                                   |
@@ -321,11 +321,11 @@ If a cell&#x20;
 | qgis                  |                                                                                                 |
 | qiime                 | N/A - User install in their python/conda environments                                           |
 | qit                   | qit/2023-04-04                                                                                  |
-| qmcpack               |                                                                                                 |
+| qmcpack               | qmcpack-mpi/3.16.0s                                                                             |
 | qt                    | qt/5.15.9                                                                                       |
 | qualimap              | qualimap/2.2.1                                                                                  |
 | quantumespresso       | quantum-espresso/7.1                                                                            |
-| quast                 |                                                                                                 |
+| quast                 | N/A - User install in their python/conda environments                                           |
 | R                     | r/4.2.2                                                                                         |
 | RAiSD                 | raisd/2.9                                                                                       |
 | raxml                 |                                                                                                 |
@@ -342,7 +342,7 @@ If a cell&#x20;
 | salmon                | salmon/1.9.0                                                                                    |
 | samtools              | samtools/1.16.1                                                                                 |
 | SAS                   |                                                                                                 |
-| scalable              |                                                                                                 |
+| scalable              | N/A                                                                                             |
 | scalapack             | netlib-scalapack                                                                                |
 | schrodinger           |                                                                                                 |
 | scikit-image          | N/A - Users install in their python/conda environments                                          |
@@ -409,10 +409,10 @@ If a cell&#x20;
 | vrpn                  | N/A                                                                                             |
 | vscode                | vscode/1.84.2                                                                                   |
 | vtk                   |                                                                                                 |
-| wcstools              |                                                                                                 |
-| weblogo               |                                                                                                 |
-| workshop              |                                                                                                 |
-| xcrysden              |                                                                                                 |
+| wcstools              | wcstools/3.9.7                                                                                  |
+| weblogo               | N/A - Users install in their python/conda environments                                          |
+| workshop              | N/A                                                                                             |
+| xcrysden              | xcrysden/1.5.60                                                                                 |
 | xeyes                 | xeyes/1.2.0                                                                                     |
 | xfce                  |                                                                                                 |
 | xgboost               | xgboost/1.6.2                                                                                   |
