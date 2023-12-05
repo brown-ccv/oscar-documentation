@@ -20,7 +20,7 @@ If a cell&#x20;
 | angsd                 | angsd/0.935                                                                                     |
 | ants                  | ants/2.4.3                                                                                      |
 | apache-ant            | ant/1.10.13                                                                                     |
-| argweaver             |                                                                                                 |
+| argweaver             | N/A - Users install in their python/conda environments                                          |
 | aria2                 | aria2/1.36.0                                                                                    |
 | ase                   | N/A - Users install in their python/conda environments                                          |
 | aspera                |                                                                                                 |
