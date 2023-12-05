@@ -37,7 +37,7 @@ If a cell&#x20;
 | bcl2fastq             | bcl2fastq2/2.20.0.422                                                                           |
 | beagle                | beagle/5.4                                                                                      |
 | bedGraphToBigWig      |                                                                                                 |
-| bedops                |                                                                                                 |
+| bedops                | bedops/2.4.40                                                                                   |
 | bedtools              | bedtools2/2.31.0                                                                                |
 | binutils              | (system RPM)                                                                                    |
 | biopython             | N/A - User install in their python/conda environments                                           |
@@ -58,7 +58,7 @@ If a cell&#x20;
 | caffe                 |                                                                                                 |
 | cantera               |                                                                                                 |
 | cartopy               |                                                                                                 |
-| casa                  |                                                                                                 |
+| casa                  | casa/6.6.0-20-py3.8.el7                                                                         |
 | cave-utils            | N/A                                                                                             |
 | cdhit                 | cdhit/4.8.1                                                                                     |
 | cdo                   | cdo-mpi/2.1.1                                                                                   |
@@ -68,7 +68,7 @@ If a cell&#x20;
 | cgal                  | cgal/5.4.1                                                                                      |
 | CharMM                |                                                                                                 |
 | chrome                | chrome/119.0.6045.159s                                                                          |
-| circlator             |                                                                                                 |
+| circlator             | N/A - User install in their python/conda environments                                           |
 | clang                 | llvm/16.0.2                                                                                     |
 | CloudCompare          |                                                                                                 |
 | clustal\_omega        | clustal-omega/1.2.4                                                                             |
@@ -78,7 +78,7 @@ If a cell&#x20;
 | conn                  | conn/22a                                                                                        |
 | connectome\_workbench | connectome-workbench/1.5.0                                                                      |
 | cp2k                  |                                                                                                 |
-| cppunit               |                                                                                                 |
+| cppunit               | cppunit@1.14.0                                                                                  |
 | crossrate             |                                                                                                 |
 | cuda                  | cuda/12.1.1                                                                                     |
 | cudnn                 | cudnn/8.7.0.84-11.8                                                                             |
@@ -95,14 +95,14 @@ If a cell&#x20;
 | deeptools             | N/A - User install in their python/conda environments                                           |
 | deeptoolsintervals    | N/A - User install in their python/conda environments                                           |
 | diamond               | diamond/2.0.15                                                                                  |
-| dicombrowser          |                                                                                                 |
+| dicombrowser          | dicombrowser/20181217                                                                           |
 | dlib                  | dlib/19.22                                                                                      |
 | dmtcp                 | dmtcp/3.0.0                                                                                     |
 | dos2unix              | dos2unix/7.4.2                                                                                  |
 | dotnet                |                                                                                                 |
 | dropest               | dropest/0.8.6                                                                                   |
 | ds9                   | ds/9.8.5s                                                                                       |
-| dsi                   |                                                                                                 |
+| dsi                   | dsi-studio/chen-2023-sif                                                                        |
 | dtitk                 | dtitk/2.3.1s                                                                                    |
 | eigen                 | eigen/3.4.0                                                                                     |
 | eigensoft             | eigensoft/7.2.1                                                                                 |
@@ -121,7 +121,7 @@ If a cell&#x20;
 | fiji                  | fiji/20231107-1617                                                                              |
 | fileZilla             | filezilla/3.49.1                                                                                |
 | firefox               | firefox-102.9.0                                                                                 |
-| flashpca              |                                                                                                 |
+| flashpca              | flashpca/2.0                                                                                    |
 | freebayes             | freebayes/1.3.6                                                                                 |
 | freeglut              | freeglut/3.2.2                                                                                  |
 | freesurfer            | freesurfer/7.3.2                                                                                |
@@ -165,7 +165,7 @@ If a cell&#x20;
 | htseq                 | N/A - User install in their python/conda environments                                           |
 | htslib                | htslib/1.17                                                                                     |
 | idba                  | idba/1.1.3                                                                                      |
-| idemp                 |                                                                                                 |
+| idemp                 | idemp/201706                                                                                    |
 | idl                   | idl/8.8.2                                                                                       |
 | idl\_DEEPS            |                                                                                                 |
 | igraph                | igraph/0.7.1                                                                                    |
@@ -236,7 +236,7 @@ If a cell&#x20;
 | mpi                   | <ul><li>hpcx-mpi/4.1.5rc2s</li><li>openmpi/4.1.2</li></ul>                                      |
 | mpi4py                |                                                                                                 |
 | mrcc                  |                                                                                                 |
-| mriconvert            |                                                                                                 |
+| mriconvert            | mriconvert/2.1.0                                                                                |
 | mricrogl              | mricrogl/2022.07.20                                                                             |
 | mricron               | mricron/201909                                                                                  |
 | msmc                  | msmc2/2.1.4                                                                                     |
@@ -249,9 +249,9 @@ If a cell&#x20;
 | mysql                 | mysql/8.0.29                                                                                    |
 | n2p2                  | n2p2-mpi/2.2.0                                                                                  |
 | nbo                   | nbo/7.0                                                                                         |
-| nccl                  |                                                                                                 |
+| nccl                  | nccl/2.16.2-1                                                                                   |
 | ncdu                  | ncdu/1.18.1                                                                                     |
-| ncl                   |                                                                                                 |
+| ncl                   | ncl-mpi/6.6.2                                                                                   |
 | nco                   | nco/5.1.5                                                                                       |
 | ncview                | ncview/2.1.8                                                                                    |
 | neovim                | neovim/0.9.4                                                                                    |
@@ -264,10 +264,10 @@ If a cell&#x20;
 | node.js               | node-js/18.12.1                                                                                 |
 | numpy                 | N/A - User install in their python/conda environments                                           |
 | numpydoc              | N/A - User install in their python/conda environments                                           |
-| nvhpc-sdk             |                                                                                                 |
+| nvhpc-sdk             | nvhpc/23.3                                                                                      |
 | nvtop                 | nvtop/3.0.1                                                                                     |
 | nwchem                | nwchem-mpi/7.2.0                                                                                |
-| obitools              |                                                                                                 |
+| obitools              | N/A - User install in their python/conda environments                                           |
 | octopus               | octopus-lunter/0.7.4                                                                            |
 | openbabel             | openbabel/3.1.1                                                                                 |
 | openblas              | openblas/0.3.23                                                                                 |
@@ -329,14 +329,14 @@ If a cell&#x20;
 | R                     | r/4.2.2                                                                                         |
 | RAiSD                 | raisd/2.9                                                                                       |
 | raxml                 |                                                                                                 |
-| raxml-ng              |                                                                                                 |
+| raxml-ng              | raxml-ng-mpi/1.1.0                                                                              |
 | rclone                | rclone/1.62.2                                                                                   |
 | repeatmasker          | repeatmasker-mpi/4.1.2-p1                                                                       |
 | root                  | root/6.28.04                                                                                    |
 | rsem                  | rsem/1.3.3                                                                                      |
 | rstudio               | rstudio/2023.09.1                                                                               |
 | rsync                 | (system RPM)                                                                                    |
-| ruby                  |                                                                                                 |
+| ruby                  | ruby/3.1.0                                                                                      |
 | rust                  | rust/1.74.0s                                                                                    |
 | sage                  | sage/9.5                                                                                        |
 | salmon                | salmon/1.9.0                                                                                    |
@@ -358,13 +358,13 @@ If a cell&#x20;
 | sharc                 | sharc-mpi/3.0.1                                                                                 |
 | singularity2          | (system RPM)                                                                                    |
 | six                   | N/A - Users install in their python/conda environments                                          |
-| skewer                |                                                                                                 |
+| skewer                | skewer/0.2.2                                                                                    |
 | slicer                | slicer/5.4.0                                                                                    |
 | slim                  | slim/4.0.1                                                                                      |
 | snakemake             | N/A - Users install in their python/conda environments                                          |
 | SNAP                  | N/A                                                                                             |
 | spectre               |                                                                                                 |
-| splash                |                                                                                                 |
+| splash                | splash/2.1.4                                                                                    |
 | spm                   | spm/12\_r7606                                                                                   |
 | spyder                | N/A - Users install in their python/conda environments                                          |
 | sqlite                | (system RPM)                                                                                    |
@@ -376,7 +376,7 @@ If a cell&#x20;
 | sublime               | sublime-text/4.4143                                                                             |
 | subread               | subread/2.0.2                                                                                   |
 | svn                   | subversion/1.14.1                                                                               |
-| swarp                 |                                                                                                 |
+| swarp                 | swarp/2.41.5                                                                                    |
 | sympy                 | N/A - Users install in their python/conda environments                                          |
 | synopsys              |                                                                                                 |
 | sysstat               | sysstat/12.5.4                                                                                  |
