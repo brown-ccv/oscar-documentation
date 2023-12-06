@@ -159,6 +159,7 @@ If a cell&#x20;
 | haplostrips           |                                                                                                 |
 | hdf5                  | hdf5/1.14.1-2                                                                                   |
 | hdfview               | <ul><li>hdf5-mpi/1.12.2</li><li>hdf5/1.14.1-2</li></ul>                                         |
+| hisat2                | hisat2/2.2.1                                                                                    |
 | hmmer                 | hmmer-mpi/3.3.2                                                                                 |
 | homer                 | homer/4.11.1                                                                                    |
 | htop                  | htop/3.2.2                                                                                      |
