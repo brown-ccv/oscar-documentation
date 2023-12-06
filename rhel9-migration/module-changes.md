@@ -374,6 +374,7 @@ If a cell&#x20;
 | star                  | star/2.7.10b                                                                                    |
 | stata                 | stata/mp17                                                                                      |
 | statsmodels           | N/A - Users install in their python/conda environments                                          |
+| stringtie             | stringtie/2.2.1                                                                                 |
 | sublime               | sublime-text/4.4143                                                                             |
 | subread               | subread/2.0.2                                                                                   |
 | svn                   | subversion/1.14.1                                                                               |
