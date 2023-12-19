@@ -4,7 +4,7 @@ Follow these instructions to test your Jupyter notebooks on the RHEL 9 miniclust
 
 ## Instructions:
 
-### 1. Start a Desktop session
+### Step 1. Start a Desktop session
 
 1. Start a desktop session on Open OnDemand. For a refresher, follow the instructions [here](../connecting-to-oscar/open-ondemand/desktop-app-vnc.md).
 2. Open a terminal. This terminal is running on the old RHEL 7. Run this command to start firefox
@@ -13,9 +13,11 @@ Follow these instructions to test your Jupyter notebooks on the RHEL 9 miniclust
  module load firefox/87.0 && firefox &
 ```
 
-### 2. Start an interactive job on RHEL 9
+Perform the next step in a different terminal. We will return to this desktop session in Step 3.
 
-1. Follow the instructions [here](lmod-new-module-system.md#accessing-rhel9-minicluster) to connect to login009.
+### Step 2. Start an interactive job on RHEL 9
+
+1. Follow the instructions [here](lmod-new-module-system.md#accessing-rhel9-minicluster) to connect to login009 on a terminal.
 2. Start an interactive job with the appropriate amount of resources. For example, to request 4 cores and 16GB of memory for 2 hours, run:
 
 ```bash
@@ -46,9 +48,9 @@ file:///oscar/home/...........-open.html
 
 5. Copy that line.
 
-### 3. Run Jupyter notebook in the Desktop session
+### Step 3. Run Jupyter notebook in the Desktop session
 
-Go back to your Open OnDemand Desktop session. Paste the line from the previous step in the address bar on Firefox.
+Go back to your Open OnDemand Desktop session from Step 1. Paste the line from the previous step in the address bar on Firefox.
 
 You should see Jupyter notebook displayed inside the browser. While the computations happen on the compute node running RHEL 9, you will see the Jupyter interface on the older OS.
 
