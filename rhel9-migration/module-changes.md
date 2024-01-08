@@ -293,7 +293,7 @@ If a cell&#x20;
 | patchelf              | patchelf/0.17.2                                                                                 |
 | paup                  | paup/4.0a168                                                                                    |
 | pcre2                 | pcre2/10.42                                                                                     |
-| pdftk                 |                                                                                                 |
+| pdftk                 | pdftk/2.02                                                                                      |
 | pdsh                  | pdsh-chaos/22.12                                                                                |
 | perl                  | perl/5.36.0                                                                                     |
 | petsc                 |                                                                                                 |
@@ -319,7 +319,7 @@ If a cell&#x20;
 | python                | (system RPM - python/3.9.16)                                                                    |
 | pytorch               | N/A - User install in their python/conda environments                                           |
 | qchem                 |                                                                                                 |
-| qgis                  |                                                                                                 |
+| qgis                  | N/A                                                                                             |
 | qiime                 | N/A - User install in their python/conda environments                                           |
 | qit                   | qit/2023-04-04                                                                                  |
 | qmcpack               | qmcpack-mpi/3.16.0s                                                                             |
@@ -345,7 +345,7 @@ If a cell&#x20;
 | SAS                   |                                                                                                 |
 | scalable              | N/A                                                                                             |
 | scalapack             | netlib-scalapack                                                                                |
-| schrodinger           |                                                                                                 |
+| schrodinger           | schrodinger/2023-4                                                                              |
 | scikit-image          | N/A - Users install in their python/conda environments                                          |
 | scikit-learn          | N/A - Users install in their python/conda environments                                          |
 | scons                 | scons/4.5.2                                                                                     |
@@ -410,7 +410,7 @@ If a cell&#x20;
 | vrg3d                 | N/A                                                                                             |
 | vrpn                  | N/A                                                                                             |
 | vscode                | vscode/1.84.2                                                                                   |
-| vtk                   |                                                                                                 |
+| vtk                   | vtk-mpi/9.2.6                                                                                   |
 | wcstools              | wcstools/3.9.7                                                                                  |
 | weblogo               | N/A - Users install in their python/conda environments                                          |
 | workshop              | N/A                                                                                             |
