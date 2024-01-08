@@ -136,7 +136,7 @@ If a cell&#x20;
 | gdb                   | (system RPM)                                                                                    |
 | geos                  | geos/3.11.2                                                                                     |
 | ghostscript           | ghostscript/10.0.0                                                                              |
-| gimp                  |                                                                                                 |
+| gimp                  | gimp/2.10.32                                                                                    |
 | git                   | (system RPM)                                                                                    |
 | gitlfs                | git-lfs/3.3.0                                                                                   |
 | glew                  | glew/2.2.0                                                                                      |
@@ -150,9 +150,9 @@ If a cell&#x20;
 | gpaw                  |                                                                                                 |
 | grace                 | grace/5.1.25                                                                                    |
 | graphviz              | graphviz/8.0.1                                                                                  |
-| gromacs               |                                                                                                 |
+| gromacs               | <ul><li>gromacs-mpi/2022.3</li><li>gromacs-mpi/2021.5</li></ul>                                 |
 | gsl                   | gsl/2.7.1                                                                                       |
-| gsutil                |                                                                                                 |
+| gsutil                | google-cloud-cli/456.0.0                                                                        |
 | guppy                 | <ul><li>guppy/6.0.1</li><li>guppy/6.1.2</li></ul>                                               |
 | gurobi                | gurobi/10.0.1                                                                                   |
 | h5py                  | N/A - User install in their python/conda environments                                           |
@@ -168,7 +168,7 @@ If a cell&#x20;
 | idba                  | idba/1.1.3                                                                                      |
 | idemp                 | idemp/201706                                                                                    |
 | idl                   | idl/8.8.2                                                                                       |
-| idl\_DEEPS            |                                                                                                 |
+| idl\_DEEPS            | N/A                                                                                             |
 | igraph                | igraph/0.7.1                                                                                    |
 | imagej                | imagej/154-linux64-java8                                                                        |
 | imagemagick           | imagemagick/7.1.1-3                                                                             |
@@ -178,8 +178,8 @@ If a cell&#x20;
 | intltool              | intltool/0.51.0                                                                                 |
 | ior                   | ior-mpi/3.3.0                                                                                   |
 | iq-tree               | iq-tree/2.1.3                                                                                   |
-| iraf                  |                                                                                                 |
-| isis                  |                                                                                                 |
+| iraf                  | iraf/2.17.1s                                                                                    |
+| isis                  | N/A - User install in their python/conda environments                                           |
 | JAGS                  | jags/4.3.1                                                                                      |
 | java                  | openjdk/11.0.17\_8                                                                              |
 | jellyfish             | jellyfish/2.2.7                                                                                 |
@@ -225,7 +225,7 @@ If a cell&#x20;
 | mentor-calibre        |                                                                                                 |
 | mercurial             | mercurial/5.8                                                                                   |
 | meshlab               |                                                                                                 |
-| metaphlan             |                                                                                                 |
+| metaphlan             | N/A - User install in their python/conda environments                                           |
 | metis                 | metis/5.1.0                                                                                     |
 | miniconda             | miniconda3/22.11.1                                                                              |
 | minimap2              | minimap2/2.14                                                                                   |
@@ -244,7 +244,7 @@ If a cell&#x20;
 | msprime               | N/A - User install in their python/conda environments                                           |
 | mujoco-py             | N/A - User install in their python/conda environments                                           |
 | MultiQC               | N/A - User install in their python/conda environments                                           |
-| multiwfn              |                                                                                                 |
+| multiwfn              | multiwfn/3.8\_1208                                                                              |
 | mummer                | mummer4/4.0.0rc1                                                                                |
 | muscle                | muscle/3.8.1551                                                                                 |
 | mysql                 | mysql/8.0.29                                                                                    |
