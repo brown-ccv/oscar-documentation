@@ -56,7 +56,7 @@ If a cell&#x20;
 | bzip2                 | (system RPM)                                                                                    |
 | cadence               | cadence/IC06.18.090                                                                             |
 | caffe                 |                                                                                                 |
-| cantera               |                                                                                                 |
+| cantera               | N/A - deprecated                                                                                |
 | cartopy               | N/A - Users install in their python/conda environments                                          |
 | casa                  | casa/6.6.0-20-py3.8.el7                                                                         |
 | cave-utils            | N/A                                                                                             |
@@ -74,7 +74,7 @@ If a cell&#x20;
 | clustal\_omega        | clustal-omega/1.2.4                                                                             |
 | cmake                 | cmake/3.26.3                                                                                    |
 | colordiff             | olordiff/1.0.21                                                                                 |
-| comsol                |                                                                                                 |
+| comsol                | <ul><li>comsol/5.2 </li><li>comsol/5.6</li></ul>                                                |
 | conn                  | conn/22a                                                                                        |
 | connectome\_workbench | connectome-workbench/1.5.0                                                                      |
 | cp2k                  |                                                                                                 |
@@ -99,7 +99,7 @@ If a cell&#x20;
 | dlib                  | dlib/19.22                                                                                      |
 | dmtcp                 | dmtcp/3.0.0                                                                                     |
 | dos2unix              | dos2unix/7.4.2                                                                                  |
-| dotnet                |                                                                                                 |
+| dotnet                | dotnet/8.0.100                                                                                  |
 | dropest               | dropest/0.8.6                                                                                   |
 | ds9                   | ds/9.8.5s                                                                                       |
 | dsi                   | dsi-studio/chen-2023-sif                                                                        |
@@ -422,3 +422,4 @@ If a cell&#x20;
 | yaml-cpp              | yaml-cpp/0.7.0                                                                                  |
 | zlib                  | zlib/1.2.13                                                                                     |
 | zsh                   | (system RPM)                                                                                    |
+
