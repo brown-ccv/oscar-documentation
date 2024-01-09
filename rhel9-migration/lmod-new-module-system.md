@@ -22,27 +22,6 @@ Users need to make the following changes:
   * Python and  Conda environments, R packages may need to be reinstalled.
     * Use `python -m venv` instead of `virtualenv` for Python environments
 
-## RHEL 9 minicluster:&#x20;
-
-To test your submissions scripts and programs for the new operating system, we have created a mini computing cluster. The reinstalled software modules are **now** available on this cluster. It also has a separate Slurm job manager to test your job scripts. In this documentation, I will refer to this cluster as the RHEL9-minicluster or just minicluster. Currently, this cluster has the following slurm partitions:
-
-* batch
-* gpu
-
-## Accessing RHEL9 minicluster
-
-#### Step 0: SSH into login nodes:
-
-&#x20;If you are not on a login007 or login008, run this command to login to the login nodes
-
-`ssh -X oscar2`
-
-#### Step 1: Login into login009
-
-Run this command to login into the new RHEL9 nodes
-
-`ssh -X login009`
-
 ## LMOD - Hierarchical Module System
 
 The older module system has a flat structure. This meant that all the modules and their versions were available for you to load. The compiler version and MPI version required for a particular module were indicated, either as a suffix to the version number, or as a message after loading the module.
@@ -81,7 +60,6 @@ Unlike Pymodules, LMOD will load the dependencies for a package automatically.
 
 ## Summary
 
-* Access the RHEL 9 cluster by running `ssh login009` from the login nodes.
 * LMOD is hierarchical. By default, core, compiler and mpi modules are available.
 * Modules compiled with a different compiler are NOT available unless you load that compiler.
 * To load modules compiled with MPI, load the MPI module first.
