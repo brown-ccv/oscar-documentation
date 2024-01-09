@@ -1,21 +1,21 @@
 # Installing Python Packages
 
-For Python 2, we recommend using the **python/2.7.16** module.   For Python 3, we recommend using the **python/3.9.0** module unless you know that all of your dependences support a newer versions.&#x20;
+&#x20;For Python 3, we recommend using the system Python. You do not need to load any Python module to use system Python3
 
 {% hint style="info" %}
-Both these modules include the `pip`and `virtualenv`commands, but do not include other common Python packages (e.g., SciPy, NumPy). This affords individual users complete control over the packages they are using.
+Python modules do not include other common Python packages (e.g., SciPy, NumPy). This affords individual users complete control over the packages they are using.
 {% endhint %}
 
 There are several ways for users to install python packages on Oscar
 
-* using a **virtual environment**
+* using a **Python environment**
 * using [conda](https://docs.conda.io/en/latest/)
 * into their home directory
 * into a custom location
 * from source into a custom location
 
 {% hint style="warning" %}
-We recommend using a virtual environment for your workflow if you prefer`pip.` If you are a conda user we recommend managing your workflow with [conda environments . ](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)You can load an [anaconda](anaconda.md) module and then use conda.
+We recommend using a Python environment for your workflow if you prefer`pip.` If you are a conda user we recommend managing your workflow with [conda environments . ](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)You can load an [anaconda](anaconda.md) module and then use conda.
 {% endhint %}
 
 {% hint style="info" %}
@@ -23,21 +23,17 @@ In this document, we use angular brackets `<>` to denote command line options th
 {% endhint %}
 
 {% hint style="info" %}
-Note for python3 packages replace `python` with  `python3` and `pip` with `pip3`
-{% endhint %}
-
-{% hint style="info" %}
 Intel provides optimized packages for numerical and scientific work that you can install through[ pip](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and) or [anaconda](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda).&#x20;
 {% endhint %}
 
-## Using virtualenv
+## Using Python Enviroments (Venv)
 
-Virtual environments are a cleaner way to install python packages for a specific workflow. [This webpage](https://virtualenv.pypa.io/en/stable/) gives a good explanation of the use cases.    In the example below, a virtual environment called 'my\_cool\_science' is set up in your home directory:
+Python environments are a cleaner way to install python packages for a specific workflow.  In the example below, a virtual environment called 'my\_cool\_science' is set up in your home directory:
 
-```
-module load python/3.9.0  # Or 2.7.16 if using python2
+```bash
+module load python@3.9.16s
 cd ~
-python3 -m venv my_cool_science
+python -m venv my_cool_science
 source ~/my_cool_science/bin/activate
 pip install <your package>
 deactivate
@@ -47,11 +43,11 @@ line 1: load the version of python you want to use
 
 line 2: change directory to home
 
-line 3: create the virtual environment
+line 3: create the Python environment
 
-line 4: activate the virtual environment
+line 4: activate the Python environment
 
-line 5: install any packages you need for the virtual environment
+line 5: install any packages you need for the Python environment
 
 line 6: deactivate the environment
 
@@ -62,6 +58,30 @@ When you want to use the environment,  e.g. in a batch script or an interactive 
 When your work is finished, deactivate the environment with&#x20;
 
 `deactivate`
+
+## Reinstalling environment
+
+### Step 1: Generate a list of installed packages
+
+Activate the environment and print the list of installed packages to a file
+
+```bash
+source ~/old_env/bin/activate
+pip freeze > ~/old_env_req.txt
+```
+
+### Step 2: Create a new environment and install packages
+
+Here, we create a new environment and install packages inside it from `old_env_req.txt` file.
+
+```bash
+module load python@3.9.16s
+cd ~
+python -m venv new_env
+source ~/new_env/bin/activate
+pip install -r ~/old_env_req.txt
+deactivate
+```
 
 ### Install into your home directory
 
