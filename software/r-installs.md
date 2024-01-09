@@ -2,21 +2,21 @@
 
 ## Installing R packages
 
-Users should install R packages for themselves locally. This documentation shows you how to install R packages locally \(without root access\) on Oscar.
+Users should install R packages for themselves locally. This documentation shows you how to install R packages locally (without root access) on Oscar.
 
-If the package you want to install has operating-system-level dependencies \(i.e. the package depends on core libraries\), then we can install it as a module. 
+If the package you want to install has operating-system-level dependencies (i.e. the package depends on core libraries), then we can install it as a module.&#x20;
 
 ### Installing an R package
 
 First load the R version that you want to use the package with:
 
-```text
-module load R/3.4.3_mkl
+```bash
+module load r/4.2.2
 ```
 
 Start an R session
 
-```text
+```
 R
 ```
 
@@ -73,11 +73,26 @@ Possible reasons for an installation failing include:
 * Other software is needed to build the R package, e.g. the R package `rgdal` needs `gdal` so you have to do `module load gdal`
 * A directory needs deleting from a previous failed installation.
 
+
+
+## Reinstalling R packages
+
+To reinstall R packages, start an R session and run the update.packages() command
+
+```bash
+module load r/4.2.2
+R
+```
+
+```r
+update.packages(checkBuilt=TRUE, ask=FALSE)
+```
+
 ### Removing an R package
 
 Start an R session:
 
-```text
+```
 R
 ```
 
@@ -86,4 +101,3 @@ To remove the 'wordcloud' package:
 ```r
 > remove.packages("wordcloud")
 ```
-
