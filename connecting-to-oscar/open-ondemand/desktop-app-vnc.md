@@ -106,3 +106,26 @@ Fill out the form with your required resources.&#x20;
 ### 3. Wait and Launch!
 
 Wait and launch this session like the regular Desktop session.
+
+
+
+## Modify the Terminal App
+
+Inside the Desktop session , click on Applications in the top left
+
+Applications -> Settings -> Default Applications
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-01-09 at 4.20.08 PM.png" alt=""><figcaption></figcaption></figure>
+
+In the new Window, click on the "Utilities" tab and choose "Gnome Terminal" in the drop down menu under "Terminal Emulator"
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-01-09 at 4.20.30 PM.png" alt=""><figcaption></figcaption></figure>
+
+#### If the steps mentioned above do not work:
+
+1. Close the Desktop session
+2. Inside a terminal (outside the Desktop session), run this command:
+
+`rm -r ~/.ood_config`
+
+3. Start a new desktop session .
