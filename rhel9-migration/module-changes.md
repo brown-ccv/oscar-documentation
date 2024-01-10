@@ -11,7 +11,7 @@ If a cell&#x20;
 
 | Old Oscar Module      | LMOD Module                                                                                     |
 | --------------------- | ----------------------------------------------------------------------------------------------- |
-| abaqus                |                                                                                                 |
+| abaqus                | abaqus/2021.1                                                                                   |
 | abinit                | abinit-mpi/9.8.3                                                                                |
 | admixture             | admixture/1.3.0                                                                                 |
 | afni                  | afni/23.3.07s                                                                                   |
