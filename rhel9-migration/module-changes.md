@@ -227,7 +227,7 @@ If a cell&#x20;
 | meshlab               |                                                                                                 |
 | metaphlan             | N/A - User install in their python/conda environments                                           |
 | metis                 | metis/5.1.0                                                                                     |
-| miniconda             | miniconda3/22.11.1                                                                              |
+| miniconda             | miniconda3/23.11.0                                                                              |
 | minimap2              | minimap2/2.14                                                                                   |
 | minvr                 |                                                                                                 |
 | mne                   | N/A - User install in their python/conda environments                                           |
