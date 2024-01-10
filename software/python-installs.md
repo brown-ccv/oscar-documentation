@@ -26,12 +26,11 @@ In this document, we use angular brackets `<>` to denote command line options th
 Intel provides optimized packages for numerical and scientific work that you can install through[ pip](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and) or [anaconda](https://software.intel.com/en-us/articles/using-intel-distribution-for-python-with-anaconda).&#x20;
 {% endhint %}
 
-## Using Python Enviroments (Venv)
+## Using Python Enviroments (venv)
 
-Python environments are a cleaner way to install python packages for a specific workflow.  In the example below, a virtual environment called 'my\_cool\_science' is set up in your home directory:
+Python environments are a cleaner way to install python packages for a specific workflow.  In the example below, a virtual environment called `my_cool_science` is set up in your home directory:
 
 ```bash
-module load python@3.9.16s
 cd ~
 python -m venv my_cool_science
 source ~/my_cool_science/bin/activate
@@ -75,7 +74,6 @@ pip freeze > ~/old_env_req.txt
 Here, we create a new environment and install packages inside it from `old_env_req.txt` file.
 
 ```bash
-module load python@3.9.16s
 cd ~
 python -m venv new_env
 source ~/new_env/bin/activate
