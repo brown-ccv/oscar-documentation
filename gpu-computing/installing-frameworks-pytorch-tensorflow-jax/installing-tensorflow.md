@@ -13,13 +13,14 @@ Here, -f = feature. We only need to build on Ampere once.&#x20;
 **Step 2:** Once your session has started on a compute node, run `nvidia-smi` to verify the GPU and then load the appropriate modules&#x20;
 
 ```
-module load python/3.11.0 openssl/3.0.0 cuda/11.7.1 cudnn/8.2.0
+module purge
+unset LD_LIBRARY_PATH
 ```
 
 **Step 3:** Create and activate the virtual environment
 
 ```
-virtualenv -p python3 tensorflow.venv
+python -m venv tensorflow.venv
 source tensorflow.venv/bin/activate
 ```
 
@@ -27,7 +28,7 @@ source tensorflow.venv/bin/activate
 
 ```
 pip install --upgrade pip
- pip install tensorflow
+pip install tensorflow
 ```
 
 **Step 5:** Test that TensorFlow is able to detect GPUs

@@ -13,14 +13,16 @@ Users can install PyTorch from a pip virtual environment or use pre-built singul
 #### To install via virtual environment:
 
 ```
-module load python/3.7.4
-module load cuda/11.3.1
-module load cudnn/8.2.0
+# Make sure none of the LMOD modules are loaded
+module purge 
+module list
 
-virtualenv -p python3 pytorch.venv
+# create and activate the environment
+python -m venv pytorch.venv
 source pytorch.venv/bin/activate
+pip install torch torchvision torchaudio
 
-pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/cu111/torch_stable.html 
+# test if it can detect GPUs 
 ```
 
 #### To use NGC containers via Singularity :

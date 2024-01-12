@@ -20,14 +20,13 @@ Here, -f = feature. We only need to build on Ampere once.
 
 **Step 2:** Once your session has started on a compute node, run `nvidia-smi` to verify the GPU and then load the appropriate modules
 
-```
-module load python/3.11.0 openssl/3.0.0
-```
-
-**Step 3:** Create and activate the virtual environment
+**Step 3:** Create and activate the virtual environment, make sure no system modules are loaded and LD\_LIBRARY\_PATH is blank
 
 ```
-python3 -m venv pytorch.venv
+module purge
+unset LD_LIBRARY_PATH
+
+python -m venv pytorch.venv
 source pytorch.venv/bin/activate
 ```
 
@@ -35,13 +34,13 @@ source pytorch.venv/bin/activate
 
 ```
 pip install --upgrade pip
-pip install torch torchvision torchaudio -f https://download.pytorch.org/whl/cu111/torch_stable.html 
+pip install torch torchvision torchaudio
 ```
 
 The aforementioned will install the latest version of PyTorch with cuda11 compatibility, for older versions you can specify the version by:
 
 ```
-pip install torch==1.8.0+cu111 torchvision==0.9.0+cu111 torchaudio==0.8.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch torchvision torchaudio
 ```
 
 **Step 5:** Test that PyTorch is able to detect GPUs
