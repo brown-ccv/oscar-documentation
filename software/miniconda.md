@@ -140,6 +140,10 @@ source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.s
 conda activate my_env
 ```
 
+{% hint style="danger" %}
+Do NOT activate a conda environment before submitting a batch job if the batch job activates a conda environment. Otherwise, the batch job will not be able to activate the conda environment and hence fail.
+{% endhint %}
+
 {% hint style="info" %}
 After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 4 in the code above).
 {% endhint %}
