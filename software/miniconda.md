@@ -52,7 +52,7 @@ conda init bash
 ```
 
 {% hint style="info" %}
-If your default shell is NOT bash, you need run _conda init \<my\_default\_shell>_ where _\<my\_default\_shell>_ should be replaced with your default shell, e.g., _zsh_.
+If your default shell is NOT bash, you need to run _conda init \<my\_default\_shell>_ where _\<my\_default\_shell>_ should be replaced with your default shell, e.g., _zsh_.
 {% endhint %}
 
 ### Conda Environment
