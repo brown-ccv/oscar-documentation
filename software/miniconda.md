@@ -186,7 +186,7 @@ conda clean --all
 
 ## Mamba
 
-Mamba is available in the miniconda/4.12.0 module.
+Mamba is NOT available in the miniconda3/23.11.0s module. We are considering to install[ a miniforge module for using mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).&#x20;
 
 Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.&#x20;
 
