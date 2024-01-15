@@ -17,6 +17,6 @@ $ module avail anaconda
 ```
 
 {% hint style="warning" %}
-Do not load the module in your .modules or .bashrc file. Otherwise, your VNC session cannot start.
+Do not load the module in your .modules or .bashrc file. Otherwise, your OOD Desktop session cannot start.
 {% endhint %}
 
