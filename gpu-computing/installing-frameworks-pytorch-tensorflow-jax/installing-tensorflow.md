@@ -28,10 +28,10 @@ source tensorflow.venv/bin/activate
 
 ```
 pip install --upgrade pip
-pip install tensorflow
+pip install tensorflow[and-cuda]
 ```
 
-**Step 5:** Test that TensorFlow is able to detect GPUs
+**Step 5:** Test that TensorFlow is able to detect GPUs&#x20;
 
 ```
 python
