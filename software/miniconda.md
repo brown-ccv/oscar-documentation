@@ -7,15 +7,15 @@ description: >-
 
 # Conda
 
-## Accessing Conda via the Miniconda3 Module
+## Accessing Conda
 
-The newest module miniconda3/23.11.0s is recommended for using Conda.
+To access the Conda command, load either a miniconda3 or a miniforge module. For example.
 
 ```
 module load miniconda3/23.11.0s
 ```
 
-### Conda Initialization
+## Conda Initialization
 
 Users need to initiazlie conda in their \~/.bashrc. This is a one-time operation.&#x20;
 
@@ -55,7 +55,7 @@ conda init bash
 If your default shell is NOT bash, you need to run _conda init \<my\_default\_shell>_ where _\<my\_default\_shell>_ should be replaced with your default shell, e.g., _zsh_.
 {% endhint %}
 
-### Conda Environment
+## Conda Environment
 
 A user may install all needed software packages for a project in a conda environment. A conda environment can be
 
@@ -186,15 +186,10 @@ conda clean --all
 
 ## Mamba
 
-Mamba is NOT available in the miniconda3/23.11.0s module. We are considering to install[ a miniforge module for using mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html).&#x20;
-
-Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.&#x20;
-
-Only activating and deactivating a conda environment still requires conda.
+To access mamba, load a miniforge module:
 
 ```
-conda activate <my_conda_environment>
-conda deactivate
+module load miniforge/23.11.0-0s
 ```
 
-&#x20;For _a_ll other commands, `conda` can be replaced with `mamba`.
+Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For _a_ll conda commands, `conda` can be replaced with `mamba`. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
