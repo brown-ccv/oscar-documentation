@@ -126,7 +126,7 @@ If a cell&#x20;
 | freeglut              | freeglut/3.2.2                                                                                  |
 | freesurfer            | freesurfer/7.3.2                                                                                |
 | freetype              | freetype/2.11.1                                                                                 |
-| fsl                   | fsl/6.0.5.2s                                                                                    |
+| fsl                   | fsl/6.0.7.7s                                                                                    |
 | fv                    | fv/5.5.2                                                                                        |
 | gatk                  | gatk/4.3.0.0                                                                                    |
 | gaussian              | gaussian/09\_v1                                                                                 |
