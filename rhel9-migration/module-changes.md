@@ -354,7 +354,7 @@ If a cell&#x20;
 | selscan               | selscan/2.0.0                                                                                   |
 | seqkit                | seqkit/0.10.1                                                                                   |
 | seqtk                 | seqtk/1.3                                                                                       |
-| sextractor            |                                                                                                 |
+| sextractor            | sextractor/2.25.0                                                                               |
 | sga                   | N/A                                                                                             |
 | sharc                 | sharc-mpi/3.0.1                                                                                 |
 | singularity2          | (system RPM)                                                                                    |
