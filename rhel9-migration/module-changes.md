@@ -319,7 +319,7 @@ If a cell&#x20;
 | python                | (system RPM - python/3.9.16)                                                                    |
 | pytorch               | N/A - User install in their python/conda environments                                           |
 | qchem                 |                                                                                                 |
-| qgis                  | N/A                                                                                             |
+| qgis                  | qgis/3.22                                                                                       |
 | qiime                 | N/A - User install in their python/conda environments                                           |
 | qit                   | qit/2023-04-04                                                                                  |
 | qmcpack               | qmcpack-mpi/3.16.0s                                                                             |
