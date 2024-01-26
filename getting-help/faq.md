@@ -76,7 +76,7 @@ Specify the SLURM option `--mem-per-cpu=` in your script.
 
 We recommend linking against the Intel Math Kernels Library (MKL) which provides both BLAS and LAPACK. The easiest way to do this on Oscar is to include the special environment variable `$MKL` at the end of your link line, e.g. `gcc -o blas-app blas-app.c $MKL`. For more complicated build systems, you may want to consult the [MKL Link Line Advisor](http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
 
-**I am getting a WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
+#### **I am getting a "WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
 
 We have recently updated the login and VSCode node hardware to improve performance, security, and reliability. As a result of this migration, the SSH host keys for our servers have been updated. To fix this:
 
