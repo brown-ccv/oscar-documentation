@@ -76,6 +76,38 @@ Specify the SLURM option `--mem-per-cpu=` in your script.
 
 We recommend linking against the Intel Math Kernels Library (MKL) which provides both BLAS and LAPACK. The easiest way to do this on Oscar is to include the special environment variable `$MKL` at the end of your link line, e.g. `gcc -o blas-app blas-app.c $MKL`. For more complicated build systems, you may want to consult the [MKL Link Line Advisor](http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
 
+**I am getting a WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
+
+We have recently updated the login and VSCode node hardware to improve performance, security, and reliability. As a result of this migration, the SSH host keys for our servers have been updated. To fix this:
+
+* **On MacOS:**
+
+```
+sed -i '' -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```
+
+* **On Linux:**
+
+```
+sed -i -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```
+
+* **On Windows:** from VSCode's internal terminal Window:
+
+```
+vi ~/.ssh/known_hosts 
+```
+
+and delete the lines starting with Oscar and delete lines starting with `vscode` and `oscar`Hopefully, this will make things easier.
+
+* **OpenOnDemand (OOD) Shell Access:** either get a Desktop session or login via regular terminal into 'ssh.ccv.brown.edu' and run&#x20;
+
+```
+sed -i -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```
+
+Then login again via OOD > Clusters&#x20;
+
 ## RUNNING JOBS
 
 #### How is a job identified?
