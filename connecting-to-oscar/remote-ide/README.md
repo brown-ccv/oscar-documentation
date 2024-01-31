@@ -17,7 +17,7 @@ Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
 
 Disable the Remote.SSH: Use Exec Server option
 
-<img src="../../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
 To use VSCode you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
@@ -156,7 +156,7 @@ or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file
 
 1. Click the green icon "Open a Remote Window" in the bottom left corner of VSCode Window. Then click "Connect to Host" in the drop down list.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
 

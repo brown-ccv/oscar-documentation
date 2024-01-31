@@ -4,7 +4,7 @@
 
 1. Open PuTTYgen (this comes as part of the [PuTTY](https://www.chiark.greenend.org.uk/\~sgtatham/putty/latest.html) package), change the 'Number of bits in a generated key:' to 4096 (recommended), then click 'Generate'
 
-![](<../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../.gitbook/assets/image (4) (1) (1).png>)
 
 2\. Move your cursor around randomly in order to "salt" your key, while the key is being generated. Once the key is generated, you should see something like this:
 

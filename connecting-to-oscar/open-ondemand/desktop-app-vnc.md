@@ -78,7 +78,7 @@ Click the side panel button on the extreme left hand side of the screen.
 
 
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -121,6 +121,10 @@ In the new Window, click on the "Utilities" tab and choose "Gnome Terminal" in t
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-01-09 at 4.20.30 PM.png" alt=""><figcaption></figcaption></figure>
 
+Then click on "Applications -> Terminal Emulator" to launch the terminal:
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 #### If the steps mentioned above do not work:
 
 1. Close the Desktop session
@@ -129,3 +133,19 @@ In the new Window, click on the "Utilities" tab and choose "Gnome Terminal" in t
 `rm -r ~/.ood_config`
 
 3. Start a new desktop session .
+
+### Change the Terminal icon for launcher panel
+
+Please drag and drop the "Terminal Emulator" icon from the "Applications" menu to the launcher panel at the bottom of the screen, it will be inserted to the launcher panel:
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Then click on "Create Launcher":
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You may remove the old terminal icon after adding the new icon:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+####

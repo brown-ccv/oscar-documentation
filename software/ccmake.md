@@ -88,7 +88,7 @@ ccmake ../
 
 The CCMake text interface will pop up with all the necessary attributes to  build the software.
 
-![](<../.gitbook/assets/image (1) (1) (1).png>)
+![](<../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 Set up the paths to the required libraries and press "c" to  configure the project. Some errors might come up about CMake unable to find some specific libraries. This could be because that library does not exist in the system or you have not loaded the right module. Please contact CCV staff on how to fix this type of errors.
 
