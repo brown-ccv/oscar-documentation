@@ -11,8 +11,9 @@ description: >-
 
 To access the Conda command, load either a miniconda3 or a miniforge module. For example.
 
-```
+```bash
 module load miniconda3/23.11.0s
+source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
 ```
 
 ## Conda Initialization
