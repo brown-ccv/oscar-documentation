@@ -1,6 +1,6 @@
 # Using Modules
 
-CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. The advantage of the modules approach is that it allows multiple versions of the same software to be installed at the same time. With the modules approach, you can "load'' and "unload'' modules to dynamically control your environment.
+CCV uses the[ LMOD ](../rhel9-migration/lmod-new-module-system.md)package for managing the software environment on OSCAR. The advantage of the modules approach is that it allows multiple versions of the same software to be installed at the same time. With the modules approach, you can "load'' and "unload'' modules to dynamically control your environment.
 
 {% hint style="info" %}
 Check out our [tutorial on using modules on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb688701-3a1e-4a96-a1bd-ad51012c0d6b)!
@@ -40,20 +40,6 @@ This feature can be used for finding what versions of a module are available.
 ### Auto-completion using tab key
 
 The `module load` command supports **auto-completion** of the module name using the "tab" key.  For example, writing `module load bo`"on the shell prompt and hitting "tab" key a couple of times will show results similar to that shown above. Similarly, the `module unload` command also auto completes using the names of modules which are loaded.   &#x20;
-
-### Modules loaded at startup
-
-You can customize the default environment that is loaded when you login by putting the appropriate module commands in the `.modules` file in your home directory. For instance, if you edited your `.modules` file to contain
-
-```bash
-module load python/3.5.2
-```
-
-python/3.5.2 will be loaded every time you log in.
-
-{% hint style="info" %}
-If you have not yet created a `.modules`file in your home directory, you will have to create one and then add the commands you wish to have as defaults to that file.
-{% endhint %}
 
 ### What modules actually do...
 
