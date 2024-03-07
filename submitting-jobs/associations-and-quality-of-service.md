@@ -1,22 +1,5 @@
 # Associations & Quality of Service (QOS)
 
-## Account QoS and Resources
-
-The `myaccount` command serves as a comprehensive tool for users to assess the resources associated with their accounts. By utilizing this command, individuals can gain insights into critical parameters such as `Max Resources Per User` and `Max Jobs Submit Per User`.
-
-```
-[ccvdemo1@login010 ~]$ myaccount
-My QoS                    Total Resources in this QoS              Max Resources Per User                   Max Jobs Submit Per User
-------------------------- ------------------------------           ------------------------------           -----------         
-debug                                                                                                       1200                
-gpu-debug                                                          cpu=8,gres/gpu=4,mem=96G                 1200                
-gpu                                                                node=1                                   1200                
-normal                                                             cpu=32,mem=246G                          1000                
-norm-bigmem                                                        cpu=32,gres/gpu=0,mem=770100M,node=2     1200                
-norm-gpu                                                           cpu=12,gres/gpu=2,mem=192G               1200                
-vnc                                                                                                         1                   
-```
-
 ## Associations
 
 Oscar uses associations to control job submissions from users. An association refers to a combination of four factors: Cluster, Account, User, and Partition. For a user to submit jobs to a partition, an association for the user and partition is required in Oscar.
@@ -80,8 +63,23 @@ The `REASON` field will be `(None)` at first, but after a minute or so, it shoul
 
 Note that the `REASON` the job is pending and not yet running is `AssocGrpCPURunMinutesLimit`. This is because the program requests 30 cores for 90 hours, which is more than the oscar/default/thegrouch/batch association allows (30 cores \* 90 hours \* 60 minutes/hour = 162,000 core-minutes > 110,000 core-minutes). In fact, this job could be pending indefinitely, so it would be a good idea for `thegrouch` to run `scancel 12345678` and make a less demanding job request (or use an association that allows for that amount of resources).
 
-## Quality of Service
+## Account Quality of Service (QoS) and Resources
 
-An association's QOS is used for job scheduling when a user requests that a job be run. Every QOS is linked to a set of job limits that reflect the limits of the cluster/account/user/partition of the association(s) that has/have that QOS. QOS's can also have information on `GrpTRESRunMins` limits for their corresponding associations. For example, [HPC Priority accounts](https://ccv.brown.edu/rates) have job limits of 1,198,080 core-minutes per job, which are associated with those accounts' QOS's. Whenever a job request is made (necessarily through a specific association), the job will only be queued if it meets the requirements of the association's QOS. In some cases, a QOS can be defined to have limits that differ from its corresponding association. In such cases, the limits of the QOS override the limits of the corresponding association.
+Quality of Service (QoS) refers to the ability of a system to prioritize and manage network resources to ensure a certain level of performance or service quality. An association's QOS is used for job scheduling when a user requests that a job be run. Every QOS is linked to a set of job limits that reflect the limits of the cluster/account/user/partition of the association(s) that has/have that QOS. QOS's can also have information on `GrpTRESRunMins` limits for their corresponding associations. For example, [HPC Priority accounts](https://ccv.brown.edu/rates) have job limits of 1,198,080 core-minutes per job, which are associated with those accounts' QOS's. Whenever a job request is made (necessarily through a specific association), the job will only be queued if it meets the requirements of the association's QOS. In some cases, a QOS can be defined to have limits that differ from its corresponding association. In such cases, the limits of the QOS override the limits of the corresponding association. For more information, see the [slurm QOS documentation](https://slurm.schedmd.com/qos.html).
 
-For more information, see the [slurm QOS documentation](https://slurm.schedmd.com/qos.html).
+### `myaccount` - To list the QoS & Resources
+
+The `myaccount` command serves as a comprehensive tool for users to assess the resources associated with their accounts. By utilizing this command, individuals can gain insights into critical parameters such as `Max Resources Per User` and `Max Jobs Submit Per User`.
+
+```
+[ccvdemo1@login010 ~]$ myaccount
+My QoS                    Total Resources in this QoS              Max Resources Per User                   Max Jobs Submit Per User
+------------------------- ------------------------------           ------------------------------           -----------         
+debug                                                                                                       1200                
+gpu-debug                                                          cpu=8,gres/gpu=4,mem=96G                 1200                
+gpu                                                                node=1                                   1200                
+normal                                                             cpu=32,mem=246G                          1000                
+norm-bigmem                                                        cpu=32,gres/gpu=0,mem=770100M,node=2     1200                
+norm-gpu                                                           cpu=12,gres/gpu=2,mem=192G               1200                
+vnc                                                                                                         1                   
+```
