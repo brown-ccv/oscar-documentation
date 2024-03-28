@@ -14,6 +14,7 @@
   * [❓ FAQ](getting-help/faq.md)
 * [Citing CCV](citing-ccv.md)
 * [CCV Account Information](ccv-user-policies.md)
+* [Offboarding](offboarding.md)
 
 ## Connecting to Oscar
 
@@ -149,7 +150,3 @@
 * [LMOD - New Module System](rhel9-migration/lmod-new-module-system.md)
 * [Module Changes](rhel9-migration/module-changes.md)
 * [Testing Jupyter Notebooks on RHEL9 mini-cluster](rhel9-migration/testing-jupyter-notebooks-on-rhel9-mini-cluster.md)
-
-***
-
-* [OFFBOARDING](offboarding.md)

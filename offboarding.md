@@ -1,4 +1,4 @@
-# OFFBOARDING
+# Offboarding
 
 ## Account and Access
 
@@ -33,4 +33,3 @@ You can download data from Oscar following the instructions [here](https://docs.
 ## Billing
 
 If you are a PI and want to keep your priority accounts and/or data directories after leaving Brown University, please contact support@ccv.brown.edu to update your billing information.
-
