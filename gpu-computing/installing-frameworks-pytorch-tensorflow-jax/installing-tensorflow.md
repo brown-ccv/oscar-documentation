@@ -15,6 +15,7 @@ Here, -f = feature. We only need to build on Ampere once.&#x20;
 ```
 module purge
 unset LD_LIBRARY_PATH
+module load cuda cudnn
 ```
 
 **Step 3:** Create and activate the virtual environment
