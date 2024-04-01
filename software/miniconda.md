@@ -1,25 +1,13 @@
 ---
 description: >-
   The Miniconda3 and minforge modules include only conda, python, and a few
-  other packages. Users can use either mamba (preferred) or condo to install
-  packages in their own conda environment.
+  other packages. Users can use either mamba (preferred) or conda to install
+  packages in their conda environment.
 ---
 
 # Conda and Mamba
 
 Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
-
-To access the Conda command, load either a miniconda3 or a miniforge module.&#x20;
-
-{% tabs %}
-{% tab title="Miniconda3" %}
-`module load miniconda3/23.11.0s`
-{% endtab %}
-
-{% tab title="Miniforge" %}
-`module load miniforge/23.11.0-0s`
-{% endtab %}
-{% endtabs %}
 
 ## Conda Initialization
 
@@ -53,9 +41,19 @@ unset __conda_setup
 
 Start a new Oscar connection, load a miniconda3 or miniforge module and then run the following command n a terminal
 
-```
-conda init bash
-```
+{% tabs %}
+{% tab title="Miniconda3" %}
+`module load miniconda3/23.11.0s`
+
+`conda init`
+{% endtab %}
+
+{% tab title="Miniforge" %}
+`module load miniforge/23.11.0-0s`
+
+`conda init`
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 If your default shell is NOT bash, you need to run _`conda init <my_default_shell>`_ where _`<my_default_shell>`_ should be replaced with your default shell, e.g., _zsh_.
