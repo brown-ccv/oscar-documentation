@@ -1,24 +1,29 @@
 ---
 description: >-
-  The Miniconda3 modules include only conda, python, and a few other packages.
-  Users can use either mamba (preferred) or condo to install packages in their
-  own conda environment.
+  The Miniconda3 and minforge modules include only conda, python, and a few
+  other packages. Users can use either mamba (preferred) or condo to install
+  packages in their own conda environment.
 ---
 
-# Conda
+# Conda and Mamba
 
-## Accessing Conda
+Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
 
-To access the Conda command, load either a miniconda3 or a miniforge module. For example.
+To access the Conda command, load either a miniconda3 or a miniforge module.&#x20;
 
-```bash
-module load miniconda3/23.11.0s
-source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
-```
+{% tabs %}
+{% tab title="Miniconda3" %}
+`module load miniconda3/23.11.0s`
+{% endtab %}
+
+{% tab title="Miniforge" %}
+`module load miniforge/23.11.0-0s`
+{% endtab %}
+{% endtabs %}
 
 ## Conda Initialization
 
-Users need to initiazlie conda in their \~/.bashrc. This is a one-time operation.&#x20;
+Users need to initialize conda in their \~/.bashrc. This is a one-time operation.&#x20;
 
 ### 1. Delete Existing Intitialization Commands in \~/.bashrc
 
@@ -46,14 +51,18 @@ unset __conda_setup
 
 ### 3. Start a New Oscar Connection and Initialize Conda
 
-Start a new Oscar connection, and run the following command n a terminal
+Start a new Oscar connection, load a miniconda3 or miniforge module and then run the following command n a terminal
 
 ```
 conda init bash
 ```
 
 {% hint style="info" %}
-If your default shell is NOT bash, you need to run _conda init \<my\_default\_shell>_ where _\<my\_default\_shell>_ should be replaced with your default shell, e.g., _zsh_.
+If your default shell is NOT bash, you need to run _`conda init <my_default_shell>`_ where _`<my_default_shell>`_ should be replaced with your default shell, e.g., _zsh_.
+{% endhint %}
+
+{% hint style="danger" %}
+Don't use `mamba init` which doesn't work on Oscar
 {% endhint %}
 
 ## Conda Environment
@@ -159,22 +168,34 @@ conda deactivate
 
 To install a package, we need to first activate a conda environment, and then run
 
-```
-conda install package_name=version
-```
+{% tabs %}
+{% tab title="Conda" %}
+`conda install package_name=version`
+{% endtab %}
 
-The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package from the conda\_forge channel, run
+{% tab title="Mamba" %}
+`mamba install package_name=version`
+{% endtab %}
+{% endtabs %}
 
-```
-conda install -c conda_forge package_name
-```
+The "=version" is optional. By default, conda install a package from the anaconda channel. To install a package from a different channel, run `conda install` with the `-c` option. For example, to install a package from the bioconda channel, run
+
+{% tabs %}
+{% tab title="Conda" %}
+`conda  install -c bioconda package_name`
+{% endtab %}
+
+{% tab title="Mamba" %}
+`mamba install -c bioconda package_name`
+{% endtab %}
+{% endtabs %}
 
 ### Delete a Conda Environment
 
 To delete a conda environment, run
 
 ```
-conda remove -n conda_environment_name --all
+conda env remove -n conda_environment_name
 ```
 
 ### Remove Caches
@@ -185,12 +206,3 @@ Conda may download lots of additional packages when installing a package. A user
 conda clean --all
 ```
 
-## Mamba
-
-To access mamba, load a miniforge module:
-
-```
-module load miniforge/23.11.0-0s
-```
-
-Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For _a_ll conda commands, `conda` can be replaced with `mamba`. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
