@@ -63,6 +63,18 @@ If your default shell is NOT bash, you need to run _`conda init <my_default_shel
 Don't use `mamba init` which doesn't work on Oscar
 {% endhint %}
 
+### 4. Disable Base Environment
+
+The base environment is automatically activated after conda initialization is completed. Normally users don't need to activate the base environment and can deactivate it via the following command:&#x20;
+
+```bash
+conda config --set auto_activate_base false
+```
+
+{% hint style="info" %}
+Users need to run the deactivation command only once as the deactivation command adds a line in \~/.condarc.&#x20;
+{% endhint %}
+
 ## Conda Environment
 
 A user may install all needed software packages for a project in a conda environment. A conda environment can be
