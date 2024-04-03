@@ -153,6 +153,30 @@ The commands above will only work if:
 
 If you need to activate a conda environment in a bash script, you need to source the conda.sh as shown in the following example bash script:
 
+
+
+{% tabs %}
+{% tab title="Miniconda3" %}
+`#!/usr/bin/bash`&#x20;
+
+`module load miniconda3/23.11.0s`&#x20;
+
+`source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh`&#x20;
+
+`conda activate my_env`
+{% endtab %}
+
+{% tab title="Miniforge" %}
+`#!/usr/bin/bash`&#x20;
+
+`module load miniconda3/23.11.0s`&#x20;
+
+`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`&#x20;
+
+`conda activate my_env`
+{% endtab %}
+{% endtabs %}
+
 ```
 #!/usr/bin/bash
 module load miniconda3/23.11.0s
