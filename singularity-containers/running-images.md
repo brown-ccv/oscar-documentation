@@ -21,35 +21,34 @@ This will launch an interactive shell within a singularity instance based on the
 $ singularity shell <imagePath>
 ```
 
-This method is only applicable when working with an interact slurm job, or via the terminal within a VNC session. 
+This method is only applicable when working with an interact slurm job, or via the terminal within a VNC session.&#x20;
 
 ## Singularity Execute Instructions
 
-The next method is to launch the image with a defined set of instructions. This will launch the singularity image, and execute whatever commands are defined by the user. 
+The next method is to launch the image with a defined set of instructions. This will launch the singularity image, and execute whatever commands are defined by the user.&#x20;
 
-```text
+```
 $ singularity exec <imagePath> <commands>
 ```
 
-Here, the commands can range from running a script, loading modules, or piping multiple instructions together. To see an example of this process, see the [Example - Tensorflow](example-tensorflow.md) section where we execute a script to run within the singularity image.
+Here, the commands can range from running a script, loading modules, or piping multiple instructions together. To see an example of this process, see the [Example - Tensorflow](broken-reference) section where we execute a script to run within the singularity image.
 
 ## Run Image Instructions
 
 The last method we will go over here is via singularities run command, which will execute a series of instructions provided to the image in the form of a runscript. This script will automatically execute if the image is either launch using the run command, or if the singularity image is directly executed.
 
-```text
+```
 $ singularity run <imagePath>
 ```
 
 or
 
-```text
+```
 ./<imagePath>
 ```
 
-In both cases, we are executing the container’s “runscript” \(the executable `/singularity` at the root of the image\).
+In both cases, we are executing the container’s “runscript” (the executable `/singularity` at the root of the image).
 
 {% hint style="info" %}
 For more information about singularity run and the associated runscript, we recommend the run documentation using `singularity run help` or visiting the [singularity run](https://singularity.lbl.gov/docs-run) documentation.
 {% endhint %}
-

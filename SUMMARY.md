@@ -124,11 +124,11 @@
 
 ## Singularity Containers
 
-* [Intro to Singularity](singularity-containers/untitled.md)
+* [Intro to Apptainer](singularity-containers/untitled.md)
 * [Building Images](singularity-containers/building-images.md)
 * [Running Images](singularity-containers/running-images.md)
-* [Accessing Oscar Filesystem](singularity-containers/accessing-oscar-filesystem.md)
-* [Example - Tensorflow](singularity-containers/example-tensorflow.md)
+* [Accessing Oscar Filesystem](singularity-containers/accessing-oscar-filesystem/README.md)
+  * [Example Container (TensorFlow)](singularity-containers/accessing-oscar-filesystem/example-container-tensorflow.md)
 * [Singularity Tips and Tricks](singularity-containers/singularity-tips-and-tricks.md)
 
 ## Installing Software Packages Locally <a href="#local-install" id="local-install"></a>

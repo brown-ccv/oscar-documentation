@@ -1,13 +1,4 @@
----
-description: >-
-  Setting up a GPU-accelerated environment can be challenging due to driver
-  dependencies, version conflicts, and other complexities. Apptainer simplifies
-  this process by encapsulating all these details
----
-
-# Installing TensorFlow
-
-## Apptainer Using NGC Containers (Our #1 Recommendation)
+# Example Container (TensorFlow)
 
 There are multiple ways to install and run TensorFlow. Our recommended approach is via NGC containers. The containers are available via [NGC Registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow). In this example we will pull TensorFlow NGC container
 
