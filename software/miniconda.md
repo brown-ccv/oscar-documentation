@@ -1,8 +1,8 @@
 ---
 description: >-
-  The Miniconda3 and minforge modules include only conda, python, and a few
-  other packages. Users can use either mamba (preferred) or conda to install
-  packages in their conda environment.
+  Both the miniconda3 and minforge modules include only conda, python, and a few
+  other packages. Only the  Users can use either mamba (preferred) or conda to
+  install packages in their conda environment.
 ---
 
 # Conda and Mamba
@@ -169,7 +169,7 @@ If you need to activate a conda environment in a bash script, you need to source
 {% tab title="Miniforge" %}
 `#!/usr/bin/bash`&#x20;
 
-`module load miniconda3/23.11.0s`&#x20;
+`module load miniforge/23.11.0-0s`&#x20;
 
 `source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`&#x20;
 
@@ -177,19 +177,12 @@ If you need to activate a conda environment in a bash script, you need to source
 {% endtab %}
 {% endtabs %}
 
-```
-#!/usr/bin/bash
-module load miniconda3/23.11.0s
-source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
-conda activate my_env
-```
+{% hint style="info" %}
+After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 4 in the code above).
+{% endhint %}
 
 {% hint style="danger" %}
 Do NOT activate a conda environment before submitting a batch job if the batch job activates a conda environment. Otherwise, the batch job will not be able to activate the conda environment and hence fail.
-{% endhint %}
-
-{% hint style="info" %}
-After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 4 in the code above).
 {% endhint %}
 
 To deactivate a conda environment, simply use the following command:
