@@ -1,8 +1,8 @@
 ---
 description: >-
   Both the miniconda3 and minforge modules include only conda, python, and a few
-  other packages. Only the  Users can use either mamba (preferred) or conda to
-  install packages in their conda environment.
+  other packages. Users can use either mamba (preferred) or conda to install
+  packages in their conda environment.
 ---
 
 # Conda and Mamba
