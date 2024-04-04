@@ -1,44 +1,93 @@
+---
+description: >-
+  Setting up a GPU-accelerated environment can be challenging due to driver
+  dependencies, version conflicts, and other complexities. Apptainer simplifies
+  this process by encapsulating all these details
+---
+
 # Installing TensorFlow
 
-In this example, we will install **TensorFlow.**&#x20;
+## Apptainer Using NGC Containers (Our #1 Recommendation)
 
-**Step 1:** Request an interactive session on a GPU node with Ampere architecture GPUs
+There are multiple ways to install and run TensorFlow. Our recommended approach is via NGC containers. The containers are available via [NGC Registry](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow). In this example we will pull TensorFlow NGC container
+
+1. Build the container:&#x20;
+
+```
+apptainer build tensorflow-24.03-tf2-py3.simg docker://nvcr.io/nvidia/tensorflow:24.03-tf2-py3
+```
+
+This will take some time, and once it completes you should see a .simg file.&#x20;
+
+{% hint style="danger" %}
+Working with Apptainer images requires lots of storage space. By default Apptainer will use \~/.apptainer as a cache directory which can cause you to go over your Home quota.
+
+```
+export APPTAINER_CACHEDIR=/tmp
+export APPTAINER_TMPDIR=/tmp
+```
+{% endhint %}
+
+2. Once the container is ready, request an interactive session with a GPU
 
 ```
 interact -q gpu -g 1 -f ampere -m 20g -n 4
 ```
 
-Here, -f = feature. We only need to build on Ampere once.&#x20;
-
-**Step 2:** Once your session has started on a compute node, run `nvidia-smi` to verify the GPU and then load the appropriate modules&#x20;
+3. Run a container wih GPU support
 
 ```
-module purge
-unset LD_LIBRARY_PATH
-module load cuda cudnn
+export APPTAINER_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data"
+# Run a container with GPU support
+apptainer run --nv tensorflow-24.03-tf2-py3.simg
 ```
 
-**Step 3:** Create and activate the virtual environment
+{% hint style="success" %}
+the --nv flag is important. As it enables the NVIDA sub-system
+{% endhint %}
+
+4. Or, if you're executing a specific command inside the container:
 
 ```
-python -m venv tensorflow.venv
-source tensorflow.venv/bin/activate
+# Execute a command inside the container with GPU support
+$ apptainer exec --nv tensorflow-24.03-tf2-py3.simg nvidia-smi
 ```
 
-**Step 4:** Install the required packages
+5. Make sure your Tensorflow image is able to detect GPUs
 
 ```
-pip install --upgrade pip
-pip install tensorflow[and-cuda]
-```
-
-**Step 5:** Test that TensorFlow is able to detect GPUs&#x20;
-
-```
-python
+$ python
 >>> import tensorflow as tf
 >>> tf.test.is_gpu_available(cuda_only=False, min_cuda_compute_capability=None)
 True
 ```
 
-If the above function returns `True`, then you are all set.&#x20;
+6. If you need to install more custom packages, the containers itself are non-writable but we can use the `--user` flag to install packages inside `.local` Example:
+
+```
+Apptainer> pip install <package-name> --user
+```
+
+### Slurm Script:
+
+Here is how you can submit a SLURM job script by using the srun command to run your container. Here is a basic example:
+
+```
+#!/bin/bash
+#SBATCH --nodes=1               # node count
+#SBATCH -p gpu --gres=gpu:1     # number of gpus per node
+#SBATCH --ntasks-per-node=1     # total number of tasks across all nodes
+#SBATCH --cpus-per-task=1       # cpu-cores per task (>1 if multi-threaded tasks)
+#SBATCH --mem-per-cpu=4G        # total memory per node (4 GB per cpu-core is default)
+#SBATCH -t 01:00:00             # total run time limit (HH:MM:SS)
+#SBATCH --mail-type=begin       # send email when job begins
+#SBATCH --mail-type=end         # send email when job ends
+#SBATCH --mail-user=<USERID>@brown.edu
+
+module purge
+unset LD_LIBRARY_PATH
+export APPTAINER_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data"
+
+srun apptainer exec --nv tensorflow-24.03-tf2-py3.simg python tf-test.py
+```
+
