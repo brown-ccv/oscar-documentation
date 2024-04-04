@@ -8,10 +8,10 @@ There are multiple ways to install and run TensorFlow. Our recommended approach 
 apptainer build tensorflow-24.03-tf2-py3.simg docker://nvcr.io/nvidia/tensorflow:24.03-tf2-py3
 ```
 
-This will take some time, and once it completes you should see a .simg file.&#x20;
+This process will take some time, and once it completes, you should see a `.simg` file.
 
 {% hint style="danger" %}
-Working with Apptainer images requires lots of storage space. By default Apptainer will use \~/.apptainer as a cache directory which can cause you to go over your Home quota.
+Working with Apptainer images requires a significant amount of storage space. By default, Apptainer will use `~/.apptainer` as a cache directory, which may exceed your home quota. You can set temporary directories as follows:
 
 ```
 export APPTAINER_CACHEDIR=/tmp
@@ -19,13 +19,13 @@ export APPTAINER_TMPDIR=/tmp
 ```
 {% endhint %}
 
-2. Once the container is ready, request an interactive session with a GPU
+2. Once the container is ready, request an interactive session with a GPU:
 
 ```
 interact -q gpu -g 1 -f ampere -m 20g -n 4
 ```
 
-3. Run a container wih GPU support
+3. To run a container with GPU support:
 
 ```
 export APPTAINER_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data"
@@ -53,7 +53,7 @@ $ python
 True
 ```
 
-6. If you need to install more custom packages, the containers itself are non-writable but we can use the `--user` flag to install packages inside `.local` Example:
+6. If you need to install additional custom packages, note that the containers themselves are non-writable. However, you can use the `--user` flag to install packages inside `.local`. For example:
 
 ```
 Apptainer> pip install <package-name> --user
@@ -61,7 +61,7 @@ Apptainer> pip install <package-name> --user
 
 ### Slurm Script:
 
-Here is how you can submit a SLURM job script by using the srun command to run your container. Here is a basic example:
+Here's how you can submit a SLURM job script using the `srun` command to run your container. Below is a basic example:
 
 ```
 #!/bin/bash
