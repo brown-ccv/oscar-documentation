@@ -8,10 +8,10 @@ Resources from the web on getting started with MPI:
 
 MPI is a standard that dictates the semantics and features of "message passing". There are different implementations of MPI. Those installed on Oscar are
 
-* MVAPICH2
+* hpcx-mpi
 * OpenMPI
 
-We recommend using MVAPICH2 as it is integrated with the SLURM scheduler and optimized for the Infiniband network.
+We recommend using hpcx-mpi as it is integrated with the SLURM scheduler and optimized for the Infiniband network.
 
 ## MPI modules on Oscar
 
@@ -36,7 +36,7 @@ mpi/<implementation>-<version>_<base compiler>
 
 ### `srun` instead of `mpirun`
 
-**Use `srun --mpi=pmix` or `srun --mpi=pmi2` to run MPI programs.** All MPI implementations listed with suffix `_slurm22` are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command, except if you are using the above mentioned legacy versions.
+**Use `srun --mpi=pmix` to run MPI programs.** All MPI implementations are built with SLURM support. Hence, the programs need to be run using SLURM's `srun` command.
 
 The `--mpi=pmix` flag is also required to match the configuration with which MPI is installed on Oscar.
 
@@ -102,7 +102,7 @@ Here is a sample batch script to run an MPI program:
 #SBATCH -e MyMPIJob-%j.err
 
 # Load required modules
-module load mpi
+module load hpcx-mpi/4.1.5rc2s
 
 srun --mpi=pmix MyMPIProgram
 ```
@@ -121,7 +121,7 @@ If your program has multi-threading capability using OpenMP, you can have severa
 #SBATCH --cpus-per-task=4
 
 # Load required modules
-module load mpi/openmpi_4.0.7_gcc_10.2_slurm22
+module load hpcx-mpi/4.1.5rc2s
 
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 srun --mpi=pmix ./MyMPIProgram
