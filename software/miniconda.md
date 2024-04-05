@@ -1,79 +1,30 @@
----
-description: >-
-  Both the miniconda3 and minforge modules include only conda, python, and a few
-  other packages. Users can use either mamba (preferred) or conda to install
-  packages in their conda environment.
----
-
 # Conda and Mamba
+
+Both the miniconda3 and minforge modules include only conda, python, and a few other packages. Only the miniforge module provides mamba.
 
 Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
 
 ## Conda Initialization
 
-Users need to initialize conda in their \~/.bashrc. This is a one-time operation.&#x20;
+It is not recommended to initialize conda via `conda init`.
 
-### 1. Delete Existing Intitialization Commands in \~/.bashrc
+## Access Conda via Modules
 
-If you have initialized conda before via an old miniconda or anaconda module, you need to delete the initialization commands from your \~/.bahsrc. Below is an example of the initialization commands in \~/.bashrc to delete:
-
-```
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/oscar/runtime/opt/anaconda/2022.05/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/oscar/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh" ]; then
-        . "/oscar/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh"
-    else
-        export PATH="/oscar/runtime/opt/anaconda/2022.05/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-```
-
-### 2. Exit Your Current Oscar Connection
-
-### 3. Start a New Oscar Connection and Initialize Conda
-
-Start a new Oscar connection, load a miniconda3 or miniforge module and then run the following command n a terminal
+To access the conda or mamba command, load either a miniconda3 or miniforge module and then run the source commandl
 
 {% tabs %}
 {% tab title="Miniconda3" %}
 `module load miniconda3/23.11.0s`
 
-`conda init`
+`source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh`
 {% endtab %}
 
 {% tab title="Miniforge" %}
 `module load miniforge/23.11.0-0s`
 
-`conda init`
+`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`&#x20;
 {% endtab %}
 {% endtabs %}
-
-{% hint style="info" %}
-If your default shell is NOT bash, you need to run _`conda init <my_default_shell>`_ where _`<my_default_shell>`_ should be replaced with your default shell, e.g., _zsh_.
-{% endhint %}
-
-{% hint style="danger" %}
-Don't use `mamba init` which doesn't work on Oscar
-{% endhint %}
-
-### 4. Disable Base Environment
-
-The base environment is automatically activated after conda initialization is completed. Normally users don't need to activate the base environment and can deactivate it via the following command:&#x20;
-
-```bash
-conda config --set auto_activate_base false
-```
-
-{% hint style="info" %}
-Users need to run the deactivation command only once as the deactivation command adds a line in \~/.condarc.&#x20;
-{% endhint %}
 
 ## Conda Environment
 
@@ -157,9 +108,7 @@ If you need to activate a conda environment in a bash script, you need to source
 
 {% tabs %}
 {% tab title="Miniconda3" %}
-`#!/usr/bin/bash`&#x20;
-
-`module load miniconda3/23.11.0s`&#x20;
+`module load miniconda3/23.11.0s`
 
 `source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh`&#x20;
 
@@ -167,11 +116,9 @@ If you need to activate a conda environment in a bash script, you need to source
 {% endtab %}
 
 {% tab title="Miniforge" %}
-`#!/usr/bin/bash`&#x20;
+`module load miniforge/23.11.0-0s`
 
-`module load miniforge/23.11.0-0s`&#x20;
-
-`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`&#x20;
+`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`
 
 `conda activate my_env`
 {% endtab %}
