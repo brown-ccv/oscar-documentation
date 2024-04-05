@@ -123,7 +123,7 @@ If your program has multi-threading capability using OpenMP, you can have severa
 # Load required modules
 module load mpi/openmpi_4.0.7_gcc_10.2_slurm22
 
-export OMP_NUM_THREADS=4
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 srun --mpi=pmix ./MyMPIProgram
 ```
 
