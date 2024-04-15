@@ -123,7 +123,7 @@ Connect to VSCode first.
 You can either create a symlink via the `ln` command below,
 
 ```
-ln -s /gpfs/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
+cp -v /gpfs/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
 ```
 
 or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file with following contents
