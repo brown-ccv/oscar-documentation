@@ -15,23 +15,29 @@ We recommend using hpcx-mpi as it is integrated with the SLURM scheduler and opt
 
 ## MPI modules on Oscar
 
-The MPI module is called "mpi". The different implementations (mvapich2, openmpi, different base compilers) are in the form of versions of the module "mpi". This is to make sure that no two implementations can be loaded simultaneously, which is a common source of errors and confusion.
+Oscar uses a Hierarchical module system where users need to load the required MPI module before they can load any other module that depends upon that particular MPI module. You can read more about this module system [here](../rhel9-migration/lmod-new-module-system.md#lmod-hierarchical-module-system).
 
-<pre><code><strong>$ module avail mpi/
-</strong>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ name: mpi*/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                    
-mpi/hpcx_2.7.0_gcc_10.2_slurm22                                     
-mpi/mvapich2-2.3.5_gcc_10.2_slurm22                             
-mpi/openmpi_4.0.7_gcc_10.2_slurm22                  
-mpi/openmpi_4.0.7_intel_2020.2_slurm22                                            
-mpi4py/3.1.4_py3.9.0_slurm22                    
-</code></pre>
+Currently, the two available mpi implementations on Oscar are `hpcx-mpi` and `openmpi`. You can check the available versions by running these commands
 
-You can just use "`module load mpi`" to load the default version which is `mpi/openmpi_4.0.7_gcc_10.2_slurm22`. This is the recommended version.
+{% code overflow="wrap" %}
+```bash
+$ module avail hpcx-mpi
 
-The module naming format is
+------------------------ /oscar/runtime/software/spack/0.20.1/share/spack/lmod/linux-rhel9-x86_64/Core -------------------------
+   hpcx-mpi/4.1.5rc2s-yflad4v
+   
+$ module avail openmpi
 
+------------------------ /oscar/runtime/software/spack/0.20.1/share/spack/lmod/linux-rhel9-x86_64/Core -------------------------
+   openmpi/4.1.2-s5wtoqb    openmpi/4.1.5-hkgv3gi    openmpi/4.1.5-kzuexje (D)
+             
 ```
-mpi/<implementation>-<version>_<base compiler>
+{% endcode %}
+
+`hpcx-mpi/4.1.5rc2s-yflad4v` is the recommend version of MPI on Oscar. It can be loaded by running
+
+```bash
+module load hpcx-mpi
 ```
 
 ### `srun` instead of `mpirun`
