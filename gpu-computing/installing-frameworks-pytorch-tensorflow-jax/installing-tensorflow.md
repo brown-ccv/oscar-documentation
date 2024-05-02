@@ -19,6 +19,14 @@ apptainer build tensorflow-24.03-tf2-py3.simg docker://nvcr.io/nvidia/tensorflow
 
 This will take some time, and once it completes you should see a .simg file.&#x20;
 
+{% hint style="info" %}
+For your convenience, the pre-built container images are located in directory:
+
+`/oscar/runtime/software/external/ngc-containers/tensorflow.d/x86_64/`
+
+You can choose either to build your own or use one of the pre-downloaded images.&#x20;
+{% endhint %}
+
 {% hint style="danger" %}
 Working with Apptainer images requires lots of storage space. By default Apptainer will use \~/.apptainer as a cache directory which can cause you to go over your Home quota.
 
@@ -78,7 +86,7 @@ Here is how you can submit a SLURM job script by using the srun command to run y
 #SBATCH -p gpu --gres=gpu:1     # number of gpus per node
 #SBATCH --ntasks-per-node=1     # total number of tasks across all nodes
 #SBATCH --cpus-per-task=1       # cpu-cores per task (>1 if multi-threaded tasks)
-#SBATCH --mem-per-cpu=4G        # total memory per node (4 GB per cpu-core is default)
+#SBATCH --mem=40G               # total memory (4 GB per cpu-core is default)
 #SBATCH -t 01:00:00             # total run time limit (HH:MM:SS)
 #SBATCH --mail-type=begin       # send email when job begins
 #SBATCH --mail-type=end         # send email when job ends
@@ -86,6 +94,7 @@ Here is how you can submit a SLURM job script by using the srun command to run y
 
 module purge
 unset LD_LIBRARY_PATH
+export APPTAINER_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data"
 srun apptainer exec --nv tensorflow-24.03-tf2-py3.simg python examples/tensorflow_examples/models/dcgan/dcgan.py
 ```
 
