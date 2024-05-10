@@ -10,14 +10,14 @@ Binding is achieved using the --bind or -B argument followed by the `<hostPath>:
 $ singularity shell -B /oscar/home/$USER,/oscar/scratch/$USER,/oscar/data <yourContainer.simg>
 ```
 
-This will bind `/data` and `/scratch` on from OSCAR's GPFS to `/data` and `/scratch` within the container, respectively. Doing this will allow any existing links you have to your data and scratch directories to function properly.&#x20;
+This will bind `/oscar/data``, /oscar/scratch and /oscar/home` from OSCAR's GPFS to `/oscar/data` and `/oscar/scratch` within the container, respectively. Doing this will allow any existing links you have to your data and scratch directories to function properly.&#x20;
 
 ### Binding Using Environment Variables
 
 An alternative approach is to use the `SINGULARITY_BINDPATH` environment variable which is used as a list of additional bind paths that will be included in any singularity commands you execute, including run and shell. Using the environment variable instead of the command line argument, this would be:
 
 ```bash
-export SINGULARITY_BINDPATH="/oscar/home/$USER,/gpfs/scratch/$USER,/gpfs/data"
+export SINGULARITY_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data"
 singularity run <yourContainer.simg>
 ```
 
