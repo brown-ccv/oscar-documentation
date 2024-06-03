@@ -47,10 +47,9 @@ If you installed Jupyter Notebook with pip, you may need to give the full path:
 
 ### 1. Submit batch script
 
-Here is an example batch script to start a Jupyter notebook server on an Oscar compute node
+Here is an example batch script to start a Jupyter notebook server on an Oscar compute node. This script assumes that you are not using a Conda or a virtual environment.
 
-```
-#!/bin/bash
+<pre class="language-bash"><code class="lang-bash">#!/bin/bash
 #SBATCH --nodes 1
 #SBATCH -c 6
 #SBATCH --time 04:00:00
@@ -73,15 +72,24 @@ echo -e "
     ------------------------------------------------------------------
     "
 ## start an ipcluster instance and launch jupyter server
-module load anaconda/3-5.2.0
+<a data-footnote-ref href="#user-content-fn-1">module load anaconda/2023.09-0-7nso27y</a>
 jupyter-notebook --no-browser --port=$ipnport --ip=$ipnip
-```
+</code></pre>
 
 {% hint style="info" %}
 If you installed Jupyter notebook with pip you may need to give the full path:
 
 `~/.local/bin/jupyter-notebook --no-browser --port-$ipnport --ip=$ipnip`
 {% endhint %}
+
+If you are using a Conda environment,  replace the last two lines with thes lines:
+
+```bash
+module purge
+module load miniconda3/23.11.0s-odstpk5 
+source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
+jupyter-notebook --no-browser --port=$ipnport --ip=$ipnip
+```
 
 This script can be found in \~/batch\_scripts.  Copy this example and submit this script with&#x20;
 
@@ -145,7 +153,7 @@ Remember to `scancel {jobid}` when you are done with your notebook session.
 
 Start an [Interactive job](../submitting-jobs/interact.md) and then in your interactive session  enter the following:
 
-```
+```bash
 unset XDG_RUNTIME_DIR
 module load anaconda/3-5.2.0
 ipnport=$(shuf -i8000-9999 -n1)
@@ -209,3 +217,5 @@ Again, you need to replace `$ipnport` with the value from the first `echo` comma
 ### 4. Press Ctrl+C twice to kill your Jupyter Notebook server
 
 Once you finish and no longer need the Jupyter Notebook server, you can kill the server by pressing Ctrl+C twice in your interactive session.
+
+[^1]: 
