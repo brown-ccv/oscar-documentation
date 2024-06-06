@@ -38,17 +38,23 @@ scancel <jobid>
 
 ## View details about completed jobs
 
+### `sacct`
+
 The `sacct` command will list all of your running, queued and completed jobs since midnight of the previous day. To pick an earlier start date, specify it with the `-S` option:
 
 ```bash
 sacct -S 2012-01-01
 ```
 
-To find out more information about a specific job, such as its exit status or the amount of runtime or memory it used, specify the `-l` \("long" format\) and `-j` options with the job ID:
+To find out more information about a specific job, such as its exit status or the amount of runtime or memory it used, specify the `-l` ("long" format) and `-j` options with the job ID:
 
 ```bash
 sacct -lj <jobid>
 ```
+
+(example)
+
+### `myjobinfo`
 
 The `myjobinfo` command uses the `sacct` command to display "Elapsed Time", "Requested Memory" and "Maximum Memory used on any one Node" for your jobs. This can be used to optimize the requested time and memory to have the job started as early as possible. Make sure you request a conservative amount based on how much was used.
 
@@ -67,3 +73,19 @@ JobID    JobName                  Submit      State        Elapsed     ReqMem   
 
 `ReqMem` shows the requested memory: A `c` at the end of number represents Memory Per CPU, a `n` represents Memory Per Node. `MaxRSS` is the maximum memory used on any one node. Note that memory specified to sbatch using `--mem` is Per Node.
 
+### `jobstats`
+
+The 'jobstats' utility is now available for analyzing recently completed jobs, comparing the resources used to those requested in the job script, including CPU, GPU, and memory. If email notifications are enabled, 'jobstats' sends an email with the results and includes a prompt to contact support for help with resource requests.
+
+Run this command in a bash shell on Oscar. No additional module needs to be loaded.
+
+```
+jobstats <jobid>
+```
+
+To send this output to your email after the job is completed, make sure that these lines are in your job submit script
+
+```
+#SBATCH --mail-type=END
+#SBATCH --mail-user=<email>
+```
