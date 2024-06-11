@@ -1,30 +1,49 @@
 # DMTCP
 
-{% hint style="danger" %}
-<mark style="color:red;">**This page is under construction!**</mark>
-{% endhint %}
-
 [Distributed Multithreaded checkpointing](https://dmtcp.sourceforge.io/) (DMTCP) checkpoints a running program on Linux with no modifications to the program or OS. It allows to restart running the program from a checkpoint.&#x20;
 
 ## Modules
 
 To access dmtcp, load a dmtcp module. For example:
 
-`module load dmtcp/2.6.0`
+`module load dmtcp/3.0.0`
 
-## `Example Programs`
+## Example Programs
 
-`The following example programs can be copied from /gpfs/runtime/`oftware\_examples/dmtcp/
+Here's a dummy example prints increasing integers, every 2 seconds. Copy this to a text file on Oscar and name it dmtcp\_serial.c
+
+<pre class="language-c"><code class="lang-c"><strong>#include&#x3C;stdio.h>
+</strong>#include&#x3C;unistd.h>
+
+int main(int argc, char* argv[])
+{
+    int count = 1;
+    while (1)
+    {
+        printf(" %2d\n",count++);
+        fflush(stdout);
+        sleep(2)
+    }
+    return 0;
+}
+</code></pre>
+
+Compile this program by running
+
+```bash
+gcc dmtcp_serial.c -o dmtcp_serial
+```
+
+You should have the files in your directory now:
 
 * dmtcp\_serial
 * dmtcp\_serial.c
-* dmtcp\_serial\_job.sh
 
 ## Basic Usage
 
 ### Launch a Program
 
-The `dmtcp_lanuch` command launches a program, and automatically checkpoints the program. To specify the interval (seconds) for checkpoints, add the "`-i num_seconds`" option to the `dmtcp_lauch` command.&#x20;
+The `dmtcp_launch` command launches a program, and automatically checkpoints the program. To specify the interval (seconds) for checkpoints, add the "`-i num_seconds`" option to the `dmtcp_lauch` command.&#x20;
 
 **Example:** the following command launches the program `dmtcp_serial` and checkpoints every 8 seconds.
 
@@ -89,13 +108,14 @@ The job script `dmtcp_serial_job.sh` below is an example which shows how to achi
 * If there is no checkpoint in the current directory, launch the program `dmtcp_serial`&#x20;
 * If one or more checkpoints exist in the current directory, restart the program `dmtcp_serial` from the latest checkpoint
 
-```
-$ cat dmtcp_serial_job.sh 
-#!/bin/bash
+```bash
+ #!/bin/bash
 
 #SBATCH -n 1
 #SBATCH -t 5:00
 #SBATCH -J dmtcp_serial
+
+module load dmtcp/3.0.0
 
 checkpoint_file=`ls ckpt_*.dmtcp -t|head -n 1`
 checkpoint_interval=8
@@ -175,13 +195,15 @@ The following example script
 * creates a sub directory for each task of a job array, and then saves a task's checkpoint in the task's own sub directory when the job script is submitted for the first time
 * restarts checkpoints in task subdirectories when the job script is submitted for the second time or later
 
-```
+```bash
 #!/bin/bash
 
 #SBATCH -n 1
 #SBATCH --array=1-4
 #SBATCH -t 5:00
 #SBATCH -J dmtcp_job_array
+
+module load dmtcp/3.0.0
 
 checkpoint_interval=8
 port=$((SLURM_JOB_ID %20000 + 40000))
