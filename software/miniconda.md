@@ -10,25 +10,23 @@ It is not recommended to initialize conda via `conda init`.
 
 ## Access Conda via Modules
 
-To access the conda or mamba command, load either a miniconda3 or miniforge module and then run the source commandl
+To access the conda or mamba command, load either a miniconda3 or miniforge module and then run the source command
 
 {% tabs %}
 {% tab title="Miniconda3" %}
-`module load miniconda3/23.11.0s`
-
-`source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh`
+```bash
+module load miniconda3/23.11.0s
+source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
+```
 {% endtab %}
 
 {% tab title="Miniforge" %}
-`module load miniforge/23.11.0-0s`
-
-`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`&#x20;
+```bash
+module load miniforge/23.11.0-0s
+source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh
+```
 {% endtab %}
 {% endtabs %}
-
-## Conda Environment
-
-A user may install all needed software packages for a project in a conda environment. A conda environment can be
 
 * shared among all users if the environment is installed in a shared directory
 * private to one user if the environment is installed in a user's private directory
