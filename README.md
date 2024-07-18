@@ -14,11 +14,7 @@ Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if th
 
 {% embed url="https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B" %}
 
-Anyone with a Brown account can get a **free Exploratory accoun**t on Oscar, or **pay for priority accounts**. A free Exploratory account allows:
-
-* 32 cores and 246GB memory for up to 48 hours in the batch queue
-* 4 cores, 192GB memory and 2 GPUs for up to 48 hours in the gpu queue
-* 32 cores and 752GB memory for up to 48 hours in the bigmem queue
+Anyone with a Brown account can get a **free Exploratory accoun**t on Oscar, or **pay for priority accounts**.&#x20;
 
 More details can be found at the [CCV Rates page](https://ccv.brown.edu/rates).
 
