@@ -3,7 +3,7 @@
 1. If you have an existing virtual environment, proceed to step 2. Otherwise, to create a new virtual environment:
 
 ```
-$ virtualenv -p python3 my_env
+$ python3 -m venv my_env
 $ source my_env/bin/activate
 #Install packages manually or from requirements.txt file
 $ pip install -r requirements.txt
