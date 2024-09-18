@@ -8,41 +8,41 @@ To view the various GPUs available on Oscar, use the command
 
 ## Interactive Use
 
-To start an [interactive](../submitting-jobs/interact.md) session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
+To start an [interactive](../../submitting-jobs/interact.md) session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
 
-```text
+```
 $ interact -q gpu -g 1
 ```
 
-To start an interactive session on a particular GPU type \(QuadroRTX, 1080ti, p100 etc\) use the feature `-f` option:
+To start an interactive session on a particular GPU type (QuadroRTX, 1080ti, p100 etc) use the feature `-f` option:
 
-```text
+```
 interact -q gpu -f quadrortx
 ```
 
 ## GPU Batch Job
 
-For production runs, please submit a [batch job](../submitting-jobs/batch.md) to the `gpu` partition. E.g. for using 1 GPU:
+For production runs, please submit a [batch job](../../submitting-jobs/batch.md) to the `gpu` partition. E.g. for using 1 GPU:
 
-```text
+```
 $ sbatch -p gpu --gres=gpu:1 <jobscript>
 ```
 
 This can also be mentioned inside the batch script:
 
-```text
+```
 #SBATCH -p gpu --gres=gpu:1
 ```
 
 You can view the status of the `gpu` partition with:
 
-```text
+```
 $ allq gpu
 ```
 
 Sample batch script for CUDA program:
 
-```text
+```
 ~/batch_scripts/cuda.sh
 ```
 
@@ -66,7 +66,7 @@ OpenACC is a portable, directive-based parallel programming construct. You can p
 * [Introduction to OpenACC Online Course](https://developer.nvidia.com/intro-to-openacc-course-2016)
 * [PGI Accelerator Compilers with OpenACC Directives](https://www.pgroup.com/resources/accel.htm)
 * [Getting Started with OpenACC](https://devblogs.nvidia.com/parallelforall/getting-started-openacc)
-* [Running OpenACC Programs on NVIDIA and AMD GPUs](https://www.pgroup.com/lit/presentations/ieee_webinar_dec2013_slides.pdf)
+* [Running OpenACC Programs on NVIDIA and AMD GPUs](https://www.pgroup.com/lit/presentations/ieee\_webinar\_dec2013\_slides.pdf)
 
 ### MATLAB
 
@@ -74,19 +74,18 @@ OpenACC is a portable, directive-based parallel programming construct. You can p
 
 ## NVLink Enabled GPU Nodes
 
-NVLink enables GPUs to pool memory over high speed links \(25 G/s\). This will increase performance of your application code.
+NVLink enables GPUs to pool memory over high speed links (25 G/s). This will increase performance of your application code.
 
-Nodes `gpu[1210,1211,1212]`have 4 fully connected NVLink \(SXM2\) V100 GPUs.
+Nodes `gpu[1210,1211,1212]`have 4 fully connected NVLink (SXM2) V100 GPUs.
 
 To submit interactive job to NVLink Enabled GPU nodes:
 
-```text
+```
 interact -q gpu -f v100
 ```
 
-To submit batch job\(s\) add following line to your batch script.
+To submit batch job(s) add following line to your batch script.
 
-```text
+```
 #SBATCH --constraint=v100
 ```
-

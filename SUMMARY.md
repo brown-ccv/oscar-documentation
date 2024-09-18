@@ -65,11 +65,12 @@
 
 ## GPU Computing
 
-* [GPUs on Oscar](gpu-computing/gpus.md)
+* [GPUs on Oscar](gpu-computing/gpus/README.md)
+  * [H100 NVL Tensor Core GPUs](gpu-computing/gpus/h100-nvl-tensor-core-gpus.md)
+  * [Ampere Architecture GPUs](gpu-computing/gpus/ampere-architecture-gpus.md)
 * [Submitting GPU Jobs](gpu-computing/submit-gpu.md)
 * [Intro to CUDA](gpu-computing/intro-to-cuda.md)
 * [Compiling CUDA](gpu-computing/cuda-compiling.md)
-* [Ampere Architecture GPUs](gpu-computing/ampere-architecture-gpus.md)
 * [Installing Frameworks (PyTorch, TensorFlow, Jax)](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/README.md)
   * [Installing JAX](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-jax.md)
   * [Installing TensorFlow](gpu-computing/installing-frameworks-pytorch-tensorflow-jax/installing-tensorflow.md)
