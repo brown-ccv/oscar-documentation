@@ -4,7 +4,7 @@ description: Overview of OSCAR Supercomputer
 
 # Overview
 
-Oscar - Ocean State Center for Advanced Resources - is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by [**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu/).&#x20;
+Oscar is Brown University's high performance computing cluster for both research and classes. Oscar is maintained and supported by [**Center for Computation and Visualization (CCV)**](https://ccv.brown.edu/).&#x20;
 
 Please contact [**`support@ccv.brown.edu`**](mailto:support@ccv.brown.edu) if there are any questions on Oscar.
 
@@ -31,8 +31,8 @@ Authorized users must comply with the following Brown University policies:
 Users can run their computing-intensive and/or long runtime jobs/program in Oscar to take advantage of high performance computing resources there, as highlighted below:
 
 * 2 Login nodes
-* 3.27 PB of storage
-* Red Hat EL 7.7 (Linux)
+* 8 PB of storage
+* Red Hat Enterprise Linux 9.2 (Linux)
 * Mellanox InfiniBand network
 * Slurm Workload manager
 
@@ -51,17 +51,17 @@ To allow users sharing access to Oscar, there are **limits on the maximum number
 
 ## Software
 
-* Operating systems of all Oscar nodes: RedHat 7.3
+* Operating systems of all Oscar nodes: Red Hat 9.2
 * More than 500 [software modules](software/modules.md)
 * CCV Staff install software upon user requests or help users on software installation
 
 ## Storage
 
-Oscar has 3.27PB storage from the General Parallel File System (GPFS) of IBM, which provides high performance access of storage. Users have Home, Scratch, and Data directories as their storage with quota  in Oscar. Please refer to the details at [Oscar's filesystem](managing-files/filesystem.md).
+Oscar has 8 PB of all-flash storage from VAST, which provides high-performance access to storage. Users have `~/home`, `~/scratch`, and `~/data` directories as their storage with quota  in Oscar. Please refer to the details at [Oscar's filesystem](managing-files/filesystem.md).
 
-**Access and User Accounts** - User accounts are controlled via central authentication and directories on HPC are only deleted on the request of the user, PI, or departmental chair.
+**Access and User Accounts** - User accounts are controlled via central authentication and directories on Oscar are only deleted on the request of the user, PI, or departmental chair.
 
-**Files not accessed for 30 days will be deleted from your scratch directory.** Use \~/data for files you wish to keep long term.
+**Files not accessed for 30 days will be deleted from your** `~/scratch` **directory**.  Use `~/data` for files you wish to keep long term.
 
 Users can[ transfer files](managing-files/filetransfer.md) from and to[ Oscar filesystem](managing-files/filesystem.md). In particular, users can [transfer files between Oscar filesystem and Campus File Storage.](managing-files/filetransfer-isilon.md)&#x20;
 
@@ -71,7 +71,7 @@ Oscar users can connect to Oscar by
 
 * [SSH](connecting-to-oscar/ssh/)
 * [Open OnDemand](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/open-ondemand)
-* [VS Code Remode IDE](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/remote-ide)
+* [VS Code Remote IDE](https://docs.ccv.brown.edu/oscar/connecting-to-oscar/remote-ide)
 
 ## Maintenance Schedule
 
