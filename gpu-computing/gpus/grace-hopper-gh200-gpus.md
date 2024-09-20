@@ -24,7 +24,7 @@ A gk-condo user can submit jobs to the GH200 nodes with their gk-gh200-gcondo ac
 For a user who is not a gk-condo users, a _High End GPU priority account_ is required for accessing the `gracehopper` partition and GH200 nodes. All users with access to the GH200 nodes need to submit jobs to the nodes with the ccv-gh200-gcondo account, i.e.
 
 ```
-#SBACH --account=ccv-gh200-gcondo
+#SBATCH --account=ccv-gh200-gcondo
 #SBATCH --partition=gracehopper
 ```
 
