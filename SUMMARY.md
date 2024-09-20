@@ -66,6 +66,7 @@
 ## GPU Computing
 
 * [GPUs on Oscar](gpu-computing/gpus/README.md)
+  * [Grace Hopper GH200 GPUs](gpu-computing/gpus/grace-hopper-gh200-gpus.md)
   * [H100 NVL Tensor Core GPUs](gpu-computing/gpus/h100-nvl-tensor-core-gpus.md)
   * [Ampere Architecture GPUs](gpu-computing/gpus/ampere-architecture-gpus.md)
 * [Submitting GPU Jobs](gpu-computing/submit-gpu.md)
