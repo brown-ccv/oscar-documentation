@@ -4,7 +4,7 @@ Oscar has two Grace Hopper GH200 GPU nodes. Each node combines [Nvidia Grace Arm
 
 ## Hardware Specifications
 
-Each GH200 node has 72 Arm cores with 530G memory. `Multiple-Install GPU (MIG)` is enabled on only one GH200 node and the node that has 4 GPUs/MIGs. One MIG has 12G GPU memory, while each of the other three MIGs has 24G GPU memory.
+Each GH200 node has 72 Arm cores with 550G memory. `Multiple-Install GPU (MIG)` is enabled on only one GH200 node that has 4 MIGs. CPU and GPU threads on GH200 nodes can now [concurrently and transparently access both CPU and GPU memory](https://resources.nvidia.com/en-us-grace-cpu/nvidia-grace-hopper).&#x20;
 
 ## Access
 
@@ -21,7 +21,7 @@ A gk-condo user can submit jobs to the GH200 nodes with their gk-gh200-gcondo ac
 
 ### CCV Account&#x20;
 
-For a user who is not a gk-condo users, a _High End GPU priority account_ is required for accessing the `gracehopper` partition and GH200 nodes. All users with access to the GH200 nodes need to submit jobs to the nodes with the ccv-gh200-gcondo account, i.e.
+For users who are not a gk-condo user, a _High End GPU priority account_ is required for accessing the `gracehopper` partition and GH200 nodes. All users with access to the GH200 nodes need to submit jobs to the nodes with the ccv-gh200-gcondo account, i.e.
 
 ```
 #SBATCH --account=ccv-gh200-gcondo
@@ -30,7 +30,7 @@ For a user who is not a gk-condo users, a _High End GPU priority account_ is req
 
 ### MIG Access
 
-To request a MIG, the feature mig must be specified, i.e.
+To request a MIG, the feature `mig` needs be specified, i.e.
 
 ```
 #SBATCH --constraint=mig
