@@ -15,7 +15,7 @@ The two GH200 nodes are in the `gracehopper` partition.&#x20;
 A gk-condo user can submit jobs to the GH200 nodes with their gk-gh200-gcondo account, i.e.,
 
 ```
-#SBACH --account=gk-gh200-gcondo
+#SBATCH --account=gk-gh200-gcondo
 #SBATCH --partition=gracehopper
 ```
 
