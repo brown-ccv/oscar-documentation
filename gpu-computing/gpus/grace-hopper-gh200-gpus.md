@@ -4,7 +4,7 @@ Oscar has two Grace Hopper GH200 GPU nodes. Each node combines [Nvidia Grace Arm
 
 ## Hardware Specifications
 
-Each GH200 node has 72 Arm cores with 550G memory. `Multiple-Install GPU (MIG)` is enabled on only one GH200 node that has 4 MIGs. CPU and GPU threads on GH200 nodes can now [concurrently and transparently access both CPU and GPU memory](https://resources.nvidia.com/en-us-grace-cpu/nvidia-grace-hopper).&#x20;
+Each GH200 node has 72 Arm cores with 550G memory. `Multiple-Install GPU (MIG)` is enabled on only one GH200 node that has 4 MIGs. The other GH200 node doesn't have MIGs and oly one GPU. CPU and GPU threads on GH200 nodes can now [concurrently and transparently access both CPU and GPU memory](https://resources.nvidia.com/en-us-grace-cpu/nvidia-grace-hopper). &#x20;
 
 ## Access
 
