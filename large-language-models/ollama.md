@@ -10,7 +10,7 @@ description: >-
 
 CCV hosts several dozen public, open-weight LLMs on Oscar. This includes Llama 3.2, Phi 3, Mistral, and Gemma 2. You can see the complete list in the Appendix section below.&#x20;
 
-We first begin by opening a terminal and connecting to Oscar. This can be done using Open OnDemand, a terminal application on your local machine, or PuTTY if you're on Window.&#x20;
+We first begin by opening a terminal and connecting to Oscar. This can be done using Open OnDemand, a terminal application on your local machine, or PuTTY if you're on a Windows machine.&#x20;
 
 Once we have a terminal session on Oscar, we need to set an environment variable that tells Ollama where to look for the CCV-hosted models. **This only needs to be done once**, and you can do so using the commands below.
 
@@ -21,8 +21,6 @@ source ~/.bashrc
 ```
 
 ## Requesting a GPU Node
-
-There are several ways to run large language models directly on Oscar. One particularly straightforward and flexible approach is to use [the Ollama framework](https://ollama.com/), which is installed as a module on Oscar.&#x20;
 
 LLMs are particularly well suited to running on GPUs, so we begin by requesting a GPU node on Oscar using the following `interact` command, which requests 4 CPU cores, 32 GB of memory, and 1 GPU for 1 hour.&#x20;
 
@@ -36,13 +34,15 @@ Note that depending on the particular LLM, you may want additional resources (e.
 
 ## Starting an Ollama Server
 
+There are several ways to run large language models directly on Oscar. One particularly straightforward and flexible approach is to use [the Ollama framework](https://ollama.com/), which is installed as a module on Oscar.&#x20;
+
 Once we get our job allocated and we are on a GPU node, we must next load the `ollama` module.
 
 ```bash
 module load ollama
 ```
 
-Because the Ollama framework operates using a client/server architecture, we must now launch the server component of Ollama. This is done using the command below, which we can only run after having loaded the `ollama` module.
+Because the Ollama framework operates using a client/server architecture, we must now launch the server component of Ollama. This is done using the command below.
 
 ```bash
 ollama serve
