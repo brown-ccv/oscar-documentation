@@ -45,6 +45,8 @@
 * [Oscar's Filesystem](managing-files/filesystem.md)
 * [Transferring Files to and from Oscar](managing-files/filetransfer.md)
 * [Transferring Files between Oscar and Campus File Storage (Replicated and Non-Replicated)](managing-files/filetransfer-isilon.md)
+* [Resolving quota issues](managing-files/resolving-quota-issues/README.md)
+  * [Understanding Disk Quotas](managing-files/resolving-quota-issues/understanding-disk-quotas.md)
 * [Inspecting Disk Usage (Ncdu)](managing-files/inspecting-disk-usage-ncdu.md)
 * [Restoring Deleted Files](managing-files/restore.md)
 * [Best Practices for I/O](managing-files/io-best-practices.md)

@@ -143,8 +143,8 @@ Open a terminal and execute the command:
 ssh -N -L <port-number>:<SERVER_IP>:<port-number> <your_brown_id>@ssh.ccv.brown.edu
 ```
 
-* **`<SERVER_IP>` **  This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
-* **`<port-number>`**This is the port exposed to access the rendering server. **Replace with the value sent in the confirmation email**
+* **`<SERVER_IP>`&#x20;**&#x20; This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
+* **`<port-number>`**&#x54;his is the port exposed to access the rendering server. **Replace with the value sent in the confirmation email**
 * **`<your_brown_id>`** is your Brown username (It should be the same used to connect to Oscar)\
 
 
