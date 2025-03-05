@@ -50,7 +50,7 @@ Once you have activated your conda environment, run the following commands to in
 
 ```
 $ module load hpcx-mpi/4.1.5rc2-mt
-$ pip install python=3.7 mpi4py
+$ pip install mpi4py
 ```
 
 {% hint style="info" %}
