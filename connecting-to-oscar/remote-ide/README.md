@@ -1,17 +1,20 @@
 ---
-description: Access Oscar's file-system remotely from VSCode.
+description: >-
+  You can access Oscar's file-system remotely from Visual Studio Code (VS Code).
+  Note that access of Oscar from VS Code is still considered experimental, and
+  as such, 24x7 support is not available.
 ---
 
-# Remote IDE (VSCode)
+# Remote IDE (VS Code)
 
-## VSCode one-time setup
+## VS Code one-time setup
 
 {% hint style="info" %}
-To use VSCode you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
+To use VS Code you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-**September 10, 2023:** Some users have reported issues while connecting to the Oscar VSCode remote extension. This is due to a recent change introduced by VSCode. To address this issue
+**September 10, 2023:** Some users have reported issues while connecting to the Oscar VS Code remote extension. This is due to a recent change introduced by VS Code. To address this issue
 
 Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
 
@@ -20,13 +23,13 @@ Disable the Remote.SSH: Use Exec Server option
 <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
-To use VSCode you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
+To use VS Code you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.
 
-1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VSCode:
+1. Install the [Remote Development extension pack](https://aka.ms/vscode-remote/download/extension) for VS Code:
 
 <figure><img src="../../.gitbook/assets/vscode_install.png" alt=""><figcaption></figcaption></figure>
 
-2\. Open VSCode settings and uncheck symlink:
+2\. Open VS Code settings and uncheck symlink:
 
 {% tabs %}
 {% tab title="Mac" %}
@@ -92,13 +95,13 @@ Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
 Disable the Remote.SSH: Use Exec Server option
 ```
 
-6. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
+6. In VS Code, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
 <figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
 
-6\. Install and set up of VSCode
+6\. Install and set up of VS Code
 
 {% tabs %}
 {% tab title="Mac / Linux" %}
@@ -108,17 +111,17 @@ After a moment, VS Code will connect to the SSH server and set itself up.
 {% tab title="Windows" %}
 After a moment, VS Code will connect to the SSH server and set itself up. You might see the Firewall prompt, please click allow.&#x20;
 
-![Allow Firewall connections](../../.gitbook/assets/capture\_5.png)
+![Allow Firewall connections](../../.gitbook/assets/capture_5.png)
 {% endtab %}
 {% endtabs %}
 
-7. Configure VSCode
+7. Configure VS Code
 
 {% hint style="info" %}
 Important: Please run the following to add a settings.json file to your config. This is because the filewatcher and file searcher (rg) indexes all the files you have access to in your workspace. If you have a large dataset (e.g. machine learning) this can take a lot of resources on the vscode node.
 {% endhint %}
 
-Connect to VSCode first.
+Connect to VS Code first.
 
 You can either create a symlink via the `ln` command below,
 
@@ -152,9 +155,9 @@ or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file
 }
 ```
 
-## Reconnect to VSCode
+## Reconnect to VS Code
 
-1. Click the green icon "Open a Remote Window" in the bottom left corner of VSCode Window. Then click "Connect to Host" in the drop down list.
+1. Click the green icon "Open a Remote Window" in the bottom left corner of VS  Code Window. Then click "Connect to Host" in the drop down list.
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
