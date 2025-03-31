@@ -86,18 +86,6 @@ Host oscar-campus
     ServerAliveCountMax 20
     ServerAliveInterval 15
     
-# These are jumphosts for vscode, we don't use them directly.
-# For connecting your IDE see the next section
-Host desktop-oscar-campus
-    HostName desktop.ccv.brown.edu
-    IdentityFile ~/.ssh/id_rsa
-    User &#x3C;username>
-    ForwardAgent yes
-Host desktop-oscar
-    HostName ssh8.ccv.brown.edu
-    IdentityFile ~/.ssh/id_rsa
-    User &#x3C;username>
-    
 <strong># When connecting from VSCODE use the following hosts
 </strong>Host vscode-oscar-campus
     HostName oscar2
@@ -106,7 +94,8 @@ Host desktop-oscar
 Host vscode-oscar
     HostName oscar2
     User &#x3C;username>
-    ProxyCommand ssh -q -W %h:%p desktop-oscar</code></pre>
+    ProxyCommand ssh -q -W %h:%p desktop-oscar
+</code></pre>
 
 ### Connecting to your preconfigured host
 

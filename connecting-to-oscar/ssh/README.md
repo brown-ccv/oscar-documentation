@@ -4,7 +4,6 @@ date: 2019-01-31 22:06:00 +0000
 project: Oscar
 section: Connecting to Oscar
 weight: 0
-icon: check
 ---
 
 # SSH (Terminal)
@@ -25,7 +24,7 @@ If you are connected to the Brown VPN, you have the option of [using an SSH key 
 
 * `ssh.ccv.brown.edu` You can connect from anywhere. You will need Two Factor Authentication
 * `sshcampus.ccv.brown.edu` You can connect when whithin Brown Wifi, Network or VPN. You will need to [set up passwordless authentication](ssh-key-login-passwordless-ssh/).
-* `desktop.ccv.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide/), i.e., Visual Studio Code.
+* `poodcit4.services.brown.edu` This is the host to be used when [connecting from a remote IDE](../remote-ide/), i.e., Visual Studio Code.
 * `transfer.ccv.brown.edu` This host is used to [transfer files to/from oscar](../../managing-files/filetransfer.md#3.-gui-programs-for-transferring-files-using-the-sftp-protocol-and-transfer.ccv.brown.edu-hostname) using SFTP protocol
 
 ## macOS and Linux
@@ -52,7 +51,7 @@ Watch our videos on [SSHing on Linux](https://brown.hosted.panopto.com/Panopto/P
 
 ## Windows
 
-Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html), a free SSH client for Windows.
+Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), a free SSH client for Windows.
 
 * If you are not connected to the Brown VPN, use `username@ssh.ccv.brown.edu` as the Host Name and click Open.
 

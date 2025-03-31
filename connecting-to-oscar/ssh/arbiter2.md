@@ -2,9 +2,9 @@
 
 [Arbiter2 ](https://github.com/CHPC-UofU/arbiter2)is a cgroups-based mechanism that is designed to prevent the misuse of login nodes and VSCode node, which are scarce, shared resources. It is installed on shared nodes listed below:
 
-* login005
-* login006
-* node1103 (VSCode)
+* login009
+* login010
+* vscode1
 
 ## Status and Limits
 
@@ -92,7 +92,7 @@ A user receives an email notification upon each violation. Below is a example em
 
 ### Violation of usage policy
 
-A **violation of the usage policy** by **ccvdemo (CCV Demo,,,,ccvdemo**[**@brown.edu**](mailto:kevin\_wamae@brown.edu)**)** on login006 was automatically detected starting at 08:53 on 04/25.
+A **violation of the usage policy** by **ccvdemo (CCV Demo,,,,ccvdemo**[**@brown.edu**](mailto:kevin_wamae@brown.edu)**)** on login006 was automatically detected starting at 08:53 on 04/25.
 
 This may indicate that you are running computationally-intensive work on the interactive/login node (when it should be run on compute nodes instead). Please utilize the 'interact' command to initiate a SLURM session on a compute node and run your workloads there.
 
