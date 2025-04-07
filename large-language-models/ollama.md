@@ -159,7 +159,7 @@ As mentioned above, LLMs are very well suited to running on GPUs because of thei
 
 ## Appendix&#x20;
 
-Below is a list of all the models that CCV currently hosts on Oscar. We will add to this list over time, and if there are models you would like to request, please let us know by emailing `support@ccv.brown.edu`
+Below is a list of all the models that CCV currently hosts on Oscar. We will add to this list over time, and if there are models you would like to request, please let us know by emailing `support@ccv.brown.edu` . Please note that models are always being added, so the list below might be slightly out-of-date at any given time. The best way to see the models CCV hosts is to use the `ollama list` command—assuming you have started an Ollama server, and set the `OLLAMA_MODELS`  environment variable as described above.
 
 
 
