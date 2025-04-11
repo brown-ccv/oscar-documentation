@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Installing your own version of CESM
 
 These instructions are for users who need to download their own version of CESM2.
@@ -22,7 +26,7 @@ The various Oscar-specific XML files needed to run CESM, including
 * config\_compilers.xml
 * config\_machines.xml
 
-can be obtained from [this github repo](https://github.com/brown-ccv/CIME\_Oscar). The easiest way to incorporate these files into your build is to place them in a directory named .cime within your home directory (i.e., \~/.cime). For example:
+can be obtained from [this github repo](https://github.com/brown-ccv/CIME_Oscar). The easiest way to incorporate these files into your build is to place them in a directory named .cime within your home directory (i.e., \~/.cime). For example:
 
 ```
 git clone https://github.com/brown-ccv/CIME_Oscar ~/.cime
