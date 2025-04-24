@@ -14,6 +14,7 @@
   * [❓ FAQ](getting-help/faq.md)
 * [Citing CCV](citing-ccv.md)
 * [CCV Account Information](ccv-user-policies.md)
+* [Student Accounts](student-accounts.md)
 * [Offboarding](offboarding.md)
 
 ## Connecting to Oscar
