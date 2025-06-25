@@ -1,7 +1,7 @@
 # Getting Started
 
 {% hint style="info" %}
-This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B).&#x20;
+This guide assumes you have an Oscar account. To request an account see [create an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B).&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -12,7 +12,7 @@ If you're confused about any acronyms or terms throughout the guide, check out o
 
 Oscar is the shared compute cluster operated by CCV.
 
-Oscar runs the Linux RedHat7 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar. Some of the most common commands you'll be using in Oscar can also be found on our [Quick Reference page](quick-reference/).
+Oscar runs the Linux Red Hat 9 operating system. General Linux documentation is available from [The Linux Documentation Project](http://tldp.org/LDP/intro-linux/html/). We recommend you read up on basic Linux commands before using Oscar. Some of the most common commands you'll be using in Oscar can also be found on our [Quick Reference page](quick-reference/).
 
 {% hint style="info" %}
 If you'd like a brief introduction to Linux commands, watch [our tutorial on Linux basics on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5962a33f-a0ae-4d4e-9a4b-ad11012fe331).
@@ -22,8 +22,8 @@ Oscar has two login nodes and several hundred compute nodes. When users log in t
 
 ### What username and password should I be using?
 
-* If you are at Brown and have requested a regular CCV account, your Oscar login will be authenticated using your Brown credentials, i.e. the same username and password that you use to log into any Brown service such as "canvas". _We have seen login problems with the Brown credentials for some users so accounts moved to the RedHat7 system after September 1st 2018 can also log into RedHat7 with their CCV password._
-* If you are an external user, you will have to get a sponsored ID at Brown through the department with which you are associated before requesting an account on Oscar. Once you have the sponsored ID at Brown, you can [request an account](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B) on Oscar and use your Brown username and password to log in.
+* If you are at Brown and have requested a regular CCV account, your Oscar login will be authenticated using your Brown credentials, i.e. the same username and password that you use to log into any Brown service such as "canvas".&#x20;
+* If you are an external user, you will have to get a sponsored ID at Brown through the department with which you are associated before requesting an account on Oscar. Once you have the sponsored ID at Brown, you can [request an account](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) on Oscar and use your Brown username and password to log in.
 
 ### Connecting to Oscar for the first time
 
@@ -33,7 +33,7 @@ To log in to Oscar you need Secure Shell (SSH) on your computer. Mac and Linux m
 ssh <username>@ssh.ccv.brown.edu
 ```
 
-Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/\~sgtatham/putty/download.html), a free SSH client for Windows. Once you've installed PuTTY, open the client and use `<username>@ssh.ccv.brown.edu`for the Host Name and click Open. The configuration should look similar to the screenshot below.
+Windows users need to install an SSH client. We recommend [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html), a free SSH client for Windows. Once you've installed PuTTY, open the client and use `<username>@ssh.ccv.brown.edu`for the Host Name and click Open. The configuration should look similar to the screenshot below.
 
 ![](.gitbook/assets/putty-capture-2-resized.png)
 
@@ -91,7 +91,7 @@ You can also transfer files to and from the Oscar Filesystem from your own compu
 
 ## Software modules
 
-CCV uses the [PyModules](https://bitbucket.org/mhowison/pymodules) package for managing the software environment on OSCAR. To see the software available on Oscar, use the command `module avail`. You can load any one of these software modules using `module load <module>`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
+CCV uses the [Lmod](https://github.com/TACC/Lmod) package for managing the software environment on OSCAR. To see the software available on Oscar, use the command `module avail`. You can load any one of these software modules using `module load <module>`. The command `module list` shows what modules you have loaded. Below is an example of checking which versions of the module 'workshop' are available and loading a given version.
 
 ```
 [mhamilton@login001 ~]$ module avail workshop
@@ -102,7 +102,7 @@ module: loading 'workshop/2.0'
 [mhamilton@login001 ~]$ 
 ```
 
-For a list of all PyModule commands, see [Software Modules](software/software.md). If you have a request for software to be installed on Oscar, email support@ccv.brown.edu.
+For a list of all Lmod commands, see [Software Modules](software/software.md). If you have a request for software to be installed on Oscar, email support@ccv.brown.edu.
 
 ## Using a Desktop on Oscar
 
