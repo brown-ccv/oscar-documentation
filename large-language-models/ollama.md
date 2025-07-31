@@ -8,7 +8,7 @@ description: >-
 
 ## LLMs Hosted by CCV
 
-CCV hosts several dozen public, open-weight LLMs on Oscar. This includes Llama 3.3, DeepSeek-r1, Mistral, and Gemma3. You can see the complete list in the Appendix section below.&#x20;
+CCV hosts several dozen public, open-weight LLMs on Oscar. This includes Llama 4, DeepSeek-r1, Mistral, and Gemma3. You can see the complete list in the Appendix section below.&#x20;
 
 We first begin by opening a terminal and connecting to Oscar. This can be done using Open OnDemand, a terminal application on your local machine, or PuTTY if you're on a Windows machine.&#x20;
 
@@ -130,7 +130,7 @@ def print_model_response(model, query):
 
 if __name__ == '__main__':
     models = ['llama3.1', 'llama3.2', 'gemma2']
-    queries =['Write a function to compute Fibonacci numbers using iteration in Rust?', 
+    queries =['Write a function to compute Fibonacci numbers using iteration in Rust.', 
               'What is the cube root of 1860867?', 
               'What is the origin of Unix epoch time?',
               'Are AI bots going to turn humans into paperclips? Yes or no?',
