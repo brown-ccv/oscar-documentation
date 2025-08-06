@@ -8,7 +8,7 @@ description: >-
 
 ## LLMs Hosted by CCV
 
-CCV hosts several dozen public, open-weight LLMs on Oscar. This includes Llama 4, DeepSeek-r1, Mistral, and Gemma3. You can see the complete list in the Appendix section below.&#x20;
+CCV hosts several dozen public, open-weight LLMs on Oscar. This includes Llama 4, DeepSeek-r1, gpt-oss, Mistral, and Gemma3. You can see the complete list in the Appendix section below.&#x20;
 
 We first begin by opening a terminal and connecting to Oscar. This can be done using Open OnDemand, a terminal application on your local machine, or PuTTY if you're on a Windows machine.&#x20;
 
