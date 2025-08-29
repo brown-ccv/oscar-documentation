@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: Managing files
 weight: 0
-icon: check
 ---
 
 # Restoring Deleted Files
@@ -35,7 +34,7 @@ Nightly snapshots of the file system are available for the last 30 days can be f
 **Scratch** directory snapshot
 
 ```
-/oscar/scratch/.snapshot/Oscar_Daily_<yyyy-mm-dd>_00_00_00_UTC/<username>/<path_to_file>
+/oscar/scratch/.snapshot/Oscar_Daily_<yyyy-mm-dd>_02_00_00_UTC/<username>/<path_to_file>
 ```
 
 To restore a file, copy the file from the snapshot to your directory.
