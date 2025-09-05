@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: MATLAB
 weight: 0
-icon: check
 ---
 
 # Parallel Matlab
@@ -22,4 +21,3 @@ Note that the Parallel Computing Toolbox by itself cannot span across multiple n
 
 * [Execute Loop Iterations in Parallel](http://www.mathworks.com/help/distcomp/parfor.html)
 * [Run Single Programs on Multiple Data Sets](http://www.mathworks.com/help/distcomp/execute-simultaneously-on-multiple-data-sets.html)
-

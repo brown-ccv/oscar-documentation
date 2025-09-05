@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: Managing files
 weight: 0
-icon: check
 ---
 
 # Oscar's Filesystem

@@ -1,6 +1,6 @@
 # Using Modules
 
-CCV uses the[ LMOD ](../rhel9-migration/lmod-new-module-system.md)package for managing the software environment on OSCAR. The advantage of the modules approach is that it allows multiple versions of the same software to be installed at the same time. With the modules approach, you can "load'' and "unload'' modules to dynamically control your environment.
+CCV uses the[ LMOD ](../sys-changes/lmod-new-module-system.md)package for managing the software environment on OSCAR. The advantage of the modules approach is that it allows multiple versions of the same software to be installed at the same time. With the modules approach, you can "load'' and "unload'' modules to dynamically control your environment.
 
 {% hint style="info" %}
 Check out our [tutorial on using modules on Oscar](https://brown.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cb688701-3a1e-4a96-a1bd-ad51012c0d6b)!

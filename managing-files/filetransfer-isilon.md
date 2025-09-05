@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: Managing files
 weight: 0
-icon: check
 ---
 
 # Transferring Files between Oscar and Campus File Storage (Replicated and Non-Replicated)

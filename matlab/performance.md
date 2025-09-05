@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: MATLAB
 weight: 0
-icon: check
 ---
 
 # Improving Performance and Memory Management
@@ -22,4 +21,3 @@ The first step to speeding up Matlab applications is identifying the part which 
 Further reading from Mathworks:
 
 * [Speeding Up MATLAB Applications](http://blogs.mathworks.com/loren/2008/06/25/speeding-up-matlab-applications/)
-

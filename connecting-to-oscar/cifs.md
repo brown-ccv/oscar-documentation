@@ -4,7 +4,6 @@ date: 2019-01-31 22:06:09 +0000
 project: Oscar
 section: Connecting to Oscar
 weight: 0
-icon: check
 ---
 
 # SMB (Local Mount)

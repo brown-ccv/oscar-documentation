@@ -5,14 +5,13 @@ draft: false
 project: Oscar
 section: GPU Computing
 weight: 0
-icon: check
 ---
 
 # Submitting GPU Jobs
 
 The Oscar GPUs are in a separate partition to the regular compute nodes. The partition is called `gpu`. To see how many jobs are running and pending in the gpu partition, use
 
-```text
+```
 allq gpu
 ```
 
@@ -20,7 +19,7 @@ allq gpu
 
 To start an session on a GPU node, use the `interact` command and specify the `gpu` partition. You also need to specify the requested number of GPUs using the `-g` option:
 
-```text
+```
 interact -q gpu -g 1
 ```
 
@@ -47,13 +46,12 @@ module load cuda
 
 To submit this script:
 
-```text
+```
 sbatch my_script.sh
 ```
 
 ## DGX GPU Nodes in the GPU-HE Partition
 
-All the nodes in the gpu-he partition have V100 GPUs. However, two of them are DGX nodes \(gpu1404/1405\) which have 8 GPUs. When a gpu-he job requests for more than 4 GPUs, the job will automatically be allocated to the DGX nodes. 
+All the nodes in the gpu-he partition have V100 GPUs. However, two of them are DGX nodes (gpu1404/1405) which have 8 GPUs. When a gpu-he job requests for more than 4 GPUs, the job will automatically be allocated to the DGX nodes.&#x20;
 
-The other non-DGX nodes actually have  a better NVLink interconnect topology as all of them have direct links to the other. So the non-DGX nodes are better for a gpu-he job if the job does not require more than 4 GPUs. 
-
+The other non-DGX nodes actually have  a better NVLink interconnect topology as all of them have direct links to the other. So the non-DGX nodes are better for a gpu-he job if the job does not require more than 4 GPUs.&#x20;

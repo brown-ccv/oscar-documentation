@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: Submitting jobs
 weight: 0
-icon: check
 ---
 
 # Interactive Jobs
@@ -18,7 +17,7 @@ interact
 
 By default, this will create an interactive session that reserves 1 core and 4GB of memory for a period of 30 minutes. You can change the resources reserved for the session from these default limits by modifying the interact command:
 
-```text
+```
 usage: interact [-n cores] [-t walltime] [-m memory] [-q queue]
                 [-o outfile] [-X] [-f featurelist] [-h hostname] [-g ngpus]
 
@@ -45,7 +44,7 @@ For example, the command
 $ interact -n 20 -t 01:00:00 -m 10g
 ```
 
-requests an interactive session with 20 cores and 10 GB of memory \(per node\) for a period of 1 hour.
+requests an interactive session with 20 cores and 10 GB of memory (per node) for a period of 1 hour.
 
 
 
@@ -54,6 +53,4 @@ requests an interactive session with 20 cores and 10 GB of memory \(per node\) f
 
 If you lose connectivity to your login node, you lose access to your interactive job. To mitigate this issue you can use `screen` to keep your connection alive. For more information on using `screen` on the login nodes, see the [software section](../software/screen.md)
 {% endhint %}
-
-
 

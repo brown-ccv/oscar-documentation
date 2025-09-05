@@ -149,12 +149,13 @@
 * [dbGaP Data Transfers](dbgap-data/dbgap-data-transfers.md)
 * [dbGaP Job Submission](dbgap-data/dbgap-job-submission.md)
 
-## RHEL9 Migration
+## Sys Changes
 
-* [RHEL-9 Migration](rhel9-migration/rhel-9-migration.md)
-* [LMOD - New Module System](rhel9-migration/lmod-new-module-system.md)
-* [Module Changes](rhel9-migration/module-changes.md)
-* [Testing Jupyter Notebooks on RHEL9 mini-cluster](rhel9-migration/testing-jupyter-notebooks-on-rhel9-mini-cluster.md)
+* [Internet Access Disabled on Compute Nodes](sys-changes/internet-access-disabled-on-compute-nodes.md)
+* [RHEL-9 Migration](sys-changes/rhel-9-migration.md)
+* [LMOD - New Module System](sys-changes/lmod-new-module-system.md)
+* [Module Changes](sys-changes/module-changes.md)
+* [Testing Jupyter Notebooks on RHEL9 mini-cluster](sys-changes/testing-jupyter-notebooks-on-rhel9-mini-cluster.md)
 
 ## Large Language Models
 

@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: Submitting jobs
 weight: 0
-icon: check
 ---
 
 # Slurm Partitions

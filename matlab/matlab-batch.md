@@ -5,7 +5,6 @@ draft: false
 project: Oscar
 section: MATLAB
 weight: 0
-icon: check
 ---
 
 # Matlab Batch Jobs

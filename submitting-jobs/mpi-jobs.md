@@ -4,7 +4,7 @@ Resources from the web on getting started with MPI:
 
 * [https://computing.llnl.gov/tutorials/mpi](https://computing.llnl.gov/tutorials/mpi)
 * [http://mpitutorial.com](http://mpitutorial.com/)
-* [http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro\_to\_MPI.pdf](http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro\_to\_MPI.pdf)
+* [http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro\_to\_MPI.pdf](http://www.math-cs.gordon.edu/courses/cps343/presentations/Intro_to_MPI.pdf)
 
 MPI is a standard that dictates the semantics and features of "message passing". There are different implementations of MPI. Those installed on Oscar are
 
@@ -15,7 +15,7 @@ We recommend using hpcx-mpi as it is integrated with the SLURM scheduler and opt
 
 ## MPI modules on Oscar
 
-Oscar uses a Hierarchical module system where users need to load the required MPI module before they can load any other module that depends upon that particular MPI module. You can read more about this module system [here](../rhel9-migration/lmod-new-module-system.md#lmod-hierarchical-module-system).
+Oscar uses a Hierarchical module system where users need to load the required MPI module before they can load any other module that depends upon that particular MPI module. You can read more about this module system [here](../sys-changes/lmod-new-module-system.md#lmod-hierarchical-module-system).
 
 Currently, the two available mpi implementations on Oscar are `hpcx-mpi` and `openmpi`. You can check the available versions by running these commands
 
