@@ -15,7 +15,6 @@ Gateway nodes will continue to have Internet access. These include:
 
 * Login nodes
 * Transfer nodes
-* VSCode node
 
 ## Impacts
 
