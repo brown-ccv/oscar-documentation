@@ -31,9 +31,9 @@ Gateway nodes will continue to have Internet access. These include:
 
 * All[ file transfer methods](../managing-files/filetransfer.md) remain unaffected and continue to support Internet access.
 * Users can still install packages via mirror servers hosted at Brown. These mirror servers can be accessed from any Oscar node.
-  * Python `pip install` (Instructions) &#x20;
-  * R from CRAN  `install.packages()` (Instructions)
-  * R from Bioconductor `BiocManager::install()` (Instructions)
+  * Python `pip install` ([Instructions](package-archive-mirrors/pypi-mirror.md))&#x20;
+  * R from CRAN  `install.packages()` ([Instructions](package-archive-mirrors/cran-mirror.md))
+  * R from Bioconductor `BiocManager::install()` ([Instructions](package-archive-mirrors/bioconductor-mirror.md))
 
 ## Testing your workflow before the change
 
