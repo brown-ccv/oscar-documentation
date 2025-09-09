@@ -20,7 +20,7 @@ Ctrl (cmd on Mac) + Shift + P > Remote-SSH: Settings
 
 Disable the Remote.SSH: Use Exec Server option
 
-<img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="original">
 {% endhint %}
 
 To use VS Code you will need to be connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu) before proceeding.

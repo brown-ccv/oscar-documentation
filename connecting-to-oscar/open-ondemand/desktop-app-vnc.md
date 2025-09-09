@@ -32,11 +32,7 @@ Click [here](https://ood.ccv.brown.edu) to launch Open OnDemand (OOD) and log in
 You may change the **Image Quality** if your internet connection is bad. Image quality can be changed in the middle of the session.
 {% endhint %}
 
-<div align="center">
-
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure></div>
 
 ## Reconnecting to session
 
@@ -142,10 +138,10 @@ Please drag and drop the "Terminal Emulator" icon from the "Applications" menu t
 
 Then click on "Create Launcher":
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 You may remove the old terminal icon after adding the new icon:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ####
