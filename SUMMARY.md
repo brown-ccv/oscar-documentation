@@ -152,6 +152,10 @@
 ## Sys Changes
 
 * [Internet Access Disabled on Compute Nodes](sys-changes/internet-access-disabled-on-compute-nodes.md)
+* [Package Archive Mirrors](sys-changes/package-archive-mirrors/README.md)
+  * [PyPI Mirror](sys-changes/package-archive-mirrors/pypi-mirror.md)
+  * [CRAN mirror](sys-changes/package-archive-mirrors/cran-mirror.md)
+  * [Bioconductor Mirror](sys-changes/package-archive-mirrors/bioconductor-mirror.md)
 * [RHEL-9 Migration](sys-changes/rhel-9-migration.md)
 * [LMOD - New Module System](sys-changes/lmod-new-module-system.md)
 * [Module Changes](sys-changes/module-changes.md)
