@@ -152,6 +152,7 @@
 ## Sys Changes
 
 * [Internet Access Disabled on Compute Nodes](sys-changes/internet-access-disabled-on-compute-nodes.md)
+* [Bigmem Partition is Retired](sys-changes/bigmem-partition-is-retired.md)
 * [Package Archive Mirrors](sys-changes/package-archive-mirrors/README.md)
   * [PyPI Mirror](sys-changes/package-archive-mirrors/pypi-mirror.md)
   * [CRAN mirror](sys-changes/package-archive-mirrors/cran-mirror.md)
