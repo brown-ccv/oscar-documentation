@@ -4,12 +4,13 @@
 
 ## Changes
 
-1. The bigmem partion is retired as of September XX, 2025 (The date is to be determined)
-2. The memory/core ratio is increased to 7.8GB/core for all Slurm associations and QOS
+1. All associations for the bigmem partition will be removed and pending bigmem jobs will be cancelled on September xx, 2025.
+2. The memory/core ratio is increased to 7.8GB/core for all Slurm associations and QOS on Septermber xx, 2025
+3. The bigmem partion is retired as of September XX, 2025 (The date is to be determined)
 
 ## Impacts
 
-* All Slurm associations and QOS are deleted.
+* All Slurm associations and QOS for the bigmem partition are deleted.
 * Users will no longer be able to submit jobs to the bigmem partition.
 * Users could purchase an HPC Priority account to submit jobs that need large memory.&#x20;
 
