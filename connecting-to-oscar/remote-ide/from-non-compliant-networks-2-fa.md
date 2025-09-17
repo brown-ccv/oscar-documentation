@@ -36,9 +36,12 @@ Host ccv-vscode-node
   ProxyCommand ssh -q -W %h:%p jump-box
 ```
 
-6\. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `login-node`
+6\. In VSCode, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`&#x20;
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
 <figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>
 
+7. When prompted in VSCode, please enter your Brown password and complete the DUO authentication. After that, wait about 30 seconds and VSCode should connect to Oscar.
+
+<figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
