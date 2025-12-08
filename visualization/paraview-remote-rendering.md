@@ -4,8 +4,9 @@ description: Running Paraview Remote Rendering in Oscar
 
 # ParaView Remote Rendering
 
-{% hint style="warning" %}
-This service is new and is in Beta
+{% hint style="danger" %}
+The render server is currently **out of service** and undergoing maintenance and updates.\
+If you need assistance with render services on Oscar, please email **support@ccv.brown.edu** for further support.
 {% endhint %}
 
 The Center for Computation and Visualization (CCV) offers to the academic community a way to visualize large datasets using Oscar and its powerful GPUs as a rendering server. The current GPU hardware and available memory on Oscar surpasses the common desktop models, offering a modern and robust solution to display large datasets in parallel jobs using the widely used  opensource software [Paraview](https://www.paraview.org/). It is a simple two-steps process. Start the server and connect the client.
@@ -145,8 +146,7 @@ ssh -N -L <port-number>:<SERVER_IP>:<port-number> <your_brown_id>@ssh.ccv.brown.
 
 * **`<SERVER_IP>`&#x20;**&#x20; This is the ip of the compute node in Oscar. **Replace with the value sent in the confirmation email**&#x20;
 * **`<port-number>`**&#x54;his is the port exposed to access the rendering server. **Replace with the value sent in the confirmation email**
-* **`<your_brown_id>`** is your Brown username (It should be the same used to connect to Oscar)\
-
+* **`<your_brown_id>`** is your Brown username (It should be the same used to connect to Oscar)<br>
 
 {% hint style="info" %}
 The IP address and the Port might vary from use to user. Check the confirmation email for the correct details  for your connection.
@@ -160,7 +160,7 @@ NOTE: After entering  your credentials, you will notice **the terminal command l
 
 This step will reset the scene, so before doing it make sure to save all your data.
 
-1. Open Paraview Desktop Application (see the [prerequisites section](broken-reference))
+1. Open Paraview Desktop Application (see the [prerequisites section](/broken/pages/-Mb7FDJyhSsv8fUkTRTs#0-prerequisites))
 2. In paraview UI go to menu bar File -> Connect ..
 3. &#x20;Add Server:
    1. Name the connection ‘Remote Rendering’’
