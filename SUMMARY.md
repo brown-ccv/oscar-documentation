@@ -151,6 +151,7 @@
 
 ## Sys Changes
 
+* [RHEL 9.6 Module Migration Guide](sys-changes/rhel-9.6-module-migration-guide.md)
 * [Internet Access Disabled on Compute Nodes](sys-changes/internet-access-disabled-on-compute-nodes.md)
 * [Bigmem Partition is Retired](sys-changes/bigmem-partition-is-retired.md)
 * [Package Archive Mirrors](sys-changes/package-archive-mirrors/README.md)
