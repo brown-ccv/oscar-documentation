@@ -11,7 +11,7 @@ If the package you want to install has operating-system-level dependencies (i.e.
 First load the R version that you want to use the package with:
 
 ```bash
-module load r/4.2.2
+module load r/4.5.1
 ```
 
 Start an R session
@@ -80,7 +80,7 @@ Possible reasons for an installation failing include:
 To reinstall R packages, start an R session and run the update.packages() command
 
 ```bash
-module load r/4.2.2
+module load r/4.5.1
 R
 ```
 
