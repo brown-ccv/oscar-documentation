@@ -2,7 +2,7 @@
 
 Both the miniconda3 and minforge modules include only conda, python, and a few other packages. Only the miniforge module provides mamba.
 
-Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user\_guide/mamba.html).
+Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html).
 
 ## Conda Initialization
 
@@ -12,57 +12,45 @@ It is not recommended to initialize conda via `conda init`.
 
 To access the conda or mamba command, load either a miniconda3 or miniforge module and then run the source command
 
-{% tabs %}
-{% tab title="Miniconda3" %}
-```bash
-module load miniconda3/23.11.0s
-source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh
 ```
-{% endtab %}
-
-{% tab title="Miniforge" %}
-```bash
-module load miniforge/23.11.0-0s
-source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh
+module load miniforge3/25.3.0-3
+source ${MAMBA_ROOT_PREFIX}/etc/profile.d/conda.shetc/profile.d/conda.sh
 ```
-{% endtab %}
-{% endtabs %}
-
-* shared among all users if the environment is installed in a shared directory
-* private to one user if the environment is installed in a user's private directory
 
 The command 'conda info' shows important configurations for conda environment.
 
 ```
-$ conda info 
+$ conda info
 
      active environment : None
             shell level : 0
        user config file : /users/yliu385/.condarc
- populated config files : /users/yliu385/.condarc
-          conda version : 23.1.0
+ populated config files : /oscar/rt/9.6/25/x86_64_v3/miniforge3-25.3.0-3-a6hhdjzejtacz63sugjqnvgosfqz63ul/.condarc
+                          /users/yliu385/.condarc
+          conda version : 25.3.0
     conda-build version : not installed
-         python version : 3.10.9.final.0
-       virtual packages : __archspec=1=x86_64
+         python version : 3.12.10.final.0
+                 solver : libmamba (default)
+       virtual packages : __archspec=1=cascadelake
+                          __conda=25.3.0=0
                           __glibc=2.34=0
                           __linux=5.14.0=0
                           __unix=0=0
-       base environment : /oscar/runtime/software/external/miniconda3/23.11.0  (writable)
-      conda av data dir : /oscar/runtime/software/external/miniconda3/23.11.0/etc/conda
+       base environment : /oscar/rt/9.6/25/x86_64_v3/miniforge3-25.3.0-3-a6hhdjzejtacz63sugjqnvgosfqz63ul  (writable)
+      conda av data dir : /oscar/rt/9.6/25/x86_64_v3/miniforge3-25.3.0-3-a6hhdjzejtacz63sugjqnvgosfqz63ul/etc/conda
   conda av metadata url : None
-           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
-                          https://repo.anaconda.com/pkgs/main/noarch
-                          https://repo.anaconda.com/pkgs/r/linux-64
-                          https://repo.anaconda.com/pkgs/r/noarch
-          package cache : /oscar/runtime/software/external/miniconda3/23.11.0/pkgs
+           channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+                          https://conda.anaconda.org/conda-forge/noarch
+          package cache : /oscar/rt/9.6/25/x86_64_v3/miniforge3-25.3.0-3-a6hhdjzejtacz63sugjqnvgosfqz63ul/pkgs
                           /users/yliu385/.conda/pkgs
-       envs directories : /oscar/runtime/software/external/miniconda3/23.11.0/envs
+       envs directories : /oscar/rt/9.6/25/x86_64_v3/miniforge3-25.3.0-3-a6hhdjzejtacz63sugjqnvgosfqz63ul/envs
                           /users/yliu385/.conda/envs
                platform : linux-64
-             user-agent : conda/23.1.0 requests/2.28.1 CPython/3.10.9 Linux/5.14.0-284.11.1.el9_2.x86_64 rhel/9.2 glibc/2.34
-                UID:GID : 140348764:2128288
+             user-agent : conda/25.3.0 requests/2.32.3 CPython/3.12.10 Linux/5.14.0-570.62.1.0.1.el9_6.x86_64 oracle/9.6 glibc/2.34 solver/libmamba conda-libmamba-solver/25.3.0 libmambapy/2.1.1
+                UID:GID : 140348764:601
              netrc file : None
            offline mode : False
+
 
 ```
 
@@ -102,28 +90,14 @@ The commands above will only work if:
 
 If you need to activate a conda environment in a bash script, you need to source the conda.sh as shown in the following example bash script:
 
-
-
-{% tabs %}
-{% tab title="Miniconda3" %}
-`module load miniconda3/23.11.0s`
-
-`source /oscar/runtime/software/external/miniconda3/23.11.0/etc/profile.d/conda.sh`&#x20;
-
-`conda activate my_env`
-{% endtab %}
-
-{% tab title="Miniforge" %}
-`module load miniforge/23.11.0-0s`
-
-`source /oscar/runtime/software/external/miniforge/23.11.0-0/etc/profile.d/conda.sh`
-
-`conda activate my_env`
-{% endtab %}
-{% endtabs %}
+```
+module load miniforge3/25.3.0-3
+source ${MAMBA_ROOT_PREFIX}/etc/profile.d/conda.shetc/profile.d/conda.sh
+conda activate my_env
+```
 
 {% hint style="info" %}
-After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 4 in the code above).
+After installing packages in an active environment (instructions below), you do **not** need to load or install those packages in the bash script; any packages installed in the conda environment (before the script even starts) will be available through the environment after it is activated (line 3 in the code above).
 {% endhint %}
 
 {% hint style="danger" %}
