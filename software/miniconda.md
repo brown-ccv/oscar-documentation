@@ -14,7 +14,7 @@ To access the conda or mamba command, load either a miniconda3 or miniforge modu
 
 ```
 module load miniforge3/25.3.0-3
-source ${MAMBA_ROOT_PREFIX}/etc/profile.d/conda.shetc/profile.d/conda.sh
+source ${MAMBA_ROOT_PREFIX}/etc/profile.d/conda.sh
 ```
 
 The command 'conda info' shows important configurations for conda environment.
