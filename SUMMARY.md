@@ -103,6 +103,7 @@
 * [Gaussian](software/gaussian.md)
 * [IDL](software/using-idl.md)
 * [MPI4PY](software/mpi4py.md)
+* [Gpaw](software/gpaw.md)
 
 ## Jupyter Notebooks/Labs <a href="#jupyter-notebooks" id="jupyter-notebooks"></a>
 
