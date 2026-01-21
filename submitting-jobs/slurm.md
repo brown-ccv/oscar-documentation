@@ -29,7 +29,6 @@ To view _all_ partitions (including ones you don't have access to), replace the 
 | gpu       | GPU nodes                                                   |
 | gpu-he    | High End GPU nodes                                          |
 | gpu-debug | short wait time, short run time partition for gpu debugging |
-| bigmem    | large memory nodes                                          |
 
 **batch** is the default partition.
 
@@ -77,10 +76,3 @@ There is no limit on the time for condo jobs, but users should be aware that pla
 * Short wait time, short run time gpu access for debugging
 * All users have the same limits and priority on the gpu-debug partition
 
-### bigmem
-
-* For jobs requiring large amounts of memory
-* Priority users get higher priority and more resources than free users on the bigmem partition
-* Condo users submit to the bigmem partition with normal or priority access (if they have a priority account in addition to their condo)
-* Premium users get higher priority and more resources than free users on the SMP partition
-* Condo users submit to the SMP partition with normal or priority access (if they have a priority account in addition to their condo)
