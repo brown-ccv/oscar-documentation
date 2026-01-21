@@ -29,11 +29,11 @@ Webpage: [https://gpaw.readthedocs.io/](https://gpaw.readthedocs.io/)
     module purge
     unset LD_LIBRARY_PATH
     ```
-4.  Load modules (the latest `gpaw 25.7` requires `python >=3.10`)
+4.  Load modules (the latest `gpaw 25.7` requires `python >=3.10`, and `python/3.12.8` has tkinter configured with it)
 
     ```sh
     module load hpcx-mpi libxc fftw-mpi netlib-scalapack-mpi intel-oneapi-mkl
-    module load python 
+    module load python/3.12.8
     ```
 5.  Move to directory you want to build gpaw in:
 
@@ -156,11 +156,12 @@ Webpage: [https://gpaw.readthedocs.io/](https://gpaw.readthedocs.io/)
         if 'xc' not in libraries:
             libraries.append('xc')
     ```
-12. Install gpaw
+12. Install gpaw and test
 
     ```sh
     cd gpaw
     pip install -e . -v
+    gpaw -P 4 test
     ```
 
 #### Other options
@@ -168,3 +169,5 @@ Webpage: [https://gpaw.readthedocs.io/](https://gpaw.readthedocs.io/)
 If there are errors, start again with a clean environment.&#x20;
 
 If your solution is failing/not converging for any reason, please try `mpirun` instead of `srun --mpi-pmix` in your submit script.
+
+If you're using `ase gui`, use it either on your login node or on OOD desktop.&#x20;
