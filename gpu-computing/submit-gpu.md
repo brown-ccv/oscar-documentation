@@ -50,6 +50,22 @@ To submit this script:
 sbatch my_script.sh
 ```
 
+## GPU-HE Partition: MIG-ed and un-MIG-ed GPUs
+
+The GPU-HE partition has a mix of B200 DGX nodes as well as RTX Pro 6000 Max-Q nodes. These GPUs have the ability to be sub-divided into virtualized "slices" of GPUs. This is a feature referred to as Multi-Instance GPU (MIG). For example, a B200 with 180 GB of VRAM can be virtualized into two MIG instances each having 90 GB of VRAM. For now, we have "MIG-ed" all of the Max-Q GPUs into two 48 GB slices, and we have MIG-ed two of the B200 nodes' GPUs into 90 GB slices. A MIG-ed GPU is allocated first by default.&#x20;
+
+To request a un-MIG-ed GPU explicitly, users need to specify the feature of nomig
+
+```
+#SBATCH --constraint=nomig
+```
+
+To request a MIG-ed GPU explicitly, users need to specify the feature of nomig
+
+```
+#SBATCH --constraint=mig
+```
+
 ## DGX GPU Nodes in the GPU-HE Partition
 
 All the nodes in the gpu-he partition have V100 GPUs. However, two of them are DGX nodes (gpu1404/1405) which have 8 GPUs. When a gpu-he job requests for more than 4 GPUs, the job will automatically be allocated to the DGX nodes.&#x20;
