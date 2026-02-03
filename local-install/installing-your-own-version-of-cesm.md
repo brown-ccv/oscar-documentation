@@ -58,4 +58,4 @@ cd <CASENAME>
 ./case.submit
 ```
 
-By default, component log files, history files, and restart files for your case will be placed in /gpfs/home/$USER/data/$USER/archive/\<CASENAME>.
+By default, component log files, history files, and restart files for your case will be placed in /oscar/home/$USER/data/$USER/archive/\<CASENAME>.

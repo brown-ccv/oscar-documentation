@@ -24,7 +24,7 @@ Check the documentation below for some of these services below:
 To access a directory, click "Change directory" and enter the path name
 
 {% hint style="info" %}
-Do not use "\~" in your directory path name. The path should start with "/users" or "/gpfs/"
+Do not use "\~" in your directory path name. The path should start with "/users" or "/oscar/"
 {% endhint %}
 
 * To access your home directory, click the "**Home Directory**" link on the left. The path name at the top of the page should change to "/users/\<username>"

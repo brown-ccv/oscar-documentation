@@ -155,9 +155,9 @@ An output similar to the one below indicates that Jupyter Lab has started:
 
 > $ jupyter-lab --no-browser --port=$ipnport --ip=$ipnip
 >
-> \[I 13:12:03.404 LabApp] JupyterLab beta preview extension loaded from /gpfs/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
+> \[I 13:12:03.404 LabApp] JupyterLab beta preview extension loaded from /oscar/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
 >
-> \[I 13:12:03.404 LabApp] JupyterLab application directory is /gpfs/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
+> \[I 13:12:03.404 LabApp] JupyterLab application directory is /oscar/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
 >
 > \[I 13:12:03.410 LabApp] Serving notebooks from local directory: /gpfs\_home/yliu385
 >

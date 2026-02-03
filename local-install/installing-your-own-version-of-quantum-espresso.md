@@ -47,7 +47,7 @@ CC=icc CXX=icpc F77=ifort FC=ifort ./configure --prefix=/users/<username>/data/q
   module load mpi/<version>
   module load hdf5/1.10.5_fortran fftw/3.3.6
   # load the mpi module dependencies
-  CC=icc CXX=icpc F77=ifort FC=ifort ./configure --prefix=/users/<username>/data/quantum-espresso/ --with-hdf5=/gpfs/runtime/opt/hdf5/1.10.5_fortran LIBDIRS=/gpfs/runtime/opt/fftw/3.3.6/lib
+  CC=icc CXX=icpc F77=ifort FC=ifort ./configure --prefix=/users/<username>/data/quantum-espresso/ --with-hdf5=/oscar/runtime/opt/hdf5/1.10.5_fortran LIBDIRS=/oscar/runtime/opt/fftw/3.3.6/lib
   ```
 
 More configuration options can be found [here](http://www.quantum-espresso.org/Doc/user_guide/node7.html).
