@@ -159,9 +159,9 @@ An output similar to the one below indicates that Jupyter Notebook has started:
 
 > $ jupyter-notebook --no-browser --port=$ipnport --ip=$ipnip
 >
-> \[I 13:35:25.948 NotebookApp] JupyterLab beta preview extension loaded from /gpfs/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
+> \[I 13:35:25.948 NotebookApp] JupyterLab beta preview extension loaded from /oscar/runtime/opt/anaconda/3-5.2.0/lib/python3.6/site-packages/jupyterlab
 >
-> \[I 13:35:25.948 NotebookApp] JupyterLab application directory is /gpfs/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
+> \[I 13:35:25.948 NotebookApp] JupyterLab application directory is /oscar/runtime/opt/anaconda/3-5.2.0/share/jupyter/lab
 >
 > \[I 13:35:25.975 NotebookApp] Serving notebooks from local directory: /gpfs\_home/yliu385
 >

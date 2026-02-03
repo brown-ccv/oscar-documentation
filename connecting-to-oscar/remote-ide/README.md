@@ -123,7 +123,7 @@ Connect to VSCode first.
 You can either create a symlink via the `ln` command below,
 
 ```
-ln -s /gpfs/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
+ln -s /oscar/runtime/opt/vscode-server/ccv-vscode-config/settings.json /users/$USER/.vscode-server/data/Machine/settings.json
 ```
 
 or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file with following contents
@@ -135,9 +135,9 @@ or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file
         "**/.git/subtree-cache/**": true,
         "**/node_modules/**": true,
         "/usr/local/**": true,
-        "/gpfs/home/**": true,
-        "/gpfs/data/**": true,
-        "/gpfs/scratch/**": true
+        "/oscar/home/**": true,
+        "/oscar/data/**": true,
+        "/oscar/scratch/**": true
     },
     "search.followSymlinks": false,
     "search.exclude": {
@@ -145,9 +145,9 @@ or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file
         "**/.git/subtree-cache/**": true,
         "**/node_modules/**": true,
         "/usr/local/**": true,
-        "/gpfs/home/**": true,
-        "/gpfs/data/**": true,
-        "/gpfs/scratch/**": true
+        "/oscar/home/**": true,
+        "/oscar/data/**": true,
+        "/oscar/scratch/**": true
     }
 }
 ```

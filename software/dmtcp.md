@@ -14,7 +14,7 @@ To access dmtcp, load a dmtcp module. For example:
 
 ## `Example Programs`
 
-`The following example programs can be copied from /gpfs/runtime/`oftware\_examples/dmtcp/
+`The following example programs can be copied from /oscar/runtime/`oftware\_examples/dmtcp/
 
 * dmtcp\_serial
 * dmtcp\_serial.c
@@ -122,7 +122,7 @@ $ head  slurm-5157871.out -n 15
 ##      CPUs : 1
 ##   Mem/CPU : 2800 MB
 ##  Mem/Node : 65536 MB
-## Directory : /gpfs/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
+## Directory : /oscar/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
 ##   Job Started : Wed May 18 09:38:39 EDT 2022
 ###############################################################################
 ls: cannot access ckpt_*.dmtcp: No such file or directory
@@ -157,7 +157,7 @@ $ head  slurm-5158218.out -n 15
 ##      CPUs : 1
 ##   Mem/CPU : 2800 MB
 ##  Mem/Node : 65536 MB
-## Directory : /gpfs/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
+## Directory : /oscar/data/ccvstaff/yliu385/Test/dmtcp/serial/batch_job
 ##   Job Started : Wed May 18 09:50:39 EDT 2022
 ###############################################################################
  153

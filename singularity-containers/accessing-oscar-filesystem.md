@@ -7,17 +7,17 @@ By default, a Singularity image only have access to a limited set of paths once 
 Binding is achieved using the --bind or -B argument followed by the `<hostPath>:<containerPath>`
 
 ```bash
-$ singularity shell -B /gpfs/scratch,/gpfs/data <yourContainer.simg>
+$ singularity shell -B /oscar/scratch,/oscar/data <yourContainer.simg>
 ```
 
-This will bind `/data` and `/scratch` on from OSCAR's GPFS to `/data` and `/scratch` within the container, respectively. Doing this will allow any existing links you have to your data and scratch directories to function properly. 
+This will bind `/data` and `/scratch` on from OSCAR's filesystem to `/data` and `/scratch` within the container, respectively. Doing this will allow any existing links you have to your data and scratch directories to function properly. 
 
 ### Binding Using Environment Variables
 
 An alternative approach is to use the `SINGULARITY_BINDPATH` environment variable which is used as a list of additional bind paths that will be included in any singularity commands you execute, including run and shell. Using the environment variable instead of the command line argument, this would be:
 
 ```bash
-export SINGULARITY_BINDPATH="/gpfs/scratch,/gpfs/data"
+export SINGULARITY_BINDPATH="/oscar/scratch,/oscar/data"
 singularity shell <yourContainer.simg>
 ```
 

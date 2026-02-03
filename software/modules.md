@@ -61,9 +61,9 @@ Loading a module sets the relevant environment variables like `PATH`, `LD_LIBRAR
 
 ```
 $ echo $PATH
-/gpfs/runtime/opt/perl/5.18.2/bin:/gpfs/runtime/opt/python/2.7.3/bin:/gpfs/runtime/opt/java/7u5/bin:
-/gpfs/runtime/opt/intel/2013.1.106/bin:/gpfs/runtime/opt/centos-updates/6.3/bin:/usr/lib64/qt-3.3/bin:
-/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/gpfs/runtime/bin
+/oscar/runtime/opt/perl/5.18.2/bin:/oscar/runtime/opt/python/2.7.3/bin:/oscar/runtime/opt/java/7u5/bin:
+/oscar/runtime/opt/intel/2013.1.106/bin:/oscar/runtime/opt/centos-updates/6.3/bin:/usr/lib64/qt-3.3/bin:
+/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/oscar/runtime/bin
 ```
 
 &#x20;

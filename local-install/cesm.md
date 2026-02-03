@@ -17,7 +17,7 @@ module load perl/5.18.2 intel/2020.2 netcdf/4.7.4\_intel\_2020.2\_hdf5\_1.12.0 h
 The following example shows how to create a new case on Oscar.
 
 ```
-create_newcase --case /gpfs/scratch/ccvtest/cesm2_C --res T62_g17 --compset C --machine oscar
+create_newcase --case /oscar/scratch/ccvtest/cesm2_C --res T62_g17 --compset C --machine oscar
 ./case.setup
 ./case.build 
 ./xmlchange JOB_WALLCLOCK_TIME=0:20:00 --subgroup case.run

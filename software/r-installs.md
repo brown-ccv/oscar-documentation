@@ -32,7 +32,7 @@ You will see a warning:
 
 ```r
 Warning in install.packages("wordcloud", repos = "http://cran.r-project.org") :
-  'lib = "/gpfs/runtime/opt/R/3.4.2/lib64/R/library"' is not writable
+  'lib = "/oscar/runtime/opt/R/3.4.2/lib64/R/library"' is not writable
 Would you like to use a personal library instead?  (y/n) 
 ```
 

@@ -23,17 +23,17 @@ This is the newest anaconda module on Oscar. The first time you load the anacond
 
 ```
 $conda init bash
-no change     /gpfs/runtime/opt/anaconda/2022.05/condabin/conda
-no change     /gpfs/runtime/opt/anaconda/2022.05/bin/conda
-no change     /gpfs/runtime/opt/anaconda/2022.05/bin/conda-env
-no change     /gpfs/runtime/opt/anaconda/2022.05/bin/activate
-no change     /gpfs/runtime/opt/anaconda/2022.05/bin/deactivate
-no change     /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
-no change     /gpfs/runtime/opt/anaconda/2022.05/etc/fish/conf.d/conda.fish
-no change     /gpfs/runtime/opt/anaconda/2022.05/shell/condabin/Conda.psm1
-no change     /gpfs/runtime/opt/anaconda/2022.05/shell/condabin/conda-hook.ps1
-no change     /gpfs/runtime/opt/anaconda/2022.05/lib/python3.7/site-packages/xontrib/conda.xsh
-no change     /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.csh
+no change     /oscar/runtime/opt/anaconda/2022.05/condabin/conda
+no change     /oscar/runtime/opt/anaconda/2022.05/bin/conda
+no change     /oscar/runtime/opt/anaconda/2022.05/bin/conda-env
+no change     /oscar/runtime/opt/anaconda/2022.05/bin/activate
+no change     /oscar/runtime/opt/anaconda/2022.05/bin/deactivate
+no change     /oscar/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
+no change     /oscar/runtime/opt/anaconda/2022.05/etc/fish/conf.d/conda.fish
+no change     /oscar/runtime/opt/anaconda/2022.05/shell/condabin/Conda.psm1
+no change     /oscar/runtime/opt/anaconda/2022.05/shell/condabin/conda-hook.ps1
+no change     /oscar/runtime/opt/anaconda/2022.05/lib/python3.7/site-packages/xontrib/conda.xsh
+no change     /oscar/runtime/opt/anaconda/2022.05/etc/profile.d/conda.csh
 modified      /users/yliu385/.bashrc
 
 ==> For changes to take effect, close and re-open your current shell. <==
@@ -86,7 +86,7 @@ $ conda info
           conda version : 4.5.4
     conda-build version : 3.10.5
          python version : 3.6.5.final.0
-       base environment : /gpfs/runtime/opt/anaconda/3-5.2.0  (read only)
+       base environment : /oscar/runtime/opt/anaconda/3-5.2.0  (read only)
            channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
                           https://repo.anaconda.com/pkgs/main/noarch
                           https://repo.anaconda.com/pkgs/free/linux-64
@@ -95,11 +95,11 @@ $ conda info
                           https://repo.anaconda.com/pkgs/r/noarch
                           https://repo.anaconda.com/pkgs/pro/linux-64
                           https://repo.anaconda.com/pkgs/pro/noarch
-          package cache : /gpfs/runtime/opt/anaconda/3-5.2.0/pkgs
+          package cache : /oscar/runtime/opt/anaconda/3-5.2.0/pkgs
                           /users/yliu385/.conda/pkgs
        envs directories : /users/yliu385/anaconda
                           /users/yliu385/.conda/envs
-                          /gpfs/runtime/opt/anaconda/3-5.2.0/envs
+                          /oscar/runtime/opt/anaconda/3-5.2.0/envs
                platform : linux-64
              user-agent : conda/4.5.4 requests/2.18.4 CPython/3.6.5 Linux/3.10.0-957.5.1.el7.x86_64 rhel/7.3 glibc/2.17
                 UID:GID : 20175:601
@@ -155,7 +155,7 @@ If you need to activate a conda environment in a bash script, you need to source
 ```
 #!/usr/bin/bash
 module load anaconda/2022.05
-source /gpfs/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
+source /oscar/runtime/opt/anaconda/2022.05/etc/profile.d/conda.sh
 conda activate my_env
 ```
 

@@ -34,7 +34,7 @@ singularity build pytorch:21.06-py3 docker://nvcr.io/nvidia/pytorch:21.06-py3
 * Export PATHs to mount the Oscar file system
 
 ```
-export SINGULARITY_BINDPATH="/gpfs/home/$USER,/gpfs/scratch/$USER,/gpfs/data/"
+export SINGULARITY_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data/"
 ```
 
 * To use the image interactively
@@ -61,7 +61,7 @@ singularity shell --nv pytorch\:21.06-py3
 
 #SBATCH -o %j.out
 
-export SINGULARITY_BINDPATH="/gpfs/home/$USER,/gpfs/scratch/$USER,/gpfs/data/"
+export SINGULARITY_BINDPATH="/oscar/home/$USER,/oscar/scratch/$USER,/oscar/data/"
 singularity --version
 
 # Use environment from the singularity image

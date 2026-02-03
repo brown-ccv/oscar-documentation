@@ -39,7 +39,7 @@ if __name__ == "__main__":
 ```
 
 {% hint style="info" %}
-The file `mpi4pytest.py`  can be found at _/gpfs/runtime/softwareexamples/mpi4py/_
+The file `mpi4pytest.py`  can be found at _/oscar/runtime/softwareexamples/mpi4py/_
 {% endhint %}
 
 ## Conda Environment
@@ -83,7 +83,7 @@ Here is an example batch job script `mpi4pytest_conda.sh` that uses  `mpi4pytest
 #SBATCH --mem=1G
 
 module load anaconda/2020.02
-source /gpfs/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
+source /oscar/runtime/opt/anaconda/2020.02/etc/profile.d/conda.sh
 conda activate my_env
 module load mpi/mpi/openmpi_4.0.5_gcc_10.2_slurm20 gcc/10.2 cuda/11.1.1
 
