@@ -59,7 +59,7 @@ END
 ```
 
 {% hint style="info" %}
-This file and the batch file below can be found at `/gpfs/runtime/software_examples/idl/8.5.1` if you wish to copy them and test the process yourself.
+This file and the batch file below can be found at `/oscar/runtime/software_examples/idl/8.5.1` if you wish to copy them and test the process yourself.
 {% endhint %}
 
 Once you have the `.pro` file on Oscar, you can then run this file using a batch script. Here is a bare bones version of a batch script (called `idl_hello_world.sh)`that will run the script `idl_hello_world.pro` (note that the `.pro` is omitted in the script).

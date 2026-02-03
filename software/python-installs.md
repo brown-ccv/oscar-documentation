@@ -99,7 +99,7 @@ This will install the package under the following path in user's HOME directory:
 If you omit the `--user` flag you will see
 
 ```
-    IOError: [Errno 13] Permission denied: '/gpfs/runtime/opt/python/2.7.3/lib/python2.7/site-packages/ordereddict.py'
+    IOError: [Errno 13] Permission denied: '/oscar/runtime/opt/python/2.7.3/lib/python2.7/site-packages/ordereddict.py'
 ```
 
 This is because users do not have access to the default locations where software is installed.

@@ -39,7 +39,7 @@ module load cmake/3.15.4
 cd build
 
 cmake -DCMAKE_INSTALL_PREFIX=/users/<username>/qmcpack/ -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx \
--DQE_BIN=/gpfs/runtime/opt/quantumespresso/6.4_openmpi_4.0.5_intel_2020.2_slurm20/bin/ \
+-DQE_BIN=/oscar/runtime/opt/quantumespresso/6.4_openmpi_4.0.5_intel_2020.2_slurm20/bin/ \
 -DBUILD_PPCONVERT=1 -DBUILD_AFQMC=0 -DENABLE_MKL=1 \
 -DQMC_VERBOSE_CONFIGURATION=1 QMC_COMPLEX=1 ..
 ```
