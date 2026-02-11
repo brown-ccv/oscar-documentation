@@ -20,3 +20,19 @@ OOD provides with a several resources for interacting with Oscar.
 2. No need to enter your password again. [SSH into Oscar](web-based-terminal-app.md) in seconds!
 3. No need to use two-factor authentication multiple times. Just do it once, when you log into OOD.
 4. Use it with, or without, VPN. Your workflow remains the same.
+
+## Common Issues
+
+### My Session is in Undetermined State
+
+Find the session ID _**\<undetermined\_session\_id>**_ for the undetermined session. For example:
+
+```
+Session ID: f37466d7-c690-467b-85ce-8d250b3847d9"
+```
+
+Then Run
+
+```
+rm ~/ondemand/data/sys/dashboard/batch_connect/db/<undetermined_seesion_id>
+```
