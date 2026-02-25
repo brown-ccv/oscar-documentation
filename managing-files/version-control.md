@@ -33,4 +33,4 @@ $ git config --global user.email john@example.com
 
 ### Getting Out of Trouble
 
-Git can sometimes be a bit tricky. And we all eventually find ourselves in a place where we want to undo something or fix a mistake we made with Git. [This website](https://ohshitgit.com/) (pardon the profanity) has a bunch of really excellent solutions to common problems we sometimes run in to with Git.
+Git can sometimes be a bit tricky. And we all eventually find ourselves in a place where we want to undo something or fix a mistake we made with Git. [This website](https://dangitgit.com) contains a number of excellent solutions to common problems we sometimes run in to with Git.
