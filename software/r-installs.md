@@ -4,7 +4,7 @@
 
 Users should install R packages for themselves locally. This documentation shows you how to install R packages locally (without root access) on Oscar.
 
-If the package you want to install has operating-system-level dependencies (i.e. the package depends on core libraries), then we can install it as a module.&#x20;
+If the package you want to install has operating-system-level dependencies (i.e. the package depends on core libraries), then we can install it as a module.
 
 ### Installing an R package
 
@@ -73,8 +73,6 @@ Possible reasons for an installation failing include:
 * Other software is needed to build the R package, e.g. the R package `rgdal` needs `gdal` so you have to do `module load gdal`
 * A directory needs deleting from a previous failed installation.
 
-
-
 ## Reinstalling R packages
 
 To reinstall R packages, start an R session and run the update.packages() command
@@ -101,3 +99,31 @@ To remove the 'wordcloud' package:
 ```r
 > remove.packages("wordcloud")
 ```
+
+## Common Issues
+
+### libproj or sqlite3 not found in standard or given locations.
+
+The error is reported for the sf and terre packages. To install the pakcages, run the following commands
+
+{% tabs %}
+{% tab title="sf" %}
+```
+install.packages("terra", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
+```
+{% endtab %}
+
+{% tab title="terra" %}
+```
+install.packages("sf", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
+```
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+The proj and sql paths need to be modified accordingly if different proj are sqlite3 modules are used.
+{% endhint %}
+
+### Can not install a package in Open OnDemand (OOD) Rstudio Server app
+
+It is recommended to install R packages from an Oscar terminal, instead of from an OOD Rstudio Server sesssion. This is because that the Rstudio Server app runs in a container which has its own OS and system packages.&#x20;
