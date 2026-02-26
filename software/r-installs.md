@@ -109,13 +109,13 @@ The error is reported for the sf and terre packages. To install the pakcages, ru
 {% tabs %}
 {% tab title="sf" %}
 ```
-install.packages("terra", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
+install.packages("sf", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
 ```
 {% endtab %}
 
 {% tab title="terra" %}
 ```
-install.packages("sf", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
+install.packages("terra", configure.args = c("--with-proj-include=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/include", "--with-proj-lib=/oscar/rt/9.6/25/spack/x86_64_v3/proj-9.4.1-fhhvfr6iwri5cw42roir5meojvazzfoo/lib64", "--with-sqlite3-lib=/oscar/rt/9.6/25/spack/x86_64_v3/sqlite-3.46.0-pwg7tka36sc5abuw7l637zgwrvk63tu3/lib"))
 ```
 {% endtab %}
 {% endtabs %}
