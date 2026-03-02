@@ -1,6 +1,6 @@
 # Conda and Mamba
 
-Both the miniconda3 and minforge modules include only conda, python, and a few other packages. Only the miniforge module provides mamba.
+The minforge modules include only conda, python, and a few other packages. Only the miniforge module provides mamba.
 
 Mamba is a drop-in replacement of conda, and is faster at resolving dependencies than conda.  For commands like `conda install` and `conda search`, `conda`can be replaced with `mamba`on Oscar. More details can be found in [Mamba User Guide](https://mamba.readthedocs.io/en/latest/user_guide/mamba.html).
 
@@ -10,7 +10,7 @@ It is not recommended to initialize conda via `conda init`.
 
 ## Access Conda via Modules
 
-To access the conda or mamba command, load either a miniconda3 or miniforge module and then run the source command
+To access the conda or mamba command, load a miniforge module and then run the source command
 
 ```
 module load miniforge3/25.3.0-3
