@@ -8,7 +8,7 @@ description: >-
 
 ## Where Can You Run
 
-Currently, apptainer 1.2.2-1.el9 has been installed and is operational on all compute nodes attached to the batch, gpu, and VNC partitions.  If you experience any issues using Singularity, please contact support through the [Support Ticket System](broken-reference).
+Currently, apptainer 1.2.2-1.el9 has been installed and is operational on all compute nodes attached to the batch, gpu, and VNC partitions.  If you experience any issues using Singularity, please contact support through the [Support Ticket System](/broken/pages/-LcWVjx0JJLmzdHyZfJy).
 
 ## How to Load Singularity <a href="#how-to-load-singularity" id="how-to-load-singularity"></a>
 
