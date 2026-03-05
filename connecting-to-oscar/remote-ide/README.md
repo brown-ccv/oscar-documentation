@@ -10,7 +10,7 @@ description: >-
 ## VS Code one-time setup
 
 {% hint style="info" %}
-To use VS Code you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.&#x20;
+To use VS Code you must be on a Brown compliant network or connected to the VPN. Please install the [Brown VPN client](https://vpn.brown.edu/) before proceeding.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -78,15 +78,15 @@ C:\Users\<uname>\.ssh\config
 {% endtabs %}
 
 {% hint style="info" %}
-If you have **Windows Subsystem for Linux (WSL)** installed in your computer, you need to follow the instructions for Windows (PowerShell).&#x20;
+If you have **Windows Subsystem for Linux (WSL)** installed in your computer, you need to follow the instructions for Windows (PowerShell).
 {% endhint %}
 
-Edit the `config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.&#x20;
+Edit the `config` file on your local machine, add the following lines. Replace `<username>` with your Oscar username.
 
 ```
 # Jump box with public IP address
 Host jump-box
-    HostName poodcit4.services.brown.edu
+    HostName ssh.ccv.brown.edu
     User <username>
 
 # Target machine with private IP address
@@ -107,7 +107,7 @@ Disable the Remote.SSH: Use Exec Server option
 
 ### Step 6: Connect for the first time
 
-In VS Code, select  **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
+In VS Code, select **Remote-SSH: Connect to Host…** and after the list populates select `ccv-vscode-node`
 
 ![](../../.gitbook/assets/screen-shot-2021-09-08-at-10.24.42-am.png)
 
@@ -123,7 +123,7 @@ After a moment, VS Code will connect to the SSH server and set itself up.
 {% endtab %}
 
 {% tab title="Windows" %}
-After a moment, VS Code will connect to the SSH server and set itself up. You might see the Firewall prompt, please click allow.&#x20;
+After a moment, VS Code will connect to the SSH server and set itself up. You might see the Firewall prompt, please click allow.
 
 ![Allow Firewall connections](../../.gitbook/assets/capture_5.png)
 {% endtab %}
@@ -173,10 +173,10 @@ or manually create `/users/$USER/.vscode-server/data/Machine/settings.json` file
 
 ## Reconnect to VS Code
 
-1. Click the green icon "Open a Remote Window" in the bottom left corner of VS  Code Window. Then click "Connect to Host" in the drop down list.
+1. Click the green icon "Open a Remote Window" in the bottom left corner of VS Code Window. Then click "Connect to Host" in the drop down list.
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-2\. Select the `ccv-vscode-node` option to connect to Oscar.&#x20;
+2\. Select the `ccv-vscode-node` option to connect to Oscar.
 
 <figure><img src="../../.gitbook/assets/vscode_setup.png" alt=""><figcaption></figcaption></figure>

@@ -22,7 +22,7 @@ Oscar is our primary research computing cluster with several hundred multi-core 
 
 #### How do I request an account on Oscar?
 
-To request an account, please fill out a [New User Account Form.](https://brown.co1.qualtrics.com/jfe/form/SV\_0GtBE8kWJpmeG4B) All accounts are subject to our [General Terms and Conditions](https://it.brown.edu/computing-policies).
+To request an account, please fill out a [New User Account Form.](https://brown.co1.qualtrics.com/jfe/form/SV_0GtBE8kWJpmeG4B) All accounts are subject to our [General Terms and Conditions](https://it.brown.edu/computing-policies).
 
 #### How do I run a job on Oscar?
 
@@ -76,29 +76,41 @@ Specify the SLURM option `--mem-per-cpu=` in your script.
 
 We recommend linking against the Intel Math Kernels Library (MKL) which provides both BLAS and LAPACK. The easiest way to do this on Oscar is to include the special environment variable `$MKL` at the end of your link line, e.g. `gcc -o blas-app blas-app.c $MKL`. For more complicated build systems, you may want to consult the [MKL Link Line Advisor](http://software.intel.com/en-us/articles/intel-mkl-link-line-advisor).
 
-#### **I am getting a "WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
+### **I am getting a "WARNING: Remote HOST IDENTIFICATION HAS CHANGED?**
 
-We have recently updated the login and VSCode node hardware to improve performance, security, and reliability. As a result of this migration, the SSH host keys for our servers have been updated. To fix this:
+We have recently updated the gateway node hardware to improve performance, security, and reliability. As a result of this migration, the SSH host keys for our servers have been updated. To fix this:
 
 * **On MacOS:**
 
-```
-sed -i '' -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```bash
+sed -i '' -e '/^ssh.ccv/d' -e '/^sshcampus.ccv/d' -e '/^pccvoodcit/d' ~/.ssh/known_hosts
 ```
 
 * **On Linux:**
 
-```
-sed -i -e '/^oscar/d' -e '/^vscode/d' ~/.ssh/known_hosts
+```bash
+sed -i -e '/^ssh.ccv/d' -e '/^sshcampus.ccv/d' -e '/^pccvoodcit/d' ~/.ssh/known_hosts
 ```
 
 * **On Windows:** from VSCode's internal terminal Window:
 
-```
+```bash
 vi ~/.ssh/known_hosts 
 ```
 
-and delete the lines starting with Oscar and delete lines starting with `vscode` and `oscar`Hopefully, this will make things easier.
+and delete the lines starting with these phrases&#x20;
+
+```
+ssh.ccv
+sshcampus.ccv
+pccvoodcit
+```
+
+After making these changes, you will be see a warning claiming that `The authenticity of host <host> can't be established` . Type "yes" to continue.
+
+{% hint style="info" icon="triangle-exclamation" %}
+If you are connecting using VSCode, the above warning is not entirely visible. Hold your mouse on the text-box to see the entire warning. Enter "yes" to continue
+{% endhint %}
 
 * **OpenOnDemand (OOD) Shell Access:** either get a Desktop session or login via regular terminal into 'ssh.ccv.brown.edu' and run&#x20;
 

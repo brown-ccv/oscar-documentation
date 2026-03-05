@@ -27,7 +27,7 @@ Search for `symlink` and make sure the symlink searching is unchecked
 ```
 # Jump box with public IP address
 Host jump-box
-  HostName ssh8.ccv.brown.edu
+  HostName ssh.ccv.brown.edu
   User <username>
 # Target machine with private IP address
 Host ccv-vscode-node
