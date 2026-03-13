@@ -87,14 +87,16 @@ Host oscar-campus
     ServerAliveInterval 15
     
 <strong># When connecting from VSCODE use the following hosts
-</strong>Host vscode-oscar-campus
-    HostName oscar2
+</strong># Jump box with public IP address
+Host jump-box
+    HostName ssh.ccv.brown.edu
     User &#x3C;username>
-    ProxyCommand ssh -q -W %h:%p desktop-oscar-campus
-Host vscode-oscar
-    HostName oscar2
+
+# Target machine with private IP address
+Host ccv-vscode-node
+    HostName vscode1
     User &#x3C;username>
-    ProxyCommand ssh -q -W %h:%p desktop-oscar
+    ProxyCommand ssh -q -W %h:%p jump-box
 </code></pre>
 
 ### Connecting to your preconfigured host
